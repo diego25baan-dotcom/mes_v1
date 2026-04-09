@@ -1,0 +1,72 @@
+Name: Translations
+Type: TranslationsCategoryFolder
+Children:
+- Name: LocalizationDictionary1
+  Type: LocalizationDictionary
+  DataType: String
+  ValueRank: OneOrMoreDimensions
+  ArrayDimensions: [0,0]
+  Value: 
+   {
+    "Type": 12,
+    "Dimensions": [57,2],
+    "Body": [
+     "","en-US",
+     "Old password","Old password",
+     "LoginFormPasswordExpired","Password expired",
+     "Login","Login",
+     "New password","New password",
+     "Password","Password",
+     "Confirm password","Confirm password",
+     "Change password","Change password",
+     "Your password is expired. Please enter a new one","Your password is expired.\nPlease enter a new one.",
+     "Current User:","Current User:",
+     "Logout","Logout",
+     "ChangePasswordFormSuccessMessage","Password changed successfully",
+     "ChangePasswordFormWrongOldPasswordMessage","Wrong old password",
+     "ChangePasswordFormPasswordAlreadyUsedMessage","Password already used",
+     "ChangePasswordFormPasswordChangedTooRecentlyMessage","Password changed too recently",
+     "ChangePasswordFormPasswordTooShortMessage","Password too short",
+     "ChangePasswordFormUserNotFoundMessage","User not found",
+     "ChangePasswordFormUnsupportedOperationMessage","Unsupported operation",
+     "ChangePasswordFormPasswordMismatchMessage","Passwords do not match",
+     "LoginFormLoginSuccessful","Login successful",
+     "LoginFormAuthenticationFailed","Authentication failed",
+     "LoginFormInvalidAuthenticationModeForUser","Invalid authentication mode for user",
+     "Create","Create",
+     "Groups","Groups",
+     "EmptyUserList","No users in list",
+     "Name","Name",
+     "PasswordChangedTooRecently","Password changed too recently",
+     "Roles","Roles",
+     "Delete","Delete",
+     "Apply","Apply",
+     "Cancel","Cancel",
+     "Locale:","Locale:",
+     "CannotCreateUserWithEmptyUsername","Cannot create user with empty username",
+     "UnableToGetUsers","Unable to get users",
+     "UsernameAlreadyExists","Username already exists",
+     "UserNotFound","User not found",
+     "PasswordAlreadyUsed","Password already used in the past",
+     "PasswordTooShort","Password too short",
+     "UnsupportedOperation","Unsupported operation",
+     "ChangesAppliedSuccessfully","Changes applied successfully",
+     "SigningWorkflowSecondLoginFailed","Login failed for second user",
+     "RequestConfirmOperation","Request confirm operation for changing {0} from {1} to {2}",
+     "RequestDoubleSignOperation","Request double sign operation for changing {0} from {1} to {2}",
+     "Confirm","Confirm",
+     "Ok","Ok",
+     "SigningWorkflowFirstLoginFailed","Login failed for first user",
+     "Note:","Note:",
+     "Password:","Password:",
+     "SigningWorkflowFirstLoginUnauthorized","First user is not authorized",
+     "User:","User:",
+     "SigningWorkflowSecondLoginUnauthorized","Second user is not authorized",
+     "SecondPassword:","Second Password:",
+     "SecondUser:","Second User:",
+     "SecondNote:","Second Note:",
+     "SigningWorkflowSecondUserMustBeDifferentFromFirstUser","Second user must be different from first user",
+     "AnotherUserIsSigningThisVariable","Another user is signing this variable",
+     "RequestSignOperation","Request sign operation for changing {0} from {1} to {2}"
+    ]
+   }
