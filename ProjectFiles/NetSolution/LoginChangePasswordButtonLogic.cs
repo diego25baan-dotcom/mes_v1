@@ -13,6 +13,7 @@ using FTOptix.AuditSigning;
 using FTOptix.Store;
 using FTOptix.EventLogger;
 using FTOptix.SQLiteStore;
+using FTOptix.DataLogger;
 #endregion
 
 public class LoginChangePasswordButtonLogic : BaseNetLogic

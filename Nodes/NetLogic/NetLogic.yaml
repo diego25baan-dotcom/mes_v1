@@ -1,2 +1,48 @@
 Name: NetLogic
 Type: NetLogicCategoryFolder
+Children:
+- Name: VariablesSimulator
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: Sine
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: Cosine
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: Ramp
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: RunSimulation
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: ns=9;LibraryReference
+    Type: ObjectLibraryReference
+    DataType: ObjectLibraryReferenceDataType
+    Value: 
+     {
+      "TypeId": {
+       "Id": 72,
+       "Namespace": 9
+      },
+      "Body": {
+       "libraryGuid": "f0701375ee41467993d632db6a8fdaa5",
+       "objectGuid": "433da0e8a0cf026566eefa86cef75613",
+       "objectVersion": 1,
+       "highestIgnoredVersion": 0
+      }
+     }
+  - Name: Potencia_kW
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Flujo_ton_h
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Factor_emision
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Porcentaje_renovable
+    Type: BaseDataVariableType
+    DataType: Float

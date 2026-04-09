@@ -1,2 +1,4 @@
 Name: Model
 Type: ModelCategoryFolder
+Children:
+- File: KPIS/KPIS.yaml
