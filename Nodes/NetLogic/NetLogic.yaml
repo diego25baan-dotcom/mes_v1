@@ -37,12 +37,18 @@ Children:
   - Name: Potencia_kW
     Type: BaseDataVariableType
     DataType: Float
-  - Name: Flujo_ton_h
+  - Name: Velocidad_Banda_mps
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Carga_Banda_kg_m
     Type: BaseDataVariableType
     DataType: Float
   - Name: Factor_emision
     Type: BaseDataVariableType
     DataType: Float
-  - Name: Porcentaje_renovable
+  - Name: Potencia_Renovable_kW
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Flujo_ton_h
     Type: BaseDataVariableType
     DataType: Float

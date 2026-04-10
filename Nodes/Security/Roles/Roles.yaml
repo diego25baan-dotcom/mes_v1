@@ -2,6 +2,12 @@ Name: Roles
 Id: g=168315c4ba704e70bb13e35de715eb03
 Type: RolesCategoryFolder
 Children:
-- Name: Admin
+- Name: Administrador
   Id: g=2f8bd968e01e521c9f91504080685aa9
+  Type: ns=1;RoleType
+- Name: Ingeniero
+  Id: g=9f3016bcc878d7fa923d30422fe55817
+  Type: ns=1;RoleType
+- Name: Analista
+  Id: g=78da1525d53e351a85e4e58a09693379
   Type: ns=1;RoleType

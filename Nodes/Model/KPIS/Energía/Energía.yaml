@@ -1,12 +1,39 @@
 Name: Energía
 Type: FolderType
 Children:
-- Name: KPI_EN_001 ENE_TURNO
+- Name: KPI_EN_001 CONSUMO
   Type: BaseDataVariableType
   DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../NetLogic/VariablesSimulator/Potencia_kW"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
 - Name: KPI_EN_002 CO2_AREA
   Type: BaseDataVariableType
-  DataType: Int32
+  DataType: Float
+  Children:
+  - Name: ExpressionEvaluator1
+    Type: ExpressionEvaluator
+    Children:
+    - Name: Expression
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Value: "{0}"
+    - Name: ns=3;Source0
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
 - Name: KPI_EN_003 KWh_ton
   Type: BaseDataVariableType
   DataType: Int32
@@ -21,6 +48,32 @@ Children:
     Type: DynamicLink
     DataType: NodePath
     Value: "../../../../NetLogic/VariablesSimulator/Potencia_kW"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Velocidad_Banda_mps
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../NetLogic/VariablesSimulator/Velocidad_Banda_mps"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Carga_Banda_kg_m
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../NetLogic/VariablesSimulator/Carga_Banda_kg_m"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -52,14 +105,14 @@ Children:
       Type: BaseVariableType
       DataType: DynamicLinkMode
       Value: 2
-- Name: Porcentaje_renovable
+- Name: Potencia_Renovable_kW
   Type: BaseDataVariableType
   DataType: Float
   Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../NetLogic/VariablesSimulator/Porcentaje_renovable"
+    Value: "../../../../NetLogic/VariablesSimulator/Potencia_Renovable_kW"
     Children:
     - Name: Mode
       Type: BaseVariableType

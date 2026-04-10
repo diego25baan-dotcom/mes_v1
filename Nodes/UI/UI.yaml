@@ -257,6 +257,7 @@ Children:
         - Name: Title
           Type: BaseDataVariableType
           DataType: LocalizedText
+          Value: {"LocaleId":"en-US","Text":"INICIO DE SESIÓN"}
         - Name: Panel
           Type: NodePointer
           DataType: NodeId
@@ -272,7 +273,7 @@ Children:
         - Name: Title
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"LocaleId":"en-US","Text":"Creación usuarios"}
+          Value: {"LocaleId":"en-US","Text":"CREACIÓN DE USUARIOS"}
         - Name: Panel
           Type: NodePointer
           DataType: NodeId
@@ -290,13 +291,14 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "{Session}/Roles/Admin"
+            Value: "{Session}/Roles/Administrador"
       - Name: Panel3
         Type: NavigationPanelItem
         Children:
         - Name: Title
           Type: BaseDataVariableType
           DataType: LocalizedText
+          Value: {"LocaleId":"en-US","Text":"MONITOREO DE ENERGÍA"}
         - Name: Panel
           Type: NodePointer
           DataType: NodeId
@@ -306,6 +308,40 @@ Children:
             Type: PropertyType
             DataType: NodeId
             Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Session}/Roles/Ingeniero"
+      - Name: Panel4
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"LocaleId":"en-US","Text":"MONITOREO DE VARIABLES ESG"}
+        - Name: Panel
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/mes_v1/UI/Screens/KPI_ESG"
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Session}/Roles/Analista"
     - Name: CurrentPanel
       Type: NodePointer
       DataType: NodeId

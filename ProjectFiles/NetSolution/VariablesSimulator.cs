@@ -14,9 +14,11 @@ public class VariablesSimulator : BaseNetLogic
         cosine = LogicObject.GetVariable("Cosine");
 
         potencia = LogicObject.GetVariable("Potencia_kW");
+        velocidad = LogicObject.GetVariable("Velocidad_Banda_mps");
+        cargaBanda = LogicObject.GetVariable("Carga_Banda_kg_m");
         flujo = LogicObject.GetVariable("Flujo_ton_h");
         factorEmision = LogicObject.GetVariable("Factor_emision");
-        renovable = LogicObject.GetVariable("Porcentaje_renovable");
+        potenciaRenovable = LogicObject.GetVariable("Potencia_Renovable_kW");
 
         simulationTask = new PeriodicTask(Simulation, 250, LogicObject);
         simulationTask.Start();
@@ -42,23 +44,24 @@ public class VariablesSimulator : BaseNetLogic
 
             double basePower = 80 + (carga * 40);
             double ruidoPotencia = (rand.NextDouble() - 0.5) * 5;
-            potencia.Value = basePower * estadoOperacion + ruidoPotencia;
+            potencia.Value = (basePower + ruidoPotencia) * estadoOperacion;
 
-            double flujoMax = 100;
-            double ruidoFlujo = (rand.NextDouble() - 0.5) * 10;
-            flujo.Value = flujoMax * carga * estadoOperacion + ruidoFlujo;
+            double baseVelocidad = 1.5 + 0.3 * Math.Sin(decimalCounter / 3);
+            double ruidoVelocidad = (rand.NextDouble() - 0.5) * 0.2;
+            velocidad.Value = (baseVelocidad + ruidoVelocidad) * estadoOperacion;
+
+            double baseCarga = 100 + (carga * 50);
+            double ruidoCarga = (rand.NextDouble() - 0.5) * 10;
+            cargaBanda.Value = (baseCarga + ruidoCarga) * estadoOperacion;
+
+            flujo.Value = velocidad.Value * cargaBanda.Value * 3.6;
 
             double baseFactor = 0.45;
             double variacion = (rand.NextDouble() - 0.5) * 0.02;
             factorEmision.Value = baseFactor + variacion;
 
-            double cambio = (rand.NextDouble() - 0.5) * 0.5;
-            double nuevo = renovable.Value + cambio;
-
-            if (nuevo < 10) nuevo = 10;
-            if (nuevo > 50) nuevo = 50;
-
-            renovable.Value = nuevo;
+            double porcentajeRenovable = 0.2 + 0.2 * Math.Sin(decimalCounter / 10);
+            potenciaRenovable.Value = potencia.Value * porcentajeRenovable;
         }
     }
 
@@ -81,7 +84,9 @@ public class VariablesSimulator : BaseNetLogic
     private IUAVariable ramp;
 
     private IUAVariable potencia;
+    private IUAVariable velocidad;
+    private IUAVariable cargaBanda;
     private IUAVariable flujo;
     private IUAVariable factorEmision;
-    private IUAVariable renovable;
+    private IUAVariable potenciaRenovable;
 }

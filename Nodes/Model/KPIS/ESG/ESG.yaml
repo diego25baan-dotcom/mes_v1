@@ -1,2 +1,39 @@
 Name: ESG
 Type: FolderType
+Children:
+- Name: CO2_total
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Energia_kWh
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Toneladas_producidas
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Relaves_tratados
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Relaves_totales
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Area_restaurada
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Area_explotada
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Numero_incidentes
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Horas_trabajadas
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Horas_capacitacion
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Auditorias_aprobadas
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Auditorias_totales
+  Type: BaseDataVariableType
+  DataType: Int32

@@ -1,2 +1,24 @@
 Name: Producción
 Type: FolderType
+Children:
+- Name: Ley_mineral_entrada
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Ley_mineral_salida
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Disponibilidad
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Rendimiento
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Calidad
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Costo_total
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Toneladas_producidas
+  Type: BaseDataVariableType
+  DataType: Int32

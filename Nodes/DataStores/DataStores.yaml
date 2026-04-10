@@ -38,12 +38,22 @@ Children:
         - Name: flujo
           Type: StoreColumn
           DataType: Float
-        - Name: factor_emision
+        - Name: factor emision
           Type: StoreColumn
           DataType: Float
-        - Name: porcentaje_renovable
+        - Name: potencia renovable
           Type: StoreColumn
           DataType: Float
+        - Name: Velocidad_Banda_mps
+          Type: StoreColumn
+          DataType: Float
+        - Name: Carga_Banda_kg_m
+          Type: StoreColumn
+          DataType: Float
+      - Name: RecordLimit
+        Type: BaseDataVariableType
+        DataType: UInt32
+        Value: 10000
   - Class: Reference
     Target: ns=19;i=30
     Direction: Forward
