@@ -105,3 +105,316 @@ Children:
       Type: BaseVariableType
       DataType: DynamicLinkMode
       Value: 2
+- Name: Velocidad_Banda_mpsTransitioned
+  Type: VariableTransitionEventDispatcher
+  Children:
+  - Name: Value
+    Type: BaseVariableType
+    DataType: Double
+    Value: 1.8
+  - Name: Transition
+    Type: BaseVariableType
+    DataType: VariableTransition
+    Value: 2
+  - Name: VariableNodePath
+    Type: BaseVariableType
+    DataType: NodePath
+    Value: "../Velocidad_Banda_mps"
+  - Name: VariableTransitionEventHandler1
+    Type: EventHandler
+    Children:
+    - Name: ListenEventType
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/EventTypes/BaseEventType/VariableConditionEvent/VariableTransitionEvent"
+    - Name: MethodsToCall
+      Type: BaseObjectType
+      Children:
+      - Name: MethodContainer1
+        Type: BaseObjectType
+        Children:
+        - Name: ns=3;ObjectPointer
+          Type: NodePointer
+          DataType: NodeId
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../../../Commands/VariableCommands@NodeId"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+        - Name: ns=3;Method
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Set"
+        - Name: InputArguments
+          Type: BaseObjectType
+          Children:
+          - Name: VariableToModify
+            Type: BaseDataVariableType
+            DataType: VariablePointer
+            Description: {"NamespaceIndex":3,"TextId":"SetVariableToModifyDescription"}
+            Value: "/Objects/mes_v1/Model/colores/Variable1"
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Color
+            Description: {"NamespaceIndex":3,"TextId":"SetValueDescription"}
+            Value: "#f42d2d"
+          - Name: ArrayIndex
+            Type: BaseDataVariableType
+            DataType: UInt32
+            Description: {"NamespaceIndex":3,"TextId":"SetArrayIndexDescription"}
+            ValueRank: ScalarOrOneDimension
+    - Name: EventArguments
+      Type: VariableTransitionEvent
+      Children:
+      - Name: VariableNodeId
+        Type: BaseVariableType
+        DataType: NodeId
+      - Name: NewValue
+        Type: BaseVariableType
+        DataType: BaseDataType
+      - Name: OldValue
+        Type: BaseVariableType
+        DataType: BaseDataType
+      - Name: EventId
+        Type: PropertyType
+        DataType: ByteString
+      - Name: EventType
+        Type: PropertyType
+        DataType: NodeId
+      - Name: SourceNode
+        Type: PropertyType
+        DataType: NodeId
+      - Name: SourceName
+        Type: PropertyType
+        DataType: String
+      - Name: Time
+        Type: PropertyType
+        DataType: UtcTime
+      - Name: ReceiveTime
+        Type: PropertyType
+        DataType: UtcTime
+      - Name: Message
+        Type: PropertyType
+        DataType: LocalizedText
+      - Name: Severity
+        Type: PropertyType
+        DataType: UInt16
+- Name: Velocidad_Banda_mpsTransitioned1
+  Type: VariableTransitionEventDispatcher
+  Children:
+  - Name: Value
+    Type: BaseVariableType
+    DataType: Double
+    Value: 1.6
+  - Name: Transition
+    Type: BaseVariableType
+    DataType: VariableTransition
+    Value: 4
+  - Name: VariableNodePath
+    Type: BaseVariableType
+    DataType: NodePath
+    Value: "../Velocidad_Banda_mps"
+  - Name: VariableTransitionEventHandler1
+    Type: EventHandler
+    Children:
+    - Name: ListenEventType
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/EventTypes/BaseEventType/VariableConditionEvent/VariableTransitionEvent"
+    - Name: MethodsToCall
+      Type: BaseObjectType
+      Children:
+      - Name: MethodContainer1
+        Type: BaseObjectType
+        Children:
+        - Name: ns=3;ObjectPointer
+          Type: NodePointer
+          DataType: NodeId
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../../../Commands/VariableCommands@NodeId"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+        - Name: ns=3;Method
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Set"
+        - Name: InputArguments
+          Type: BaseObjectType
+          Children:
+          - Name: VariableToModify
+            Type: BaseDataVariableType
+            DataType: VariablePointer
+            Description: {"NamespaceIndex":3,"TextId":"SetVariableToModifyDescription"}
+            Value: "/Objects/mes_v1/Model/colores/Variable1"
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Color
+            Description: {"NamespaceIndex":3,"TextId":"SetValueDescription"}
+            Value: "#23bf0784"
+          - Name: ArrayIndex
+            Type: BaseDataVariableType
+            DataType: UInt32
+            Description: {"NamespaceIndex":3,"TextId":"SetArrayIndexDescription"}
+            ValueRank: ScalarOrOneDimension
+    - Name: EventArguments
+      Type: VariableTransitionEvent
+      Children:
+      - Name: VariableNodeId
+        Type: BaseVariableType
+        DataType: NodeId
+      - Name: NewValue
+        Type: BaseVariableType
+        DataType: BaseDataType
+      - Name: OldValue
+        Type: BaseVariableType
+        DataType: BaseDataType
+      - Name: EventId
+        Type: PropertyType
+        DataType: ByteString
+      - Name: EventType
+        Type: PropertyType
+        DataType: NodeId
+      - Name: SourceNode
+        Type: PropertyType
+        DataType: NodeId
+      - Name: SourceName
+        Type: PropertyType
+        DataType: String
+      - Name: Time
+        Type: PropertyType
+        DataType: UtcTime
+      - Name: ReceiveTime
+        Type: PropertyType
+        DataType: UtcTime
+      - Name: Message
+        Type: PropertyType
+        DataType: LocalizedText
+      - Name: Severity
+        Type: PropertyType
+        DataType: UInt16
+- Name: Velocidad_Banda_mpsRangeTransitioned
+  Type: VariableRangeTransitionEventDispatcher
+  Children:
+  - Name: From
+    Type: BaseVariableType
+    DataType: Double
+    Value: 1.6
+  - Name: To
+    Type: BaseVariableType
+    DataType: Double
+    Value: 1.8
+  - Name: Transition
+    Type: BaseVariableType
+    DataType: VariableRangeTransition
+    Value: 2
+  - Name: VariableNodePath
+    Type: BaseVariableType
+    DataType: NodePath
+    Value: "../Velocidad_Banda_mps"
+  - Name: VariableRangeTransitionEventHandler1
+    Type: EventHandler
+    Children:
+    - Name: ListenEventType
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/EventTypes/BaseEventType/VariableConditionEvent/VariableRangeTransitionEvent"
+    - Name: MethodsToCall
+      Type: BaseObjectType
+      Children:
+      - Name: MethodContainer1
+        Type: BaseObjectType
+        Children:
+        - Name: ns=3;ObjectPointer
+          Type: NodePointer
+          DataType: NodeId
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../../../Commands/VariableCommands@NodeId"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+        - Name: ns=3;Method
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Set"
+        - Name: InputArguments
+          Type: BaseObjectType
+          Children:
+          - Name: VariableToModify
+            Type: BaseDataVariableType
+            DataType: VariablePointer
+            Description: {"NamespaceIndex":3,"TextId":"SetVariableToModifyDescription"}
+            Value: "/Objects/mes_v1/Model/colores/Variable1"
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Color
+            Description: {"NamespaceIndex":3,"TextId":"SetValueDescription"}
+            Value: "#f8e71c"
+          - Name: ArrayIndex
+            Type: BaseDataVariableType
+            DataType: UInt32
+            Description: {"NamespaceIndex":3,"TextId":"SetArrayIndexDescription"}
+            ValueRank: ScalarOrOneDimension
+    - Name: EventArguments
+      Type: VariableRangeTransitionEvent
+      Children:
+      - Name: VariableNodeId
+        Type: BaseVariableType
+        DataType: NodeId
+      - Name: NewValue
+        Type: BaseVariableType
+        DataType: BaseDataType
+      - Name: OldValue
+        Type: BaseVariableType
+        DataType: BaseDataType
+      - Name: EventId
+        Type: PropertyType
+        DataType: ByteString
+      - Name: EventType
+        Type: PropertyType
+        DataType: NodeId
+      - Name: SourceNode
+        Type: PropertyType
+        DataType: NodeId
+      - Name: SourceName
+        Type: PropertyType
+        DataType: String
+      - Name: Time
+        Type: PropertyType
+        DataType: UtcTime
+      - Name: ReceiveTime
+        Type: PropertyType
+        DataType: UtcTime
+      - Name: Message
+        Type: PropertyType
+        DataType: LocalizedText
+      - Name: Severity
+        Type: PropertyType
+        DataType: UInt16

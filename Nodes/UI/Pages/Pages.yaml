@@ -4529,3 +4529,2187 @@ Children:
       DataType: VerticalAlignment
       ModellingRule: Optional
       Value: 3
+- Name: KPIS_ENERGIA
+  Id: g=2fbe54fee4fd1debee4b30fcf4a9847f
+  Supertype: KPIS
+  ReferenceType: HasComponent
+  Children:
+  - Name: HorizontalLayout1
+    Type: RowLayout
+    Children:
+    - Name: VerticalLayout1
+      Type: ColumnLayout
+      Children:
+      - Name: Trend1
+        Type: Trend
+        Children:
+        - Name: Pens
+          Type: BaseObjectType
+          Children:
+          - Name: potencia
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#1b5583"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/potencia/LastValue"
+          - Name: factor emision
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#f3da08"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/factor emision/LastValue"
+          - Name: potencia renovable
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#ff7514"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/potencia renovable/LastValue"
+          - Name: Velocidad_Banda_mps
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#7d7f7d"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/Velocidad_Banda_mps/LastValue"
+          - Name: Carga_Banda_kg_m
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#4c9141"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/Carga_Banda_kg_m/LastValue"
+        - Class: Reference
+          Target: ns=5;i=1129
+          Direction: Forward
+        - Name: XAxis
+          Type: DateTimeAxis
+          Children:
+          - Name: Follow
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Window
+            Type: BaseDataVariableType
+            DataType: Duration
+            Value: "0:00:00:05.0000000"
+          - Name: Interactive
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Time
+            Type: BaseDataVariableType
+            DataType: DateTime
+        - Name: YAxis
+          Type: ValueAxis
+          Children:
+          - Name: Position
+            Type: BaseDataVariableType
+            DataType: HorizontalPositionEnum
+          - Name: MinValue
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -100.0
+          - Name: MaxValue
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: 100.0
+          - Name: AutoScale
+            Type: BaseDataVariableType
+            DataType: Boolean
+          - Name: Interactive
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+        - Name: LegendVisible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Class: Reference
+          Target: ns=5;i=1201
+          Direction: Forward
+        - Name: TimeRanges
+          Type: BaseObjectType
+        - Class: Reference
+          Target: ns=5;i=1209
+          Direction: Forward
+        - Name: Model
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/mes_v1/Loggers/DataLogger1"
+          Children:
+          - Name: ItemKind
+            Type: PropertyType
+            DataType: NodeId
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+      - Name: DataGrid1
+        Type: DataGrid
+        Children:
+        - Name: Model
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/mes_v1/DataStores/EmbeddedDatabase1"
+          Children:
+          - Name: ItemKind
+            Type: PropertyType
+            DataType: NodeId
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+        - Name: Query
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "SELECT * FROM \"VARIABLES ENERGÉTICAS\""
+        - Name: Columns
+          Type: BaseObjectType
+          Children:
+          - Name: Timestamp
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"Timestamp"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Visible
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/Timestamp"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/Timestamp"
+          - Name: LocalTimestamp
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"LocalTimestamp"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Visible
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/LocalTimestamp"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/LocalTimestamp"
+          - Name: potencia
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"potencia"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Visible
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/potencia"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/potencia"
+          - Name: factor emision
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"factor emision"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Visible
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/factor emision"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/factor emision"
+          - Name: potencia renovable
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"potencia renovable"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Visible
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/potencia renovable"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/potencia renovable"
+          - Name: Velocidad_Banda_mps
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"Velocidad_Banda_mps"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Visible
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/Velocidad_Banda_mps"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/Velocidad_Banda_mps"
+          - Name: Carga_Banda_kg_m
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"Carga_Banda_kg_m"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Visible
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/Carga_Banda_kg_m"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/Carga_Banda_kg_m"
+        - Name: SelectedItem
+          Type: NodePointer
+          DataType: NodeId
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+        - Name: UISelectedItem
+          Type: BaseDataVariableType
+          DataType: NodeId
+          AccessLevel: Read
+        - Class: Reference
+          Target: ns=5;i=504
+          Direction: Forward
+        - Name: Item
+          Type: Alias
+          DataType: NodeId
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+        - Name: SortColumn
+          Type: BaseDataVariableType
+          DataType: NodeId
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../Columns/Timestamp@NodeId"
+        - Name: SortOrder
+          Type: BaseDataVariableType
+          DataType: SortOrderEnum
+          Value: 1
+- Name: KPIS_AGUA
+  Id: g=a8a5a751a4b5378a6bd95c9e2e088d3d
+  Supertype: KPIS
+  ReferenceType: HasComponent
+  Children:
+  - Name: HorizontalLayout1
+    Type: RowLayout
+    Children:
+    - Name: VerticalLayout1
+      Type: ColumnLayout
+      Children:
+      - Name: Trend1
+        Type: Trend
+        Children:
+        - Name: Pens
+          Type: BaseObjectType
+          Children:
+          - Name: potencia
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/potencia/LastValue"
+          - Name: flujo
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/flujo/LastValue"
+          - Name: factor emision
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/factor emision/LastValue"
+          - Name: potencia renovable
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/potencia renovable/LastValue"
+          - Name: Velocidad_Banda_mps
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/Velocidad_Banda_mps/LastValue"
+          - Name: Carga_Banda_kg_m
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/Carga_Banda_kg_m/LastValue"
+        - Class: Reference
+          Target: ns=5;i=1129
+          Direction: Forward
+        - Name: XAxis
+          Type: DateTimeAxis
+          Children:
+          - Name: Follow
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Window
+            Type: BaseDataVariableType
+            DataType: Duration
+            Value: "0:00:00:05.0000000"
+          - Name: Interactive
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Time
+            Type: BaseDataVariableType
+            DataType: DateTime
+        - Name: YAxis
+          Type: ValueAxis
+          Children:
+          - Name: Position
+            Type: BaseDataVariableType
+            DataType: HorizontalPositionEnum
+          - Name: MinValue
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -100.0
+          - Name: MaxValue
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: 100.0
+          - Name: AutoScale
+            Type: BaseDataVariableType
+            DataType: Boolean
+          - Name: Interactive
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+        - Name: LegendVisible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Class: Reference
+          Target: ns=5;i=1201
+          Direction: Forward
+        - Name: TimeRanges
+          Type: BaseObjectType
+        - Class: Reference
+          Target: ns=5;i=1209
+          Direction: Forward
+        - Name: Model
+          Type: NodePointer
+          DataType: NodeId
+          Children:
+          - Name: ItemKind
+            Type: PropertyType
+            DataType: NodeId
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+      - Name: DataGrid1
+        Type: DataGrid
+        Children:
+        - Name: Model
+          Type: NodePointer
+          DataType: NodeId
+          Children:
+          - Name: ItemKind
+            Type: PropertyType
+            DataType: NodeId
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+        - Name: Query
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "SELECT * FROM \"VARIABLES ENERGÉTICAS\""
+        - Name: Columns
+          Type: BaseObjectType
+          Children:
+          - Name: Timestamp
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"Timestamp"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Visible
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/Timestamp"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/Timestamp"
+          - Name: LocalTimestamp
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"LocalTimestamp"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Visible
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/LocalTimestamp"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/LocalTimestamp"
+          - Name: potencia
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"potencia"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Visible
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/potencia"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/potencia"
+          - Name: factor emision
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"factor emision"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Visible
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/factor emision"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/factor emision"
+          - Name: potencia renovable
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"potencia renovable"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Visible
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/potencia renovable"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/potencia renovable"
+          - Name: Velocidad_Banda_mps
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"Velocidad_Banda_mps"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Visible
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/Velocidad_Banda_mps"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/Velocidad_Banda_mps"
+          - Name: Carga_Banda_kg_m
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"Carga_Banda_kg_m"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Visible
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/Carga_Banda_kg_m"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/Carga_Banda_kg_m"
+        - Name: SelectedItem
+          Type: NodePointer
+          DataType: NodeId
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+        - Name: UISelectedItem
+          Type: BaseDataVariableType
+          DataType: NodeId
+          AccessLevel: Read
+        - Class: Reference
+          Target: ns=5;i=504
+          Direction: Forward
+        - Name: Item
+          Type: Alias
+          DataType: NodeId
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+        - Name: SortColumn
+          Type: BaseDataVariableType
+          DataType: NodeId
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../Columns/Timestamp@NodeId"
+        - Name: SortOrder
+          Type: BaseDataVariableType
+          DataType: SortOrderEnum
+          Value: 1
+- Name: KPIS_ESG
+  Id: g=900c9cb44f0c804dc20e86cd2f28ef4d
+  Supertype: KPIS
+  ReferenceType: HasComponent
+  Children:
+  - Name: HorizontalLayout1
+    Type: RowLayout
+    Children:
+    - Name: VerticalLayout1
+      Type: ColumnLayout
+      Children:
+      - Name: Trend1
+        Type: Trend
+        Children:
+        - Name: Pens
+          Type: BaseObjectType
+          Children:
+          - Name: potencia
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/potencia/LastValue"
+          - Name: flujo
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/flujo/LastValue"
+          - Name: factor emision
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/factor emision/LastValue"
+          - Name: potencia renovable
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/potencia renovable/LastValue"
+          - Name: Velocidad_Banda_mps
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/Velocidad_Banda_mps/LastValue"
+          - Name: Carga_Banda_kg_m
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/Carga_Banda_kg_m/LastValue"
+        - Class: Reference
+          Target: ns=5;i=1129
+          Direction: Forward
+        - Name: XAxis
+          Type: DateTimeAxis
+          Children:
+          - Name: Follow
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Window
+            Type: BaseDataVariableType
+            DataType: Duration
+            Value: "0:00:00:05.0000000"
+          - Name: Interactive
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Time
+            Type: BaseDataVariableType
+            DataType: DateTime
+        - Name: YAxis
+          Type: ValueAxis
+          Children:
+          - Name: Position
+            Type: BaseDataVariableType
+            DataType: HorizontalPositionEnum
+          - Name: MinValue
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -100.0
+          - Name: MaxValue
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: 100.0
+          - Name: AutoScale
+            Type: BaseDataVariableType
+            DataType: Boolean
+          - Name: Interactive
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+        - Name: LegendVisible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Class: Reference
+          Target: ns=5;i=1201
+          Direction: Forward
+        - Name: TimeRanges
+          Type: BaseObjectType
+        - Class: Reference
+          Target: ns=5;i=1209
+          Direction: Forward
+        - Name: Model
+          Type: NodePointer
+          DataType: NodeId
+          Children:
+          - Name: ItemKind
+            Type: PropertyType
+            DataType: NodeId
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+      - Name: DataGrid1
+        Type: DataGrid
+        Children:
+        - Name: Model
+          Type: NodePointer
+          DataType: NodeId
+          Children:
+          - Name: ItemKind
+            Type: PropertyType
+            DataType: NodeId
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+        - Name: Query
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "SELECT * FROM \"VARIABLES ENERGÉTICAS\""
+        - Name: Columns
+          Type: BaseObjectType
+          Children:
+          - Name: Timestamp
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"Timestamp"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Visible
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/Timestamp"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/Timestamp"
+          - Name: LocalTimestamp
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"LocalTimestamp"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Visible
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/LocalTimestamp"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/LocalTimestamp"
+          - Name: potencia
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"potencia"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Visible
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/potencia"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/potencia"
+          - Name: factor emision
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"factor emision"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Visible
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/factor emision"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/factor emision"
+          - Name: potencia renovable
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"potencia renovable"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Visible
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/potencia renovable"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/potencia renovable"
+          - Name: Velocidad_Banda_mps
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"Velocidad_Banda_mps"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Visible
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/Velocidad_Banda_mps"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/Velocidad_Banda_mps"
+          - Name: Carga_Banda_kg_m
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"Carga_Banda_kg_m"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Visible
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/Carga_Banda_kg_m"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/Carga_Banda_kg_m"
+        - Name: SelectedItem
+          Type: NodePointer
+          DataType: NodeId
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+        - Name: UISelectedItem
+          Type: BaseDataVariableType
+          DataType: NodeId
+          AccessLevel: Read
+        - Class: Reference
+          Target: ns=5;i=504
+          Direction: Forward
+        - Name: Item
+          Type: Alias
+          DataType: NodeId
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+        - Name: SortColumn
+          Type: BaseDataVariableType
+          DataType: NodeId
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../Columns/Timestamp@NodeId"
+        - Name: SortOrder
+          Type: BaseDataVariableType
+          DataType: SortOrderEnum
+          Value: 1
+- Name: KPIS_PRODUCCION
+  Id: g=f64620d30aef85194e8ae29d7ded5e7b
+  Supertype: KPIS
+  ReferenceType: HasComponent
+  Children:
+  - Name: HorizontalLayout1
+    Type: RowLayout
+    Children:
+    - Name: VerticalLayout1
+      Type: ColumnLayout
+      Children:
+      - Name: Trend1
+        Type: Trend
+        Children:
+        - Name: Pens
+          Type: BaseObjectType
+          Children:
+          - Name: potencia
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/potencia/LastValue"
+          - Name: flujo
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/flujo/LastValue"
+          - Name: factor emision
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/factor emision/LastValue"
+          - Name: potencia renovable
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/potencia renovable/LastValue"
+          - Name: Velocidad_Banda_mps
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/Velocidad_Banda_mps/LastValue"
+          - Name: Carga_Banda_kg_m
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/Carga_Banda_kg_m/LastValue"
+        - Class: Reference
+          Target: ns=5;i=1129
+          Direction: Forward
+        - Name: XAxis
+          Type: DateTimeAxis
+          Children:
+          - Name: Follow
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Window
+            Type: BaseDataVariableType
+            DataType: Duration
+            Value: "0:00:00:05.0000000"
+          - Name: Interactive
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Time
+            Type: BaseDataVariableType
+            DataType: DateTime
+        - Name: YAxis
+          Type: ValueAxis
+          Children:
+          - Name: Position
+            Type: BaseDataVariableType
+            DataType: HorizontalPositionEnum
+          - Name: MinValue
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -100.0
+          - Name: MaxValue
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: 100.0
+          - Name: AutoScale
+            Type: BaseDataVariableType
+            DataType: Boolean
+          - Name: Interactive
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+        - Name: LegendVisible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Class: Reference
+          Target: ns=5;i=1201
+          Direction: Forward
+        - Name: TimeRanges
+          Type: BaseObjectType
+        - Class: Reference
+          Target: ns=5;i=1209
+          Direction: Forward
+        - Name: Model
+          Type: NodePointer
+          DataType: NodeId
+          Children:
+          - Name: ItemKind
+            Type: PropertyType
+            DataType: NodeId
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+      - Name: DataGrid1
+        Type: DataGrid
+        Children:
+        - Name: Model
+          Type: NodePointer
+          DataType: NodeId
+          Children:
+          - Name: ItemKind
+            Type: PropertyType
+            DataType: NodeId
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+        - Name: Query
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "SELECT * FROM \"VARIABLES ENERGÉTICAS\""
+        - Name: Columns
+          Type: BaseObjectType
+          Children:
+          - Name: Timestamp
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"Timestamp"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Visible
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/Timestamp"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/Timestamp"
+          - Name: LocalTimestamp
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"LocalTimestamp"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Visible
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/LocalTimestamp"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/LocalTimestamp"
+          - Name: potencia
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"potencia"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Visible
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/potencia"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/potencia"
+          - Name: factor emision
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"factor emision"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Visible
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/factor emision"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/factor emision"
+          - Name: potencia renovable
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"potencia renovable"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Visible
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/potencia renovable"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/potencia renovable"
+          - Name: Velocidad_Banda_mps
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"Velocidad_Banda_mps"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Visible
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/Velocidad_Banda_mps"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/Velocidad_Banda_mps"
+          - Name: Carga_Banda_kg_m
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"Carga_Banda_kg_m"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Visible
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/Carga_Banda_kg_m"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/Carga_Banda_kg_m"
+        - Name: SelectedItem
+          Type: NodePointer
+          DataType: NodeId
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+        - Name: UISelectedItem
+          Type: BaseDataVariableType
+          DataType: NodeId
+          AccessLevel: Read
+        - Class: Reference
+          Target: ns=5;i=504
+          Direction: Forward
+        - Name: Item
+          Type: Alias
+          DataType: NodeId
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+        - Name: SortColumn
+          Type: BaseDataVariableType
+          DataType: NodeId
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../Columns/Timestamp@NodeId"
+        - Name: SortOrder
+          Type: BaseDataVariableType
+          DataType: SortOrderEnum
+          Value: 1
+- Name: page1
+  Id: g=23c8bd260236771c6aec6401276df09d
+  Supertype: page
+  ReferenceType: HasComponent
+  Children:
+  - Name: Label1
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Velocidad de la banda"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 150.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 210.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 75.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 35.0
+    - Name: FontSize
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 25.0
+  - Name: TextBox1
+    Type: TextBox
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/mes_v1/Model/KPIS/Energía/Velocidad_Banda_mps"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 110.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 400.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 210.0
+  - Name: LED1
+    Type: Led
+    Children:
+    - Name: Active
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 280.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 150.0
+    - Name: Color
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#ff0000"
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/mes_v1/Model/colores/Variable1"
+  - Name: Button1
+    Type: Button
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Button1"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 400.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 176.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=3;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{NavigationPanel1}@NodeId"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: ns=3;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "ChangePanelByTabIndex"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: Index
+              Type: BaseDataVariableType
+              DataType: Int32
+              Description: {"NamespaceIndex":5,"TextId":"ChangePanelByTabIndexIndexDescription"}
+              Value: 2
+            - Name: AliasNode
+              Type: BaseDataVariableType
+              DataType: NodeId
+              Description: {"NamespaceIndex":5,"TextId":"ChangePanelByTabIndexAliasNodeDescription"}
+              ValueRank: ScalarOrOneDimension
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16

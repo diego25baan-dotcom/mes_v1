@@ -1,0 +1,8 @@
+Name: colores
+Type: FolderType
+Children:
+- Name: Variable1
+  Id: g=404f4fb9d5d4df524f1baaa09acb499d
+  Type: BaseDataVariableType
+  DataType: Color
+  Value: "#ffffff"

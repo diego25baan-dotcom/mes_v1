@@ -44,6 +44,9 @@ Children:
         - Name: Carga_Banda_kg_m
           Type: StoreColumn
           DataType: Float
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
       - Name: RecordLimit
         Type: BaseDataVariableType
         DataType: UInt32
