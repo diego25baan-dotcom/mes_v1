@@ -49,6 +49,3 @@ Children:
   - Name: Potencia_Renovable_kW
     Type: BaseDataVariableType
     DataType: Float
-  - Name: Flujo_ton_h
-    Type: BaseDataVariableType
-    DataType: Float

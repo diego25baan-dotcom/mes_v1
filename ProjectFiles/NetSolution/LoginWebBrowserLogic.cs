@@ -17,6 +17,8 @@ using FTOptix.Store;
 using FTOptix.EventLogger;
 using FTOptix.SQLiteStore;
 using FTOptix.DataLogger;
+using FTOptix.Alarm;
+using FTOptix.SerialPort;
 #endregion
 
 public class LoginWebBrowserLogic : BaseNetLogic

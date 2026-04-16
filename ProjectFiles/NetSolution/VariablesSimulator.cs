@@ -2,6 +2,9 @@
 using System;
 using UAManagedCore;
 using FTOptix.NetLogic;
+using FTOptix.Alarm;
+using FTOptix.SerialPort;
+using FTOptix.EventLogger;
 #endregion
 
 public class VariablesSimulator : BaseNetLogic
@@ -16,7 +19,6 @@ public class VariablesSimulator : BaseNetLogic
         potencia = LogicObject.GetVariable("Potencia_kW");
         velocidad = LogicObject.GetVariable("Velocidad_Banda_mps");
         cargaBanda = LogicObject.GetVariable("Carga_Banda_kg_m");
-        flujo = LogicObject.GetVariable("Flujo_ton_h");
         factorEmision = LogicObject.GetVariable("Factor_emision");
         potenciaRenovable = LogicObject.GetVariable("Potencia_Renovable_kW");
 
@@ -54,7 +56,7 @@ public class VariablesSimulator : BaseNetLogic
             double ruidoCarga = (rand.NextDouble() - 0.5) * 10;
             cargaBanda.Value = (baseCarga + ruidoCarga) * estadoOperacion;
 
-            flujo.Value = velocidad.Value * cargaBanda.Value * 3.6;
+            //flujo.Value = velocidad.Value * cargaBanda.Value * 3.6;
 
             double baseFactor = 0.45;
             double variacion = (rand.NextDouble() - 0.5) * 0.02;
@@ -86,7 +88,6 @@ public class VariablesSimulator : BaseNetLogic
     private IUAVariable potencia;
     private IUAVariable velocidad;
     private IUAVariable cargaBanda;
-    private IUAVariable flujo;
     private IUAVariable factorEmision;
     private IUAVariable potenciaRenovable;
 }

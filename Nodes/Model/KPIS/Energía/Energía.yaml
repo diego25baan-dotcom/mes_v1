@@ -79,19 +79,6 @@ Children:
       Type: BaseVariableType
       DataType: DynamicLinkMode
       Value: 2
-- Name: Flujo_ton_h
-  Type: BaseDataVariableType
-  DataType: Float
-  Children:
-  - Name: DynamicLink
-    Type: DynamicLink
-    DataType: NodePath
-    Value: "../../../../NetLogic/VariablesSimulator/Flujo_ton_h"
-    Children:
-    - Name: Mode
-      Type: BaseVariableType
-      DataType: DynamicLinkMode
-      Value: 2
 - Name: Factor_emision
   Type: BaseDataVariableType
   DataType: Float

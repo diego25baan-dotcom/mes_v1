@@ -916,42 +916,6 @@ Children:
                   Type: DynamicLink
                   DataType: NodePath
                   Value: "{Item}/potencia"
-          - Name: flujo
-            Type: DataGridColumn
-            Children:
-            - Name: Title
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Value: {"LocaleId":"en-US","Text":"flujo"}
-            - Name: Width
-              Type: BaseDataVariableType
-              DataType: Size
-              Value: -1.0
-            - Name: Visible
-              Type: BaseDataVariableType
-              DataType: Boolean
-              Value: true
-            - Name: HeaderAlignment
-              Type: BaseDataVariableType
-              DataType: TextHorizontalAlignment
-            - Name: ContentAlignment
-              Type: BaseVariableType
-              DataType: HorizontalAlignment
-            - Name: OrderBy
-              Type: BaseDataVariableType
-              DataType: NodePath
-              Value: "{Item}/flujo"
-            - Name: DataItemTemplate
-              Type: DataGridLabelItemTemplate
-              Children:
-              - Name: Text
-                Type: BaseDataVariableType
-                DataType: LocalizedText
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{Item}/flujo"
           - Name: factor emision
             Type: DataGridColumn
             Children:
@@ -3429,3 +3393,8 @@ Children:
     DataType: Boolean
     ModellingRule: Optional
     Value: true
+- File: AlarmWidgets/AlarmWidgets.yaml
+- Name: page
+  Id: g=8842fa727fe1cfaae2ba681504f0a00b
+  Supertype: Screen
+  ReferenceType: HasComponent

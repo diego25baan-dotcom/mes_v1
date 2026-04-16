@@ -84,16 +84,40 @@ Project:
    Uri: 'urn:FTOptix:SQLiteStore:Net'
    Module: FTOptix.SQLiteStore.Net
    Version: 1.0
+  21:
+   Uri: 'urn:FTOptix:EventLogger'
+   Module: FTOptix.EventLogger
+   Version: 2.0
+  22:
+   Uri: 'urn:FTOptix:EventLogger:Net'
+   Module: FTOptix.EventLogger.Net
+   Version: 1.0
+  23:
+   Uri: 'urn:FTOptix:Alarm'
+   Module: FTOptix.Alarm
+   Version: 6.1
+  24:
+   Uri: 'urn:FTOptix:Alarm:Net'
+   Module: FTOptix.Alarm.Net
+   Version: 1.2
+  25:
+   Uri: 'urn:FTOptix:SerialPort'
+   Module: FTOptix.SerialPort
+   Version: 1.0
+  26:
+   Uri: 'urn:FTOptix:SerialPort:Net'
+   Module: FTOptix.SerialPort.Net
+   Version: 1.0
  Statistics:
-  TotalNodeCount: 2544
-  Objects: 502
-  ObjectTypes: 24
-  Variables: 2009
+  TotalNodeCount: 13145
+  Objects: 2755
+  ObjectTypes: 67
+  Variables: 10287
   VariableTypes: 0
   DataTypes: 0
-  Methods: 9
-  References: 66
+  Methods: 36
+  References: 131
   ReferenceTypes: 0
-  Files: 30
+  Files: 33
  Nodes:
  - File: Nodes/mes_v1.yaml
