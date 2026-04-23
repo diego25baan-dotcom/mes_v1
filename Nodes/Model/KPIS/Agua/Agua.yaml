@@ -3,25 +3,34 @@ Type: FolderType
 Children:
 - Name: Caudal_Agua_Ls
   Type: BaseDataVariableType
-  DataType: Int32
-- Name: Tiempo_operacion
-  Type: BaseDataVariableType
-  DataType: Int32
+  DataType: Float
 - Name: Toneladas producidas
   Type: BaseDataVariableType
-  DataType: Int32
+  DataType: Float
 - Name: Agua_reutilizada
   Type: BaseDataVariableType
-  DataType: Int32
+  DataType: Float
 - Name: Agua_total
   Type: BaseDataVariableType
-  DataType: Int32
-- Name: Tiempo
-  Type: BaseDataVariableType
-  DataType: Int32
+  DataType: Float
 - Name: Numero_incidentes
   Type: BaseDataVariableType
-  DataType: Int32
+  DataType: Float
 - Name: Tiempo_respuesta
   Type: BaseDataVariableType
-  DataType: Int32
+  DataType: Float
+- Name: Caudal_descarga_m3h
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: KPI_WA_001_huella
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: KPI_WA_002_reutilizacion
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: KPI_WA_003_des_residual
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: KPI_WA_004_incidentes
+  Type: BaseDataVariableType
+  DataType: Float

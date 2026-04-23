@@ -4690,6 +4690,35 @@ Children:
                 DataType: DynamicLinkMode
                 ModellingRule: Optional
                 Value: 2
+          - Name: toneladas_acumuladas
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#84c3be"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/toneladas_acumuladas/LastValue"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
         - Class: Reference
           Target: ns=5;i=1129
           Direction: Forward
@@ -4747,7 +4776,7 @@ Children:
         - Name: Model
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/mes_v1/Loggers/DataLogger1"
+          Value: "/Objects/mes_v1/Loggers/DataLogger_energia"
           Children:
           - Name: ItemKind
             Type: PropertyType
@@ -4761,7 +4790,7 @@ Children:
         - Name: Model
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/mes_v1/DataStores/EmbeddedDatabase1"
+          Value: "/Objects/mes_v1/DataStores/Database_energia"
           Children:
           - Name: ItemKind
             Type: PropertyType
@@ -5064,6 +5093,42 @@ Children:
                   Type: DynamicLink
                   DataType: NodePath
                   Value: "{Item}/flujo_material"
+          - Name: toneladas_acumuladas
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"toneladas_acumuladas"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Visible
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/toneladas_acumuladas"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/toneladas_acumuladas"
         - Name: SelectedItem
           Type: NodePointer
           DataType: NodeId
@@ -5114,7 +5179,7 @@ Children:
         - Name: Pens
           Type: BaseObjectType
           Children:
-          - Name: potencia
+          - Name: Caudal_Agua_Ls
             Type: TrendPen
             DataType: BaseDataType
             Children:
@@ -5128,11 +5193,22 @@ Children:
               Value: true
             - Name: Thresholds
               Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#1b5583"
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "../../Model/VariablesToLog/potencia/LastValue"
-          - Name: flujo
+              Value: "../../Model/VariablesToLog/Caudal_Agua_Ls/LastValue"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: Agua_reutilizada
             Type: TrendPen
             DataType: BaseDataType
             Children:
@@ -5146,11 +5222,22 @@ Children:
               Value: true
             - Name: Thresholds
               Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#f3da08"
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "../../Model/VariablesToLog/flujo/LastValue"
-          - Name: factor emision
+              Value: "../../Model/VariablesToLog/Agua_reutilizada/LastValue"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: Agua_total
             Type: TrendPen
             DataType: BaseDataType
             Children:
@@ -5164,11 +5251,22 @@ Children:
               Value: true
             - Name: Thresholds
               Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#ff7514"
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "../../Model/VariablesToLog/factor emision/LastValue"
-          - Name: potencia renovable
+              Value: "../../Model/VariablesToLog/Agua_total/LastValue"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: Numero_incidentes
             Type: TrendPen
             DataType: BaseDataType
             Children:
@@ -5182,11 +5280,22 @@ Children:
               Value: true
             - Name: Thresholds
               Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#7d7f7d"
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "../../Model/VariablesToLog/potencia renovable/LastValue"
-          - Name: Velocidad_Banda_mps
+              Value: "../../Model/VariablesToLog/Numero_incidentes/LastValue"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: Tiempo_respuesta
             Type: TrendPen
             DataType: BaseDataType
             Children:
@@ -5200,11 +5309,22 @@ Children:
               Value: true
             - Name: Thresholds
               Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#4c9141"
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "../../Model/VariablesToLog/Velocidad_Banda_mps/LastValue"
-          - Name: Carga_Banda_kg_m
+              Value: "../../Model/VariablesToLog/Tiempo_respuesta/LastValue"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: Caudal_descarga_m3h
             Type: TrendPen
             DataType: BaseDataType
             Children:
@@ -5218,10 +5338,50 @@ Children:
               Value: true
             - Name: Thresholds
               Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#922b3e"
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "../../Model/VariablesToLog/Carga_Banda_kg_m/LastValue"
+              Value: "../../Model/VariablesToLog/Caudal_descarga_m3h/LastValue"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: Toneladas_acumuladas
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#84c3be"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/Toneladas_acumuladas/LastValue"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
         - Class: Reference
           Target: ns=5;i=1129
           Direction: Forward
@@ -5279,6 +5439,7 @@ Children:
         - Name: Model
           Type: NodePointer
           DataType: NodeId
+          Value: "/Objects/mes_v1/Loggers/DataLogger_agua"
           Children:
           - Name: ItemKind
             Type: PropertyType
@@ -5292,6 +5453,7 @@ Children:
         - Name: Model
           Type: NodePointer
           DataType: NodeId
+          Value: "/Objects/mes_v1/DataStores/Database_agua"
           Children:
           - Name: ItemKind
             Type: PropertyType
@@ -5302,7 +5464,7 @@ Children:
         - Name: Query
           Type: BaseDataVariableType
           DataType: String
-          Value: "SELECT * FROM \"VARIABLES ENERGÉTICAS\""
+          Value: "SELECT * FROM \"DataLogger_agua\""
         - Name: Columns
           Type: BaseObjectType
           Children:
@@ -5378,13 +5540,13 @@ Children:
                   Type: DynamicLink
                   DataType: NodePath
                   Value: "{Item}/LocalTimestamp"
-          - Name: potencia
+          - Name: Caudal_Agua_Ls
             Type: DataGridColumn
             Children:
             - Name: Title
               Type: BaseDataVariableType
               DataType: LocalizedText
-              Value: {"LocaleId":"en-US","Text":"potencia"}
+              Value: {"LocaleId":"en-US","Text":"Caudal_Agua_Ls"}
             - Name: Width
               Type: BaseDataVariableType
               DataType: Size
@@ -5402,7 +5564,7 @@ Children:
             - Name: OrderBy
               Type: BaseDataVariableType
               DataType: NodePath
-              Value: "{Item}/potencia"
+              Value: "{Item}/Caudal_Agua_Ls"
             - Name: DataItemTemplate
               Type: DataGridLabelItemTemplate
               Children:
@@ -5413,14 +5575,14 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "{Item}/potencia"
-          - Name: factor emision
+                  Value: "{Item}/Caudal_Agua_Ls"
+          - Name: Agua_reutilizada
             Type: DataGridColumn
             Children:
             - Name: Title
               Type: BaseDataVariableType
               DataType: LocalizedText
-              Value: {"LocaleId":"en-US","Text":"factor emision"}
+              Value: {"LocaleId":"en-US","Text":"Agua_reutilizada"}
             - Name: Width
               Type: BaseDataVariableType
               DataType: Size
@@ -5438,7 +5600,7 @@ Children:
             - Name: OrderBy
               Type: BaseDataVariableType
               DataType: NodePath
-              Value: "{Item}/factor emision"
+              Value: "{Item}/Agua_reutilizada"
             - Name: DataItemTemplate
               Type: DataGridLabelItemTemplate
               Children:
@@ -5449,14 +5611,14 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "{Item}/factor emision"
-          - Name: potencia renovable
+                  Value: "{Item}/Agua_reutilizada"
+          - Name: Agua_total
             Type: DataGridColumn
             Children:
             - Name: Title
               Type: BaseDataVariableType
               DataType: LocalizedText
-              Value: {"LocaleId":"en-US","Text":"potencia renovable"}
+              Value: {"LocaleId":"en-US","Text":"Agua_total"}
             - Name: Width
               Type: BaseDataVariableType
               DataType: Size
@@ -5474,7 +5636,7 @@ Children:
             - Name: OrderBy
               Type: BaseDataVariableType
               DataType: NodePath
-              Value: "{Item}/potencia renovable"
+              Value: "{Item}/Agua_total"
             - Name: DataItemTemplate
               Type: DataGridLabelItemTemplate
               Children:
@@ -5485,14 +5647,14 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "{Item}/potencia renovable"
-          - Name: Velocidad_Banda_mps
+                  Value: "{Item}/Agua_total"
+          - Name: Numero_incidentes
             Type: DataGridColumn
             Children:
             - Name: Title
               Type: BaseDataVariableType
               DataType: LocalizedText
-              Value: {"LocaleId":"en-US","Text":"Velocidad_Banda_mps"}
+              Value: {"LocaleId":"en-US","Text":"Numero_incidentes"}
             - Name: Width
               Type: BaseDataVariableType
               DataType: Size
@@ -5510,7 +5672,7 @@ Children:
             - Name: OrderBy
               Type: BaseDataVariableType
               DataType: NodePath
-              Value: "{Item}/Velocidad_Banda_mps"
+              Value: "{Item}/Numero_incidentes"
             - Name: DataItemTemplate
               Type: DataGridLabelItemTemplate
               Children:
@@ -5521,14 +5683,14 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "{Item}/Velocidad_Banda_mps"
-          - Name: Carga_Banda_kg_m
+                  Value: "{Item}/Numero_incidentes"
+          - Name: Tiempo_respuesta
             Type: DataGridColumn
             Children:
             - Name: Title
               Type: BaseDataVariableType
               DataType: LocalizedText
-              Value: {"LocaleId":"en-US","Text":"Carga_Banda_kg_m"}
+              Value: {"LocaleId":"en-US","Text":"Tiempo_respuesta"}
             - Name: Width
               Type: BaseDataVariableType
               DataType: Size
@@ -5546,7 +5708,7 @@ Children:
             - Name: OrderBy
               Type: BaseDataVariableType
               DataType: NodePath
-              Value: "{Item}/Carga_Banda_kg_m"
+              Value: "{Item}/Tiempo_respuesta"
             - Name: DataItemTemplate
               Type: DataGridLabelItemTemplate
               Children:
@@ -5557,7 +5719,79 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "{Item}/Carga_Banda_kg_m"
+                  Value: "{Item}/Tiempo_respuesta"
+          - Name: Caudal_descarga_m3h
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"Caudal_descarga_m3h"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Visible
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/Caudal_descarga_m3h"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/Caudal_descarga_m3h"
+          - Name: Toneladas_acumuladas
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"Toneladas_acumuladas"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Visible
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/Toneladas_acumuladas"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/Toneladas_acumuladas"
         - Name: SelectedItem
           Type: NodePointer
           DataType: NodeId

@@ -8,7 +8,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../NetLogic/VariablesSimulator/KPI_EN_001 CONSUMO"
+    Value: "../../../../NetLogic/Sim_energía/KPI_EN_001 CONSUMO"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -21,7 +21,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../NetLogic/VariablesSimulator/KPI_EN_002 CO2_AREA"
+    Value: "../../../../NetLogic/Sim_energía/KPI_EN_002 CO2_AREA"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -34,7 +34,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../NetLogic/VariablesSimulator/KPI_EN_003 KWh_ton"
+    Value: "../../../../NetLogic/Sim_energía/KPI_EN_003 KWh_ton"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -47,7 +47,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../NetLogic/VariablesSimulator/KPI_EN_004 % EN RENOVABLE"
+    Value: "../../../../NetLogic/Sim_energía/KPI_EN_004 % EN RENOVABLE"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -60,7 +60,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../NetLogic/VariablesSimulator/Potencia_kW"
+    Value: "../../../../NetLogic/Sim_energía/Potencia_kW"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -73,7 +73,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../NetLogic/VariablesSimulator/Velocidad_Banda_mps"
+    Value: "../../../../NetLogic/Sim_energía/Velocidad_Banda_mps"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -86,7 +86,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../NetLogic/VariablesSimulator/Carga_Banda_kg_m"
+    Value: "../../../../NetLogic/Sim_energía/Carga_Banda_kg_m"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -99,7 +99,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../NetLogic/VariablesSimulator/Factor_emision"
+    Value: "../../../../NetLogic/Sim_energía/Factor_emision"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -112,7 +112,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../NetLogic/VariablesSimulator/Potencia_Renovable_kW"
+    Value: "../../../../NetLogic/Sim_energía/Potencia_Renovable_kW"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -438,7 +438,20 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../NetLogic/VariablesSimulator/Potencia_Renovable_kW"
+    Value: "../../../../NetLogic/Sim_energía/Potencia_Renovable_kW"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: toneladas_acumuladas
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../NetLogic/Sim_energía/toneladas_acumuladas"
     Children:
     - Name: Mode
       Type: BaseVariableType

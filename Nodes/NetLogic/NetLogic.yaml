@@ -1,19 +1,10 @@
 Name: NetLogic
 Type: NetLogicCategoryFolder
 Children:
-- Name: VariablesSimulator
+- Name: Sim_energía
   Type: NetLogic
   WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
   Children:
-  - Name: Sine
-    Type: BaseDataVariableType
-    DataType: Int32
-  - Name: Cosine
-    Type: BaseDataVariableType
-    DataType: Int32
-  - Name: Ramp
-    Type: BaseDataVariableType
-    DataType: Int32
   - Name: RunSimulation
     Type: BaseDataVariableType
     DataType: Boolean
@@ -65,5 +56,75 @@ Children:
     Type: BaseDataVariableType
     DataType: Float
   - Name: KPI_EN_004 % EN RENOVABLE
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: toneladas_acumuladas
+    Type: BaseDataVariableType
+    DataType: Float
+- Name: Sim_agua
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: RunSimulation
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: ns=9;LibraryReference
+    Type: ObjectLibraryReference
+    DataType: ObjectLibraryReferenceDataType
+    Value: 
+     {
+      "TypeId": {
+       "Id": 72,
+       "Namespace": 9
+      },
+      "Body": {
+       "libraryGuid": "f0701375ee41467993d632db6a8fdaa5",
+       "objectGuid": "433da0e8a0cf026566eefa86cef75613",
+       "objectVersion": 1,
+       "highestIgnoredVersion": 0
+      }
+     }
+  - Name: Caudal_Agua_Ls
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Agua_reutilizada
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Agua_total
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Numero_incidentes
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Tiempo_respuesta
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Caudal_descarga_m3h
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Toneladas_acumuladas
+    Type: BaseDataVariableType
+    DataType: Float
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/KPIS/Energía/toneladas_acumuladas"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: KPI_WA_001_huella
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: KPI_WA_002_reutilizacion
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: KPI_WA_003_des_residual
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: KPI_WA_004_incidentes
     Type: BaseDataVariableType
     DataType: Float
