@@ -8,7 +8,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../NetLogic/VariablesSimulator/Potencia_kW"
+    Value: "../../../../NetLogic/VariablesSimulator/KPI_EN_001 CONSUMO"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -18,28 +18,41 @@ Children:
   Type: BaseDataVariableType
   DataType: Float
   Children:
-  - Name: ExpressionEvaluator1
-    Type: ExpressionEvaluator
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../NetLogic/VariablesSimulator/KPI_EN_002 CO2_AREA"
     Children:
-    - Name: Expression
-      Type: BaseDataVariableType
-      DataType: String
-      ReferenceType: HasParameter
-      Value: "{0}"
-    - Name: ns=3;Source0
-      Type: BaseDataVariableType
-      DataType: BaseDataType
-      ReferenceType: HasSource
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
 - Name: KPI_EN_003 KWh_ton
   Type: BaseDataVariableType
-  DataType: Int32
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../NetLogic/VariablesSimulator/KPI_EN_003 KWh_ton"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
 - Name: KPI_EN_004 % EN RENOVABLE
   Type: BaseDataVariableType
-  DataType: Int32
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../NetLogic/VariablesSimulator/KPI_EN_004 % EN RENOVABLE"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
 - Name: Potencia_kW
   Type: BaseDataVariableType
   DataType: Float
@@ -418,3 +431,16 @@ Children:
       - Name: Severity
         Type: PropertyType
         DataType: UInt16
+- Name: flujo_material
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../NetLogic/VariablesSimulator/Potencia_Renovable_kW"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2

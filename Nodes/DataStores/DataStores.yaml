@@ -47,6 +47,9 @@ Children:
         - Name: Timestamp
           Type: StoreColumn
           DataType: UtcTime
+        - Name: flujo_material
+          Type: StoreColumn
+          DataType: Float
       - Name: RecordLimit
         Type: BaseDataVariableType
         DataType: UInt32

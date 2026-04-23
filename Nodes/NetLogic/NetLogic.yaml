@@ -49,3 +49,21 @@ Children:
   - Name: Potencia_Renovable_kW
     Type: BaseDataVariableType
     DataType: Float
+  - Name: mes_v1_NetLogic_VariablesSimulator_Carga_Banda_kg_m
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: flujo_material
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: KPI_EN_001 CONSUMO
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: KPI_EN_002 CO2_AREA
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: KPI_EN_003 KWh_ton
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: KPI_EN_004 % EN RENOVABLE
+    Type: BaseDataVariableType
+    DataType: Float
