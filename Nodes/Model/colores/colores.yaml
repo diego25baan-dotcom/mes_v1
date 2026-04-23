@@ -1,8 +1,21 @@
 Name: colores
 Type: FolderType
 Children:
-- Name: Variable1
+- Name: KPI01_ENERGIA_C
   Id: g=404f4fb9d5d4df524f1baaa09acb499d
   Type: BaseDataVariableType
   DataType: Color
   Value: "#ffffff"
+- Name: KPI02_ENERGIA_C
+  Id: g=b58a7fea006147722ed5ff98d61f2ef6
+  Type: BaseDataVariableType
+  DataType: Color
+  Value: "#f2fe0d01"
+- Name: KPI03_ENERGIA_C
+  Id: g=4a4803a64dbc8f75d9db8f68a8db16a0
+  Type: BaseDataVariableType
+  DataType: Color
+- Name: KPI04_ENERGIA_C1
+  Id: g=90d4ab70b5250d432cd38d58d3f82c2a
+  Type: BaseDataVariableType
+  DataType: Color

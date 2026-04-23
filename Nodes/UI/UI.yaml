@@ -426,7 +426,7 @@ Children:
         - Name: Panel
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/mes_v1/UI/Pages/page1"
+          Value: "/Objects/mes_v1/UI/Pages/indicadores_KPI_ENERGÍA"
           Children:
           - Name: Kind
             Type: PropertyType

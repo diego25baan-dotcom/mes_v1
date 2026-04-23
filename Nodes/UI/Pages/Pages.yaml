@@ -6813,7 +6813,7 @@ Children:
           Type: BaseDataVariableType
           DataType: SortOrderEnum
           Value: 1
-- Name: page1
+- Name: indicadores_KPI_ENERGÍA
   Id: g=23c8bd260236771c6aec6401276df09d
   Supertype: page
   ReferenceType: HasComponent
@@ -6918,7 +6918,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/mes_v1/Model/colores/Variable1"
+        Value: "/Objects/mes_v1/Model/colores/KPI01_ENERGIA_C"
   - Name: Button1
     Type: Button
     Children:
@@ -7117,7 +7117,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/mes_v1/Model/colores/Variable1"
+        Value: "/Objects/mes_v1/Model/colores/KPI02_ENERGIA_C"
   - Name: Button2
     Type: Button
     Children:
@@ -7311,7 +7311,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/mes_v1/Model/colores/Variable1"
+        Value: "/Objects/mes_v1/Model/colores/KPI03_ENERGIA_C"
     - Name: Text
       Type: BaseDataVariableType
       DataType: LocalizedText
@@ -7510,7 +7510,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/mes_v1/Model/colores/Variable1"
+        Value: "/Objects/mes_v1/Model/colores/KPI04_ENERGIA_C1"
   - Name: Button4
     Type: Button
     Children:

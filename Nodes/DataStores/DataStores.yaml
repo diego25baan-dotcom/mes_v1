@@ -7,6 +7,49 @@ Children:
   Children:
   - Name: Tables
     Type: BaseObjectType
+    Children:
+    - Name: VARIABLES ENERGÉTICAS
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=17;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=17;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=17;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=17;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: potencia
+          Type: StoreColumn
+          DataType: Float
+        - Name: factor emision
+          Type: StoreColumn
+          DataType: Float
+        - Name: potencia renovable
+          Type: StoreColumn
+          DataType: Float
+        - Name: Velocidad_Banda_mps
+          Type: StoreColumn
+          DataType: Float
+        - Name: Carga_Banda_kg_m
+          Type: StoreColumn
+          DataType: Float
+        - Name: flujo_material
+          Type: StoreColumn
+          DataType: Float
+        - Name: toneladas_acumuladas
+          Type: StoreColumn
+          DataType: Float
   - Class: Reference
     Target: ns=19;i=30
     Direction: Forward
