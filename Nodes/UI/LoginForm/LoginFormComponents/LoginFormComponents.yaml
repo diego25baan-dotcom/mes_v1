@@ -479,6 +479,9 @@ Children:
     DataType: VerticalAlignment
     ModellingRule: Optional
     Value: 3
+  - Name: pageID
+    Type: BaseDataVariableType
+    DataType: Int32
 - Name: LoginPasswordExpiredDialog
   Id: g=53b1bd1b17b4de66926108a7dfdf143e
   Supertype: Dialog

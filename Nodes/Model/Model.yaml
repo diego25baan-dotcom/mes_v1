@@ -3,3 +3,7 @@ Type: ModelCategoryFolder
 Children:
 - File: KPIS/KPIS.yaml
 - File: colores/colores.yaml
+- Name: pageID
+  Id: g=b1ca44b1f6c220be94e3faf96df18b89
+  Type: BaseDataVariableType
+  DataType: Int32

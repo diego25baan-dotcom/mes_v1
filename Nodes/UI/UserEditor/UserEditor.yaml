@@ -578,6 +578,10 @@ Children:
       Type: PropertyType
       DataType: NodeId
       Value: "/Types/ObjectTypes/BaseObjectType/FolderType/CategoryFolder/RolesCategoryFolder"
+  - Name: pageID
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 1
 - Name: NoUsersPanel
   Id: g=77fdc7237cdc85ffc02c93f038c617d9
   Supertype: Panel
