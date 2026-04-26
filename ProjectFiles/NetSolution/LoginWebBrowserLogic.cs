@@ -19,6 +19,8 @@ using FTOptix.SQLiteStore;
 using FTOptix.DataLogger;
 using FTOptix.Alarm;
 using FTOptix.SerialPort;
+using FTOptix.InfluxDBStore;
+using FTOptix.InfluxDBStoreRemote;
 #endregion
 
 public class LoginWebBrowserLogic : BaseNetLogic

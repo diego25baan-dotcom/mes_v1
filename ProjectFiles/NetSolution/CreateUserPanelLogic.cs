@@ -13,6 +13,8 @@ using FTOptix.SQLiteStore;
 using FTOptix.DataLogger;
 using FTOptix.Alarm;
 using FTOptix.SerialPort;
+using FTOptix.InfluxDBStore;
+using FTOptix.InfluxDBStoreRemote;
 using OpcUa = UAManagedCore.OpcUa;
 #endregion
 

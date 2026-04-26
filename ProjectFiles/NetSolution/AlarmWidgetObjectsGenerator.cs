@@ -10,6 +10,8 @@ using UAManagedCore;
 using FTOptix.Alarm;
 using FTOptix.SerialPort;
 using FTOptix.EventLogger;
+using FTOptix.InfluxDBStore;
+using FTOptix.InfluxDBStoreRemote;
 using static AlarmFilterDataLogic;
 using OpcUa = UAManagedCore.OpcUa;
 #endregion

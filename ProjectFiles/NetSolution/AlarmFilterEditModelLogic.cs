@@ -11,6 +11,8 @@ using System.Xml.Linq;
 using FTOptix.Alarm;
 using FTOptix.SerialPort;
 using FTOptix.EventLogger;
+using FTOptix.InfluxDBStore;
+using FTOptix.InfluxDBStoreRemote;
 #endregion
 
 public class AlarmFilterEditModelLogic : BaseNetLogic

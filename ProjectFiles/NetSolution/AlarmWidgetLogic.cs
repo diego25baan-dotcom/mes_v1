@@ -10,6 +10,8 @@ using FTOptix.SerialPort;
 using FTOptix.SQLiteStore;
 using FTOptix.Store;
 using FTOptix.EventLogger;
+using FTOptix.InfluxDBStore;
+using FTOptix.InfluxDBStoreRemote;
 using static AlarmFilterDataLogic;
 #endregion
 

@@ -108,15 +108,31 @@ Project:
    Uri: 'urn:FTOptix:SerialPort:Net'
    Module: FTOptix.SerialPort.Net
    Version: 1.0
+  27:
+   Uri: 'urn:FTOptix:InfluxDBStore'
+   Module: FTOptix.InfluxDBStore
+   Version: 4.0
+  28:
+   Uri: 'urn:FTOptix:InfluxDBStore:Net'
+   Module: FTOptix.InfluxDBStore.Net
+   Version: 1.0
+  29:
+   Uri: 'urn:FTOptix:InfluxDBStoreRemote'
+   Module: FTOptix.InfluxDBStoreRemote
+   Version: 1.0
+  30:
+   Uri: 'urn:FTOptix:InfluxDBStoreRemote:Net'
+   Module: FTOptix.InfluxDBStoreRemote.Net
+   Version: 1.0
  Statistics:
-  TotalNodeCount: 14308
-  Objects: 2990
-  ObjectTypes: 73
-  Variables: 11206
+  TotalNodeCount: 14420
+  Objects: 3016
+  ObjectTypes: 75
+  Variables: 11290
   VariableTypes: 0
   DataTypes: 0
   Methods: 39
-  References: 154
+  References: 155
   ReferenceTypes: 0
   Files: 34
  Nodes:

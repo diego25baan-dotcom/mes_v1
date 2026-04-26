@@ -6,6 +6,8 @@ using System.Text;
 using FTOptix.Alarm;
 using FTOptix.SerialPort;
 using FTOptix.EventLogger;
+using FTOptix.InfluxDBStore;
+using FTOptix.InfluxDBStoreRemote;
 #endregion
 
 public class AlarmFilterQueryBuilderLogic : BaseNetLogic

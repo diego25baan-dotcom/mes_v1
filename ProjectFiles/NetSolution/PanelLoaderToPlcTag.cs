@@ -6,6 +6,8 @@ using FTOptix.HMIProject;
 using FTOptix.NetLogic;
 using FTOptix.UI;
 using UAManagedCore;
+using FTOptix.InfluxDBStore;
+using FTOptix.InfluxDBStoreRemote;
 
 #endregion
 

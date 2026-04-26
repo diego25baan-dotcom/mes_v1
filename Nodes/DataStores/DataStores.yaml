@@ -1,116 +1,6 @@
 Name: DataStores
 Type: DataStoresCategoryFolder
 Children:
-- Name: Database_energia
-  Id: g=0ce0efba6fe0cff1cf4efb08180e86eb
-  Type: SQLiteStore
-  Children:
-  - Name: Tables
-    Type: BaseObjectType
-    Children:
-    - Name: VARIABLES ENERGÉTICAS
-      Type: SQLiteStoreTable
-      Children:
-      - Class: Reference
-        Target: ns=17;i=12
-        Direction: Forward
-      - Class: Reference
-        Target: ns=17;i=15
-        Direction: Forward
-      - Class: Reference
-        Target: ns=17;i=21
-        Direction: Forward
-      - Class: Reference
-        Target: ns=17;i=20
-        Direction: Forward
-      - Name: Columns
-        Type: BaseObjectType
-        Children:
-        - Name: Timestamp
-          Type: StoreColumn
-          DataType: UtcTime
-        - Name: potencia
-          Type: StoreColumn
-          DataType: Float
-        - Name: factor emision
-          Type: StoreColumn
-          DataType: Float
-        - Name: potencia renovable
-          Type: StoreColumn
-          DataType: Float
-        - Name: Velocidad_Banda_mps
-          Type: StoreColumn
-          DataType: Float
-        - Name: Carga_Banda_kg_m
-          Type: StoreColumn
-          DataType: Float
-        - Name: flujo_material
-          Type: StoreColumn
-          DataType: Float
-        - Name: toneladas_acumuladas
-          Type: StoreColumn
-          DataType: Float
-  - Class: Reference
-    Target: ns=19;i=30
-    Direction: Forward
-  - Class: Reference
-    Target: ns=19;i=33
-    Direction: Forward
-  - Name: MaxColumnNameLength
-    Type: BaseDataVariableType
-    DataType: UInt32
-    AccessLevel: Read
-  - Name: MaxColumnCount
-    Type: BaseDataVariableType
-    DataType: UInt32
-    AccessLevel: Read
-  - Name: DataTypeCompatibilityMap
-    Type: BaseDataVariableType
-    DataType: NodeId
-    AccessLevel: Read
-    ValueRank: OneOrMoreDimensions
-    ArrayDimensions: [0,0]
-  - Name: Status
-    Type: PropertyType
-    DataType: StoreStatus
-    AccessLevel: Read
-    Value: 2
-  - Class: Reference
-    Target: ns=17;i=22
-    Direction: Forward
-  - Class: Reference
-    Target: ns=17;i=67
-    Direction: Forward
-  - Class: Reference
-    Target: ns=17;i=6
-    Direction: Forward
-  - Class: Reference
-    Target: ns=17;i=8
-    Direction: Forward
-  - Class: Reference
-    Target: ns=17;i=25
-    Direction: Forward
-  - Class: Reference
-    Target: ns=17;i=38
-    Direction: Forward
-  - Class: Reference
-    Target: ns=17;i=41
-    Direction: Forward
-  - Class: Reference
-    Target: ns=17;i=44
-    Direction: Forward
-  - Class: Reference
-    Target: ns=17;i=53
-    Direction: Forward
-  - Class: Reference
-    Target: ns=17;i=55
-    Direction: Forward
-  - Class: Reference
-    Target: ns=17;i=57
-    Direction: Forward
-  - Class: Reference
-    Target: ns=17;i=59
-    Direction: Forward
 - Name: Alarms_database
   Id: g=b83247b3c8cc13dee4d47dacb5d7aa57
   Type: SQLiteStore
@@ -348,3 +238,155 @@ Children:
   - Class: Reference
     Target: ns=17;i=59
     Direction: Forward
+- Name: RemoteInfluxDBDatabase1
+  Id: g=c36ce7d4099fc7ef3d2a46cff658bbf9
+  Type: InfluxDBStoreRemote
+  Children:
+  - Name: Server
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "us-east-1-1.aws.cloud2.influxdata.com"
+  - Name: Port
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 443
+  - Name: UseSSL
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: SFEnabled
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: SFBufferMaxSize
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1000
+  - Name: SFBufferUsage
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: SFBufferOverflow
+    Type: BaseDataVariableType
+    DataType: Boolean
+    AccessLevel: Read
+  - Name: SFBufferOverwrite
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Tables
+    Type: BaseObjectType
+    Children:
+    - Name: VARIABLES ENERGÉTICAS
+      Type: RemoteInfluxDBStoreTable
+      Children:
+      - Name: Tags
+        Type: BaseObjectType
+      - Class: Reference
+        Target: ns=17;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=17;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=17;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=17;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: potencia
+          Type: StoreColumn
+          DataType: Float
+        - Name: factor emision
+          Type: StoreColumn
+          DataType: Float
+        - Name: potencia renovable
+          Type: StoreColumn
+          DataType: Float
+        - Name: Velocidad_Banda_mps
+          Type: StoreColumn
+          DataType: Float
+        - Name: Carga_Banda_kg_m
+          Type: StoreColumn
+          DataType: Float
+        - Name: flujo_material
+          Type: StoreColumn
+          DataType: Float
+        - Name: toneladas_acumuladas
+          Type: StoreColumn
+          DataType: Float
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+  - Name: Token
+    Type: BaseDataVariableType
+    DataType: Password
+    SecretValue: f8ZttNWmdwNdn9vx0tuwqSCR/CzGfw6GD/xrwSG6xHm5Y1EIX5etx0u6dLGKiG6O1KSGGz72rZ94rsaVUryFBzuIG+9E+iG0CkpC4DdRgXSXQ5eGEJZKQTRbqDhPB0B/N74n8ekkJgZ2qSI5AZH3e8ohma8=
+  - Name: Organization
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Dev Team"
+  - Name: Bucket
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "remotebase"
+  - Name: MaxColumnNameLength
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: MaxColumnCount
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: DataTypeCompatibilityMap
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+  - Name: Status
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=17;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=67
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=17;i=59
+    Direction: Forward
+  - Name: ServerCertificate
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=14;%PROJECTDIR%/PKI/Issuers/Certs/us-east-1-1.aws.cloud2.influxdata,pem.crt"

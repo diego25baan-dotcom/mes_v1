@@ -4,6 +4,8 @@ using System.Linq;
 using UAManagedCore;
 using FTOptix.Core;
 using FTOptix.NetLogic;
+using FTOptix.InfluxDBStore;
+using FTOptix.InfluxDBStoreRemote;
 #endregion
 
 public class AlarmBannerLogic : BaseNetLogic

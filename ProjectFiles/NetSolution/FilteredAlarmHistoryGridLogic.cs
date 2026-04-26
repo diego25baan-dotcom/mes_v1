@@ -11,6 +11,8 @@ using FTOptix.EventLogger;
 using FTOptix.OPCUAServer;
 using FTOptix.Store;
 using FTOptix.SQLiteStore;
+using FTOptix.InfluxDBStore;
+using FTOptix.InfluxDBStoreRemote;
 #endregion
 
 public class FilteredAlarmHistoryGridLogic : BaseNetLogic

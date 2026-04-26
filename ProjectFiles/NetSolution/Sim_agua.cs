@@ -5,6 +5,8 @@ using FTOptix.NetLogic;
 using FTOptix.Alarm;
 using FTOptix.SerialPort;
 using FTOptix.EventLogger;
+using FTOptix.InfluxDBStore;
+using FTOptix.InfluxDBStoreRemote;
 #endregion
 
 public class Sim_agua : BaseNetLogic

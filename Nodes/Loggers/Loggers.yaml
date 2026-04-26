@@ -12,7 +12,7 @@ Children:
   - Name: Store
     Type: NodePointer
     DataType: NodeId
-    Value: "/Objects/mes_v1/DataStores/Database_energia"
+    Value: "/Objects/mes_v1/DataStores/RemoteInfluxDBDatabase1"
     Children:
     - Name: Kind
       Type: PropertyType
