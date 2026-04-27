@@ -121,125 +121,8 @@ Children:
   - Class: Reference
     Target: ns=17;i=59
     Direction: Forward
-- Name: Database_agua
-  Id: g=a169537dc8a6b78ede3d4ca3154b60b0
-  Type: SQLiteStore
-  Children:
-  - Name: Tables
-    Type: BaseObjectType
-    Children:
-    - Name: DataLogger_agua
-      Type: SQLiteStoreTable
-      Children:
-      - Class: Reference
-        Target: ns=17;i=12
-        Direction: Forward
-      - Class: Reference
-        Target: ns=17;i=15
-        Direction: Forward
-      - Class: Reference
-        Target: ns=17;i=21
-        Direction: Forward
-      - Class: Reference
-        Target: ns=17;i=20
-        Direction: Forward
-      - Name: Columns
-        Type: BaseObjectType
-        Children:
-        - Name: Timestamp
-          Type: StoreColumn
-          DataType: UtcTime
-        - Name: LocalTimestamp
-          Type: StoreColumn
-          DataType: DateTime
-        - Name: Caudal_Agua_Ls
-          Type: StoreColumn
-          DataType: Float
-        - Name: Agua_reutilizada
-          Type: StoreColumn
-          DataType: Float
-        - Name: Agua_total
-          Type: StoreColumn
-          DataType: Float
-        - Name: Numero_incidentes
-          Type: StoreColumn
-          DataType: Float
-        - Name: Tiempo_respuesta
-          Type: StoreColumn
-          DataType: Float
-        - Name: Caudal_descarga_m3h
-          Type: StoreColumn
-          DataType: Float
-        - Name: Toneladas_acumuladas
-          Type: StoreColumn
-          DataType: Float
-      - Name: RecordLimit
-        Type: BaseDataVariableType
-        DataType: UInt32
-        Value: 100000
-  - Class: Reference
-    Target: ns=19;i=30
-    Direction: Forward
-  - Class: Reference
-    Target: ns=19;i=33
-    Direction: Forward
-  - Name: MaxColumnNameLength
-    Type: BaseDataVariableType
-    DataType: UInt32
-    AccessLevel: Read
-  - Name: MaxColumnCount
-    Type: BaseDataVariableType
-    DataType: UInt32
-    AccessLevel: Read
-  - Name: DataTypeCompatibilityMap
-    Type: BaseDataVariableType
-    DataType: NodeId
-    AccessLevel: Read
-    ValueRank: OneOrMoreDimensions
-    ArrayDimensions: [0,0]
-  - Name: Status
-    Type: PropertyType
-    DataType: StoreStatus
-    AccessLevel: Read
-    Value: 2
-  - Class: Reference
-    Target: ns=17;i=22
-    Direction: Forward
-  - Class: Reference
-    Target: ns=17;i=67
-    Direction: Forward
-  - Class: Reference
-    Target: ns=17;i=6
-    Direction: Forward
-  - Class: Reference
-    Target: ns=17;i=8
-    Direction: Forward
-  - Class: Reference
-    Target: ns=17;i=25
-    Direction: Forward
-  - Class: Reference
-    Target: ns=17;i=38
-    Direction: Forward
-  - Class: Reference
-    Target: ns=17;i=41
-    Direction: Forward
-  - Class: Reference
-    Target: ns=17;i=44
-    Direction: Forward
-  - Class: Reference
-    Target: ns=17;i=53
-    Direction: Forward
-  - Class: Reference
-    Target: ns=17;i=55
-    Direction: Forward
-  - Class: Reference
-    Target: ns=17;i=57
-    Direction: Forward
-  - Class: Reference
-    Target: ns=17;i=59
-    Direction: Forward
-- Name: RemoteInfluxDBDatabase1
-  Id: g=c36ce7d4099fc7ef3d2a46cff658bbf9
+- Name: Database
+  Id: g=b378678d1541e876aa2b70c262cd4808
   Type: InfluxDBStoreRemote
   Children:
   - Name: Server
@@ -275,6 +158,50 @@ Children:
   - Name: Tables
     Type: BaseObjectType
     Children:
+    - Name: DataLogger_agua
+      Type: RemoteInfluxDBStoreTable
+      Children:
+      - Name: Tags
+        Type: BaseObjectType
+      - Class: Reference
+        Target: ns=17;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=17;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=17;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=17;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Caudal_Agua_Ls
+          Type: StoreColumn
+          DataType: Float
+        - Name: Agua_reutilizada
+          Type: StoreColumn
+          DataType: Float
+        - Name: Agua_total
+          Type: StoreColumn
+          DataType: Float
+        - Name: Numero_incidentes
+          Type: StoreColumn
+          DataType: Float
+        - Name: Tiempo_respuesta
+          Type: StoreColumn
+          DataType: Float
+        - Name: Caudal_descarga_m3h
+          Type: StoreColumn
+          DataType: Float
+        - Name: Toneladas_acumuladas
+          Type: StoreColumn
+          DataType: Float
     - Name: VARIABLES ENERGÉTICAS
       Type: RemoteInfluxDBStoreTable
       Children:
@@ -295,6 +222,9 @@ Children:
       - Name: Columns
         Type: BaseObjectType
         Children:
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
         - Name: potencia
           Type: StoreColumn
           DataType: Float
@@ -316,13 +246,10 @@ Children:
         - Name: toneladas_acumuladas
           Type: StoreColumn
           DataType: Float
-        - Name: LocalTimestamp
-          Type: StoreColumn
-          DataType: DateTime
   - Name: Token
     Type: BaseDataVariableType
     DataType: Password
-    SecretValue: f8ZttNWmdwNdn9vx0tuwqSCR/CzGfw6GD/xrwSG6xHm5Y1EIX5etx0u6dLGKiG6O1KSGGz72rZ94rsaVUryFBzuIG+9E+iG0CkpC4DdRgXSXQ5eGEJZKQTRbqDhPB0B/N74n8ekkJgZ2qSI5AZH3e8ohma8=
+    SecretValue: Ew3thW+d5JpxWQj5kXBu5qTPfq7TfNWZB7+ShIc/RXCjPaIpm9GDoSlNbmJQXHQQeud6k302/9QJF5r8u8tcs9Gez2h5xmD0nAlsOj4LlVmgX1U9Pmo8EajgAFpqCJ4eThg0Ss8NvlyCmjPz9U0fNhePbxA=
   - Name: Organization
     Type: BaseDataVariableType
     DataType: String
@@ -330,7 +257,7 @@ Children:
   - Name: Bucket
     Type: BaseDataVariableType
     DataType: String
-    Value: "remotebase"
+    Value: "remotebase_water"
   - Name: MaxColumnNameLength
     Type: BaseDataVariableType
     DataType: UInt32

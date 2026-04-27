@@ -4578,7 +4578,7 @@ Children:
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
-- Name: Monitoring_energy
+- Name: monitoring_energy
   Id: g=2fbe54fee4fd1debee4b30fcf4a9847f
   Supertype: KPIS
   ReferenceType: HasComponent
@@ -4847,7 +4847,7 @@ Children:
         - Name: Model
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/mes_v1/DataStores/RemoteInfluxDBDatabase1"
+          Value: "/Objects/mes_v1/DataStores/Database"
           Children:
           - Name: ItemKind
             Type: PropertyType
@@ -5470,7 +5470,7 @@ Children:
         - Name: Model
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/mes_v1/DataStores/Database_agua"
+          Value: "/Objects/mes_v1/DataStores/Database"
           Children:
           - Name: ItemKind
             Type: PropertyType
@@ -5485,42 +5485,6 @@ Children:
         - Name: Columns
           Type: BaseObjectType
           Children:
-          - Name: Timestamp
-            Type: DataGridColumn
-            Children:
-            - Name: Title
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Value: {"LocaleId":"en-US","Text":"Timestamp"}
-            - Name: Width
-              Type: BaseDataVariableType
-              DataType: Size
-              Value: -1.0
-            - Name: Visible
-              Type: BaseDataVariableType
-              DataType: Boolean
-              Value: true
-            - Name: HeaderAlignment
-              Type: BaseDataVariableType
-              DataType: TextHorizontalAlignment
-            - Name: ContentAlignment
-              Type: BaseVariableType
-              DataType: HorizontalAlignment
-            - Name: OrderBy
-              Type: BaseDataVariableType
-              DataType: NodePath
-              Value: "{Item}/Timestamp"
-            - Name: DataItemTemplate
-              Type: DataGridLabelItemTemplate
-              Children:
-              - Name: Text
-                Type: BaseDataVariableType
-                DataType: LocalizedText
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{Item}/Timestamp"
           - Name: LocalTimestamp
             Type: DataGridColumn
             Children:
@@ -5830,23 +5794,11 @@ Children:
           - Name: Kind
             Type: PropertyType
             DataType: NodeId
-        - Name: SortColumn
-          Type: BaseDataVariableType
-          DataType: NodeId
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "../Columns/Timestamp@NodeId"
-        - Name: SortOrder
-          Type: BaseDataVariableType
-          DataType: SortOrderEnum
-          Value: 1
   - Name: pageID
     Type: BaseDataVariableType
     DataType: Int32
     Value: 6
-- Name: Monitoring_ESG
+- Name: monitoring_ESG
   Id: g=900c9cb44f0c804dc20e86cd2f28ef4d
   Supertype: KPIS
   ReferenceType: HasComponent
@@ -8025,7 +7977,7 @@ Children:
               - Name: NewPanel
                 Type: BaseDataVariableType
                 DataType: NodeId
-                Value: "/Objects/mes_v1/UI/Pages/Monitoring_energy"
+                Value: "/Objects/mes_v1/UI/Pages/monitoring_energy"
               - Name: AliasNode
                 Type: BaseDataVariableType
                 DataType: NodeId
@@ -8175,12 +8127,12 @@ Children:
               - Name: NewPanel
                 Type: BaseDataVariableType
                 DataType: NodeId
-                Value: "/Objects/mes_v1/UI/Pages/Monitoring_ESG"
+                Value: "/Objects/mes_v1/UI/Pages/monitoring_ESG"
               - Name: AliasNode
                 Type: BaseDataVariableType
                 DataType: NodeId
                 ValueRank: ScalarOrOneDimension
-                Value: "/Objects/mes_v1/UI/Pages/Monitoring_ESG"
+                Value: "/Objects/mes_v1/UI/Pages/monitoring_ESG"
         - Name: EventArguments
           Type: MouseClickEvent
           Children:
@@ -8359,7 +8311,7 @@ Children:
               - Name: NewPanel
                 Type: BaseDataVariableType
                 DataType: NodeId
-                Value: "/Objects/mes_v1/UI/Pages/page1"
+                Value: "/Objects/mes_v1/UI/Pages/historization_energy"
               - Name: AliasNode
                 Type: BaseDataVariableType
                 DataType: NodeId
@@ -8429,7 +8381,7 @@ Children:
               - Name: NewPanel
                 Type: BaseDataVariableType
                 DataType: NodeId
-                Value: "/Objects/mes_v1/UI/Pages/monitoring_water"
+                Value: "/Objects/mes_v1/UI/Pages/historization_water"
               - Name: AliasNode
                 Type: BaseDataVariableType
                 DataType: NodeId
@@ -8499,12 +8451,12 @@ Children:
               - Name: NewPanel
                 Type: BaseDataVariableType
                 DataType: NodeId
-                Value: "/Objects/mes_v1/UI/Pages/Monitoring_ESG"
+                Value: "/Objects/mes_v1/UI/Pages/monitoring_ESG"
               - Name: AliasNode
                 Type: BaseDataVariableType
                 DataType: NodeId
                 ValueRank: ScalarOrOneDimension
-                Value: "/Objects/mes_v1/UI/Pages/Monitoring_ESG"
+                Value: "/Objects/mes_v1/UI/Pages/monitoring_ESG"
         - Name: EventArguments
           Type: MouseClickEvent
           Children:
@@ -8602,7 +8554,7 @@ Children:
           - Name: Severity
             Type: PropertyType
             DataType: UInt16
-- Name: page1
+- Name: historization_energy
   Id: g=a9c1fb3b167b091bf015f5e4ff0c1bb0
   Supertype: page
   ReferenceType: HasComponent
@@ -8610,13 +8562,13 @@ Children:
   - Name: pageID
     Type: BaseDataVariableType
     DataType: Int32
-  - Name: WebBrowser1
+  - Name: WebBrowser_energy
     Type: WebBrowser
     Children:
     - Name: URL
       Type: BaseDataVariableType
       DataType: ResourceUri
-      Value: "https://a01664328.grafana.net/d/al5tqc/energia?orgId=1&from=now-15m&to=now&timezone=browser&refresh=5s&kiosk=true&editPanel=1&viewPanel=panel-1"
+      Value: "https://a01664328.grafana.net/d/am6khx/energia-dashboard?orgId=1&from=now-15m&to=now&timezone=browser&refresh=5s&kiosk=true&editPanel=1&viewPanel=panel-1"
     - Class: Reference
       Target: ns=5;i=354
       Direction: Forward
@@ -8650,3 +8602,91 @@ Children:
       Type: BaseDataVariableType
       DataType: Boolean
       ModellingRule: Optional
+  - Name: LeftMargin
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 5.0
+  - Name: TopMargin
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 5.0
+  - Name: RightMargin
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 5.0
+  - Name: BottomMargin
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 5.0
+- Name: historization_water
+  Id: g=cbb750d55ab65f6d91dc420dce26b921
+  Supertype: page
+  ReferenceType: HasComponent
+  Children:
+  - Name: pageID
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: WebBrowser_water
+    Type: WebBrowser
+    Children:
+    - Name: URL
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "https://a01664328.grafana.net/d/ans5c7/water-dashboard?orgId=1&from=now-15m&to=now&timezone=browser&refresh=5s&editPanel=1&kiosk=true&viewPanel=panel-1"
+    - Class: Reference
+      Target: ns=5;i=354
+      Direction: Forward
+    - Class: Reference
+      Target: ns=5;i=356
+      Direction: Forward
+    - Class: Reference
+      Target: ns=5;i=358
+      Direction: Forward
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 300.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 300.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: IncognitoMode
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
+  - Name: LeftMargin
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 5.0
+  - Name: TopMargin
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 5.0
+  - Name: RightMargin
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 5.0
+  - Name: BottomMargin
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 5.0

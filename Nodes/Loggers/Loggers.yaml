@@ -12,7 +12,7 @@ Children:
   - Name: Store
     Type: NodePointer
     DataType: NodeId
-    Value: "/Objects/mes_v1/DataStores/RemoteInfluxDBDatabase1"
+    Value: "/Objects/mes_v1/DataStores/Database"
     Children:
     - Name: Kind
       Type: PropertyType
@@ -210,7 +210,11 @@ Children:
   - Name: SamplingPeriod
     Type: PropertyType
     DataType: Duration
-    Value: "0:00:00:02.0000000"
+    Value: "0:00:00:03.0000000"
+  - Name: PollingPeriod
+    Type: PropertyType
+    DataType: Duration
+    Value: "0:00:00:01.0000000"
 - Name: AlarmsEventLogger1
   Id: g=d787dda705a97f24e3d2e6ed35d9537b
   Type: EventLogger
@@ -511,7 +515,7 @@ Children:
   - Name: Store
     Type: NodePointer
     DataType: NodeId
-    Value: "/Objects/mes_v1/DataStores/Database_agua"
+    Value: "/Objects/mes_v1/DataStores/Database"
     Children:
     - Name: Kind
       Type: PropertyType
@@ -702,3 +706,11 @@ Children:
     Type: PropertyType
     DataType: Boolean
     Value: true
+  - Name: SamplingPeriod
+    Type: PropertyType
+    DataType: Duration
+    Value: "0:00:00:03.0000000"
+  - Name: PollingPeriod
+    Type: PropertyType
+    DataType: Duration
+    Value: "0:00:00:01.0000000"

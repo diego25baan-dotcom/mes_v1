@@ -126,13 +126,13 @@ Project:
    Version: 1.0
  Statistics:
   TotalNodeCount: 14420
-  Objects: 3016
-  ObjectTypes: 75
-  Variables: 11290
+  Objects: 3014
+  ObjectTypes: 76
+  Variables: 11291
   VariableTypes: 0
   DataTypes: 0
   Methods: 39
-  References: 155
+  References: 144
   ReferenceTypes: 0
   Files: 34
  Nodes:
