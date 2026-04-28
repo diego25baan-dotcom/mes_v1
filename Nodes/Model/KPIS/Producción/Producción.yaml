@@ -3,22 +3,34 @@ Type: FolderType
 Children:
 - Name: Ley_mineral_entrada
   Type: BaseDataVariableType
-  DataType: Int32
+  DataType: Float
 - Name: Ley_mineral_salida
   Type: BaseDataVariableType
-  DataType: Int32
+  DataType: Float
 - Name: Disponibilidad
   Type: BaseDataVariableType
-  DataType: Int32
+  DataType: Float
 - Name: Rendimiento
   Type: BaseDataVariableType
-  DataType: Int32
+  DataType: Float
 - Name: Calidad
   Type: BaseDataVariableType
-  DataType: Int32
+  DataType: Float
 - Name: Costo_total
   Type: BaseDataVariableType
-  DataType: Int32
+  DataType: Float
 - Name: Toneladas_producidas
   Type: BaseDataVariableType
-  DataType: Int32
+  DataType: Float
+- Name: 'KPI_PROD_001 PRODUCTION '
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: KPI_PROD_002 RECOVERY
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: KPI_PROD_003 OEE
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: KPI_PROD_004 COSTS PER TON
+  Type: BaseDataVariableType
+  DataType: Float

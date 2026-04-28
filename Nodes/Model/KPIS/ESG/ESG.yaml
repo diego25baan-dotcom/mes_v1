@@ -3,37 +3,49 @@ Type: FolderType
 Children:
 - Name: CO2_total
   Type: BaseDataVariableType
-  DataType: Int32
+  DataType: Float
 - Name: Energia_kWh
   Type: BaseDataVariableType
-  DataType: Int32
+  DataType: Float
 - Name: Toneladas_producidas
   Type: BaseDataVariableType
-  DataType: Int32
+  DataType: Float
 - Name: Relaves_tratados
   Type: BaseDataVariableType
-  DataType: Int32
+  DataType: Float
 - Name: Relaves_totales
   Type: BaseDataVariableType
-  DataType: Int32
+  DataType: Float
 - Name: Area_restaurada
   Type: BaseDataVariableType
-  DataType: Int32
+  DataType: Float
 - Name: Area_explotada
   Type: BaseDataVariableType
-  DataType: Int32
+  DataType: Float
 - Name: Numero_incidentes
   Type: BaseDataVariableType
-  DataType: Int32
+  DataType: Float
 - Name: Horas_trabajadas
   Type: BaseDataVariableType
-  DataType: Int32
+  DataType: Float
 - Name: Horas_capacitacion
   Type: BaseDataVariableType
-  DataType: Int32
+  DataType: Float
 - Name: Auditorias_aprobadas
   Type: BaseDataVariableType
-  DataType: Int32
+  DataType: Float
 - Name: Auditorias_totales
   Type: BaseDataVariableType
-  DataType: Int32
+  DataType: Float
+- Name: KPI_ESG_001 ENV iNTENSITY
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: KPI_ESG_002 REHABILITATION
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: KPI_ESG_003 JOB SECURITY
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: KPI_ESG_004 AUDIT COMPLIANCE
+  Type: BaseDataVariableType
+  DataType: Float

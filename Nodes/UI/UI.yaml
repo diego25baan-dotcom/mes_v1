@@ -1237,7 +1237,7 @@ Children:
                     Type: BaseDataVariableType
                     DataType: NodeId
                     Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
-                    Value: "/Objects/mes_v1/UI/Pages/page1"
+                    Value: "/Objects/mes_v1/UI/Pages/KPIS_monitoring"
                   - Name: AliasNode
                     Type: BaseDataVariableType
                     DataType: NodeId

@@ -1,0 +1,19 @@
+Name: WATER
+Type: FolderType
+Children:
+- Name: KPI01_WATER_C
+  Type: BaseDataVariableType
+  DataType: Color
+  Value: "#e4e4e4"
+- Name: KPI02_WATER_C
+  Type: BaseDataVariableType
+  DataType: Color
+  Value: "#e4e4e4"
+- Name: KPI03_WATER_C
+  Type: BaseDataVariableType
+  DataType: Color
+  Value: "#e4e4e4"
+- Name: KPI04_WATER_C
+  Type: BaseDataVariableType
+  DataType: Color
+  Value: "#e4e4e4"

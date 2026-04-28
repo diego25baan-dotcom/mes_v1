@@ -1,0 +1,19 @@
+Name: PRODUCTION
+Type: FolderType
+Children:
+- Name: KPI01_PROD_C
+  Type: BaseDataVariableType
+  DataType: Color
+  Value: "#e4e4e4"
+- Name: KPI02_PROD_C
+  Type: BaseDataVariableType
+  DataType: Color
+  Value: "#e4e4e4"
+- Name: KPI03_PROD_C
+  Type: BaseDataVariableType
+  DataType: Color
+  Value: "#e4e4e4"
+- Name: KPI04_PROD_C
+  Type: BaseDataVariableType
+  DataType: Color
+  Value: "#e4e4e4"

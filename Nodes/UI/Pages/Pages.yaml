@@ -4583,7 +4583,7 @@ Children:
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
-- Name: monitoring_energy
+- Name: data_energy
   Id: g=2fbe54fee4fd1debee4b30fcf4a9847f
   Supertype: KPIS
   ReferenceType: HasComponent
@@ -5180,7 +5180,7 @@ Children:
     Type: BaseDataVariableType
     DataType: Int32
     Value: 5
-- Name: monitoring_water
+- Name: data_water
   Id: g=a8a5a751a4b5378a6bd95c9e2e088d3d
   Supertype: KPIS
   ReferenceType: HasComponent
@@ -5803,7 +5803,7 @@ Children:
     Type: BaseDataVariableType
     DataType: Int32
     Value: 6
-- Name: monitoring_ESG
+- Name: data_ESG
   Id: g=900c9cb44f0c804dc20e86cd2f28ef4d
   Supertype: KPIS
   ReferenceType: HasComponent
@@ -6301,7 +6301,7 @@ Children:
     Type: BaseDataVariableType
     DataType: Int32
     Value: 7
-- Name: monitoring_production
+- Name: data_production
   Id: g=f64620d30aef85194e8ae29d7ded5e7b
   Supertype: KPIS
   ReferenceType: HasComponent
@@ -6799,801 +6799,6 @@ Children:
     Type: BaseDataVariableType
     DataType: Int32
     Value: 8
-- Name: KPI_ENERGÍA
-  Id: g=23c8bd260236771c6aec6401276df09d
-  Supertype: page
-  ReferenceType: HasComponent
-  Children:
-  - Name: Label1
-    Type: Label
-    Children:
-    - Name: Text
-      Type: BaseDataVariableType
-      DataType: LocalizedText
-      ModellingRule: Optional
-      Value: {"LocaleId":"en-US","Text":"KPI 01 CONSUMO ENERGÉTICO"}
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 150.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 210.0
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 75.0
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 35.0
-    - Name: FontSize
-      Type: BaseDataVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 25.0
-  - Name: TextBox1
-    Type: TextBox
-    Children:
-    - Name: Text
-      Type: BaseDataVariableType
-      DataType: LocalizedText
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/mes_v1/Model/KPIS/Energía/KPI_EN_001 CONSUMO"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          ModellingRule: Optional
-          Value: 2
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 110.0
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 270.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 236.0
-  - Name: LED1
-    Type: Led
-    Children:
-    - Name: Active
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Value: true
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 50.0
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 50.0
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 280.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 150.0
-    - Name: Color
-      Type: BaseDataVariableType
-      DataType: Color
-      Value: "#ff0000"
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/mes_v1/Model/colores/KPI01_ENERGIA_C"
-  - Name: Button1
-    Type: Button
-    Children:
-    - Name: Text
-      Type: BaseDataVariableType
-      DataType: LocalizedText
-      ModellingRule: Optional
-      Value: {"LocaleId":"en-US","Text":"Button1"}
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 328.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 130.0
-    - Name: MouseClickEventHandler1
-      Type: EventHandler
-      Children:
-      - Name: ListenEventType
-        Type: PropertyType
-        DataType: NodeId
-        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
-      - Name: MethodsToCall
-        Type: BaseObjectType
-        Children:
-        - Name: MethodContainer1
-          Type: BaseObjectType
-          Children:
-          - Name: ns=3;ObjectPointer
-            Type: NodePointer
-            DataType: NodeId
-            Children:
-            - Name: Kind
-              Type: PropertyType
-              DataType: NodeId
-              Value: "/Types/ObjectTypes/BaseObjectType"
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "{NavigationPanel1}@NodeId"
-              Children:
-              - Name: Mode
-                Type: BaseVariableType
-                DataType: DynamicLinkMode
-                ModellingRule: Optional
-                Value: 2
-          - Name: ns=3;Method
-            Type: BaseDataVariableType
-            DataType: String
-            Value: "ChangePanelByTabIndex"
-          - Name: InputArguments
-            Type: BaseObjectType
-            Children:
-            - Name: Index
-              Type: BaseDataVariableType
-              DataType: Int32
-              Description: {"NamespaceIndex":5,"TextId":"ChangePanelByTabIndexIndexDescription"}
-              Value: 2
-            - Name: AliasNode
-              Type: BaseDataVariableType
-              DataType: NodeId
-              Description: {"NamespaceIndex":5,"TextId":"ChangePanelByTabIndexAliasNodeDescription"}
-              ValueRank: ScalarOrOneDimension
-      - Name: EventArguments
-        Type: MouseClickEvent
-        Children:
-        - Name: EventId
-          Type: PropertyType
-          DataType: ByteString
-        - Name: EventType
-          Type: PropertyType
-          DataType: NodeId
-        - Name: SourceNode
-          Type: PropertyType
-          DataType: NodeId
-        - Name: SourceName
-          Type: PropertyType
-          DataType: String
-        - Name: Time
-          Type: PropertyType
-          DataType: UtcTime
-        - Name: ReceiveTime
-          Type: PropertyType
-          DataType: UtcTime
-        - Name: Message
-          Type: PropertyType
-          DataType: LocalizedText
-        - Name: Severity
-          Type: PropertyType
-          DataType: UInt16
-  - Name: Label2
-    Type: Label
-    Children:
-    - Name: Text
-      Type: BaseDataVariableType
-      DataType: LocalizedText
-      ModellingRule: Optional
-      Value: {"LocaleId":"en-US","Text":"KPI 02 EMISIÓN DE CO2"}
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 150.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 390.0
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 75.0
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 35.0
-    - Name: FontSize
-      Type: BaseDataVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 25.0
-  - Name: TextBox2
-    Type: TextBox
-    Children:
-    - Name: Text
-      Type: BaseDataVariableType
-      DataType: LocalizedText
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/mes_v1/Model/KPIS/Energía/KPI_EN_002 CO2_AREA"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          ModellingRule: Optional
-          Value: 2
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 110.0
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 270.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 416.0
-    - Name: Visible
-      Type: BaseDataVariableType
-      DataType: Boolean
-      ModellingRule: Optional
-      Value: true
-  - Name: LED2
-    Type: Led
-    Children:
-    - Name: Active
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Value: true
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 50.0
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 50.0
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 280.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 330.0
-    - Name: Color
-      Type: BaseDataVariableType
-      DataType: Color
-      Value: "#ff0000"
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/mes_v1/Model/colores/KPI02_ENERGIA_C"
-  - Name: Button2
-    Type: Button
-    Children:
-    - Name: Text
-      Type: BaseDataVariableType
-      DataType: LocalizedText
-      ModellingRule: Optional
-      Value: {"LocaleId":"en-US","Text":"Button1"}
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 328.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 310.0
-    - Name: MouseClickEventHandler1
-      Type: EventHandler
-      Children:
-      - Name: ListenEventType
-        Type: PropertyType
-        DataType: NodeId
-        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
-      - Name: MethodsToCall
-        Type: BaseObjectType
-        Children:
-        - Name: MethodContainer1
-          Type: BaseObjectType
-          Children:
-          - Name: ns=3;ObjectPointer
-            Type: NodePointer
-            DataType: NodeId
-            Children:
-            - Name: Kind
-              Type: PropertyType
-              DataType: NodeId
-              Value: "/Types/ObjectTypes/BaseObjectType"
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "{NavigationPanel1}@NodeId"
-              Children:
-              - Name: Mode
-                Type: BaseVariableType
-                DataType: DynamicLinkMode
-                ModellingRule: Optional
-                Value: 2
-          - Name: ns=3;Method
-            Type: BaseDataVariableType
-            DataType: String
-            Value: "ChangePanelByTabIndex"
-          - Name: InputArguments
-            Type: BaseObjectType
-            Children:
-            - Name: Index
-              Type: BaseDataVariableType
-              DataType: Int32
-              Description: {"NamespaceIndex":5,"TextId":"ChangePanelByTabIndexIndexDescription"}
-              Value: 2
-            - Name: AliasNode
-              Type: BaseDataVariableType
-              DataType: NodeId
-              Description: {"NamespaceIndex":5,"TextId":"ChangePanelByTabIndexAliasNodeDescription"}
-              ValueRank: ScalarOrOneDimension
-      - Name: EventArguments
-        Type: MouseClickEvent
-        Children:
-        - Name: EventId
-          Type: PropertyType
-          DataType: ByteString
-        - Name: EventType
-          Type: PropertyType
-          DataType: NodeId
-        - Name: SourceNode
-          Type: PropertyType
-          DataType: NodeId
-        - Name: SourceName
-          Type: PropertyType
-          DataType: String
-        - Name: Time
-          Type: PropertyType
-          DataType: UtcTime
-        - Name: ReceiveTime
-          Type: PropertyType
-          DataType: UtcTime
-        - Name: Message
-          Type: PropertyType
-          DataType: LocalizedText
-        - Name: Severity
-          Type: PropertyType
-          DataType: UInt16
-  - Name: Label3
-    Type: Label
-    Children:
-    - Name: Text
-      Type: BaseDataVariableType
-      DataType: LocalizedText
-      ModellingRule: Optional
-      Value: {"LocaleId":"en-US","Text":"KPI 03 ENERGÍA-TONELADAS PRODUCIDAS"}
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 620.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 210.0
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 75.0
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 35.0
-    - Name: FontSize
-      Type: BaseDataVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 25.0
-  - Name: TextBox3
-    Type: TextBox
-    Children:
-    - Name: Text
-      Type: BaseDataVariableType
-      DataType: LocalizedText
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/mes_v1/Model/KPIS/Energía/KPI_EN_003 KWh_ton"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          ModellingRule: Optional
-          Value: 2
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 110.0
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 740.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 236.0
-  - Name: LED3
-    Type: Led
-    Children:
-    - Name: Active
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Value: true
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 50.0
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 50.0
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 750.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 150.0
-    - Name: Color
-      Type: BaseDataVariableType
-      DataType: Color
-      Value: "#ff0000"
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/mes_v1/Model/colores/KPI03_ENERGIA_C"
-    - Name: Text
-      Type: BaseDataVariableType
-      DataType: LocalizedText
-      ModellingRule: Optional
-      Value: {"LocaleId":"en-US","Text":""}
-  - Name: Button3
-    Type: Button
-    Children:
-    - Name: Text
-      Type: BaseDataVariableType
-      DataType: LocalizedText
-      ModellingRule: Optional
-      Value: {"LocaleId":"en-US","Text":"Button1"}
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 798.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 130.0
-    - Name: MouseClickEventHandler1
-      Type: EventHandler
-      Children:
-      - Name: ListenEventType
-        Type: PropertyType
-        DataType: NodeId
-        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
-      - Name: MethodsToCall
-        Type: BaseObjectType
-        Children:
-        - Name: MethodContainer1
-          Type: BaseObjectType
-          Children:
-          - Name: ns=3;ObjectPointer
-            Type: NodePointer
-            DataType: NodeId
-            Children:
-            - Name: Kind
-              Type: PropertyType
-              DataType: NodeId
-              Value: "/Types/ObjectTypes/BaseObjectType"
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "{NavigationPanel1}@NodeId"
-              Children:
-              - Name: Mode
-                Type: BaseVariableType
-                DataType: DynamicLinkMode
-                ModellingRule: Optional
-                Value: 2
-          - Name: ns=3;Method
-            Type: BaseDataVariableType
-            DataType: String
-            Value: "ChangePanelByTabIndex"
-          - Name: InputArguments
-            Type: BaseObjectType
-            Children:
-            - Name: Index
-              Type: BaseDataVariableType
-              DataType: Int32
-              Description: {"NamespaceIndex":5,"TextId":"ChangePanelByTabIndexIndexDescription"}
-              Value: 2
-            - Name: AliasNode
-              Type: BaseDataVariableType
-              DataType: NodeId
-              Description: {"NamespaceIndex":5,"TextId":"ChangePanelByTabIndexAliasNodeDescription"}
-              ValueRank: ScalarOrOneDimension
-      - Name: EventArguments
-        Type: MouseClickEvent
-        Children:
-        - Name: EventId
-          Type: PropertyType
-          DataType: ByteString
-        - Name: EventType
-          Type: PropertyType
-          DataType: NodeId
-        - Name: SourceNode
-          Type: PropertyType
-          DataType: NodeId
-        - Name: SourceName
-          Type: PropertyType
-          DataType: String
-        - Name: Time
-          Type: PropertyType
-          DataType: UtcTime
-        - Name: ReceiveTime
-          Type: PropertyType
-          DataType: UtcTime
-        - Name: Message
-          Type: PropertyType
-          DataType: LocalizedText
-        - Name: Severity
-          Type: PropertyType
-          DataType: UInt16
-  - Name: Label4
-    Type: Label
-    Children:
-    - Name: Text
-      Type: BaseDataVariableType
-      DataType: LocalizedText
-      ModellingRule: Optional
-      Value: {"LocaleId":"en-US","Text":"KPI 04 ENERGÍA RENOVABLE"}
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 610.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 390.0
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 75.0
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 35.0
-    - Name: FontSize
-      Type: BaseDataVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 25.0
-  - Name: TextBox4
-    Type: TextBox
-    Children:
-    - Name: Text
-      Type: BaseDataVariableType
-      DataType: LocalizedText
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/mes_v1/Model/KPIS/Energía/KPI_EN_004 % EN RENOVABLE"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          ModellingRule: Optional
-          Value: 2
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 110.0
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 730.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 416.0
-  - Name: LED4
-    Type: Led
-    Children:
-    - Name: Active
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Value: true
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 50.0
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 50.0
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 740.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 330.0
-    - Name: Color
-      Type: BaseDataVariableType
-      DataType: Color
-      Value: "#ff0000"
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/mes_v1/Model/colores/KPI04_ENERGIA_C"
-  - Name: Button4
-    Type: Button
-    Children:
-    - Name: Text
-      Type: BaseDataVariableType
-      DataType: LocalizedText
-      ModellingRule: Optional
-      Value: {"LocaleId":"en-US","Text":"Button1"}
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 788.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 310.0
-    - Name: MouseClickEventHandler1
-      Type: EventHandler
-      Children:
-      - Name: ListenEventType
-        Type: PropertyType
-        DataType: NodeId
-        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
-      - Name: MethodsToCall
-        Type: BaseObjectType
-        Children:
-        - Name: MethodContainer1
-          Type: BaseObjectType
-          Children:
-          - Name: ns=3;ObjectPointer
-            Type: NodePointer
-            DataType: NodeId
-            Children:
-            - Name: Kind
-              Type: PropertyType
-              DataType: NodeId
-              Value: "/Types/ObjectTypes/BaseObjectType"
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "{NavigationPanel1}@NodeId"
-              Children:
-              - Name: Mode
-                Type: BaseVariableType
-                DataType: DynamicLinkMode
-                ModellingRule: Optional
-                Value: 2
-          - Name: ns=3;Method
-            Type: BaseDataVariableType
-            DataType: String
-            Value: "ChangePanelByTabIndex"
-          - Name: InputArguments
-            Type: BaseObjectType
-            Children:
-            - Name: Index
-              Type: BaseDataVariableType
-              DataType: Int32
-              Description: {"NamespaceIndex":5,"TextId":"ChangePanelByTabIndexIndexDescription"}
-              Value: 2
-            - Name: AliasNode
-              Type: BaseDataVariableType
-              DataType: NodeId
-              Description: {"NamespaceIndex":5,"TextId":"ChangePanelByTabIndexAliasNodeDescription"}
-              ValueRank: ScalarOrOneDimension
-      - Name: EventArguments
-        Type: MouseClickEvent
-        Children:
-        - Name: EventId
-          Type: PropertyType
-          DataType: ByteString
-        - Name: EventType
-          Type: PropertyType
-          DataType: NodeId
-        - Name: SourceNode
-          Type: PropertyType
-          DataType: NodeId
-        - Name: SourceName
-          Type: PropertyType
-          DataType: String
-        - Name: Time
-          Type: PropertyType
-          DataType: UtcTime
-        - Name: ReceiveTime
-          Type: PropertyType
-          DataType: UtcTime
-        - Name: Message
-          Type: PropertyType
-          DataType: LocalizedText
-        - Name: Severity
-          Type: PropertyType
-          DataType: UInt16
-  - Name: pageID
-    Type: BaseDataVariableType
-    DataType: Int32
-    Value: 9
 - Name: login
   Id: g=88a0f0f7545e9604244cb2c588849dcb
   Supertype: page
@@ -7980,7 +7185,7 @@ Children:
               - Name: NewPanel
                 Type: BaseDataVariableType
                 DataType: NodeId
-                Value: "/Objects/mes_v1/UI/Pages/monitoring_energy"
+                Value: "/Objects/mes_v1/UI/Pages/data_energy"
               - Name: AliasNode
                 Type: BaseDataVariableType
                 DataType: NodeId
@@ -8055,7 +7260,7 @@ Children:
               - Name: NewPanel
                 Type: BaseDataVariableType
                 DataType: NodeId
-                Value: "/Objects/mes_v1/UI/Pages/monitoring_water"
+                Value: "/Objects/mes_v1/UI/Pages/data_water"
               - Name: AliasNode
                 Type: BaseDataVariableType
                 DataType: NodeId
@@ -8130,12 +7335,12 @@ Children:
               - Name: NewPanel
                 Type: BaseDataVariableType
                 DataType: NodeId
-                Value: "/Objects/mes_v1/UI/Pages/monitoring_ESG"
+                Value: "/Objects/mes_v1/UI/Pages/data_ESG"
               - Name: AliasNode
                 Type: BaseDataVariableType
                 DataType: NodeId
                 ValueRank: ScalarOrOneDimension
-                Value: "/Objects/mes_v1/UI/Pages/monitoring_ESG"
+                Value: "/Objects/mes_v1/UI/Pages/data_ESG"
         - Name: EventArguments
           Type: MouseClickEvent
           Children:
@@ -8206,7 +7411,7 @@ Children:
               - Name: NewPanel
                 Type: BaseDataVariableType
                 DataType: NodeId
-                Value: "/Objects/mes_v1/UI/Pages/monitoring_production"
+                Value: "/Objects/mes_v1/UI/Pages/data_production"
               - Name: AliasNode
                 Type: BaseDataVariableType
                 DataType: NodeId
@@ -8454,12 +7659,12 @@ Children:
               - Name: NewPanel
                 Type: BaseDataVariableType
                 DataType: NodeId
-                Value: "/Objects/mes_v1/UI/Pages/monitoring_ESG"
+                Value: "/Objects/mes_v1/UI/Pages/data_ESG"
               - Name: AliasNode
                 Type: BaseDataVariableType
                 DataType: NodeId
                 ValueRank: ScalarOrOneDimension
-                Value: "/Objects/mes_v1/UI/Pages/monitoring_ESG"
+                Value: "/Objects/mes_v1/UI/Pages/data_ESG"
         - Name: EventArguments
           Type: MouseClickEvent
           Children:
@@ -8525,7 +7730,7 @@ Children:
               - Name: NewPanel
                 Type: BaseDataVariableType
                 DataType: NodeId
-                Value: "/Objects/mes_v1/UI/Pages/monitoring_production"
+                Value: "/Objects/mes_v1/UI/Pages/data_production"
               - Name: AliasNode
                 Type: BaseDataVariableType
                 DataType: NodeId
@@ -8693,7 +7898,7 @@ Children:
     DataType: Size
     ModellingRule: Optional
     Value: 5.0
-- Name: page1
+- Name: KPIS_monitoring
   Id: g=1af38e23c787102cf0b84ee4b6f3a3ea
   Supertype: page
   ReferenceType: HasComponent
@@ -8753,12 +7958,12 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 200.0
+          Value: 180.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 60.0
+          Value: 110.0
         - Name: Width
           Type: BaseVariableType
           DataType: Size
@@ -8778,6 +7983,81 @@ Children:
           Type: BaseDataVariableType
           DataType: Color
           Value: "#e4e4e4"
+        - Name: MouseClickEventHandler1
+          Type: EventHandler
+          Children:
+          - Name: ListenEventType
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+          - Name: MethodsToCall
+            Type: BaseObjectType
+            Children:
+            - Name: MethodContainer1
+              Type: BaseObjectType
+              Children:
+              - Name: ns=3;ObjectPointer
+                Type: NodePointer
+                DataType: NodeId
+                Children:
+                - Name: Kind
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: "/Types/ObjectTypes/BaseObjectType"
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{PanelLoader1}@NodeId"
+                  Children:
+                  - Name: Mode
+                    Type: BaseVariableType
+                    DataType: DynamicLinkMode
+                    ModellingRule: Optional
+                    Value: 2
+              - Name: ns=3;Method
+                Type: BaseDataVariableType
+                DataType: String
+                Value: "ChangePanel"
+              - Name: InputArguments
+                Type: BaseObjectType
+                Children:
+                - Name: NewPanel
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                  Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
+                  Value: "/Objects/mes_v1/UI/Pages/data_energy"
+                - Name: AliasNode
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                  Description: {"NamespaceIndex":5,"TextId":"ChangePanelAliasNodeDescription"}
+                  ValueRank: ScalarOrOneDimension
+          - Name: EventArguments
+            Type: MouseClickEvent
+            Children:
+            - Name: EventId
+              Type: PropertyType
+              DataType: ByteString
+            - Name: EventType
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceNode
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceName
+              Type: PropertyType
+              DataType: String
+            - Name: Time
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: ReceiveTime
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: Message
+              Type: PropertyType
+              DataType: LocalizedText
+            - Name: Severity
+              Type: PropertyType
+              DataType: UInt16
       - Name: Button2
         Type: Button
         Children:
@@ -8795,12 +8075,12 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 200.0
+          Value: 180.0
         - Name: BottomMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 81.0
+          Value: 40.0
         - Name: Width
           Type: BaseVariableType
           DataType: Size
@@ -8832,7 +8112,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 60.0
+          Value: 110.0
         - Name: RightMargin
           Type: BaseVariableType
           DataType: Size
@@ -8879,7 +8159,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 81.0
+          Value: 40.0
         - Name: Width
           Type: BaseVariableType
           DataType: Size
@@ -8910,17 +8190,22 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 70.0
+          Value: 50.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 40.0
+          Value: 90.0
         - Name: FontSize
           Type: BaseDataVariableType
           DataType: Size
           ModellingRule: Optional
           Value: 15.0
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#ffffff"
       - Name: Label2
         Type: Label
         Children:
@@ -8933,17 +8218,22 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 92.0
+          Value: 72.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 160.0
+          Value: 210.0
         - Name: FontSize
           Type: BaseDataVariableType
           DataType: Size
           ModellingRule: Optional
           Value: 15.0
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#ffffff"
       - Name: Label3
         Type: Label
         Children:
@@ -8961,12 +8251,17 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 40.0
+          Value: 90.0
         - Name: FontSize
           Type: BaseDataVariableType
           DataType: Size
           ModellingRule: Optional
           Value: 15.0
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#ffffff"
       - Name: Label4
         Type: Label
         Children:
@@ -8984,12 +8279,17 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 160.0
+          Value: 210.0
         - Name: FontSize
           Type: BaseDataVariableType
           DataType: Size
           ModellingRule: Optional
           Value: 15.0
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#ffffff"
       - Name: TextBox1
         Type: TextBox
         Children:
@@ -9016,12 +8316,12 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 85.0
+          Value: 65.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 65.0
+          Value: 115.0
       - Name: TextBox2
         Type: TextBox
         Children:
@@ -9048,12 +8348,12 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 85.0
+          Value: 65.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 195.0
+          Value: 236.0
       - Name: TextBox3
         Type: TextBox
         Children:
@@ -9085,7 +8385,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 65.0
+          Value: 115.0
       - Name: TextBox4
         Type: TextBox
         Children:
@@ -9117,7 +8417,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 195.0
+          Value: 236.0
       - Name: LEDTopView1
         Type: ScaleLayout
         WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
@@ -9130,7 +8430,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/colores/KPI03_ENERGIA_C"
+            Value: "/Objects/mes_v1/Model/colores/ENERGY/KPI03_ENERGIA_C"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -9449,12 +8749,12 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 157.0
+          Value: 137.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 132.0
+          Value: 182.0
       - Name: LEDTopView2
         Type: ScaleLayout
         WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
@@ -9467,7 +8767,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/colores/KPI01_ENERGIA_C"
+            Value: "/Objects/mes_v1/Model/colores/ENERGY/KPI01_ENERGIA_C"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -9785,12 +9085,12 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 157.0
+          Value: 137.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 12.0
+          Value: 62.0
       - Name: LEDTopView3
         Type: ScaleLayout
         WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
@@ -9803,7 +9103,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/colores/KPI02_ENERGIA_C"
+            Value: "/Objects/mes_v1/Model/colores/ENERGY/KPI02_ENERGIA_C"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -10126,7 +9426,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 12.0
+          Value: 62.0
       - Name: LEDTopView4
         Type: ScaleLayout
         WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
@@ -10139,7 +9439,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/colores/KPI04_ENERGIA_C"
+            Value: "/Objects/mes_v1/Model/colores/ENERGY/KPI04_ENERGIA_C"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -10462,7 +9762,69 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 130.0
+          Value: 180.0
+      - Name: FillColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#16222d"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#f0f0f0"
+      - Name: BorderThickness
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 4.0
+      - Name: CornerRadius
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 15.0
+      - Name: Label5
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"ENERGY KPI'S"}
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 6.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 20.0
+        - Name: FontSize
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 25.0
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#ffffff"
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: RightMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+        - Name: FontWeight
+          Type: BaseDataVariableType
+          DataType: FontWeightEnum
+          ModellingRule: Optional
+          Value: 700
     - Name: HorizontalAlignment
       Type: BaseVariableType
       DataType: HorizontalAlignment
@@ -10515,12 +9877,12 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 200.0
+          Value: 180.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 60.0
+          Value: 110.0
         - Name: Width
           Type: BaseVariableType
           DataType: Size
@@ -10553,12 +9915,12 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 200.0
+          Value: 180.0
         - Name: BottomMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 81.0
+          Value: 40.0
         - Name: Width
           Type: BaseVariableType
           DataType: Size
@@ -10586,7 +9948,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 60.0
+          Value: 110.0
         - Name: RightMargin
           Type: BaseVariableType
           DataType: Size
@@ -10629,7 +9991,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 81.0
+          Value: 40.0
         - Name: Width
           Type: BaseVariableType
           DataType: Size
@@ -10656,17 +10018,22 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 51.0
+          Value: 31.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 40.0
+          Value: 90.0
         - Name: FontSize
           Type: BaseDataVariableType
           DataType: Size
           ModellingRule: Optional
           Value: 15.0
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#ffffff"
       - Name: Label2
         Type: Label
         Children:
@@ -10679,17 +10046,22 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 80.0
+          Value: 60.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 160.0
+          Value: 210.0
         - Name: FontSize
           Type: BaseDataVariableType
           DataType: Size
           ModellingRule: Optional
           Value: 15.0
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#ffffff"
       - Name: Label3
         Type: Label
         Children:
@@ -10707,12 +10079,17 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 40.0
+          Value: 90.0
         - Name: FontSize
           Type: BaseDataVariableType
           DataType: Size
           ModellingRule: Optional
           Value: 15.0
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#ffffff"
       - Name: Label4
         Type: Label
         Children:
@@ -10730,12 +10107,17 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 160.0
+          Value: 210.0
         - Name: FontSize
           Type: BaseDataVariableType
           DataType: Size
           ModellingRule: Optional
           Value: 15.0
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#ffffff"
       - Name: HorizontalAlignment
         Type: BaseVariableType
         DataType: HorizontalAlignment
@@ -10771,12 +10153,12 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 85.0
+          Value: 65.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 65.0
+          Value: 115.0
       - Name: TextBox2
         Type: TextBox
         Children:
@@ -10803,12 +10185,12 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 85.0
+          Value: 65.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 195.0
+          Value: 236.0
       - Name: TextBox3
         Type: TextBox
         Children:
@@ -10840,7 +10222,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 65.0
+          Value: 115.0
       - Name: TextBox4
         Type: TextBox
         Children:
@@ -10872,7 +10254,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 195.0
+          Value: 236.0
       - Name: LEDTopView1
         Type: ScaleLayout
         WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
@@ -10881,6 +10263,17 @@ Children:
           Type: BaseDataVariableType
           DataType: Color
           Value: "#ff0000"
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/mes_v1/Model/colores/WATER/KPI03_WATER_C"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
         - Name: On
           Type: BaseDataVariableType
           DataType: Boolean
@@ -11192,12 +10585,12 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 165.0
+          Value: 145.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 132.0
+          Value: 182.0
       - Name: LEDTopView2
         Type: ScaleLayout
         WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
@@ -11206,6 +10599,17 @@ Children:
           Type: BaseDataVariableType
           DataType: Color
           Value: "#ff0000"
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/mes_v1/Model/colores/WATER/KPI01_WATER_C"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
         - Name: On
           Type: BaseDataVariableType
           DataType: Boolean
@@ -11517,12 +10921,12 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 165.0
+          Value: 145.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 12.0
+          Value: 62.0
       - Name: LEDTopView3
         Type: ScaleLayout
         WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
@@ -11531,6 +10935,17 @@ Children:
           Type: BaseDataVariableType
           DataType: Color
           Value: "#ff0000"
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/mes_v1/Model/colores/WATER/KPI02_WATER_C"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
         - Name: On
           Type: BaseDataVariableType
           DataType: Boolean
@@ -11847,7 +11262,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 12.0
+          Value: 62.0
       - Name: LEDTopView4
         Type: ScaleLayout
         WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
@@ -11856,6 +11271,17 @@ Children:
           Type: BaseDataVariableType
           DataType: Color
           Value: "#ff0000"
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/mes_v1/Model/colores/WATER/KPI04_WATER_C"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
         - Name: On
           Type: BaseDataVariableType
           DataType: Boolean
@@ -12172,7 +11598,69 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 130.0
+          Value: 180.0
+      - Name: FillColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#16222d"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#f0f0f0"
+      - Name: BorderThickness
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 4.0
+      - Name: CornerRadius
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 15.0
+      - Name: Label5
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"WATER KPI'S"}
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 6.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 20.0
+        - Name: FontSize
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 25.0
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#ffffff"
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: RightMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+        - Name: FontWeight
+          Type: BaseDataVariableType
+          DataType: FontWeightEnum
+          ModellingRule: Optional
+          Value: 700
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
@@ -12271,12 +11759,12 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 200.0
+          Value: 180.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 60.0
+          Value: 110.0
         - Name: Width
           Type: BaseVariableType
           DataType: Size
@@ -12309,12 +11797,12 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 200.0
+          Value: 180.0
         - Name: BottomMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 80.0
+          Value: 39.0
         - Name: Width
           Type: BaseVariableType
           DataType: Size
@@ -12342,7 +11830,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 60.0
+          Value: 110.0
         - Name: RightMargin
           Type: BaseVariableType
           DataType: Size
@@ -12385,7 +11873,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 80.0
+          Value: 39.0
         - Name: Width
           Type: BaseVariableType
           DataType: Size
@@ -12407,22 +11895,27 @@ Children:
           Type: BaseDataVariableType
           DataType: LocalizedText
           ModellingRule: Optional
-          Value: {"LocaleId":"en-US","Text":"KPI_EN_001 CONSUMO"}
+          Value: {"LocaleId":"en-US","Text":"KPI_ESG_001 ENV iNTENSITY"}
         - Name: LeftMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 88.0
+          Value: 49.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 40.0
+          Value: 90.0
         - Name: FontSize
           Type: BaseDataVariableType
           DataType: Size
           ModellingRule: Optional
           Value: 15.0
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#ffffff"
       - Name: Label2
         Type: Label
         Children:
@@ -12430,22 +11923,27 @@ Children:
           Type: BaseDataVariableType
           DataType: LocalizedText
           ModellingRule: Optional
-          Value: {"LocaleId":"en-US","Text":"KPI_EN_003 KWh_ton"}
+          Value: {"LocaleId":"en-US","Text":"KPI_ESG_003 JOB SECURITY"}
         - Name: LeftMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 94.0
+          Value: 54.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 160.0
+          Value: 210.0
         - Name: FontSize
           Type: BaseDataVariableType
           DataType: Size
           ModellingRule: Optional
           Value: 15.0
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#ffffff"
       - Name: Label3
         Type: Label
         Children:
@@ -12453,22 +11951,27 @@ Children:
           Type: BaseDataVariableType
           DataType: LocalizedText
           ModellingRule: Optional
-          Value: {"LocaleId":"en-US","Text":"KPI_EN_002 CO2_AREA"}
+          Value: {"LocaleId":"en-US","Text":"KPI_ESG_002 REHABILITATION"}
         - Name: LeftMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 313.0
+          Value: 286.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 40.0
+          Value: 90.0
         - Name: FontSize
           Type: BaseDataVariableType
           DataType: Size
           ModellingRule: Optional
           Value: 15.0
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#ffffff"
       - Name: Label4
         Type: Label
         Children:
@@ -12476,22 +11979,27 @@ Children:
           Type: BaseDataVariableType
           DataType: LocalizedText
           ModellingRule: Optional
-          Value: {"LocaleId":"en-US","Text":"KPI_EN_004 % EN RENOVABLE"}
+          Value: {"LocaleId":"en-US","Text":"KPI_ESG_004 AUDIT COMPLIANCE"}
         - Name: LeftMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 282.0
+          Value: 273.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 160.0
+          Value: 210.0
         - Name: FontSize
           Type: BaseDataVariableType
           DataType: Size
           ModellingRule: Optional
           Value: 15.0
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#ffffff"
       - Name: HorizontalAlignment
         Type: BaseVariableType
         DataType: HorizontalAlignment
@@ -12521,12 +12029,12 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 85.0
+          Value: 65.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 65.0
+          Value: 115.0
       - Name: TextBox2
         Type: TextBox
         Children:
@@ -12542,12 +12050,12 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 85.0
+          Value: 65.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 195.0
+          Value: 236.0
       - Name: TextBox3
         Type: TextBox
         Children:
@@ -12568,7 +12076,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 65.0
+          Value: 115.0
       - Name: TextBox4
         Type: TextBox
         Children:
@@ -12589,7 +12097,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 195.0
+          Value: 236.0
       - Name: LEDTopView1
         Type: ScaleLayout
         WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
@@ -12598,6 +12106,17 @@ Children:
           Type: BaseDataVariableType
           DataType: Color
           Value: "#ff0000"
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/mes_v1/Model/colores/ESG/KPI03_ESG_C"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
         - Name: On
           Type: BaseDataVariableType
           DataType: Boolean
@@ -12909,12 +12428,12 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 156.0
+          Value: 136.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 132.0
+          Value: 182.0
       - Name: LEDTopView2
         Type: ScaleLayout
         WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
@@ -12923,6 +12442,17 @@ Children:
           Type: BaseDataVariableType
           DataType: Color
           Value: "#ff0000"
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
         - Name: On
           Type: BaseDataVariableType
           DataType: Boolean
@@ -13234,12 +12764,12 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 156.0
+          Value: 136.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 12.0
+          Value: 62.0
       - Name: LEDTopView3
         Type: ScaleLayout
         WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
@@ -13248,6 +12778,17 @@ Children:
           Type: BaseDataVariableType
           DataType: Color
           Value: "#ff0000"
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/mes_v1/Model/colores/ESG/KPI02_ESG_C"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
         - Name: On
           Type: BaseDataVariableType
           DataType: Boolean
@@ -13564,7 +13105,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 12.0
+          Value: 62.0
       - Name: LEDTopView4
         Type: ScaleLayout
         WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
@@ -13573,6 +13114,17 @@ Children:
           Type: BaseDataVariableType
           DataType: Color
           Value: "#ff0000"
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/mes_v1/Model/colores/ESG/KPI04_ESG_C"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
         - Name: On
           Type: BaseDataVariableType
           DataType: Boolean
@@ -13889,7 +13441,69 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 130.0
+          Value: 180.0
+      - Name: FillColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#16222d"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#f0f0f0"
+      - Name: BorderThickness
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 4.0
+      - Name: CornerRadius
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 15.0
+      - Name: Label5
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"ESG KPI'S"}
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 6.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 20.0
+        - Name: FontSize
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 25.0
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#ffffff"
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: RightMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+        - Name: FontWeight
+          Type: BaseDataVariableType
+          DataType: FontWeightEnum
+          ModellingRule: Optional
+          Value: 700
     - Name: Rectangle2
       Type: Rectangle
       Children:
@@ -13929,12 +13543,12 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 200.0
+          Value: 180.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 60.0
+          Value: 110.0
         - Name: Width
           Type: BaseVariableType
           DataType: Size
@@ -13950,6 +13564,11 @@ Children:
           DataType: String
           ModellingRule: Optional
           Value: "Default"
+        - Name: BackgroundColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#e4e4e4"
       - Name: Button2
         Type: Button
         Children:
@@ -13967,12 +13586,12 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 200.0
+          Value: 180.0
         - Name: BottomMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 80.0
+          Value: 39.0
         - Name: Width
           Type: BaseVariableType
           DataType: Size
@@ -14000,7 +13619,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 60.0
+          Value: 110.0
         - Name: RightMargin
           Type: BaseVariableType
           DataType: Size
@@ -14043,7 +13662,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 80.0
+          Value: 39.0
         - Name: Width
           Type: BaseVariableType
           DataType: Size
@@ -14065,22 +13684,27 @@ Children:
           Type: BaseDataVariableType
           DataType: LocalizedText
           ModellingRule: Optional
-          Value: {"LocaleId":"en-US","Text":"KPI_EN_001 CONSUMO"}
+          Value: {"LocaleId":"en-US","Text":"KPI_PROD_001 PRODUCTION "}
         - Name: LeftMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 89.0
+          Value: 45.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 40.0
+          Value: 90.0
         - Name: FontSize
           Type: BaseDataVariableType
           DataType: Size
           ModellingRule: Optional
           Value: 15.0
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#ffffff"
       - Name: Label2
         Type: Label
         Children:
@@ -14088,22 +13712,27 @@ Children:
           Type: BaseDataVariableType
           DataType: LocalizedText
           ModellingRule: Optional
-          Value: {"LocaleId":"en-US","Text":"KPI_EN_003 KWh_ton"}
+          Value: {"LocaleId":"en-US","Text":"KPI_PROD_003 OEE"}
         - Name: LeftMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 95.0
+          Value: 81.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 160.0
+          Value: 210.0
         - Name: FontSize
           Type: BaseDataVariableType
           DataType: Size
           ModellingRule: Optional
           Value: 15.0
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#ffffff"
       - Name: Label3
         Type: Label
         Children:
@@ -14111,22 +13740,27 @@ Children:
           Type: BaseDataVariableType
           DataType: LocalizedText
           ModellingRule: Optional
-          Value: {"LocaleId":"en-US","Text":"KPI_EN_002 CO2_AREA"}
+          Value: {"LocaleId":"en-US","Text":"KPI_PROD_002 RECOVERY"}
         - Name: LeftMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 310.0
+          Value: 302.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 40.0
+          Value: 90.0
         - Name: FontSize
           Type: BaseDataVariableType
           DataType: Size
           ModellingRule: Optional
           Value: 15.0
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#ffffff"
       - Name: Label4
         Type: Label
         Children:
@@ -14134,7 +13768,7 @@ Children:
           Type: BaseDataVariableType
           DataType: LocalizedText
           ModellingRule: Optional
-          Value: {"LocaleId":"en-US","Text":"KPI_EN_004 % EN RENOVABLE"}
+          Value: {"LocaleId":"en-US","Text":"KPI_PROD_004 COSTS PER TON"}
         - Name: LeftMargin
           Type: BaseVariableType
           DataType: Size
@@ -14144,12 +13778,17 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 160.0
+          Value: 210.0
         - Name: FontSize
           Type: BaseDataVariableType
           DataType: Size
           ModellingRule: Optional
           Value: 15.0
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#ffffff"
       - Name: HorizontalAlignment
         Type: BaseVariableType
         DataType: HorizontalAlignment
@@ -14184,12 +13823,12 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 85.0
+          Value: 65.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 65.0
+          Value: 115.0
       - Name: TextBox2
         Type: TextBox
         Children:
@@ -14205,12 +13844,12 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 85.0
+          Value: 65.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 195.0
+          Value: 236.0
       - Name: TextBox3
         Type: TextBox
         Children:
@@ -14231,7 +13870,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 65.0
+          Value: 115.0
       - Name: TextBox4
         Type: TextBox
         Children:
@@ -14252,7 +13891,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 195.0
+          Value: 236.0
       - Name: LEDTopView1
         Type: ScaleLayout
         WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
@@ -14261,6 +13900,17 @@ Children:
           Type: BaseDataVariableType
           DataType: Color
           Value: "#ff0000"
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/mes_v1/Model/colores/PRODUCTION/KPI03_PROD_C"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
         - Name: On
           Type: BaseDataVariableType
           DataType: Boolean
@@ -14572,12 +14222,12 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 155.0
+          Value: 135.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 132.0
+          Value: 182.0
       - Name: LEDTopView2
         Type: ScaleLayout
         WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
@@ -14586,6 +14236,17 @@ Children:
           Type: BaseDataVariableType
           DataType: Color
           Value: "#ff0000"
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/mes_v1/Model/colores/PRODUCTION/KPI01_PROD_C"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
         - Name: On
           Type: BaseDataVariableType
           DataType: Boolean
@@ -14897,12 +14558,12 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 155.0
+          Value: 135.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 12.0
+          Value: 62.0
       - Name: LEDTopView3
         Type: ScaleLayout
         WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
@@ -14911,6 +14572,17 @@ Children:
           Type: BaseDataVariableType
           DataType: Color
           Value: "#ff0000"
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/mes_v1/Model/colores/PRODUCTION/KPI02_PROD_C"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
         - Name: On
           Type: BaseDataVariableType
           DataType: Boolean
@@ -15227,7 +14899,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 12.0
+          Value: 62.0
       - Name: LEDTopView4
         Type: ScaleLayout
         WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
@@ -15236,6 +14908,17 @@ Children:
           Type: BaseDataVariableType
           DataType: Color
           Value: "#ff0000"
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/mes_v1/Model/colores/PRODUCTION/KPI04_PROD_C"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
         - Name: On
           Type: BaseDataVariableType
           DataType: Boolean
@@ -15552,7 +15235,69 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 130.0
+          Value: 180.0
+      - Name: FillColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#16222d"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#f0f0f0"
+      - Name: BorderThickness
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 4.0
+      - Name: CornerRadius
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 15.0
+      - Name: Label5
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"PRODUCTION KPI'S"}
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 6.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 20.0
+        - Name: FontSize
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 25.0
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#ffffff"
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: RightMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+        - Name: FontWeight
+          Type: BaseDataVariableType
+          DataType: FontWeightEnum
+          ModellingRule: Optional
+          Value: 700
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
