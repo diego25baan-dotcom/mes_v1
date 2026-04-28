@@ -159,94 +159,6 @@ Children:
     Type: BaseVariableType
     DataType: NodePath
     Value: "../KPI_EN_001 CONSUMO"
-  - Name: VariableTransitionEventHandler1
-    Type: EventHandler
-    Children:
-    - Name: ListenEventType
-      Type: PropertyType
-      DataType: NodeId
-      Value: "/Types/EventTypes/BaseEventType/VariableConditionEvent/VariableTransitionEvent"
-    - Name: MethodsToCall
-      Type: BaseObjectType
-      Children:
-      - Name: MethodContainer1
-        Type: BaseObjectType
-        Children:
-        - Name: ns=3;ObjectPointer
-          Type: NodePointer
-          DataType: NodeId
-          Children:
-          - Name: Kind
-            Type: PropertyType
-            DataType: NodeId
-            Value: "/Types/ObjectTypes/BaseObjectType"
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "../../../../../../../../../Commands/VariableCommands@NodeId"
-            Children:
-            - Name: Mode
-              Type: BaseVariableType
-              DataType: DynamicLinkMode
-              Value: 2
-        - Name: ns=3;Method
-          Type: BaseDataVariableType
-          DataType: String
-          Value: "Set"
-        - Name: InputArguments
-          Type: BaseObjectType
-          Children:
-          - Name: VariableToModify
-            Type: BaseDataVariableType
-            DataType: VariablePointer
-            Description: {"NamespaceIndex":3,"TextId":"SetVariableToModifyDescription"}
-            Value: "/Objects/mes_v1/Model/colores/KPI01_ENERGIA_C"
-          - Name: Value
-            Type: BaseDataVariableType
-            DataType: Color
-            Description: {"NamespaceIndex":3,"TextId":"SetValueDescription"}
-            Value: "#0aef0bd9"
-          - Name: ArrayIndex
-            Type: BaseDataVariableType
-            DataType: UInt32
-            Description: {"NamespaceIndex":3,"TextId":"SetArrayIndexDescription"}
-            ValueRank: ScalarOrOneDimension
-    - Name: EventArguments
-      Type: VariableTransitionEvent
-      Children:
-      - Name: VariableNodeId
-        Type: BaseVariableType
-        DataType: NodeId
-      - Name: NewValue
-        Type: BaseVariableType
-        DataType: BaseDataType
-      - Name: OldValue
-        Type: BaseVariableType
-        DataType: BaseDataType
-      - Name: EventId
-        Type: PropertyType
-        DataType: ByteString
-      - Name: EventType
-        Type: PropertyType
-        DataType: NodeId
-      - Name: SourceNode
-        Type: PropertyType
-        DataType: NodeId
-      - Name: SourceName
-        Type: PropertyType
-        DataType: String
-      - Name: Time
-        Type: PropertyType
-        DataType: UtcTime
-      - Name: ReceiveTime
-        Type: PropertyType
-        DataType: UtcTime
-      - Name: Message
-        Type: PropertyType
-        DataType: LocalizedText
-      - Name: Severity
-        Type: PropertyType
-        DataType: UInt16
 - Name: KPI_EN_001CONSUMOTransitioned1
   Type: VariableTransitionEventDispatcher
   Children:
@@ -308,7 +220,7 @@ Children:
             Type: BaseDataVariableType
             DataType: Color
             Description: {"NamespaceIndex":3,"TextId":"SetValueDescription"}
-            Value: "#ff0808c9"
+            Value: "#ff0000"
           - Name: ArrayIndex
             Type: BaseDataVariableType
             DataType: UInt32
@@ -517,7 +429,7 @@ Children:
             Type: BaseDataVariableType
             DataType: Color
             Description: {"NamespaceIndex":3,"TextId":"SetValueDescription"}
-            Value: "#ff0b0bcd"
+            Value: "#ff0000"
           - Name: ArrayIndex
             Type: BaseDataVariableType
             DataType: UInt32
@@ -680,94 +592,6 @@ Children:
     Type: BaseVariableType
     DataType: NodePath
     Value: "../KPI_EN_002 CO2_AREA"
-  - Name: VariableTransitionEventHandler1
-    Type: EventHandler
-    Children:
-    - Name: ListenEventType
-      Type: PropertyType
-      DataType: NodeId
-      Value: "/Types/EventTypes/BaseEventType/VariableConditionEvent/VariableTransitionEvent"
-    - Name: MethodsToCall
-      Type: BaseObjectType
-      Children:
-      - Name: MethodContainer1
-        Type: BaseObjectType
-        Children:
-        - Name: ns=3;ObjectPointer
-          Type: NodePointer
-          DataType: NodeId
-          Children:
-          - Name: Kind
-            Type: PropertyType
-            DataType: NodeId
-            Value: "/Types/ObjectTypes/BaseObjectType"
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "../../../../../../../../../Commands/VariableCommands@NodeId"
-            Children:
-            - Name: Mode
-              Type: BaseVariableType
-              DataType: DynamicLinkMode
-              Value: 2
-        - Name: ns=3;Method
-          Type: BaseDataVariableType
-          DataType: String
-          Value: "Set"
-        - Name: InputArguments
-          Type: BaseObjectType
-          Children:
-          - Name: VariableToModify
-            Type: BaseDataVariableType
-            DataType: VariablePointer
-            Description: {"NamespaceIndex":3,"TextId":"SetVariableToModifyDescription"}
-            Value: "/Objects/mes_v1/Model/colores/KPI02_ENERGIA_C"
-          - Name: Value
-            Type: BaseDataVariableType
-            DataType: Color
-            Description: {"NamespaceIndex":3,"TextId":"SetValueDescription"}
-            Value: "#02cc03d0"
-          - Name: ArrayIndex
-            Type: BaseDataVariableType
-            DataType: UInt32
-            Description: {"NamespaceIndex":3,"TextId":"SetArrayIndexDescription"}
-            ValueRank: ScalarOrOneDimension
-    - Name: EventArguments
-      Type: VariableTransitionEvent
-      Children:
-      - Name: VariableNodeId
-        Type: BaseVariableType
-        DataType: NodeId
-      - Name: NewValue
-        Type: BaseVariableType
-        DataType: BaseDataType
-      - Name: OldValue
-        Type: BaseVariableType
-        DataType: BaseDataType
-      - Name: EventId
-        Type: PropertyType
-        DataType: ByteString
-      - Name: EventType
-        Type: PropertyType
-        DataType: NodeId
-      - Name: SourceNode
-        Type: PropertyType
-        DataType: NodeId
-      - Name: SourceName
-        Type: PropertyType
-        DataType: String
-      - Name: Time
-        Type: PropertyType
-        DataType: UtcTime
-      - Name: ReceiveTime
-        Type: PropertyType
-        DataType: UtcTime
-      - Name: Message
-        Type: PropertyType
-        DataType: LocalizedText
-      - Name: Severity
-        Type: PropertyType
-        DataType: UInt16
 - Name: KPI_EN_003 KWh_tonTransitioned
   Type: VariableTransitionEventDispatcher
   Children:
@@ -783,94 +607,6 @@ Children:
     Type: BaseVariableType
     DataType: NodePath
     Value: "../KPI_EN_003 KWh_ton"
-  - Name: VariableTransitionEventHandler1
-    Type: EventHandler
-    Children:
-    - Name: ListenEventType
-      Type: PropertyType
-      DataType: NodeId
-      Value: "/Types/EventTypes/BaseEventType/VariableConditionEvent/VariableTransitionEvent"
-    - Name: MethodsToCall
-      Type: BaseObjectType
-      Children:
-      - Name: MethodContainer1
-        Type: BaseObjectType
-        Children:
-        - Name: ns=3;ObjectPointer
-          Type: NodePointer
-          DataType: NodeId
-          Children:
-          - Name: Kind
-            Type: PropertyType
-            DataType: NodeId
-            Value: "/Types/ObjectTypes/BaseObjectType"
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "../../../../../../../../../Commands/VariableCommands@NodeId"
-            Children:
-            - Name: Mode
-              Type: BaseVariableType
-              DataType: DynamicLinkMode
-              Value: 2
-        - Name: ns=3;Method
-          Type: BaseDataVariableType
-          DataType: String
-          Value: "Set"
-        - Name: InputArguments
-          Type: BaseObjectType
-          Children:
-          - Name: VariableToModify
-            Type: BaseDataVariableType
-            DataType: VariablePointer
-            Description: {"NamespaceIndex":3,"TextId":"SetVariableToModifyDescription"}
-            Value: "/Objects/mes_v1/Model/colores/KPI03_ENERGIA_C"
-          - Name: Value
-            Type: BaseDataVariableType
-            DataType: Color
-            Description: {"NamespaceIndex":3,"TextId":"SetValueDescription"}
-            Value: "#02cc03d0"
-          - Name: ArrayIndex
-            Type: BaseDataVariableType
-            DataType: UInt32
-            Description: {"NamespaceIndex":3,"TextId":"SetArrayIndexDescription"}
-            ValueRank: ScalarOrOneDimension
-    - Name: EventArguments
-      Type: VariableTransitionEvent
-      Children:
-      - Name: VariableNodeId
-        Type: BaseVariableType
-        DataType: NodeId
-      - Name: NewValue
-        Type: BaseVariableType
-        DataType: BaseDataType
-      - Name: OldValue
-        Type: BaseVariableType
-        DataType: BaseDataType
-      - Name: EventId
-        Type: PropertyType
-        DataType: ByteString
-      - Name: EventType
-        Type: PropertyType
-        DataType: NodeId
-      - Name: SourceNode
-        Type: PropertyType
-        DataType: NodeId
-      - Name: SourceName
-        Type: PropertyType
-        DataType: String
-      - Name: Time
-        Type: PropertyType
-        DataType: UtcTime
-      - Name: ReceiveTime
-        Type: PropertyType
-        DataType: UtcTime
-      - Name: Message
-        Type: PropertyType
-        DataType: LocalizedText
-      - Name: Severity
-        Type: PropertyType
-        DataType: UInt16
 - Name: KPI_EN_003 KWh_tonRangeTransitioned
   Type: VariableRangeTransitionEventDispatcher
   Children:
@@ -1038,7 +774,7 @@ Children:
             Type: BaseDataVariableType
             DataType: Color
             Description: {"NamespaceIndex":3,"TextId":"SetValueDescription"}
-            Value: "#f60000ca"
+            Value: "#ff0000"
           - Name: ArrayIndex
             Type: BaseDataVariableType
             DataType: UInt32
@@ -1095,94 +831,6 @@ Children:
     Type: BaseVariableType
     DataType: NodePath
     Value: "../KPI_EN_004 % EN RENOVABLE"
-  - Name: VariableTransitionEventHandler1
-    Type: EventHandler
-    Children:
-    - Name: ListenEventType
-      Type: PropertyType
-      DataType: NodeId
-      Value: "/Types/EventTypes/BaseEventType/VariableConditionEvent/VariableTransitionEvent"
-    - Name: MethodsToCall
-      Type: BaseObjectType
-      Children:
-      - Name: MethodContainer1
-        Type: BaseObjectType
-        Children:
-        - Name: ns=3;ObjectPointer
-          Type: NodePointer
-          DataType: NodeId
-          Children:
-          - Name: Kind
-            Type: PropertyType
-            DataType: NodeId
-            Value: "/Types/ObjectTypes/BaseObjectType"
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "../../../../../../../../../Commands/VariableCommands@NodeId"
-            Children:
-            - Name: Mode
-              Type: BaseVariableType
-              DataType: DynamicLinkMode
-              Value: 2
-        - Name: ns=3;Method
-          Type: BaseDataVariableType
-          DataType: String
-          Value: "Set"
-        - Name: InputArguments
-          Type: BaseObjectType
-          Children:
-          - Name: VariableToModify
-            Type: BaseDataVariableType
-            DataType: VariablePointer
-            Description: {"NamespaceIndex":3,"TextId":"SetVariableToModifyDescription"}
-            Value: "/Objects/mes_v1/Model/colores/KPI04_ENERGIA_C"
-          - Name: Value
-            Type: BaseDataVariableType
-            DataType: Color
-            Description: {"NamespaceIndex":3,"TextId":"SetValueDescription"}
-            Value: "#0fd94fd7"
-          - Name: ArrayIndex
-            Type: BaseDataVariableType
-            DataType: UInt32
-            Description: {"NamespaceIndex":3,"TextId":"SetArrayIndexDescription"}
-            ValueRank: ScalarOrOneDimension
-    - Name: EventArguments
-      Type: VariableTransitionEvent
-      Children:
-      - Name: VariableNodeId
-        Type: BaseVariableType
-        DataType: NodeId
-      - Name: NewValue
-        Type: BaseVariableType
-        DataType: BaseDataType
-      - Name: OldValue
-        Type: BaseVariableType
-        DataType: BaseDataType
-      - Name: EventId
-        Type: PropertyType
-        DataType: ByteString
-      - Name: EventType
-        Type: PropertyType
-        DataType: NodeId
-      - Name: SourceNode
-        Type: PropertyType
-        DataType: NodeId
-      - Name: SourceName
-        Type: PropertyType
-        DataType: String
-      - Name: Time
-        Type: PropertyType
-        DataType: UtcTime
-      - Name: ReceiveTime
-        Type: PropertyType
-        DataType: UtcTime
-      - Name: Message
-        Type: PropertyType
-        DataType: LocalizedText
-      - Name: Severity
-        Type: PropertyType
-        DataType: UInt16
 - Name: KPI_EN_004 % EN RENOVABLERangeTransitioned
   Type: VariableRangeTransitionEventDispatcher
   Children:
@@ -1350,7 +998,7 @@ Children:
             Type: BaseDataVariableType
             DataType: Color
             Description: {"NamespaceIndex":3,"TextId":"SetValueDescription"}
-            Value: "#ff0808c9"
+            Value: "#ff0000"
           - Name: ArrayIndex
             Type: BaseDataVariableType
             DataType: UInt32

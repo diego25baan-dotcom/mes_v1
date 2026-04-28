@@ -749,7 +749,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 610.0
+        Value: 770.0
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -759,7 +759,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 30.0
+        Value: 10.0
       - Name: PanelLoader1
         Type: PanelLoader
         Children:
@@ -1327,7 +1327,6 @@ Children:
     Type: BaseDataVariableType
     DataType: Boolean
     ModellingRule: Optional
-    Value: true
 - File: Screens/Screens.yaml
 - File: Keyboards/Keyboards.yaml
 - File: LoginForm/LoginForm.yaml
