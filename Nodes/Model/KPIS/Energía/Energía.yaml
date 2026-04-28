@@ -1136,7 +1136,7 @@ Children:
             Type: BaseDataVariableType
             DataType: VariablePointer
             Description: {"NamespaceIndex":3,"TextId":"SetVariableToModifyDescription"}
-            Value: "/Objects/mes_v1/Model/colores/KPI04_ENERGIA_C1"
+            Value: "/Objects/mes_v1/Model/colores/KPI04_ENERGIA_C"
           - Name: Value
             Type: BaseDataVariableType
             DataType: Color
@@ -1242,7 +1242,7 @@ Children:
             Type: BaseDataVariableType
             DataType: VariablePointer
             Description: {"NamespaceIndex":3,"TextId":"SetVariableToModifyDescription"}
-            Value: "/Objects/mes_v1/Model/colores/KPI04_ENERGIA_C1"
+            Value: "/Objects/mes_v1/Model/colores/KPI04_ENERGIA_C"
           - Name: Value
             Type: BaseDataVariableType
             DataType: Color
@@ -1345,7 +1345,7 @@ Children:
             Type: BaseDataVariableType
             DataType: VariablePointer
             Description: {"NamespaceIndex":3,"TextId":"SetVariableToModifyDescription"}
-            Value: "/Objects/mes_v1/Model/colores/KPI04_ENERGIA_C1"
+            Value: "/Objects/mes_v1/Model/colores/KPI04_ENERGIA_C"
           - Name: Value
             Type: BaseDataVariableType
             DataType: Color

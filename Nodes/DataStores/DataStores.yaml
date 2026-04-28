@@ -202,6 +202,9 @@ Children:
         - Name: Toneladas_acumuladas
           Type: StoreColumn
           DataType: Float
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
     - Name: VARIABLES ENERGÉTICAS
       Type: RemoteInfluxDBStoreTable
       Children:
@@ -246,6 +249,9 @@ Children:
         - Name: toneladas_acumuladas
           Type: StoreColumn
           DataType: Float
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
   - Name: Token
     Type: BaseDataVariableType
     DataType: Password
