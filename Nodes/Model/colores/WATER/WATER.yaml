@@ -2,18 +2,22 @@ Name: WATER
 Type: FolderType
 Children:
 - Name: KPI01_WATER_C
+  Id: g=71c9ac3581fc5e129b03b723f434f1a5
   Type: BaseDataVariableType
   DataType: Color
   Value: "#e4e4e4"
 - Name: KPI02_WATER_C
+  Id: g=74d8c565e4f0034537427dad8c69af2c
   Type: BaseDataVariableType
   DataType: Color
   Value: "#e4e4e4"
 - Name: KPI03_WATER_C
+  Id: g=295732b47e4face8461c330718431296
   Type: BaseDataVariableType
   DataType: Color
   Value: "#e4e4e4"
 - Name: KPI04_WATER_C
+  Id: g=80b6fecff3025376dafc508da55e6d00
   Type: BaseDataVariableType
   DataType: Color
   Value: "#e4e4e4"

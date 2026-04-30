@@ -252,6 +252,77 @@ Children:
         - Name: Timestamp
           Type: StoreColumn
           DataType: UtcTime
+    - Name: DataLogger_esg
+      Type: RemoteInfluxDBStoreTable
+      Children:
+      - Name: Tags
+        Type: BaseObjectType
+      - Class: Reference
+        Target: ns=17;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=17;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=17;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=17;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: CO2_total
+          Type: StoreColumn
+          DataType: Float
+        - Name: Energia_kWh
+          Type: StoreColumn
+          DataType: Float
+        - Name: Toneladas_producidas
+          Type: StoreColumn
+          DataType: Float
+        - Name: Relaves_tratados
+          Type: StoreColumn
+          DataType: Float
+        - Name: Relaves_totales
+          Type: StoreColumn
+          DataType: Float
+        - Name: Area_restaurada
+          Type: StoreColumn
+          DataType: Float
+        - Name: Area_explotada
+          Type: StoreColumn
+          DataType: Float
+        - Name: Numero_incidentes
+          Type: StoreColumn
+          DataType: Float
+        - Name: Horas_trabajadas
+          Type: StoreColumn
+          DataType: Float
+        - Name: Horas_capacitacion
+          Type: StoreColumn
+          DataType: Float
+        - Name: Auditorias_aprobadas
+          Type: StoreColumn
+          DataType: Float
+        - Name: Auditorias_totales
+          Type: StoreColumn
+          DataType: Float
+        - Name: KPI_ESG_001 ENV iNTENSITY
+          Type: StoreColumn
+          DataType: Float
+        - Name: KPI_ESG_002 REHABILITATION
+          Type: StoreColumn
+          DataType: Float
+        - Name: KPI_ESG_003 JOB SECURITY
+          Type: StoreColumn
+          DataType: Float
+        - Name: KPI_ESG_004 AUDIT COMPLIANCE
+          Type: StoreColumn
+          DataType: Float
   - Name: Token
     Type: BaseDataVariableType
     DataType: Password

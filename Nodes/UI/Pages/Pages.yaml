@@ -5820,7 +5820,7 @@ Children:
         - Name: Pens
           Type: BaseObjectType
           Children:
-          - Name: potencia
+          - Name: CO2_total
             Type: TrendPen
             DataType: BaseDataType
             Children:
@@ -5834,11 +5834,22 @@ Children:
               Value: true
             - Name: Thresholds
               Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#1b5583"
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "../../Model/VariablesToLog/potencia/LastValue"
-          - Name: flujo
+              Value: "../../Model/VariablesToLog/CO2_total/LastValue"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: Energia_kWh
             Type: TrendPen
             DataType: BaseDataType
             Children:
@@ -5852,11 +5863,22 @@ Children:
               Value: true
             - Name: Thresholds
               Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#f3da08"
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "../../Model/VariablesToLog/flujo/LastValue"
-          - Name: factor emision
+              Value: "../../Model/VariablesToLog/Energia_kWh/LastValue"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: Toneladas_producidas
             Type: TrendPen
             DataType: BaseDataType
             Children:
@@ -5870,11 +5892,22 @@ Children:
               Value: true
             - Name: Thresholds
               Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#ff7514"
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "../../Model/VariablesToLog/factor emision/LastValue"
-          - Name: potencia renovable
+              Value: "../../Model/VariablesToLog/Toneladas_producidas/LastValue"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: Relaves_tratados
             Type: TrendPen
             DataType: BaseDataType
             Children:
@@ -5888,11 +5921,22 @@ Children:
               Value: true
             - Name: Thresholds
               Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#7d7f7d"
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "../../Model/VariablesToLog/potencia renovable/LastValue"
-          - Name: Velocidad_Banda_mps
+              Value: "../../Model/VariablesToLog/Relaves_tratados/LastValue"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: Relaves_totales
             Type: TrendPen
             DataType: BaseDataType
             Children:
@@ -5906,11 +5950,22 @@ Children:
               Value: true
             - Name: Thresholds
               Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#4c9141"
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "../../Model/VariablesToLog/Velocidad_Banda_mps/LastValue"
-          - Name: Carga_Banda_kg_m
+              Value: "../../Model/VariablesToLog/Relaves_totales/LastValue"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: Area_restaurada
             Type: TrendPen
             DataType: BaseDataType
             Children:
@@ -5924,10 +5979,195 @@ Children:
               Value: true
             - Name: Thresholds
               Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#922b3e"
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "../../Model/VariablesToLog/Carga_Banda_kg_m/LastValue"
+              Value: "../../Model/VariablesToLog/Area_restaurada/LastValue"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: Area_explotada
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#84c3be"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/Area_explotada/LastValue"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: Numero_incidentes
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#8f8b66"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/Numero_incidentes/LastValue"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: Horas_trabajadas
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#8673a1"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/Horas_trabajadas/LastValue"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: Horas_capacitacion
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#1e5945"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/Horas_capacitacion/LastValue"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: Auditorias_aprobadas
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#c51d34"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/Auditorias_aprobadas/LastValue"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: Auditorias_totales
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#f3a505"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/Auditorias_totales/LastValue"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
         - Class: Reference
           Target: ns=5;i=1129
           Direction: Forward
@@ -5985,6 +6225,7 @@ Children:
         - Name: Model
           Type: NodePointer
           DataType: NodeId
+          Value: "/Objects/mes_v1/Loggers/DataLogger_esg"
           Children:
           - Name: ItemKind
             Type: PropertyType
@@ -5998,6 +6239,7 @@ Children:
         - Name: Model
           Type: NodePointer
           DataType: NodeId
+          Value: "/Objects/mes_v1/DataStores/Database"
           Children:
           - Name: ItemKind
             Type: PropertyType
@@ -6008,46 +6250,10 @@ Children:
         - Name: Query
           Type: BaseDataVariableType
           DataType: String
-          Value: "SELECT * FROM \"VARIABLES ENERGÉTICAS\""
+          Value: "SELECT * FROM \"DataLogger_esg\""
         - Name: Columns
           Type: BaseObjectType
           Children:
-          - Name: Timestamp
-            Type: DataGridColumn
-            Children:
-            - Name: Title
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Value: {"LocaleId":"en-US","Text":"Timestamp"}
-            - Name: Width
-              Type: BaseDataVariableType
-              DataType: Size
-              Value: -1.0
-            - Name: Visible
-              Type: BaseDataVariableType
-              DataType: Boolean
-              Value: true
-            - Name: HeaderAlignment
-              Type: BaseDataVariableType
-              DataType: TextHorizontalAlignment
-            - Name: ContentAlignment
-              Type: BaseVariableType
-              DataType: HorizontalAlignment
-            - Name: OrderBy
-              Type: BaseDataVariableType
-              DataType: NodePath
-              Value: "{Item}/Timestamp"
-            - Name: DataItemTemplate
-              Type: DataGridLabelItemTemplate
-              Children:
-              - Name: Text
-                Type: BaseDataVariableType
-                DataType: LocalizedText
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{Item}/Timestamp"
           - Name: LocalTimestamp
             Type: DataGridColumn
             Children:
@@ -6084,13 +6290,13 @@ Children:
                   Type: DynamicLink
                   DataType: NodePath
                   Value: "{Item}/LocalTimestamp"
-          - Name: potencia
+          - Name: CO2_total
             Type: DataGridColumn
             Children:
             - Name: Title
               Type: BaseDataVariableType
               DataType: LocalizedText
-              Value: {"LocaleId":"en-US","Text":"potencia"}
+              Value: {"LocaleId":"en-US","Text":"CO2_total"}
             - Name: Width
               Type: BaseDataVariableType
               DataType: Size
@@ -6108,7 +6314,7 @@ Children:
             - Name: OrderBy
               Type: BaseDataVariableType
               DataType: NodePath
-              Value: "{Item}/potencia"
+              Value: "{Item}/CO2_total"
             - Name: DataItemTemplate
               Type: DataGridLabelItemTemplate
               Children:
@@ -6119,14 +6325,14 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "{Item}/potencia"
-          - Name: factor emision
+                  Value: "{Item}/CO2_total"
+          - Name: Energia_kWh
             Type: DataGridColumn
             Children:
             - Name: Title
               Type: BaseDataVariableType
               DataType: LocalizedText
-              Value: {"LocaleId":"en-US","Text":"factor emision"}
+              Value: {"LocaleId":"en-US","Text":"Energia_kWh"}
             - Name: Width
               Type: BaseDataVariableType
               DataType: Size
@@ -6144,7 +6350,7 @@ Children:
             - Name: OrderBy
               Type: BaseDataVariableType
               DataType: NodePath
-              Value: "{Item}/factor emision"
+              Value: "{Item}/Energia_kWh"
             - Name: DataItemTemplate
               Type: DataGridLabelItemTemplate
               Children:
@@ -6155,14 +6361,14 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "{Item}/factor emision"
-          - Name: potencia renovable
+                  Value: "{Item}/Energia_kWh"
+          - Name: Toneladas_producidas
             Type: DataGridColumn
             Children:
             - Name: Title
               Type: BaseDataVariableType
               DataType: LocalizedText
-              Value: {"LocaleId":"en-US","Text":"potencia renovable"}
+              Value: {"LocaleId":"en-US","Text":"Toneladas_producidas"}
             - Name: Width
               Type: BaseDataVariableType
               DataType: Size
@@ -6180,7 +6386,7 @@ Children:
             - Name: OrderBy
               Type: BaseDataVariableType
               DataType: NodePath
-              Value: "{Item}/potencia renovable"
+              Value: "{Item}/Toneladas_producidas"
             - Name: DataItemTemplate
               Type: DataGridLabelItemTemplate
               Children:
@@ -6191,14 +6397,14 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "{Item}/potencia renovable"
-          - Name: Velocidad_Banda_mps
+                  Value: "{Item}/Toneladas_producidas"
+          - Name: Relaves_tratados
             Type: DataGridColumn
             Children:
             - Name: Title
               Type: BaseDataVariableType
               DataType: LocalizedText
-              Value: {"LocaleId":"en-US","Text":"Velocidad_Banda_mps"}
+              Value: {"LocaleId":"en-US","Text":"Relaves_tratados"}
             - Name: Width
               Type: BaseDataVariableType
               DataType: Size
@@ -6216,7 +6422,7 @@ Children:
             - Name: OrderBy
               Type: BaseDataVariableType
               DataType: NodePath
-              Value: "{Item}/Velocidad_Banda_mps"
+              Value: "{Item}/Relaves_tratados"
             - Name: DataItemTemplate
               Type: DataGridLabelItemTemplate
               Children:
@@ -6227,14 +6433,14 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "{Item}/Velocidad_Banda_mps"
-          - Name: Carga_Banda_kg_m
+                  Value: "{Item}/Relaves_tratados"
+          - Name: Relaves_totales
             Type: DataGridColumn
             Children:
             - Name: Title
               Type: BaseDataVariableType
               DataType: LocalizedText
-              Value: {"LocaleId":"en-US","Text":"Carga_Banda_kg_m"}
+              Value: {"LocaleId":"en-US","Text":"Relaves_totales"}
             - Name: Width
               Type: BaseDataVariableType
               DataType: Size
@@ -6252,7 +6458,7 @@ Children:
             - Name: OrderBy
               Type: BaseDataVariableType
               DataType: NodePath
-              Value: "{Item}/Carga_Banda_kg_m"
+              Value: "{Item}/Relaves_totales"
             - Name: DataItemTemplate
               Type: DataGridLabelItemTemplate
               Children:
@@ -6263,7 +6469,403 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "{Item}/Carga_Banda_kg_m"
+                  Value: "{Item}/Relaves_totales"
+          - Name: Area_restaurada
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"Area_restaurada"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Visible
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/Area_restaurada"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/Area_restaurada"
+          - Name: Area_explotada
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"Area_explotada"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Visible
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/Area_explotada"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/Area_explotada"
+          - Name: Numero_incidentes
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"Numero_incidentes"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Visible
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/Numero_incidentes"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/Numero_incidentes"
+          - Name: Horas_trabajadas
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"Horas_trabajadas"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Visible
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/Horas_trabajadas"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/Horas_trabajadas"
+          - Name: Horas_capacitacion
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"Horas_capacitacion"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Visible
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/Horas_capacitacion"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/Horas_capacitacion"
+          - Name: Auditorias_aprobadas
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"Auditorias_aprobadas"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Visible
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/Auditorias_aprobadas"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/Auditorias_aprobadas"
+          - Name: Auditorias_totales
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"Auditorias_totales"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Visible
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/Auditorias_totales"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/Auditorias_totales"
+          - Name: KPI_ESG_001 ENV iNTENSITY
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"KPI_ESG_001 ENV iNTENSITY"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Visible
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/KPI_ESG_001 ENV iNTENSITY"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/KPI_ESG_001 ENV iNTENSITY"
+          - Name: KPI_ESG_002 REHABILITATION
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"KPI_ESG_002 REHABILITATION"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Visible
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/KPI_ESG_002 REHABILITATION"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/KPI_ESG_002 REHABILITATION"
+          - Name: KPI_ESG_003 JOB SECURITY
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"KPI_ESG_003 JOB SECURITY"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Visible
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/KPI_ESG_003 JOB SECURITY"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/KPI_ESG_003 JOB SECURITY"
+          - Name: KPI_ESG_004 AUDIT COMPLIANCE
+            Type: DataGridColumn
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"LocaleId":"en-US","Text":"KPI_ESG_004 AUDIT COMPLIANCE"}
+            - Name: Width
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Visible
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: HeaderAlignment
+              Type: BaseDataVariableType
+              DataType: TextHorizontalAlignment
+            - Name: ContentAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+            - Name: OrderBy
+              Type: BaseDataVariableType
+              DataType: NodePath
+              Value: "{Item}/KPI_ESG_004 AUDIT COMPLIANCE"
+            - Name: DataItemTemplate
+              Type: DataGridLabelItemTemplate
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Item}/KPI_ESG_004 AUDIT COMPLIANCE"
         - Name: SelectedItem
           Type: NodePointer
           DataType: NodeId
@@ -6285,18 +6887,6 @@ Children:
           - Name: Kind
             Type: PropertyType
             DataType: NodeId
-        - Name: SortColumn
-          Type: BaseDataVariableType
-          DataType: NodeId
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "../Columns/Timestamp@NodeId"
-        - Name: SortOrder
-          Type: BaseDataVariableType
-          DataType: SortOrderEnum
-          Value: 1
   - Name: pageID
     Type: BaseDataVariableType
     DataType: Int32
@@ -9855,7 +10445,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 10.0
+        Value: 166.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
@@ -11682,7 +12272,7 @@ Children:
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
-    Value: -1.0
+    Value: 1340.0
   - Name: HorizontalAlignment
     Type: BaseVariableType
     DataType: HorizontalAlignment
@@ -12020,6 +12610,17 @@ Children:
         - Name: Text
           Type: BaseDataVariableType
           DataType: LocalizedText
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
         - Name: Width
           Type: BaseVariableType
           DataType: Size
@@ -12041,6 +12642,17 @@ Children:
         - Name: Text
           Type: BaseDataVariableType
           DataType: LocalizedText
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_003 JOB SECURITY"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
         - Name: Width
           Type: BaseVariableType
           DataType: Size
@@ -12062,6 +12674,17 @@ Children:
         - Name: Text
           Type: BaseDataVariableType
           DataType: LocalizedText
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_002 REHABILITATION"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
         - Name: Width
           Type: BaseVariableType
           DataType: Size
@@ -12083,6 +12706,17 @@ Children:
         - Name: Text
           Type: BaseDataVariableType
           DataType: LocalizedText
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_004 AUDIT COMPLIANCE"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
         - Name: Width
           Type: BaseVariableType
           DataType: Size
@@ -13521,7 +14155,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 10.0
+        Value: 166.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size

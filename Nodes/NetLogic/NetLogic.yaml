@@ -128,3 +128,71 @@ Children:
   - Name: KPI_WA_004_incidentes
     Type: BaseDataVariableType
     DataType: Float
+- Name: Sim_esg
+  Type: NetLogic
+  Children:
+  - Name: CO2_total
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Potencia_kW
+    Type: BaseDataVariableType
+    DataType: Float
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/KPIS/Energía/Potencia_kW"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: Energia_kWh
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Toneladas_producidas
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Relaves_tratados
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Relaves_totales
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Area_restaurada
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Area_explotada
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: RunSimulation
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Numero_incidentes
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Horas_trabajadas
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Horas_capacitacion
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Auditorias_aprobadas
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Auditorias_totales
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: KPI_ESG_001 ENV INTENSITY
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: KPI_ESG_002 REHABILITATION
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: KPI_ESG_003 JOB SECURITY
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: KPI_ESG_004 AUDIT COMPLIANCE
+    Type: BaseDataVariableType
+    DataType: Float

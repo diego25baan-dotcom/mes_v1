@@ -72,7 +72,7 @@ public class Sim_energía : BaseNetLogic
             flujo_material.Value = flujo_val;
 
             
-            double dt = 1;
+            double dt = .25;
 
            
             double toneladas_procesadas = (flujo_val * dt) / 1000.0;

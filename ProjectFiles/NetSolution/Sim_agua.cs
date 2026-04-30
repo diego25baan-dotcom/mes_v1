@@ -56,7 +56,7 @@ public class Sim_agua : BaseNetLogic
             caudalAgua.Value = caudalAgua_val;
 
             
-            double dt = 1; 
+            double dt = .25; 
             double volumen_agua = caudalAgua_val * dt * 0.001;
 
             
