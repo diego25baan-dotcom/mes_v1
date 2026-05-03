@@ -323,6 +323,9 @@ Children:
         - Name: KPI_ESG_004 AUDIT COMPLIANCE
           Type: StoreColumn
           DataType: Float
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
   - Name: Token
     Type: BaseDataVariableType
     DataType: Password

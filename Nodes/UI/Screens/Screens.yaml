@@ -1211,7 +1211,12 @@ Children:
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
-    Value: -1.0
+    Value: 1420.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 900.0
 - Name: submenu
   Id: g=940c1e55bd124565dcd463799210fc14
   Supertype: Rectangle

@@ -83,22 +83,26 @@ public class Sim_esg : BaseNetLogic
             double horasCap = 1 + Math.Abs(Math.Sin(decimalCounter / 8));
             Horas_capacitacion.Value += horasCap;
 
-            if (rand.NextDouble() < 0.02)
+            if (rand.NextDouble() < 0.01)
                 Numero_incidentes.Value++;
 
             if (rand.NextDouble() < 0.03)
-                Auditorias_totales.Value++;
+            {
+                Auditorias_totales.Value = (double)Auditorias_totales.Value + 1;
 
-            if (rand.NextDouble() < 0.025)
-                Auditorias_aprobadas.Value++;
+                
+                if (rand.NextDouble() < 0.8)
+                    Auditorias_aprobadas.Value = (double)Auditorias_aprobadas.Value + 1;
+            }
 
             
             // KPI-ESG-001
             // CO2e por tonelada
             
-
+            double co2_val = CO2_total.Value;
+            double ton_prod_val = Toneladas_producidas.Value;
             if (Toneladas_producidas.Value > 0.001)
-                KPI_ESG_001.Value = CO2_total.Value / Toneladas_producidas.Value;
+                KPI_ESG_001.Value = co2_val / ton_prod_val;
             else
                 KPI_ESG_001.Value = 0;
 
@@ -110,11 +114,16 @@ public class Sim_esg : BaseNetLogic
             double porcentajeRelaves = 0;
             double porcentajeRehabilitacion = 0;
 
+            double relaves_tratados_val = Relaves_tratados.Value;
+            double relaves_totales_val = Relaves_totales.Value;
+            double area_explotada_val = Area_explotada.Value;
+            double area_restaurada_val = Area_restaurada.Value;
+
             if (Relaves_totales.Value > 0.001)
-                porcentajeRelaves = (Relaves_tratados.Value / Relaves_totales.Value) * 100;
+                porcentajeRelaves = (relaves_tratados_val / relaves_totales_val) * 100;
 
             if (Area_explotada.Value > 0.001)
-                porcentajeRehabilitacion = (Area_restaurada.Value / Area_explotada.Value) * 100;
+                porcentajeRehabilitacion = (area_restaurada_val / area_explotada_val) * 100;
 
             KPI_ESG_002.Value = (porcentajeRelaves + porcentajeRehabilitacion) / 2;
 
@@ -125,22 +134,26 @@ public class Sim_esg : BaseNetLogic
 
             double tasaIncidentes = 0;
             double indiceCapacitacion = 0;
+            double num_incidentes_val = Numero_incidentes.Value;
+            double horas_trabajadas_val = Horas_trabajadas.Value;
+            double horas_capacitacion_val = Horas_capacitacion.Value;
 
             if (Horas_trabajadas.Value > 0.001)
-                tasaIncidentes = (Numero_incidentes.Value / Horas_trabajadas.Value) * 1000;
+                tasaIncidentes = (num_incidentes_val / horas_trabajadas_val) * 100;
 
             if (Horas_trabajadas.Value > 0.001)
-                indiceCapacitacion = (Horas_capacitacion.Value / Horas_trabajadas.Value) * 100;
+                indiceCapacitacion = (horas_capacitacion_val / horas_trabajadas_val) * 100;
 
-            KPI_ESG_003.Value = indiceCapacitacion - tasaIncidentes;
+            KPI_ESG_003.Value = tasaIncidentes;
 
             
             // KPI-ESG-004
             // Cumplimiento normativo
             
-
+            double auditorias_aprobadas_val = Auditorias_aprobadas.Value;
+            double auditorias_totales_val = Auditorias_totales.Value;
             if (Auditorias_totales.Value > 0.001)
-                KPI_ESG_004.Value = (Auditorias_aprobadas.Value / Auditorias_totales.Value) * 100;
+                KPI_ESG_004.Value = (auditorias_aprobadas_val / auditorias_totales_val) * 100;
             else
                 KPI_ESG_004.Value = 0;
         }
