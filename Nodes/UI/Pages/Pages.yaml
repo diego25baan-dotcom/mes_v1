@@ -12754,7 +12754,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/colores/ESG/KPI03_ESG_C"
+            Value: "/Objects/mes_v1/Model/colores/ESG/KPI03_ESG_C_BORDER"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -13090,7 +13090,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C"
+            Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_BORDER"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -13426,7 +13426,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/colores/ESG/KPI02_ESG_C"
+            Value: "/Objects/mes_v1/Model/colores/ESG/KPI02_ESG_C_BORDER"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -13762,7 +13762,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/colores/ESG/KPI04_ESG_C"
+            Value: "/Objects/mes_v1/Model/colores/ESG/KPI04_ESG_C_BORDER"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -16646,42 +16646,6 @@ Children:
               DataType: Size
               ModellingRule: Optional
               Value: 30.0
-      - Name: Rectangle1
-        Type: Rectangle
-        Children:
-        - Name: Width
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 140.0
-        - Name: Height
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 110.0
-        - Name: LeftMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 530.0
-        - Name: TopMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 260.0
-        - Name: FillColor
-          Type: BaseDataVariableType
-          DataType: Color
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "/Objects/mes_v1/Model/colores/PRODUCTION/KPI01_PROD_C"
-        - Name: BorderColor
-          Type: BaseDataVariableType
-          DataType: Color
-          ModellingRule: Optional
-          Value: "#000000"
   - Name: Width
     Type: BaseVariableType
     DataType: Size

@@ -139,7 +139,7 @@ public class Sim_esg : BaseNetLogic
             double horas_capacitacion_val = Horas_capacitacion.Value;
 
             if (Horas_trabajadas.Value > 0.001)
-                tasaIncidentes = (num_incidentes_val / horas_trabajadas_val) * 100;
+                tasaIncidentes = (num_incidentes_val / horas_trabajadas_val) * 1000;
 
             if (Horas_trabajadas.Value > 0.001)
                 indiceCapacitacion = (horas_capacitacion_val / horas_trabajadas_val) * 100;

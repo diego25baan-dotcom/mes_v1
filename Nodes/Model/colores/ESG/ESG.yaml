@@ -2,17 +2,14 @@ Name: ESG
 Type: FolderType
 Children:
 - Name: KPI01_ESG_C
-  Id: g=a7885e236b00bc28af45c80425c0f908
   Type: BaseDataVariableType
   DataType: Color
   Value: "#e4e4e4"
 - Name: KPI02_ESG_C
-  Id: g=225daf7fd0c0f43f879bce4e4e7400a8
   Type: BaseDataVariableType
   DataType: Color
   Value: "#e4e4e4"
 - Name: KPI03_ESG_C
-  Id: g=a7f40d46854a4e55c19f8f9e4fe8c954
   Type: BaseDataVariableType
   DataType: Color
   Value: "#e4e4e4"
@@ -22,62 +19,902 @@ Children:
   DataType: Color
   Value: "#e4e4e4"
 - Name: KPI01_ESG_C_TEXT
-  Id: g=efdedb6c39b7c1e131023a7c45f2cbd4
   Type: BaseDataVariableType
   DataType: Color
-  Value: "#ffffff"
+  Value: "#6fcf97"
+  Children:
+  - Name: ConditionalConverter1
+    Type: ConditionalConverter
+    Children:
+    - Name: Condition
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ReferenceType: HasSource
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          Value: "{0}<0.00016"
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+    - Name: TrueValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Value: "#6fcf97"
+    - Name: FalseValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Children:
+          - Name: ExpressionEvaluator1
+            Type: ExpressionEvaluator
+            Children:
+            - Name: Expression
+              Type: BaseDataVariableType
+              DataType: String
+              ReferenceType: HasParameter
+              Value: "{0}>0.00018"
+            - Name: ns=3;Source0
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../../../../KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#eb5757"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#f2c94c"
 - Name: KPI01_ESG_C_FILL
-  Id: g=7451159ff3de7740cc0c961521a24166
   Type: BaseDataVariableType
   DataType: Color
-  Value: "#13232f"
+  Value: "#6fcf97"
+  Children:
+  - Name: ConditionalConverter1
+    Type: ConditionalConverter
+    Children:
+    - Name: Condition
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ReferenceType: HasSource
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          Value: "{0}<0.00016"
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+    - Name: TrueValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Value: "#0f2a1d"
+    - Name: FalseValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Children:
+          - Name: ExpressionEvaluator1
+            Type: ExpressionEvaluator
+            Children:
+            - Name: Expression
+              Type: BaseDataVariableType
+              DataType: String
+              ReferenceType: HasParameter
+              Value: "{0}>0.00018"
+            - Name: ns=3;Source0
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../../../../KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#2a1414"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#2a2412"
 - Name: KPI01_ESG_C_BORDER
-  Id: g=9842a07d66fb91838c8ec6f163e64a7e
   Type: BaseDataVariableType
   DataType: Color
-  Value: "#2a3f4f"
+  Value: "#6fcf97"
+  Children:
+  - Name: ConditionalConverter1
+    Type: ConditionalConverter
+    Children:
+    - Name: Condition
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ReferenceType: HasSource
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          Value: "{0}<0.00016"
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+    - Name: TrueValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Value: "#27ae60"
+    - Name: FalseValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Children:
+          - Name: ExpressionEvaluator1
+            Type: ExpressionEvaluator
+            Children:
+            - Name: Expression
+              Type: BaseDataVariableType
+              DataType: String
+              ReferenceType: HasParameter
+              Value: "{0}>0.00018"
+            - Name: ns=3;Source0
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../../../../KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#e74c3c"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#f2c94c"
 - Name: KPI02_ESG_C_TEXT
-  Id: g=626c8f0ebc2969736f199d73c689c6c9
   Type: BaseDataVariableType
   DataType: Color
-  Value: "#ffffff"
+  Value: "#6fcf97"
+  Children:
+  - Name: ConditionalConverter1
+    Type: ConditionalConverter
+    Children:
+    - Name: Condition
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ReferenceType: HasSource
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          Value: "{0}>80"
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../KPIS/ESG/KPI_ESG_002 REHABILITATION"
+    - Name: TrueValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Value: "#6fcf97"
+    - Name: FalseValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Children:
+          - Name: ExpressionEvaluator1
+            Type: ExpressionEvaluator
+            Children:
+            - Name: Expression
+              Type: BaseDataVariableType
+              DataType: String
+              ReferenceType: HasParameter
+              Value: "{0}<75"
+            - Name: ns=3;Source0
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../../../../KPIS/ESG/KPI_ESG_002 REHABILITATION"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#eb5757"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#f2c94c"
 - Name: KPI02_ESG_C_FILL
-  Id: g=ba7f307ff6b4baff978253a15839dd23
   Type: BaseDataVariableType
   DataType: Color
-  Value: "#13232f"
+  Value: "#6fcf97"
+  Children:
+  - Name: ConditionalConverter1
+    Type: ConditionalConverter
+    Children:
+    - Name: Condition
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ReferenceType: HasSource
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          Value: "{0}>80"
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../KPIS/ESG/KPI_ESG_002 REHABILITATION"
+    - Name: TrueValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Value: "#0f2a1d"
+    - Name: FalseValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Children:
+          - Name: ExpressionEvaluator1
+            Type: ExpressionEvaluator
+            Children:
+            - Name: Expression
+              Type: BaseDataVariableType
+              DataType: String
+              ReferenceType: HasParameter
+              Value: "{0}<75"
+            - Name: ns=3;Source0
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../../../../KPIS/ESG/KPI_ESG_002 REHABILITATION"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#2a1414"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#2a2412"
 - Name: KPI02_ESG_C_BORDER
-  Id: g=0d7fd090fd7409752e16897e68f7a2c3
   Type: BaseDataVariableType
   DataType: Color
-  Value: "#2a3f4f"
+  Value: "#6fcf97"
+  Children:
+  - Name: ConditionalConverter1
+    Type: ConditionalConverter
+    Children:
+    - Name: Condition
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ReferenceType: HasSource
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          Value: "{0}>80"
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../KPIS/ESG/KPI_ESG_002 REHABILITATION"
+    - Name: TrueValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Value: "#27ae60"
+    - Name: FalseValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Children:
+          - Name: ExpressionEvaluator1
+            Type: ExpressionEvaluator
+            Children:
+            - Name: Expression
+              Type: BaseDataVariableType
+              DataType: String
+              ReferenceType: HasParameter
+              Value: "{0}<75"
+            - Name: ns=3;Source0
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../../../../KPIS/ESG/KPI_ESG_002 REHABILITATION"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#e74c3c"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#f2c94c"
 - Name: KPI03_ESG_C_TEXT
-  Id: g=38924af2f5f34fb5eaea9179de6f06c0
   Type: BaseDataVariableType
   DataType: Color
-  Value: "#ffffff"
+  Value: "#6fcf97"
+  Children:
+  - Name: ConditionalConverter1
+    Type: ConditionalConverter
+    Children:
+    - Name: Condition
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ReferenceType: HasSource
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          Value: "{0}<5"
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../KPIS/ESG/KPI_ESG_003 JOB SECURITY"
+    - Name: TrueValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Value: "#6fcf97"
+    - Name: FalseValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Children:
+          - Name: ExpressionEvaluator1
+            Type: ExpressionEvaluator
+            Children:
+            - Name: Expression
+              Type: BaseDataVariableType
+              DataType: String
+              ReferenceType: HasParameter
+              Value: "{0}>10"
+            - Name: ns=3;Source0
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../../../../KPIS/ESG/KPI_ESG_003 JOB SECURITY"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#eb5757"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#f2c94c"
 - Name: KPI03_ESG_C_FILL
-  Id: g=8882293df0a9ae9a1b0f6741e2b8bb7e
   Type: BaseDataVariableType
   DataType: Color
-  Value: "#13232f"
+  Value: "#6fcf97"
+  Children:
+  - Name: ConditionalConverter1
+    Type: ConditionalConverter
+    Children:
+    - Name: Condition
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ReferenceType: HasSource
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          Value: "{0}<5"
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../KPIS/ESG/KPI_ESG_003 JOB SECURITY"
+    - Name: TrueValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Value: "#0f2a1d"
+    - Name: FalseValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Children:
+          - Name: ExpressionEvaluator1
+            Type: ExpressionEvaluator
+            Children:
+            - Name: Expression
+              Type: BaseDataVariableType
+              DataType: String
+              ReferenceType: HasParameter
+              Value: "{0}>10"
+            - Name: ns=3;Source0
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../../../../KPIS/ESG/KPI_ESG_003 JOB SECURITY"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#2a1414"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#2a2412"
 - Name: KPI03_ESG_C_BORDER
-  Id: g=6a8f4f4e9f2f1c4c81281cae073d096f
   Type: BaseDataVariableType
   DataType: Color
-  Value: "#2a3f4f"
+  Value: "#6fcf97"
+  Children:
+  - Name: ConditionalConverter1
+    Type: ConditionalConverter
+    Children:
+    - Name: Condition
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ReferenceType: HasSource
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          Value: "{0}<5"
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../KPIS/ESG/KPI_ESG_003 JOB SECURITY"
+    - Name: TrueValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Value: "#27ae60"
+    - Name: FalseValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Children:
+          - Name: ExpressionEvaluator1
+            Type: ExpressionEvaluator
+            Children:
+            - Name: Expression
+              Type: BaseDataVariableType
+              DataType: String
+              ReferenceType: HasParameter
+              Value: "{0}>10"
+            - Name: ns=3;Source0
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../../../../KPIS/ESG/KPI_ESG_003 JOB SECURITY"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#e74c3c"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#f2c94c"
 - Name: KPI04_ESG_C_TEXT
-  Id: g=5e2dccfa4d6e66b1f310922d9e945fd0
   Type: BaseDataVariableType
   DataType: Color
-  Value: "#ffffff"
+  Value: "#6fcf97"
+  Children:
+  - Name: ConditionalConverter1
+    Type: ConditionalConverter
+    Children:
+    - Name: Condition
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ReferenceType: HasSource
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          Value: "{0}>90"
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../KPIS/ESG/KPI_ESG_004 AUDIT COMPLIANCE"
+    - Name: TrueValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Value: "#6fcf97"
+    - Name: FalseValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Children:
+          - Name: ExpressionEvaluator1
+            Type: ExpressionEvaluator
+            Children:
+            - Name: Expression
+              Type: BaseDataVariableType
+              DataType: String
+              ReferenceType: HasParameter
+              Value: "{0}<85"
+            - Name: ns=3;Source0
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../../../../KPIS/ESG/KPI_ESG_004 AUDIT COMPLIANCE"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#eb5757"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#f2c94c"
 - Name: KPI04_ESG_C_FILL
-  Id: g=19ceb7c62deef2c519bd28b69452dfd4
   Type: BaseDataVariableType
   DataType: Color
-  Value: "#13232f"
+  Value: "#6fcf97"
+  Children:
+  - Name: ConditionalConverter1
+    Type: ConditionalConverter
+    Children:
+    - Name: Condition
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ReferenceType: HasSource
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          Value: "{0}>90"
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../KPIS/ESG/KPI_ESG_004 AUDIT COMPLIANCE"
+    - Name: TrueValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Value: "#0f2a1d"
+    - Name: FalseValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Children:
+          - Name: ExpressionEvaluator1
+            Type: ExpressionEvaluator
+            Children:
+            - Name: Expression
+              Type: BaseDataVariableType
+              DataType: String
+              ReferenceType: HasParameter
+              Value: "{0}<85"
+            - Name: ns=3;Source0
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../../../../KPIS/ESG/KPI_ESG_004 AUDIT COMPLIANCE"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#2a1414"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#2a2412"
 - Name: KPI04_ESG_C_BORDER
-  Id: g=ea5e25919c0e0b62dda6771c761adcbb
   Type: BaseDataVariableType
   DataType: Color
-  Value: "#2a3f4f"
+  Value: "#6fcf97"
+  Children:
+  - Name: ConditionalConverter1
+    Type: ConditionalConverter
+    Children:
+    - Name: Condition
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ReferenceType: HasSource
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          Value: "{0}>90"
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../KPIS/ESG/KPI_ESG_004 AUDIT COMPLIANCE"
+    - Name: TrueValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Value: "#27ae60"
+    - Name: FalseValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Children:
+          - Name: ExpressionEvaluator1
+            Type: ExpressionEvaluator
+            Children:
+            - Name: Expression
+              Type: BaseDataVariableType
+              DataType: String
+              ReferenceType: HasParameter
+              Value: "{0}<85"
+            - Name: ns=3;Source0
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../../../../KPIS/ESG/KPI_ESG_004 AUDIT COMPLIANCE"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#e74c3c"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#f2c94c"
