@@ -159,6 +159,7 @@ Children:
     Type: BaseObjectType
     Children:
     - Name: DataLogger_agua
+      Id: g=f5fdd7095c0b2011fcdb0da4150e795e
       Type: RemoteInfluxDBStoreTable
       Children:
       - Name: Tags
@@ -206,6 +207,7 @@ Children:
           Type: StoreColumn
           DataType: UtcTime
     - Name: VARIABLES ENERGÉTICAS
+      Id: g=ee5327d13128d29be7dddc37b78fb77d
       Type: RemoteInfluxDBStoreTable
       Children:
       - Name: Tags
@@ -253,6 +255,7 @@ Children:
           Type: StoreColumn
           DataType: UtcTime
     - Name: DataLogger_esg
+      Id: g=94c8183a4a024b978219ff94237b229d
       Type: RemoteInfluxDBStoreTable
       Children:
       - Name: Tags

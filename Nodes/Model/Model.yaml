@@ -7,3 +7,9 @@ Children:
   Id: g=b1ca44b1f6c220be94e3faf96df18b89
   Type: BaseDataVariableType
   DataType: Int32
+- Name: Datalog_StartDate
+  Type: BaseDataVariableType
+  DataType: DateTime
+- Name: Datalog_EndDate
+  Type: BaseDataVariableType
+  DataType: DateTime

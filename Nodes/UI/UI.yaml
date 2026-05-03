@@ -10,6 +10,15 @@ Children:
     Children:
     - Name: Default
       Type: ButtonStyle
+      Children:
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#3b3b3b"
+      - Name: PressedTextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#3b3b3b"
     - Name: Accent
       Type: ButtonStyle
       Children:
@@ -714,6 +723,10 @@ Children:
       DataType: HorizontalAlignment
       ModellingRule: Optional
       Value: 2
+    - Name: Wrap
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
   - Name: Rectangle1
     Type: Rectangle
     Children:
@@ -749,7 +762,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 780.0
+        Value: 830.0
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -759,7 +772,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 30.0
+        Value: 20.0
       - Name: PanelLoader1
         Type: PanelLoader
         Children:
@@ -865,12 +878,12 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 12.0
+        Value: 10.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 40.0
+        Value: 20.0
       - Name: VerticalLayout1
         Type: ColumnLayout
         Children:
@@ -1444,3 +1457,4 @@ Children:
 - File: LoginForm/LoginForm.yaml
 - File: UserEditor/UserEditor.yaml
 - File: Pages/Pages.yaml
+- File: AdvancedTrend/AdvancedTrend.yaml
