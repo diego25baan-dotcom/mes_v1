@@ -329,6 +329,9 @@ Children:
         - Name: Timestamp
           Type: StoreColumn
           DataType: UtcTime
+        - Name: Energia_kWh_tot
+          Type: StoreColumn
+          DataType: Float
   - Name: Token
     Type: BaseDataVariableType
     DataType: Password

@@ -18,6 +18,7 @@ public class Sim_esg : BaseNetLogic
         CO2_total = LogicObject.GetVariable("CO2_total");
         Potencia_kW= LogicObject.GetVariable("Potencia_kW");
         Energia_kWh = LogicObject.GetVariable("Energia_kWh");
+        Energia_kWh_tot = LogicObject.GetVariable("Energia_kWh_tot");
         Toneladas_producidas = LogicObject.GetVariable("Toneladas_producidas");
         Relaves_tratados = LogicObject.GetVariable("Relaves_tratados");
         Relaves_totales = LogicObject.GetVariable("Relaves_totales");
@@ -61,7 +62,9 @@ public class Sim_esg : BaseNetLogic
             
             
             double energia = Potencia_kW.Value * (dt / 3600.0);
-            Energia_kWh.Value += energia;
+            Energia_kWh_tot.Value += energia;
+            Energia_kWh.Value = energia;
+            
 
             double co2 = energia * 0.45;
             CO2_total.Value += co2;
@@ -173,6 +176,7 @@ public class Sim_esg : BaseNetLogic
 
     private IUAVariable CO2_total;
     private IUAVariable Energia_kWh;
+    private IUAVariable Energia_kWh_tot;
     private IUAVariable Potencia_kW;
     private IUAVariable Toneladas_producidas;
     private IUAVariable Relaves_tratados;

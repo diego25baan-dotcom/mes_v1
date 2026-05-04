@@ -1,0 +1,1411 @@
+Name: data acquisition
+Type: FolderType
+Children:
+- Name: data_energy
+  Id: g=2fbe54fee4fd1debee4b30fcf4a9847f
+  Supertype: KPIS
+  ReferenceType: HasComponent
+  Children:
+  - Name: pageID
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 5
+  - Name: AdvancedTrendMain1
+    Type: AdvancedTrendMain
+    Children:
+    - Name: InteractiveArea
+      Type: Rectangle
+      Children:
+      - Name: RightMargin
+        Type: BaseVariableType
+        DataType: Size
+        Value: 10.0
+      - Name: InteractiveAreaNavigation
+        Type: NavigationPanel
+        Children:
+        - Name: Panels
+          Type: BaseObjectType
+          Children:
+          - Name: Pens
+            Type: NavigationPanelItem
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+            - Name: Panel
+              Type: NodePointer
+              DataType: NodeId
+              Value: "/Objects/mes_v1/UI/AdvancedTrend/Components/AdvancedTrendPens"
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+          - Name: Ranges
+            Type: NavigationPanelItem
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+            - Name: Panel
+              Type: NodePointer
+              DataType: NodeId
+              Value: "/Objects/mes_v1/UI/AdvancedTrend/Components/AdvancedTrendRanges"
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+              Children:
+              - Name: ExpressionEvaluator1
+                Type: ExpressionEvaluator
+                Children:
+                - Name: Source0
+                  Type: BaseDataVariableType
+                  DataType: BaseDataType
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: ExpressionEvaluator1
+                    Type: ExpressionEvaluator
+                    Children:
+                    - Name: Source0
+                      Type: BaseDataVariableType
+                      DataType: BaseDataType
+                      ReferenceType: HasSource
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "../../../../../../../../../TrendPanel/MainTrend/Mode"
+                - Name: Source1
+                  Type: BaseDataVariableType
+                  DataType: BaseDataType
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+          - Name: Config
+            Type: NavigationPanelItem
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+            - Name: Panel
+              Type: NodePointer
+              DataType: NodeId
+              Value: "/Objects/mes_v1/UI/AdvancedTrend/Components/AdvancedTrendConfiguration"
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+            - Name: AliasNode
+              Type: BaseDataVariableType
+              DataType: NodeId
+              ValueRank: ScalarOrOneDimension
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../TrendPanel/MainTrend@NodeId"
+        - Name: CurrentPanel
+          Type: NodePointer
+          DataType: NodeId
+          AccessLevel: Read
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item"
+        - Name: CurrentTabIndex
+          Type: BaseDataVariableType
+          DataType: Int32
+        - Class: Reference
+          Target: ns=5;i=1181
+          Direction: Forward
+        - Class: Reference
+          Target: ns=5;i=1183
+          Direction: Forward
+        - Name: BottomMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 30.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 270.0
+    - Name: TrendPanel
+      Type: Panel
+      Children:
+      - Name: RightMargin
+        Type: BaseVariableType
+        DataType: Size
+        Value: 100.0
+      - Name: MainTrend
+        Type: Trend
+        Children:
+        - Name: Pens
+          Type: BaseObjectType
+        - Class: Reference
+          Target: ns=5;i=1129
+          Direction: Forward
+        - Name: XAxis
+          Type: DateTimeAxis
+          Children:
+          - Name: Follow
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Window
+            Type: BaseDataVariableType
+            DataType: Duration
+            Value: "0:00:05:00.0000000"
+          - Name: Interactive
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Time
+            Type: BaseDataVariableType
+            DataType: DateTime
+          - Name: SnapPosition
+            Type: BaseDataVariableType
+            DataType: SnapPositionEnum
+            Value: 2
+        - Name: YAxis
+          Type: ValueAxis
+          Children:
+          - Name: MinValue
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -100.0
+          - Name: MaxValue
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: 100.0
+          - Name: AutoScale
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Interactive
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Position
+            Type: BaseDataVariableType
+            DataType: HorizontalPositionEnum
+        - Name: LegendVisible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          Value: 850.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          Value: 501.0
+        - Name: ReferenceTimeZone
+          Type: BaseDataVariableType
+          DataType: ReferenceTimeZone
+          Value: 1
+        - Name: Opacity
+          Type: BaseVariableType
+          DataType: Float
+          Value: 100.0
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Name: Rotation
+          Type: BaseVariableType
+          DataType: Size
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          Value: 3
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Name: RefreshTime
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 250
+        - Name: Mode
+          Type: BaseDataVariableType
+          DataType: TrendModeEnum
+        - Class: Reference
+          Target: ns=5;i=1201
+          Direction: Forward
+        - Name: TimeRanges
+          Type: BaseObjectType
+        - Class: Reference
+          Target: ns=5;i=1209
+          Direction: Forward
+        - Name: Model
+          Type: NodePointer
+          DataType: NodeId
+          Children:
+          - Name: ItemKind
+            Type: PropertyType
+            DataType: NodeId
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/mes_v1/Loggers/DataLogger_energia@NodeId"
+      - Name: AdvancedTrendAlias
+        Type: Alias
+        DataType: NodeId
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Trend"
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../MainTrend@NodeId"
+    - Name: Logger
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/mes_v1/Loggers/DataLogger_energia"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/ObjectTypes/BaseObjectType/DataLogger"
+    - Name: AdvancedTrendLogic
+      Type: NetLogic
+      Children:
+      - Class: Reference
+        Target: g=692c1b52eb98183f140772f8f58e3d77
+        Direction: Forward
+  - Name: Button1
+    Type: Button
+    Children:
+    - Name: MouseClickEventHandler2
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{PanelLoader1}@NodeId"
+          - Name: Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "ChangePanel"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: NewPanel
+              Type: BaseDataVariableType
+              DataType: NodeId
+              Value: "/Objects/mes_v1/UI/Pages/datalog_energy"
+            - Name: AliasNode
+              Type: BaseDataVariableType
+              DataType: NodeId
+              ValueRank: ScalarOrOneDimension
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+- Name: data_water
+  Id: g=a8a5a751a4b5378a6bd95c9e2e088d3d
+  Supertype: KPIS
+  ReferenceType: HasComponent
+  Children:
+  - Name: pageID
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 6
+  - Name: AdvancedTrendMain1
+    Type: AdvancedTrendMain
+    Children:
+    - Name: InteractiveArea
+      Type: Rectangle
+      Children:
+      - Name: RightMargin
+        Type: BaseVariableType
+        DataType: Size
+        Value: 10.0
+      - Name: InteractiveAreaNavigation
+        Type: NavigationPanel
+        Children:
+        - Name: Panels
+          Type: BaseObjectType
+          Children:
+          - Name: Pens
+            Type: NavigationPanelItem
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+            - Name: Panel
+              Type: NodePointer
+              DataType: NodeId
+              Value: "/Objects/mes_v1/UI/AdvancedTrend/Components/AdvancedTrendPens"
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+          - Name: Ranges
+            Type: NavigationPanelItem
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+            - Name: Panel
+              Type: NodePointer
+              DataType: NodeId
+              Value: "/Objects/mes_v1/UI/AdvancedTrend/Components/AdvancedTrendRanges"
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+              Children:
+              - Name: ExpressionEvaluator1
+                Type: ExpressionEvaluator
+                Children:
+                - Name: Source0
+                  Type: BaseDataVariableType
+                  DataType: BaseDataType
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: ExpressionEvaluator1
+                    Type: ExpressionEvaluator
+                    Children:
+                    - Name: Source0
+                      Type: BaseDataVariableType
+                      DataType: BaseDataType
+                      ReferenceType: HasSource
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "../../../../../../../../../TrendPanel/MainTrend/Mode"
+                - Name: Source1
+                  Type: BaseDataVariableType
+                  DataType: BaseDataType
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+          - Name: Config
+            Type: NavigationPanelItem
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+            - Name: Panel
+              Type: NodePointer
+              DataType: NodeId
+              Value: "/Objects/mes_v1/UI/AdvancedTrend/Components/AdvancedTrendConfiguration"
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+            - Name: AliasNode
+              Type: BaseDataVariableType
+              DataType: NodeId
+              ValueRank: ScalarOrOneDimension
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../TrendPanel/MainTrend@NodeId"
+        - Name: CurrentPanel
+          Type: NodePointer
+          DataType: NodeId
+          AccessLevel: Read
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item"
+        - Name: CurrentTabIndex
+          Type: BaseDataVariableType
+          DataType: Int32
+        - Class: Reference
+          Target: ns=5;i=1181
+          Direction: Forward
+        - Class: Reference
+          Target: ns=5;i=1183
+          Direction: Forward
+    - Name: TrendPanel
+      Type: Panel
+      Children:
+      - Name: RightMargin
+        Type: BaseVariableType
+        DataType: Size
+        Value: 100.0
+      - Name: MainTrend
+        Type: Trend
+        Children:
+        - Name: Pens
+          Type: BaseObjectType
+        - Class: Reference
+          Target: ns=5;i=1129
+          Direction: Forward
+        - Name: XAxis
+          Type: DateTimeAxis
+          Children:
+          - Name: Follow
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Window
+            Type: BaseDataVariableType
+            DataType: Duration
+            Value: "0:00:05:00.0000000"
+          - Name: Interactive
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Time
+            Type: BaseDataVariableType
+            DataType: DateTime
+          - Name: SnapPosition
+            Type: BaseDataVariableType
+            DataType: SnapPositionEnum
+            Value: 2
+        - Name: YAxis
+          Type: ValueAxis
+          Children:
+          - Name: MinValue
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -100.0
+          - Name: MaxValue
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: 100.0
+          - Name: AutoScale
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Interactive
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Position
+            Type: BaseDataVariableType
+            DataType: HorizontalPositionEnum
+        - Name: LegendVisible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          Value: 850.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          Value: 501.0
+        - Name: ReferenceTimeZone
+          Type: BaseDataVariableType
+          DataType: ReferenceTimeZone
+          Value: 1
+        - Name: Opacity
+          Type: BaseVariableType
+          DataType: Float
+          Value: 100.0
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Name: Rotation
+          Type: BaseVariableType
+          DataType: Size
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          Value: 3
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Name: RefreshTime
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 250
+        - Name: Mode
+          Type: BaseDataVariableType
+          DataType: TrendModeEnum
+        - Class: Reference
+          Target: ns=5;i=1201
+          Direction: Forward
+        - Name: TimeRanges
+          Type: BaseObjectType
+        - Class: Reference
+          Target: ns=5;i=1209
+          Direction: Forward
+        - Name: Model
+          Type: NodePointer
+          DataType: NodeId
+          Children:
+          - Name: ItemKind
+            Type: PropertyType
+            DataType: NodeId
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/mes_v1/Loggers/DataLogger_agua@NodeId"
+      - Name: AdvancedTrendAlias
+        Type: Alias
+        DataType: NodeId
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Trend"
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../MainTrend@NodeId"
+    - Name: Logger
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/mes_v1/Loggers/DataLogger_agua"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/ObjectTypes/BaseObjectType/DataLogger"
+    - Name: AdvancedTrendLogic
+      Type: NetLogic
+      Children:
+      - Class: Reference
+        Target: g=692c1b52eb98183f140772f8f58e3d77
+        Direction: Forward
+  - Name: Button1
+    Type: Button
+    Children:
+    - Name: MouseClickEventHandler2
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{PanelLoader1}@NodeId"
+          - Name: Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "ChangePanel"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: NewPanel
+              Type: BaseDataVariableType
+              DataType: NodeId
+              Value: "/Objects/mes_v1/UI/Pages/datalog_water"
+            - Name: AliasNode
+              Type: BaseDataVariableType
+              DataType: NodeId
+              ValueRank: ScalarOrOneDimension
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+- Name: data_ESG
+  Id: g=900c9cb44f0c804dc20e86cd2f28ef4d
+  Supertype: KPIS
+  ReferenceType: HasComponent
+  Children:
+  - Name: pageID
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 7
+  - Name: AdvancedTrendMain1
+    Type: AdvancedTrendMain
+    Children:
+    - Name: InteractiveArea
+      Type: Rectangle
+      Children:
+      - Name: RightMargin
+        Type: BaseVariableType
+        DataType: Size
+        Value: 10.0
+      - Name: InteractiveAreaNavigation
+        Type: NavigationPanel
+        Children:
+        - Name: Panels
+          Type: BaseObjectType
+          Children:
+          - Name: Pens
+            Type: NavigationPanelItem
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+            - Name: Panel
+              Type: NodePointer
+              DataType: NodeId
+              Value: "/Objects/mes_v1/UI/AdvancedTrend/Components/AdvancedTrendPens"
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+          - Name: Ranges
+            Type: NavigationPanelItem
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+            - Name: Panel
+              Type: NodePointer
+              DataType: NodeId
+              Value: "/Objects/mes_v1/UI/AdvancedTrend/Components/AdvancedTrendRanges"
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+              Children:
+              - Name: ExpressionEvaluator1
+                Type: ExpressionEvaluator
+                Children:
+                - Name: Source0
+                  Type: BaseDataVariableType
+                  DataType: BaseDataType
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: ExpressionEvaluator1
+                    Type: ExpressionEvaluator
+                    Children:
+                    - Name: Source0
+                      Type: BaseDataVariableType
+                      DataType: BaseDataType
+                      ReferenceType: HasSource
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "../../../../../../../../../TrendPanel/MainTrend/Mode"
+                - Name: Source1
+                  Type: BaseDataVariableType
+                  DataType: BaseDataType
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+          - Name: Config
+            Type: NavigationPanelItem
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+            - Name: Panel
+              Type: NodePointer
+              DataType: NodeId
+              Value: "/Objects/mes_v1/UI/AdvancedTrend/Components/AdvancedTrendConfiguration"
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+            - Name: AliasNode
+              Type: BaseDataVariableType
+              DataType: NodeId
+              ValueRank: ScalarOrOneDimension
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../TrendPanel/MainTrend@NodeId"
+        - Name: CurrentPanel
+          Type: NodePointer
+          DataType: NodeId
+          AccessLevel: Read
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item"
+        - Name: CurrentTabIndex
+          Type: BaseDataVariableType
+          DataType: Int32
+        - Class: Reference
+          Target: ns=5;i=1181
+          Direction: Forward
+        - Class: Reference
+          Target: ns=5;i=1183
+          Direction: Forward
+    - Name: TrendPanel
+      Type: Panel
+      Children:
+      - Name: RightMargin
+        Type: BaseVariableType
+        DataType: Size
+        Value: 100.0
+      - Name: MainTrend
+        Type: Trend
+        Children:
+        - Name: Pens
+          Type: BaseObjectType
+        - Class: Reference
+          Target: ns=5;i=1129
+          Direction: Forward
+        - Name: XAxis
+          Type: DateTimeAxis
+          Children:
+          - Name: Follow
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Window
+            Type: BaseDataVariableType
+            DataType: Duration
+            Value: "0:00:05:00.0000000"
+          - Name: Interactive
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Time
+            Type: BaseDataVariableType
+            DataType: DateTime
+          - Name: SnapPosition
+            Type: BaseDataVariableType
+            DataType: SnapPositionEnum
+            Value: 2
+        - Name: YAxis
+          Type: ValueAxis
+          Children:
+          - Name: MinValue
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -100.0
+          - Name: MaxValue
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: 100.0
+          - Name: AutoScale
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Interactive
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Position
+            Type: BaseDataVariableType
+            DataType: HorizontalPositionEnum
+        - Name: LegendVisible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          Value: 850.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          Value: 501.0
+        - Name: ReferenceTimeZone
+          Type: BaseDataVariableType
+          DataType: ReferenceTimeZone
+          Value: 1
+        - Name: Opacity
+          Type: BaseVariableType
+          DataType: Float
+          Value: 100.0
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Name: Rotation
+          Type: BaseVariableType
+          DataType: Size
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          Value: 3
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Name: RefreshTime
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 250
+        - Name: Mode
+          Type: BaseDataVariableType
+          DataType: TrendModeEnum
+        - Class: Reference
+          Target: ns=5;i=1201
+          Direction: Forward
+        - Name: TimeRanges
+          Type: BaseObjectType
+        - Class: Reference
+          Target: ns=5;i=1209
+          Direction: Forward
+        - Name: Model
+          Type: NodePointer
+          DataType: NodeId
+          Children:
+          - Name: ItemKind
+            Type: PropertyType
+            DataType: NodeId
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/mes_v1/Loggers/DataLogger_esg@NodeId"
+      - Name: AdvancedTrendAlias
+        Type: Alias
+        DataType: NodeId
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Trend"
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../MainTrend@NodeId"
+    - Name: Logger
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/mes_v1/Loggers/DataLogger_esg"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/ObjectTypes/BaseObjectType/DataLogger"
+    - Name: AdvancedTrendLogic
+      Type: NetLogic
+      Children:
+      - Class: Reference
+        Target: g=692c1b52eb98183f140772f8f58e3d77
+        Direction: Forward
+  - Name: Button1
+    Type: Button
+    Children:
+    - Name: MouseClickEventHandler2
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{PanelLoader1}@NodeId"
+          - Name: Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "ChangePanel"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: NewPanel
+              Type: BaseDataVariableType
+              DataType: NodeId
+              Value: "/Objects/mes_v1/UI/Pages/datalog_esg"
+            - Name: AliasNode
+              Type: BaseDataVariableType
+              DataType: NodeId
+              ValueRank: ScalarOrOneDimension
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+- Name: data_production
+  Id: g=f64620d30aef85194e8ae29d7ded5e7b
+  Supertype: KPIS
+  ReferenceType: HasComponent
+  Children:
+  - Name: pageID
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 8
+  - Name: AdvancedTrendMain1
+    Type: AdvancedTrendMain
+    Children:
+    - Name: InteractiveArea
+      Type: Rectangle
+      Children:
+      - Name: RightMargin
+        Type: BaseVariableType
+        DataType: Size
+        Value: 10.0
+      - Name: InteractiveAreaNavigation
+        Type: NavigationPanel
+        Children:
+        - Name: Panels
+          Type: BaseObjectType
+          Children:
+          - Name: Pens
+            Type: NavigationPanelItem
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+            - Name: Panel
+              Type: NodePointer
+              DataType: NodeId
+              Value: "/Objects/mes_v1/UI/AdvancedTrend/Components/AdvancedTrendPens"
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+          - Name: Ranges
+            Type: NavigationPanelItem
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+            - Name: Panel
+              Type: NodePointer
+              DataType: NodeId
+              Value: "/Objects/mes_v1/UI/AdvancedTrend/Components/AdvancedTrendRanges"
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+              Children:
+              - Name: ExpressionEvaluator1
+                Type: ExpressionEvaluator
+                Children:
+                - Name: Source0
+                  Type: BaseDataVariableType
+                  DataType: BaseDataType
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: ExpressionEvaluator1
+                    Type: ExpressionEvaluator
+                    Children:
+                    - Name: Source0
+                      Type: BaseDataVariableType
+                      DataType: BaseDataType
+                      ReferenceType: HasSource
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "../../../../../../../../../TrendPanel/MainTrend/Mode"
+                - Name: Source1
+                  Type: BaseDataVariableType
+                  DataType: BaseDataType
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+          - Name: Config
+            Type: NavigationPanelItem
+            Children:
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+            - Name: Panel
+              Type: NodePointer
+              DataType: NodeId
+              Value: "/Objects/mes_v1/UI/AdvancedTrend/Components/AdvancedTrendConfiguration"
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+            - Name: AliasNode
+              Type: BaseDataVariableType
+              DataType: NodeId
+              ValueRank: ScalarOrOneDimension
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../TrendPanel/MainTrend@NodeId"
+        - Name: CurrentPanel
+          Type: NodePointer
+          DataType: NodeId
+          AccessLevel: Read
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item"
+        - Name: CurrentTabIndex
+          Type: BaseDataVariableType
+          DataType: Int32
+        - Class: Reference
+          Target: ns=5;i=1181
+          Direction: Forward
+        - Class: Reference
+          Target: ns=5;i=1183
+          Direction: Forward
+    - Name: TrendPanel
+      Type: Panel
+      Children:
+      - Name: RightMargin
+        Type: BaseVariableType
+        DataType: Size
+        Value: 100.0
+      - Name: MainTrend
+        Type: Trend
+        Children:
+        - Name: Pens
+          Type: BaseObjectType
+        - Class: Reference
+          Target: ns=5;i=1129
+          Direction: Forward
+        - Name: XAxis
+          Type: DateTimeAxis
+          Children:
+          - Name: Follow
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Window
+            Type: BaseDataVariableType
+            DataType: Duration
+            Value: "0:00:05:00.0000000"
+          - Name: Interactive
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Time
+            Type: BaseDataVariableType
+            DataType: DateTime
+          - Name: SnapPosition
+            Type: BaseDataVariableType
+            DataType: SnapPositionEnum
+            Value: 2
+        - Name: YAxis
+          Type: ValueAxis
+          Children:
+          - Name: MinValue
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -100.0
+          - Name: MaxValue
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: 100.0
+          - Name: AutoScale
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Interactive
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Position
+            Type: BaseDataVariableType
+            DataType: HorizontalPositionEnum
+        - Name: LegendVisible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          Value: 850.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          Value: 501.0
+        - Name: ReferenceTimeZone
+          Type: BaseDataVariableType
+          DataType: ReferenceTimeZone
+          Value: 1
+        - Name: Opacity
+          Type: BaseVariableType
+          DataType: Float
+          Value: 100.0
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Name: Rotation
+          Type: BaseVariableType
+          DataType: Size
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          Value: 3
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Name: RefreshTime
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 250
+        - Name: Mode
+          Type: BaseDataVariableType
+          DataType: TrendModeEnum
+        - Class: Reference
+          Target: ns=5;i=1201
+          Direction: Forward
+        - Name: TimeRanges
+          Type: BaseObjectType
+        - Class: Reference
+          Target: ns=5;i=1209
+          Direction: Forward
+        - Name: Model
+          Type: NodePointer
+          DataType: NodeId
+          Children:
+          - Name: ItemKind
+            Type: PropertyType
+            DataType: NodeId
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../Logger@NodeId"
+      - Name: AdvancedTrendAlias
+        Type: Alias
+        DataType: NodeId
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Trend"
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../MainTrend@NodeId"
+    - Name: Logger
+      Type: NodePointer
+      DataType: NodeId
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/ObjectTypes/BaseObjectType/DataLogger"
+    - Name: AdvancedTrendLogic
+      Type: NetLogic
+      Children:
+      - Class: Reference
+        Target: g=692c1b52eb98183f140772f8f58e3d77
+        Direction: Forward
+  - Name: Button1
+    Type: Button
+    Children:
+    - Name: MouseClickEventHandler2
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{PanelLoader1}@NodeId"
+          - Name: Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "ChangePanel"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: NewPanel
+              Type: BaseDataVariableType
+              DataType: NodeId
+            - Name: AliasNode
+              Type: BaseDataVariableType
+              DataType: NodeId
+              ValueRank: ScalarOrOneDimension
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16

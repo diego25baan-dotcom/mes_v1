@@ -196,3 +196,6 @@ Children:
   - Name: KPI_ESG_004 AUDIT COMPLIANCE
     Type: BaseDataVariableType
     DataType: Float
+  - Name: Energia_kWh_tot
+    Type: BaseDataVariableType
+    DataType: Float
