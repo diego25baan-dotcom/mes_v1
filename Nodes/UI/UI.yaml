@@ -136,6 +136,11 @@ Children:
     Children:
     - Name: Default
       Type: ChartStyle
+      Children:
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
   - Name: DataListStyles
     Type: BaseObjectType
     Children:

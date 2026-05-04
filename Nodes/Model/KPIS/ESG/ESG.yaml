@@ -21,7 +21,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../NetLogic/Sim_esg/Potencia_kW"
+    Value: "../../Energía/Potencia_kW"
     Children:
     - Name: Mode
       Type: BaseVariableType
