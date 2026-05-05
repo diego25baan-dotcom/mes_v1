@@ -891,7 +891,7 @@ Children:
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
-    Value: 830.0
+    Value: 820.0
 - Name: submenu
   Id: g=940c1e55bd124565dcd463799210fc14
   Supertype: Rectangle
