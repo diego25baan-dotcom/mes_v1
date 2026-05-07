@@ -206,6 +206,9 @@ Children:
         - Name: Timestamp
           Type: StoreColumn
           DataType: UtcTime
+        - Name: Water_consumption
+          Type: StoreColumn
+          DataType: Float
     - Name: VARIABLES ENERGÉTICAS
       Id: g=ee5327d13128d29be7dddc37b78fb77d
       Type: RemoteInfluxDBStoreTable

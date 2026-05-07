@@ -128,6 +128,9 @@ Children:
   - Name: KPI_WA_004_incidentes
     Type: BaseDataVariableType
     DataType: Float
+  - Name: Water_consumption
+    Type: BaseDataVariableType
+    DataType: Float
 - Name: Sim_esg
   Type: NetLogic
   Children:

@@ -1,0 +1,5 @@
+Name: ESG pages
+Type: FolderType
+Children:
+- File: Energy_and_emissions/Energy_and_emissions.yaml
+- File: Water/Water.yaml

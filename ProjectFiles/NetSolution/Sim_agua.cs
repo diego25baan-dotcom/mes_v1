@@ -19,6 +19,7 @@ public class Sim_agua : BaseNetLogic
         caudalDescarga = LogicObject.GetVariable("Caudal_descarga_m3h");
         agua_reutilizada = LogicObject.GetVariable("Agua_reutilizada");
         agua_total= LogicObject.GetVariable("Agua_total");
+        water_consumption= LogicObject.GetVariable("Water_consumption");
         numero_incidentes = LogicObject.GetVariable("Numero_incidentes");
         tiempo_respuesta = LogicObject.GetVariable("Tiempo_respuesta");
         toneladas_acumuladas = LogicObject.GetVariable("Toneladas_acumuladas");
@@ -67,6 +68,7 @@ public class Sim_agua : BaseNetLogic
             double factorReuso = 0.4 + 0.4 * Math.Abs(Math.Sin(decimalCounter / 6));
             double agua_reuso = volumen_agua * factorReuso;
             agua_reutilizada.Value += agua_reuso;
+            water_consumption.Value = volumen_agua- agua_reuso;
 
             // KPI-WA-001: Huella hídrica
             if (toneladas_acumuladas.Value > 0.001)
@@ -132,6 +134,7 @@ public class Sim_agua : BaseNetLogic
     private IUAVariable caudalDescarga;
     private IUAVariable agua_reutilizada;
     private IUAVariable agua_total;
+    private IUAVariable water_consumption;
     private IUAVariable numero_incidentes;
     private IUAVariable tiempo_respuesta;
     private IUAVariable toneladas_acumuladas;
