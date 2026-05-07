@@ -14,7 +14,6 @@ Children:
   DataType: Color
   Value: "#e4e4e4"
 - Name: KPI04_ESG_C
-  Id: g=fa787a9e4d259529b5ae1bf2047bf64d
   Type: BaseDataVariableType
   DataType: Color
   Value: "#e4e4e4"
