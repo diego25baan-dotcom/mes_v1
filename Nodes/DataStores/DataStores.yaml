@@ -209,6 +209,18 @@ Children:
         - Name: Water_consumption
           Type: StoreColumn
           DataType: Float
+        - Name: KPI_WA_001_huella
+          Type: StoreColumn
+          DataType: Float
+        - Name: KPI_WA_002_reutilizacion
+          Type: StoreColumn
+          DataType: Float
+        - Name: KPI_WA_003_des_residual
+          Type: StoreColumn
+          DataType: Float
+        - Name: KPI_WA_004_incidentes
+          Type: StoreColumn
+          DataType: Float
     - Name: VARIABLES ENERGÉTICAS
       Id: g=ee5327d13128d29be7dddc37b78fb77d
       Type: RemoteInfluxDBStoreTable

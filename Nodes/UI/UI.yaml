@@ -878,7 +878,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 270.0
+        Value: 290.0
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -1068,6 +1068,15 @@ Children:
             DataType: HorizontalAlignment
             ModellingRule: Optional
             Value: 2
+          - Name: Visible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Session}/Roles/Mine Production Supervisor"
         - Name: DropdownButton2
           Type: DropDownButton
           Children:
@@ -1132,6 +1141,15 @@ Children:
             DataType: FontWeightEnum
             ModellingRule: Optional
             Value: 400
+          - Name: Visible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Session}/Roles/Mine Production Supervisor"
         - Name: DropdownButton3
           Type: DropDownButton
           Children:
@@ -1196,6 +1214,15 @@ Children:
             DataType: FontWeightEnum
             ModellingRule: Optional
             Value: 400
+          - Name: Visible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Session}/Roles/Mine Production Supervisor"
         - Name: LeftMargin
           Type: BaseVariableType
           DataType: Size
@@ -1317,6 +1344,15 @@ Children:
             DataType: Size
             ModellingRule: Optional
             Value: -1.0
+          - Name: Visible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Session}/Roles/Mine Production Supervisor"
         - Name: Button3
           Type: Button
           Children:
@@ -1324,7 +1360,7 @@ Children:
             Type: BaseDataVariableType
             DataType: LocalizedText
             ModellingRule: Optional
-            Value: {"LocaleId":"en-US","Text":"ESG"}
+            Value: {"LocaleId":"en-US","Text":"ESG Summary"}
           - Name: MouseClickEventHandler1
             Type: EventHandler
             Children:
@@ -1429,6 +1465,15 @@ Children:
             DataType: Size
             ModellingRule: Optional
             Value: -1.0
+          - Name: Visible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Session}/Roles/Sustainable engineer"
         - Name: Button4
           Type: Button
           Children:
@@ -1541,6 +1586,15 @@ Children:
             DataType: Size
             ModellingRule: Optional
             Value: -1.0
+          - Name: Visible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Session}/Roles/Sustainable engineer"
         - Name: Button5
           Type: Button
           Children:
@@ -1548,7 +1602,7 @@ Children:
             Type: BaseDataVariableType
             DataType: LocalizedText
             ModellingRule: Optional
-            Value: {"LocaleId":"en-US","Text":"Water"}
+            Value: {"LocaleId":"en-US","Text":"Water resources"}
           - Name: MouseClickEventHandler1
             Type: EventHandler
             Children:
@@ -1591,7 +1645,7 @@ Children:
                     Type: BaseDataVariableType
                     DataType: NodeId
                     Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
-                    Value: "/Objects/mes_v1/UI/Pages/Water"
+                    Value: "/Objects/mes_v1/UI/Pages/Water_resources"
                   - Name: AliasNode
                     Type: BaseDataVariableType
                     DataType: NodeId
@@ -1653,6 +1707,20 @@ Children:
             DataType: Size
             ModellingRule: Optional
             Value: -1.0
+          - Name: Enabled
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ModellingRule: Optional
+            Value: true
+          - Name: Visible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Session}/Roles/Sustainable engineer"
       - Name: FillColor
         Type: BaseDataVariableType
         DataType: Color
