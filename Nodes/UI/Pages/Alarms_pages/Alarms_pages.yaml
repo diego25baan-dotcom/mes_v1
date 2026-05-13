@@ -4281,7 +4281,7 @@ Children:
     - Name: AlarmsEventLogger
       Type: Alias
       DataType: NodeId
-      Value: "/Objects/mes_v1/Loggers/AlarmsEventLogger1"
+      Value: "/Objects/mes_v1/Loggers/AlarmsEventLogger_all"
       Children:
       - Name: Kind
         Type: PropertyType

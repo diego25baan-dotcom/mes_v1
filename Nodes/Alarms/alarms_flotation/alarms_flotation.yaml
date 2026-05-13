@@ -1,29 +1,29 @@
-Name: Folder1
-Id: g=c2408dd2e309e87a224ffef0013f53db
+Name: alarms_flotation
+Id: g=4b454481870513ba3e77e9b0366107ef
 Type: FolderType
 Children:
-- Name: Alarm_velocidad_banda
-  Id: g=107242b2f9794bb1877dce347f9b0c9d
+- Name: ExclusiveLevelAlarm1
+  Id: g=087be1f1025c49c28f87d7d1a783b42a
   Type: ExclusiveLevelAlarmController
   Children:
   - Name: InputValue
-    Id: g=42f8bb0e513fab9d50a003762f210218
+    Id: g=d8d60ee24ed38af0ad36b8d45be9a67b
     Type: BaseDataVariableType
     DataType: Double
     Children:
     - Name: DynamicLink
-      Id: g=812c6f4440af8602cf29383aca0c7f9f
+      Id: g=b38335a803b6c388c289d3f9531e7afd
       Type: DynamicLink
       DataType: NodePath
-      Value: "../../../../Model/KPIS/Energía/Velocidad_Banda_mps"
+      Value: "../../../../Model/KPIS/ESG/Numero_incidentes"
       Children:
       - Name: Mode
-        Id: g=994e7052174acee2490270326f2bf7f9
+        Id: g=c5d416617c89cda827a4863841adb920
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
   - Name: LastEvent
-    Id: g=d0370e256c10a2e6ac69f0a2b99c65e3
+    Id: g=2608fcd4a14f0c6a2341e26e7f766997
     Type: BaseDataVariableType
     DataType: BaseDataType
     ValueRank: OneDimension
@@ -62,21 +62,17 @@ Children:
     Target: ns=23;i=154
     Direction: Forward
   - Name: HighLimit
-    Id: g=b444b45424e92e1db21a44e11b946454
+    Id: g=02fc96709e119a1913af924f7b264b67
     Type: BaseDataVariableType
     DataType: Double
-    Value: 1.5
+    Value: 2.0
   - Name: Message
-    Id: g=c609b073d894cc80ca30d470dc98dad9
+    Id: g=e60935c5c5b7baeeb2745a8c2395ef0d
     Type: BaseDataVariableType
     DataType: LocalizedText
     Children:
     - Name: HighStateMessage
-      Id: g=1d70a7461c355484144809d8763cd2f9
+      Id: g=db6f94f9627c6a945f1faf32f581d452
       Type: BaseDataVariableType
       DataType: LocalizedText
-      Value: {"LocaleId":"en-US","Text":"Velocidad recomendada de la banda excedida"}
-  - Name: LatchingEnabled
-    Id: g=41aecf56ec93e802f9b799504b1e23f5
-    Type: BaseDataVariableType
-    DataType: Boolean
+      Value: {"LocaleId":"en-US","Text":"High number of incidents"}
