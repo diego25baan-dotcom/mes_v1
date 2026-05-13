@@ -1,0 +1,78 @@
+Name: alarms_grinding
+Id: g=ac16741932a6bea9034b8594bb0dcdf4
+Type: FolderType
+Children:
+- Name: ExclusiveLevelAlarm1
+  Id: g=3b4ba26e0057eb45f818ae8dc8e7b157
+  Type: ExclusiveLevelAlarmController
+  Children:
+  - Name: InputValue
+    Id: g=b096a0e01d3c3398c062cda6341250b3
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=eb5ce31ee7ab26a6788e124d90851b5e
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Model/KPIS/ESG/Numero_incidentes"
+      Children:
+      - Name: Mode
+        Id: g=412f5cf3e2a2a8229bb29bed95f43caa
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=ce4653ffff44c1fdc1915bdf9f7ad030
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=154
+    Direction: Forward
+  - Name: HighLimit
+    Id: g=86f0d953e6e74a0f6b7b2710bc34ff8e
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 2.0
+  - Name: Message
+    Id: g=15c35c890647132e7596c33765f2823f
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: HighStateMessage
+      Id: g=d259bc550458bb2e0a89e16e0ff60d67
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"High number of incidents"}

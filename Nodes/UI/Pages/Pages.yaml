@@ -2,7 +2,7 @@ Name: Pages
 Id: g=50fe9a2c0235afd94984c1e880797dae
 Type: FolderType
 Children:
-- File: Alarms/Alarms.yaml
+- File: Alarms_pages/Alarms_pages.yaml
 - File: data_acquisition/data_acquisition.yaml
 - File: historization/historization.yaml
 - Name: login
@@ -621,7 +621,7 @@ Children:
               - Name: NewPanel
                 Type: BaseDataVariableType
                 DataType: NodeId
-                Value: "/Objects/mes_v1/UI/Pages/Alarms/Alarms_summary"
+                Value: "/Objects/mes_v1/UI/Pages/Alarms_pages/Alarms_summary"
               - Name: AliasNode
                 Type: BaseDataVariableType
                 DataType: NodeId
@@ -696,7 +696,7 @@ Children:
               - Name: NewPanel
                 Type: BaseDataVariableType
                 DataType: NodeId
-                Value: "/Objects/mes_v1/UI/Pages/Alarms/Alarms_Manager"
+                Value: "/Objects/mes_v1/UI/Pages/Alarms_pages/Alarms_Manager"
               - Name: AliasNode
                 Type: BaseDataVariableType
                 DataType: NodeId
@@ -771,7 +771,7 @@ Children:
               - Name: NewPanel
                 Type: BaseDataVariableType
                 DataType: NodeId
-                Value: "/Objects/mes_v1/UI/Pages/Alarms/Alarms_history"
+                Value: "/Objects/mes_v1/UI/Pages/Alarms_pages/Alarms_history"
               - Name: AliasNode
                 Type: BaseDataVariableType
                 DataType: NodeId
