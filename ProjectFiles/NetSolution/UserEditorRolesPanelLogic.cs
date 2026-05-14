@@ -13,6 +13,8 @@ using FTOptix.Alarm;
 using FTOptix.SerialPort;
 using FTOptix.InfluxDBStore;
 using FTOptix.InfluxDBStoreRemote;
+using FTOptix.RAEtherNetIP;
+using FTOptix.CommunicationDriver;
 using OpcUa = UAManagedCore.OpcUa;
 #endregion
 

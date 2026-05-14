@@ -73,7 +73,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../NetLogic/Sim_energía/Velocidad_Banda_mps"
+    Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Velocidad_Banda_extr"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -125,7 +125,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../NetLogic/Sim_energía/Potencia_Renovable_kW"
+    Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/FeedRate_tph"
     Children:
     - Name: Mode
       Type: BaseVariableType

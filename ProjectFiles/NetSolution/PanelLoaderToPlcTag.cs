@@ -8,6 +8,8 @@ using FTOptix.UI;
 using UAManagedCore;
 using FTOptix.InfluxDBStore;
 using FTOptix.InfluxDBStoreRemote;
+using FTOptix.RAEtherNetIP;
+using FTOptix.CommunicationDriver;
 
 #endregion
 

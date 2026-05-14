@@ -10,6 +10,8 @@ using FTOptix.SerialPort;
 using FTOptix.EventLogger;
 using FTOptix.InfluxDBStore;
 using FTOptix.InfluxDBStoreRemote;
+using FTOptix.RAEtherNetIP;
+using FTOptix.CommunicationDriver;
 #endregion
 
 public class AlarmFilterDataLogic : BaseNetLogic

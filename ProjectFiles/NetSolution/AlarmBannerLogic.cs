@@ -6,6 +6,8 @@ using FTOptix.Core;
 using FTOptix.NetLogic;
 using FTOptix.InfluxDBStore;
 using FTOptix.InfluxDBStoreRemote;
+using FTOptix.RAEtherNetIP;
+using FTOptix.CommunicationDriver;
 #endregion
 
 public class AlarmBannerLogic : BaseNetLogic

@@ -10,6 +10,8 @@ using FTOptix.Store;
 using FTOptix.EventLogger;
 using FTOptix.InfluxDBStore;
 using FTOptix.InfluxDBStoreRemote;
+using FTOptix.RAEtherNetIP;
+using FTOptix.CommunicationDriver;
 using static AlarmFilterDataLogic;
 #endregion
 

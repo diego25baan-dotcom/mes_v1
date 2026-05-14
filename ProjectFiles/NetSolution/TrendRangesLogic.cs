@@ -15,6 +15,8 @@ using UAManagedCore;
 using FTOptix.SQLiteStore;
 using FTOptix.WebUI;
 using System.Collections;
+using FTOptix.RAEtherNetIP;
+using FTOptix.CommunicationDriver;
 
 #endregion
 

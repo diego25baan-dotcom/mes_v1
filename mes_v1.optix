@@ -124,16 +124,32 @@ Project:
    Uri: 'urn:FTOptix:InfluxDBStoreRemote:Net'
    Module: FTOptix.InfluxDBStoreRemote.Net
    Version: 1.0
+  31:
+   Uri: 'urn:FTOptix:RAEtherNetIP'
+   Module: FTOptix.RAEtherNetIP
+   Version: 7.0
+  32:
+   Uri: 'urn:FTOptix:RAEtherNetIP:Net'
+   Module: FTOptix.RAEtherNetIP.Net
+   Version: 3.2
+  33:
+   Uri: 'urn:FTOptix:CommunicationDriver'
+   Module: FTOptix.CommunicationDriver
+   Version: 3.0
+  34:
+   Uri: 'urn:FTOptix:CommunicationDriver:Net'
+   Module: FTOptix.CommunicationDriver.Net
+   Version: 4.0
  Statistics:
-  TotalNodeCount: 21997
-  Objects: 4300
+  TotalNodeCount: 22120
+  Objects: 4309
   ObjectTypes: 109
-  Variables: 17544
-  VariableTypes: 0
-  DataTypes: 0
+  Variables: 17656
+  VariableTypes: 1
+  DataTypes: 1
   Methods: 44
-  References: 269
+  References: 275
   ReferenceTypes: 0
-  Files: 52
+  Files: 58
  Nodes:
  - File: Nodes/mes_v1.yaml
