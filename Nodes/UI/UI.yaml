@@ -1902,7 +1902,7 @@ Children:
                     Type: BaseDataVariableType
                     DataType: NodeId
                     Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
-                    Value: "/Objects/mes_v1/UI/Pages/tailings_and_rehabilitation"
+                    Value: "/Objects/mes_v1/UI/Pages/Security_and_compliance"
                   - Name: AliasNode
                     Type: BaseDataVariableType
                     DataType: NodeId
