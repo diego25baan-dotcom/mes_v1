@@ -141,15 +141,15 @@ Project:
    Module: FTOptix.CommunicationDriver.Net
    Version: 4.0
  Statistics:
-  TotalNodeCount: 22120
-  Objects: 4309
-  ObjectTypes: 109
-  Variables: 17656
+  TotalNodeCount: 23331
+  Objects: 4478
+  ObjectTypes: 119
+  Variables: 18688
   VariableTypes: 1
   DataTypes: 1
   Methods: 44
-  References: 275
+  References: 301
   ReferenceTypes: 0
-  Files: 58
+  Files: 60
  Nodes:
  - File: Nodes/mes_v1.yaml

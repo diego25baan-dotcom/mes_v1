@@ -1,0 +1,7 @@
+Name: ESG web links
+Type: FolderType
+Children:
+- File: Energy_and_emissions/Energy_and_emissions.yaml
+- File: Water/Water.yaml
+- File: Tailings_and_rehabilitation/Tailings_and_rehabilitation.yaml
+- File: security_and_compliance/security_and_compliance.yaml

@@ -202,3 +202,6 @@ Children:
   - Name: Energia_kWh_tot
     Type: BaseDataVariableType
     DataType: Float
+  - Name: KPI_ESG_002 RESTORED
+    Type: BaseDataVariableType
+    DataType: Float
