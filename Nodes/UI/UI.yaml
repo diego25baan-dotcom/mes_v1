@@ -126,6 +126,31 @@ Children:
     Children:
     - Name: Default
       Type: GaugeStyle
+      Children:
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 8.0
+      - Name: HandleSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 10.0
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 10.0
+      - Name: HandleBorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 1.0
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 1.0
   - Name: NavigationPanelStyles
     Type: BaseObjectType
     Children:
@@ -151,6 +176,11 @@ Children:
     Children:
     - Name: Default
       Type: ToolTipStyle
+      Children:
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#3b3b3b"
   - Name: ScrollBarStyles
     Type: BaseObjectType
     Children:
