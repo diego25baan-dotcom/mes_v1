@@ -196,6 +196,19 @@ Children:
       Type: BaseVariableType
       DataType: DynamicLinkMode
       Value: 2
+- Name: KPI_ESG_002_02 RESTORED
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../NetLogic/Sim_esg/KPI_ESG_002 RESTORED"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
 - Name: KPI_ESG_003 JOB SECURITY
   Type: BaseDataVariableType
   DataType: Float

@@ -543,10 +543,13 @@ Children:
         - Name: Energia_kWh_tot
           Type: StoreColumn
           DataType: Float
+        - Name: KPI_ESG_002_02 RESTORED
+          Type: StoreColumn
+          DataType: Float
   - Name: Token
     Type: BaseDataVariableType
     DataType: Password
-    SecretValue: Ew3thW+d5JpxWQj5kXBu5qTPfq7TfNWZB7+ShIc/RXCjPaIpm9GDoSlNbmJQXHQQeud6k302/9QJF5r8u8tcs9Gez2h5xmD0nAlsOj4LlVmgX1U9Pmo8EajgAFpqCJ4eThg0Ss8NvlyCmjPz9U0fNhePbxA=
+    SecretValue: MxI9MTJqUk1jr8szMxL8QtJmdsJ1ckEPdqqhRBY+DyfyDqeIsdNHyBJMA701BcQvftAn34jXkd48iabtxm10hGzLgk67r1EokYkkDg/szQb5397BCFGbgnbwphiguVV7fi0dL2Izj0lzqaJ77vjuPd0BGRM=
   - Name: Organization
     Type: BaseDataVariableType
     DataType: String

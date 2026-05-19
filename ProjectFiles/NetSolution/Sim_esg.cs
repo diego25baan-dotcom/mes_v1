@@ -34,6 +34,7 @@ public class Sim_esg : BaseNetLogic
 
         KPI_ESG_001 = LogicObject.GetVariable("KPI_ESG_001 ENV INTENSITY");
         KPI_ESG_002 = LogicObject.GetVariable("KPI_ESG_002 REHABILITATION");
+        KPI_ESG_002_02 = LogicObject.GetVariable("KPI_ESG_002 RESTORED");
         KPI_ESG_003 = LogicObject.GetVariable("KPI_ESG_003 JOB SECURITY");
         KPI_ESG_004 = LogicObject.GetVariable("KPI_ESG_004 AUDIT COMPLIANCE");
 
@@ -130,7 +131,8 @@ public class Sim_esg : BaseNetLogic
             if (Area_explotada.Value > 0.001)
                 porcentajeRehabilitacion = (area_restaurada_val / area_explotada_val) * 100;
 
-            KPI_ESG_002.Value = (porcentajeRelaves + porcentajeRehabilitacion) / 2;
+            KPI_ESG_002.Value = porcentajeRelaves;
+            KPI_ESG_002_02.Value = porcentajeRehabilitacion;
 
             
             // KPI-ESG-003
@@ -193,6 +195,7 @@ public class Sim_esg : BaseNetLogic
 
     private IUAVariable KPI_ESG_001;
     private IUAVariable KPI_ESG_002;
+    private IUAVariable KPI_ESG_002_02;
     private IUAVariable KPI_ESG_003;
     private IUAVariable KPI_ESG_004;
 }
