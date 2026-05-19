@@ -18,6 +18,7 @@ using FTOptix.InfluxDBStore;
 using FTOptix.InfluxDBStoreRemote;
 using FTOptix.RAEtherNetIP;
 using FTOptix.CommunicationDriver;
+using FTOptix.Report;
 #endregion
 
 public class LoginFormOutputMessageLogic : BaseNetLogic

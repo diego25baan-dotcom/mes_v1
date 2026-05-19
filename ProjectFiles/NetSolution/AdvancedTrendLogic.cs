@@ -15,6 +15,7 @@ using FTOptix.WebUI;
 using System.Threading;
 using FTOptix.RAEtherNetIP;
 using FTOptix.CommunicationDriver;
+using FTOptix.Report;
 
 #endregion
 

@@ -140,15 +140,23 @@ Project:
    Uri: 'urn:FTOptix:CommunicationDriver:Net'
    Module: FTOptix.CommunicationDriver.Net
    Version: 4.0
+  35:
+   Uri: 'urn:FTOptix:Report'
+   Module: FTOptix.Report
+   Version: 4.1
+  36:
+   Uri: 'urn:FTOptix:Report:Net'
+   Module: FTOptix.Report.Net
+   Version: 2.5
  Statistics:
-  TotalNodeCount: 24263
-  Objects: 4630
+  TotalNodeCount: 24588
+  Objects: 4707
   ObjectTypes: 120
-  Variables: 19467
+  Variables: 19715
   VariableTypes: 1
   DataTypes: 1
   Methods: 44
-  References: 302
+  References: 307
   ReferenceTypes: 0
   Files: 60
  Nodes:

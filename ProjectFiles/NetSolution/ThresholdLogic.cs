@@ -13,6 +13,7 @@ using FTOptix.SQLiteStore;
 using FTOptix.WebUI;
 using FTOptix.RAEtherNetIP;
 using FTOptix.CommunicationDriver;
+using FTOptix.Report;
 
 #endregion
 
