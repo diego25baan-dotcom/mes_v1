@@ -13,3 +13,9 @@ Children:
 - Name: Datalog_EndDate
   Type: BaseDataVariableType
   DataType: DateTime
+- File: Variables_Chancado/Variables_Chancado.yaml
+- File: Variables_Extracción/Variables_Extracción.yaml
+- File: Variables_Molienda/Variables_Molienda.yaml
+- File: Variables_Flotación/Variables_Flotación.yaml
+- File: Variables_Fundición/Variables_Fundición.yaml
+- File: Variables_Electrorrefinación/Variables_Electrorrefinación.yaml

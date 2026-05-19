@@ -1,0 +1,6 @@
+Name: Variables_Chancado
+Type: FolderType
+Children:
+- File: Energía/Energía.yaml
+- File: ESG/ESG.yaml
+- File: Producción/Producción.yaml
