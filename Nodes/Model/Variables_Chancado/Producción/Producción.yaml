@@ -1,0 +1,38 @@
+Name: Producción
+Type: FolderType
+Children:
+- Name: Ley_mineral_entrada_Chancado
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Ley_mineral_entrada_chan"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Ley_mineral_salida_Chancado
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Ley_mineral_salida_chanc"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Disponibilidad_Chancado
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Rendimiento_Chancado
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Calidad_Chancado
+  Type: BaseDataVariableType
+  DataType: Int32

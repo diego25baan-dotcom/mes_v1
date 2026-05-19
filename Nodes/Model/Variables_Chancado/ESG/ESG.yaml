@@ -1,0 +1,31 @@
+Name: ESG
+Type: FolderType
+Children:
+- Name: Energía_kWh_Chancado
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Toneladas_Producidas_Chancado
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Toneladas_Chan_salida"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Variable3
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Variable4
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Variable5
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Variable6
+  Type: BaseDataVariableType
+  DataType: Int32
