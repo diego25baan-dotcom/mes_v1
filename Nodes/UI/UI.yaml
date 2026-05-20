@@ -142,7 +142,7 @@ Children:
       - Name: Radius
         Type: BaseDataVariableType
         DataType: Size
-        Value: 10.0
+        Value: 5.0
       - Name: HandleBorderWidth
         Type: BaseDataVariableType
         DataType: Size
