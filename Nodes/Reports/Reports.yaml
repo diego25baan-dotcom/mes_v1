@@ -1,2 +1,1112 @@
 Name: Reports
 Type: ReportsCategoryFolder
+Children:
+- Name: StyleSheet1
+  Id: g=b44492cad0a62aa8736051ef81346ed7
+  Type: ReportStyleSheet
+  Children:
+  - Name: ButtonStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ButtonStyle
+    - Name: Accent
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#075982"
+    - Name: BorderedRectangular
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e4e4e4"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+    - Name: BorderedCircular
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e4e4e4"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+    - Name: Emergency
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#eb001b"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#f8e71c"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+    - Name: Transparent
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+  - Name: InputBoxStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: InputBoxStyle
+  - Name: SwitchStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: SwitchStyle
+  - Name: GaugeStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: GaugeStyle
+  - Name: NavigationPanelStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: NavigationPanelStyle
+  - Name: ChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ChartStyle
+  - Name: DataListStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: DataListStyle
+  - Name: ToolTipStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ToolTipStyle
+  - Name: ScrollBarStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ScrollBarStyle
+  - Name: AccordionStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: AccordionStyle
+  - Name: PieChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: PieChartStyle
+  - Name: HistogramChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: HistogramChartStyle
+  - Name: LabelStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: LabelStyle
+  - Name: RadioButtonStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: RadioButtonStyle
+  - Name: CheckBoxStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: CheckBoxStyle
+  - Name: RectangleStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: RectangleStyle
+      Children:
+      - Name: BorderThickness
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 1.0
+  - Name: ScreenStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ScreenStyle
+- Name: Reports1
+  Id: g=b5b1b5939455b2a4dd0c8eaaed7aeb21
+  Type: Report
+  ReferenceType: HasComponent
+  Children:
+  - Name: PageSize
+    Type: BaseDataVariableType
+    DataType: PageSize
+    Value: 2
+  - Name: PageWidth
+    Type: BaseDataVariableType
+    DataType: Size
+    Value: 210.0
+    Children:
+    - Name: EngineeringUnits
+      Type: EUInformationType
+      DataType: EUInformation
+      Children:
+      - Name: UnitId
+        Type: BaseDataVariableType
+        DataType: Int32
+        AccessLevel: Read
+        Value: 5066068
+      - Name: DisplayName
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+      - Name: Description
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+  - Name: PageHeight
+    Type: BaseDataVariableType
+    DataType: Size
+    Value: 297.0
+    Children:
+    - Name: EngineeringUnits
+      Type: EUInformationType
+      DataType: EUInformation
+      Children:
+      - Name: UnitId
+        Type: BaseDataVariableType
+        DataType: Int32
+        AccessLevel: Read
+        Value: 5066068
+      - Name: DisplayName
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+      - Name: Description
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+  - Name: StyleSheet
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/mes_v1/Reports/StyleSheet1"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/StyleSheet/ReportStyleSheet"
+  - Name: PageCount
+    Type: BaseDataVariableType
+    DataType: String
+    AccessLevel: Read
+    Value: "{page_count}"
+  - Name: PageNumber
+    Type: BaseDataVariableType
+    DataType: String
+    AccessLevel: Read
+    Value: "{page_number}"
+  - Name: PrintDateTime
+    Type: BaseDataVariableType
+    DataType: DateTime
+    AccessLevel: Read
+  - Name: Header
+    Type: Panel
+    Children:
+    - Name: Height
+      Type: BaseDataVariableType
+      DataType: Size
+      Value: 20.0
+      Children:
+      - Name: EngineeringUnits
+        Type: EUInformationType
+        DataType: EUInformation
+        Children:
+        - Name: UnitId
+          Type: BaseDataVariableType
+          DataType: Int32
+          AccessLevel: Read
+          Value: 5066068
+        - Name: DisplayName
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+        - Name: Description
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+    - Name: Label1
+      Type: ReportLabel
+      Children:
+      - Name: Width
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 20.0
+        Children:
+        - Name: EngineeringUnits
+          Type: EUInformationType
+          DataType: EUInformation
+          Children:
+          - Name: UnitId
+            Type: BaseDataVariableType
+            DataType: Int32
+            AccessLevel: Read
+            Value: 5066068
+          - Name: DisplayName
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+          - Name: Description
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Value: {"LocaleId":"en-US","Text":"Report"}
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        Value: 2
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+    - Name: TopMargin
+      Type: BaseDataVariableType
+      DataType: Size
+      AccessLevel: Read
+      Children:
+      - Name: EngineeringUnits
+        Type: EUInformationType
+        DataType: EUInformation
+        Children:
+        - Name: UnitId
+          Type: BaseDataVariableType
+          DataType: Int32
+          AccessLevel: Read
+          Value: 5066068
+        - Name: DisplayName
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+        - Name: Description
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+  - Name: Sections
+    Type: ReportColumnLayout
+    Children:
+    - Name: DataGridSection1
+      Type: DataGridSection
+      Children:
+      - Class: Reference
+        Target: ns=5;i=504
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: LocalTimestamp
+          Id: g=fa656457c4651a12ba09edfe7bb85fbd
+          Type: ReportDataGridColumn
+          Children:
+          - Name: Width
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -1.0
+            Children:
+            - Name: EngineeringUnits
+              Type: EUInformationType
+              DataType: EUInformation
+              Children:
+              - Name: UnitId
+                Type: BaseDataVariableType
+                DataType: Int32
+                AccessLevel: Read
+                Value: 5066068
+              - Name: DisplayName
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+              - Name: Description
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"LocaleId":"en-US","Text":"LocalTimestamp"}
+          - Name: Visible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: HeaderAlignment
+            Type: BaseDataVariableType
+            DataType: TextHorizontalAlignment
+          - Name: ContentAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+          - Name: OrderBy
+            Type: BaseDataVariableType
+            DataType: NodePath
+            Value: "{Item}/LocalTimestamp"
+          - Name: DataItemTemplate
+            Type: ReportDataGridLabelItemTemplate
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{Item}/LocalTimestamp"
+        - Name: potencia
+          Type: ReportDataGridColumn
+          Children:
+          - Name: Width
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -1.0
+            Children:
+            - Name: EngineeringUnits
+              Type: EUInformationType
+              DataType: EUInformation
+              Children:
+              - Name: UnitId
+                Type: BaseDataVariableType
+                DataType: Int32
+                AccessLevel: Read
+                Value: 5066068
+              - Name: DisplayName
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+              - Name: Description
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"LocaleId":"en-US","Text":"potencia"}
+          - Name: Visible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: HeaderAlignment
+            Type: BaseDataVariableType
+            DataType: TextHorizontalAlignment
+          - Name: ContentAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+          - Name: OrderBy
+            Type: BaseDataVariableType
+            DataType: NodePath
+            Value: "{Item}/potencia"
+          - Name: DataItemTemplate
+            Type: ReportDataGridLabelItemTemplate
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{Item}/potencia"
+        - Name: potencia renovable
+          Type: ReportDataGridColumn
+          Children:
+          - Name: Width
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -1.0
+            Children:
+            - Name: EngineeringUnits
+              Type: EUInformationType
+              DataType: EUInformation
+              Children:
+              - Name: UnitId
+                Type: BaseDataVariableType
+                DataType: Int32
+                AccessLevel: Read
+                Value: 5066068
+              - Name: DisplayName
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+              - Name: Description
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"LocaleId":"en-US","Text":"potencia renovable"}
+          - Name: Visible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: HeaderAlignment
+            Type: BaseDataVariableType
+            DataType: TextHorizontalAlignment
+          - Name: ContentAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+          - Name: OrderBy
+            Type: BaseDataVariableType
+            DataType: NodePath
+            Value: "{Item}/potencia renovable"
+          - Name: DataItemTemplate
+            Type: ReportDataGridLabelItemTemplate
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{Item}/potencia renovable"
+        - Name: Carga_Banda_kg_m
+          Type: ReportDataGridColumn
+          Children:
+          - Name: Width
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -1.0
+            Children:
+            - Name: EngineeringUnits
+              Type: EUInformationType
+              DataType: EUInformation
+              Children:
+              - Name: UnitId
+                Type: BaseDataVariableType
+                DataType: Int32
+                AccessLevel: Read
+                Value: 5066068
+              - Name: DisplayName
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+              - Name: Description
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"LocaleId":"en-US","Text":"Carga_Banda_kg_m"}
+          - Name: Visible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: HeaderAlignment
+            Type: BaseDataVariableType
+            DataType: TextHorizontalAlignment
+          - Name: ContentAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+          - Name: OrderBy
+            Type: BaseDataVariableType
+            DataType: NodePath
+            Value: "{Item}/Carga_Banda_kg_m"
+          - Name: DataItemTemplate
+            Type: ReportDataGridLabelItemTemplate
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{Item}/Carga_Banda_kg_m"
+        - Name: toneladas_acumuladas
+          Type: ReportDataGridColumn
+          Children:
+          - Name: Width
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -1.0
+            Children:
+            - Name: EngineeringUnits
+              Type: EUInformationType
+              DataType: EUInformation
+              Children:
+              - Name: UnitId
+                Type: BaseDataVariableType
+                DataType: Int32
+                AccessLevel: Read
+                Value: 5066068
+              - Name: DisplayName
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+              - Name: Description
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"LocaleId":"en-US","Text":"toneladas_acumuladas"}
+          - Name: Visible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: HeaderAlignment
+            Type: BaseDataVariableType
+            DataType: TextHorizontalAlignment
+          - Name: ContentAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+          - Name: OrderBy
+            Type: BaseDataVariableType
+            DataType: NodePath
+            Value: "{Item}/toneladas_acumuladas"
+          - Name: DataItemTemplate
+            Type: ReportDataGridLabelItemTemplate
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{Item}/toneladas_acumuladas"
+      - Name: SelectedItem
+        Type: NodePointer
+        DataType: NodeId
+        AccessLevel: Read
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+      - Name: Model
+        Type: NodePointer
+        DataType: NodeId
+        Value: "/Objects/mes_v1/DataStores/Database"
+        Children:
+        - Name: ItemKind
+          Type: PropertyType
+          DataType: NodeId
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+      - Name: Query
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "SELECT\n    MAX(\"potencia\") AS \"potencia\",\n    MAX(\"potencia\") AS \"potencia renovable\",\n    (SUM(\"potencia renovable\")/COUNT(\"potencia renovable\") ) AS \"Carga_Banda_kg_m\"\nFROM \"VARIABLES ENERGÉTICAS\""
+      - Name: UISelectedItem
+        Type: BaseDataVariableType
+        DataType: NodeId
+        AccessLevel: Read
+      - Name: Height
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 30.0
+        Children:
+        - Name: EngineeringUnits
+          Type: EUInformationType
+          DataType: EUInformation
+          Children:
+          - Name: UnitId
+            Type: BaseDataVariableType
+            DataType: Int32
+            AccessLevel: Read
+            Value: 5066068
+          - Name: DisplayName
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+          - Name: Description
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+      - Name: Item
+        Type: Alias
+        DataType: NodeId
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+      - Name: SortColumn
+        Type: BaseDataVariableType
+        DataType: NodeId
+        Value: "/Objects/mes_v1/Reports/Reports1/Sections/DataGridSection1/Columns/LocalTimestamp"
+      - Name: SortOrder
+        Type: BaseDataVariableType
+        DataType: SortOrderEnum
+        Value: 1
+    - Name: PanelSection1
+      Type: PanelSection
+      Children:
+      - Name: Height
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 30.0
+        Children:
+        - Name: EngineeringUnits
+          Type: EUInformationType
+          DataType: EUInformation
+          Children:
+          - Name: UnitId
+            Type: BaseDataVariableType
+            DataType: Int32
+            AccessLevel: Read
+            Value: 5066068
+          - Name: DisplayName
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+          - Name: Description
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+      - Name: Trend1
+        Type: ReportTrend
+        Children:
+        - Name: Pens
+          Type: BaseObjectType
+          Children:
+          - Name: potencia
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              Value: "#1b5583"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/potencia/LastValue"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                Value: 2
+          - Name: factor emision
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              Value: "#f3da08"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/factor emision/LastValue"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                Value: 2
+          - Name: potencia renovable
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              Value: "#ff7514"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/potencia renovable/LastValue"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                Value: 2
+          - Name: Velocidad_Banda_mps
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              Value: "#7d7f7d"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/Velocidad_Banda_mps/LastValue"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                Value: 2
+          - Name: Carga_Banda_kg_m
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              Value: "#4c9141"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/Carga_Banda_kg_m/LastValue"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                Value: 2
+          - Name: flujo_material
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              Value: "#922b3e"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/flujo_material/LastValue"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                Value: 2
+          - Name: toneladas_acumuladas
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              Value: "#84c3be"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/toneladas_acumuladas/LastValue"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                Value: 2
+        - Class: Reference
+          Target: ns=5;i=1129
+          Direction: Forward
+        - Name: XAxis
+          Type: DateTimeAxis
+          Children:
+          - Name: Follow
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Window
+            Type: BaseDataVariableType
+            DataType: Duration
+            Value: "0:00:10:00.0000000"
+          - Name: Interactive
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Time
+            Type: BaseDataVariableType
+            DataType: DateTime
+            Value: "2026-05-18T16:17:01.0000000"
+          - Name: SnapPosition
+            Type: BaseDataVariableType
+            DataType: SnapPositionEnum
+            Value: 2
+        - Name: YAxis
+          Type: ValueAxis
+          Children:
+          - Name: Position
+            Type: BaseDataVariableType
+            DataType: HorizontalPositionEnum
+          - Name: MinValue
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -100.0
+          - Name: MaxValue
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: 100.0
+          - Name: AutoScale
+            Type: BaseDataVariableType
+            DataType: Boolean
+          - Name: Interactive
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+        - Name: LegendVisible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Class: Reference
+          Target: ns=5;i=1201
+          Direction: Forward
+        - Name: TimeRanges
+          Type: BaseObjectType
+        - Class: Reference
+          Target: ns=5;i=1209
+          Direction: Forward
+        - Name: Width
+          Type: BaseDataVariableType
+          DataType: Size
+          Value: 182.5625
+          Children:
+          - Name: EngineeringUnits
+            Type: EUInformationType
+            DataType: EUInformation
+            Children:
+            - Name: UnitId
+              Type: BaseDataVariableType
+              DataType: Int32
+              AccessLevel: Read
+              Value: 5066068
+            - Name: DisplayName
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+            - Name: Description
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+        - Name: Height
+          Type: BaseDataVariableType
+          DataType: Size
+          Value: 48.68333435058594
+          Children:
+          - Name: EngineeringUnits
+            Type: EUInformationType
+            DataType: EUInformation
+            Children:
+            - Name: UnitId
+              Type: BaseDataVariableType
+              DataType: Int32
+              AccessLevel: Read
+              Value: 5066068
+            - Name: DisplayName
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+            - Name: Description
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+        - Name: ReferenceTimeZone
+          Type: BaseDataVariableType
+          DataType: ReferenceTimeZone
+          Value: 1
+        - Name: Model
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/mes_v1/Loggers/DataLogger_energia"
+          Children:
+          - Name: ItemKind
+            Type: PropertyType
+            DataType: NodeId
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          Value: 2
+        - Name: LeftMargin
+          Type: BaseDataVariableType
+          DataType: Size
+          Children:
+          - Name: EngineeringUnits
+            Type: EUInformationType
+            DataType: EUInformation
+            Children:
+            - Name: UnitId
+              Type: BaseDataVariableType
+              DataType: Int32
+              AccessLevel: Read
+              Value: 5066068
+            - Name: DisplayName
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+            - Name: Description
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+        - Name: RightMargin
+          Type: BaseDataVariableType
+          DataType: Size
+          Children:
+          - Name: EngineeringUnits
+            Type: EUInformationType
+            DataType: EUInformation
+            Children:
+            - Name: UnitId
+              Type: BaseDataVariableType
+              DataType: Int32
+              AccessLevel: Read
+              Value: 5066068
+            - Name: DisplayName
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+            - Name: Description
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+        - Name: TopMargin
+          Type: BaseDataVariableType
+          DataType: Size
+          Value: 12.699999809265137
+          Children:
+          - Name: EngineeringUnits
+            Type: EUInformationType
+            DataType: EUInformation
+            Children:
+            - Name: UnitId
+              Type: BaseDataVariableType
+              DataType: Int32
+              AccessLevel: Read
+              Value: 5066068
+            - Name: DisplayName
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+            - Name: Description
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+  - Name: Footer
+    Type: Panel
+    Children:
+    - Name: Height
+      Type: BaseDataVariableType
+      DataType: Size
+      Value: 20.0
+      Children:
+      - Name: EngineeringUnits
+        Type: EUInformationType
+        DataType: EUInformation
+        Children:
+        - Name: UnitId
+          Type: BaseDataVariableType
+          DataType: Int32
+          AccessLevel: Read
+          Value: 5066068
+        - Name: DisplayName
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+        - Name: Description
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+  - Class: Reference
+    Target: ns=35;i=16
+    Direction: Forward
+  - Name: TopMargin
+    Type: BaseDataVariableType
+    DataType: Size
+    Children:
+    - Name: EngineeringUnits
+      Type: EUInformationType
+      DataType: EUInformation
+      Children:
+      - Name: UnitId
+        Type: BaseDataVariableType
+        DataType: Int32
+        AccessLevel: Read
+        Value: 5066068
+      - Name: DisplayName
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+      - Name: Description
+        Type: BaseDataVariableType
+        DataType: LocalizedText

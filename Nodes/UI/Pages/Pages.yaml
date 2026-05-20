@@ -22229,9 +22229,104 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 310.0
+  - Name: Button1
+    Type: Button
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Button1"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 16.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 360.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=3;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: "/Objects/mes_v1/Reports/Reports1"
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: ns=3;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "GeneratePdf"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: OutputPath
+              Type: BaseDataVariableType
+              DataType: ResourceUri
+              Description: {"NamespaceIndex":35,"TextId":"GeneratePdfOutputPathDescription"}
+              Value: "file:///C:/Users/Julio Badillo/Documents/MES_csv/report1.pdf"
+            - Name: LocaleId
+              Type: BaseDataVariableType
+              DataType: LocaleId
+              Description: {"NamespaceIndex":35,"TextId":"GeneratePdfLocaleIdDescription"}
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{Session}/LocaleId"
+          - Name: OutputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: OperationId
+              Type: BaseDataVariableType
+              DataType: Guid
+              Description: {"NamespaceIndex":35,"TextId":"GeneratePdfOperationIdDescription"}
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
 - File: ESG_web_links/ESG_web_links.yaml
 - File: process_stages/process_stages.yaml
-- Name: ESG_DASHBOARD1
+- Name: Critical_equipment
   Id: g=44383d53266da9a50f876e9b1d6b9d71
   Supertype: page
   ReferenceType: HasComponent
@@ -26105,22 +26200,21 @@ Children:
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
-              Value: 312.0
+              Value: 390.0
             - Name: Height
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
-              Value: 370.0
+              Value: 675.0
             - Name: HorizontalAlignment
               Type: BaseVariableType
               DataType: HorizontalAlignment
               ModellingRule: Optional
-              Value: 3
+              Value: 2
             - Name: VerticalAlignment
               Type: BaseVariableType
               DataType: VerticalAlignment
               ModellingRule: Optional
-              Value: 3
         - Name: HorizontalLayout1
           Type: RowLayout
           Children:
@@ -26296,6 +26390,4017 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 1420.0
+- Name: Traceability
+  Id: g=ca1df77bd0a32c60b68bd2c97282f50a
+  Supertype: page
+  ReferenceType: HasComponent
+  Children:
+  - Name: pageID
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: Rectangle1
+    Type: Rectangle
+    Children:
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: FillColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#0a141b"
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalLayout1
+      Type: ColumnLayout
+      Children:
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 50.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 50.0
+      - Name: Label1
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"LOT TRACEABILITY"}
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#ffffff"
+        - Name: FontSize
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 20.0
+        - Name: FontWeight
+          Type: BaseDataVariableType
+          DataType: FontWeightEnum
+          ModellingRule: Optional
+          Value: 700
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 5.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 3.0
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: HorizontalLayout1
+        Type: RowLayout
+        Children:
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 980.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 85.0
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+        - Name: Rectangle1
+          Type: Rectangle
+          Children:
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 160.0
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 200.0
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 40.0
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 3
+          - Name: FillColor
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#13232f"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_FILL"
+          - Name: BorderColor
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#2a3f4f"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_BORDER"
+          - Name: BorderThickness
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 3.0
+          - Name: Label1
+            Type: Label
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              ModellingRule: Optional
+              Value: {"LocaleId":"en-US","Text":"LOT"}
+            - Name: TextColor
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#ffffff"
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 6.0
+            - Name: FontSize
+              Type: BaseDataVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 15.0
+            - Name: HorizontalAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              ModellingRule: Optional
+              Value: 2
+          - Name: Label3
+            Type: Label
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            - Name: TextColor
+              Type: BaseDataVariableType
+              DataType: Color
+              Value: "#ffffff"
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_TEXT"
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 30.0
+            - Name: FontSize
+              Type: BaseDataVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 30.0
+            - Name: HorizontalAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              ModellingRule: Optional
+              Value: 2
+          - Name: CornerRadius
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 10.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 15.0
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+        - Name: Rectangle2
+          Type: Rectangle
+          Children:
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 160.0
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 200.0
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 8.0
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 3
+          - Name: FillColor
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#13232f"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_FILL"
+          - Name: BorderColor
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#2a3f4f"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_BORDER"
+          - Name: BorderThickness
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 3.0
+          - Name: Label1
+            Type: Label
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              ModellingRule: Optional
+              Value: {"LocaleId":"en-US","Text":"Current status"}
+            - Name: TextColor
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#ffffff"
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 6.0
+            - Name: FontSize
+              Type: BaseDataVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 15.0
+            - Name: HorizontalAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              ModellingRule: Optional
+              Value: 2
+          - Name: Label3
+            Type: Label
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            - Name: TextColor
+              Type: BaseDataVariableType
+              DataType: Color
+              Value: "#ffffff"
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_TEXT"
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 30.0
+            - Name: FontSize
+              Type: BaseDataVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 30.0
+            - Name: HorizontalAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              ModellingRule: Optional
+              Value: 2
+          - Name: CornerRadius
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 10.0
+        - Name: Rectangle3
+          Type: Rectangle
+          Children:
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 160.0
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 200.0
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 8.0
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 3
+          - Name: FillColor
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#13232f"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_FILL"
+          - Name: BorderColor
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#2a3f4f"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_BORDER"
+          - Name: BorderThickness
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 3.0
+          - Name: Label1
+            Type: Label
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              ModellingRule: Optional
+              Value: {"LocaleId":"en-US","Text":"Current stage"}
+            - Name: TextColor
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#ffffff"
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 6.0
+            - Name: FontSize
+              Type: BaseDataVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 15.0
+            - Name: HorizontalAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              ModellingRule: Optional
+              Value: 2
+          - Name: Label3
+            Type: Label
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            - Name: TextColor
+              Type: BaseDataVariableType
+              DataType: Color
+              Value: "#ffffff"
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_TEXT"
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 30.0
+            - Name: FontSize
+              Type: BaseDataVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 30.0
+            - Name: HorizontalAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              ModellingRule: Optional
+              Value: 2
+          - Name: CornerRadius
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 10.0
+        - Name: Rectangle4
+          Type: Rectangle
+          Children:
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 160.0
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 200.0
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 8.0
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 3
+          - Name: FillColor
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#13232f"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_FILL"
+          - Name: BorderColor
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#2a3f4f"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_BORDER"
+          - Name: BorderThickness
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 3.0
+          - Name: Label1
+            Type: Label
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              ModellingRule: Optional
+              Value: {"LocaleId":"en-US","Text":"Current equipment"}
+            - Name: TextColor
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#ffffff"
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 6.0
+            - Name: FontSize
+              Type: BaseDataVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 15.0
+            - Name: HorizontalAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              ModellingRule: Optional
+              Value: 2
+          - Name: Label3
+            Type: Label
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            - Name: TextColor
+              Type: BaseDataVariableType
+              DataType: Color
+              Value: "#ffffff"
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_TEXT"
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 30.0
+            - Name: FontSize
+              Type: BaseDataVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 30.0
+            - Name: HorizontalAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              ModellingRule: Optional
+              Value: 2
+          - Name: CornerRadius
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 10.0
+        - Name: Rectangle5
+          Type: Rectangle
+          Children:
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 160.0
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 200.0
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 8.0
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 3
+          - Name: FillColor
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#13232f"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_FILL"
+          - Name: BorderColor
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#2a3f4f"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_BORDER"
+          - Name: BorderThickness
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 3.0
+          - Name: Label1
+            Type: Label
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              ModellingRule: Optional
+              Value: {"LocaleId":"en-US","Text":"Origin"}
+            - Name: TextColor
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#ffffff"
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 6.0
+            - Name: FontSize
+              Type: BaseDataVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 15.0
+            - Name: HorizontalAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              ModellingRule: Optional
+              Value: 2
+          - Name: Label3
+            Type: Label
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            - Name: TextColor
+              Type: BaseDataVariableType
+              DataType: Color
+              Value: "#ffffff"
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_TEXT"
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 30.0
+            - Name: FontSize
+              Type: BaseDataVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 30.0
+            - Name: HorizontalAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              ModellingRule: Optional
+              Value: 2
+          - Name: CornerRadius
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 10.0
+        - Name: Rectangle6
+          Type: Rectangle
+          Children:
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 160.0
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 200.0
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 8.0
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 3
+          - Name: FillColor
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#13232f"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_FILL"
+          - Name: BorderColor
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#2a3f4f"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_BORDER"
+          - Name: BorderThickness
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 3.0
+          - Name: Label1
+            Type: Label
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              ModellingRule: Optional
+              Value: {"LocaleId":"en-US","Text":"Tonnage"}
+            - Name: TextColor
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#ffffff"
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 6.0
+            - Name: FontSize
+              Type: BaseDataVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 15.0
+            - Name: HorizontalAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              ModellingRule: Optional
+              Value: 2
+          - Name: Label3
+            Type: Label
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            - Name: TextColor
+              Type: BaseDataVariableType
+              DataType: Color
+              Value: "#ffffff"
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_TEXT"
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 30.0
+            - Name: FontSize
+              Type: BaseDataVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 30.0
+            - Name: HorizontalAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              ModellingRule: Optional
+              Value: 2
+          - Name: CornerRadius
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 10.0
+        - Name: Rectangle7
+          Type: Rectangle
+          Children:
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 160.0
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 200.0
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 8.0
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 3
+          - Name: FillColor
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#13232f"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_FILL"
+          - Name: BorderColor
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#2a3f4f"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_BORDER"
+          - Name: BorderThickness
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 3.0
+          - Name: Label1
+            Type: Label
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              ModellingRule: Optional
+              Value: {"LocaleId":"en-US","Text":"Feed grade"}
+            - Name: TextColor
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#ffffff"
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 6.0
+            - Name: FontSize
+              Type: BaseDataVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 15.0
+            - Name: HorizontalAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              ModellingRule: Optional
+              Value: 2
+          - Name: Label3
+            Type: Label
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            - Name: TextColor
+              Type: BaseDataVariableType
+              DataType: Color
+              Value: "#ffffff"
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_TEXT"
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 30.0
+            - Name: FontSize
+              Type: BaseDataVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 30.0
+            - Name: HorizontalAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              ModellingRule: Optional
+              Value: 2
+          - Name: CornerRadius
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 10.0
+        - Name: Rectangle8
+          Type: Rectangle
+          Children:
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 160.0
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 200.0
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 8.0
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 3
+          - Name: FillColor
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#13232f"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_FILL"
+          - Name: BorderColor
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#2a3f4f"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_BORDER"
+          - Name: BorderThickness
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 3.0
+          - Name: Label1
+            Type: Label
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              ModellingRule: Optional
+              Value: {"LocaleId":"en-US","Text":"Lot start time"}
+            - Name: TextColor
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#ffffff"
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 6.0
+            - Name: FontSize
+              Type: BaseDataVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 15.0
+            - Name: HorizontalAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              ModellingRule: Optional
+              Value: 2
+          - Name: Label3
+            Type: Label
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            - Name: TextColor
+              Type: BaseDataVariableType
+              DataType: Color
+              Value: "#ffffff"
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_TEXT"
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 30.0
+            - Name: FontSize
+              Type: BaseDataVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 30.0
+            - Name: HorizontalAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              ModellingRule: Optional
+              Value: 2
+          - Name: CornerRadius
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 10.0
+      - Name: HorizontalLayout2
+        Type: RowLayout
+        Children:
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 1420.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 448.0
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+        - Name: Rectangle1
+          Type: Rectangle
+          Children:
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 1336.0
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 200.0
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 40.0
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 3
+          - Name: FillColor
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#13232f"
+          - Name: BorderColor
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#2a3f4f"
+          - Name: BorderThickness
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 3.0
+          - Name: Label1
+            Type: Label
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              ModellingRule: Optional
+              Value: {"LocaleId":"en-US","Text":"Critical equipment status"}
+            - Name: TextColor
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#ffffff"
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 12.0
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 6.0
+            - Name: FontSize
+              Type: BaseDataVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 15.0
+          - Name: CornerRadius
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 10.0
+          - Name: HorizontalLayout1
+            Type: RowLayout
+            Children:
+            - Name: Width
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 50.0
+            - Name: Height
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 155.0
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 40.0
+            - Name: HorizontalAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              ModellingRule: Optional
+              Value: 3
+            - Name: Rectangle1
+              Type: Rectangle
+              Children:
+              - Name: Width
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 170.0
+              - Name: Height
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 155.0
+              - Name: LeftMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 25.0
+              - Name: TopMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+              - Name: FillColor
+                Type: BaseDataVariableType
+                DataType: Color
+                ModellingRule: Optional
+                Value: "#162b38"
+              - Name: BorderThickness
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 3.0
+              - Name: CornerRadius
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 10.0
+              - Name: BorderColor
+                Type: BaseDataVariableType
+                DataType: Color
+                ModellingRule: Optional
+                Value: "#2a3f4f"
+              - Name: Label1
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  ModellingRule: Optional
+                  Value: {"LocaleId":"en-US","Text":"Extraction"}
+                - Name: WordWrap
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                  ModellingRule: Optional
+                  Value: true
+                - Name: Width
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 68.0
+                - Name: TextHorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: TextHorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 1
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 76.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 10.0
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  ModellingRule: Optional
+                  Value: "#ffffff"
+                - Name: RightMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+              - Name: Image1
+                Type: Image
+                Children:
+                - Name: Path
+                  Type: BaseDataVariableType
+                  DataType: ResourceUri
+                - Name: Width
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 80.0
+                - Name: Height
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 80.0
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 10.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 10.0
+              - Name: Label3
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/mes_v1/Model/KPIS/ESG/Energia_kWh"
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  Value: "#ffffff"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 80.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 44.0
+                - Name: FontSize
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 13.0
+                - Name: TextHorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: TextHorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 1
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+                - Name: RightMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+              - Name: Label2
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Value: {"LocaleId":"en-US","Text":"Start "}
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  Value: "#e4e4e4"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: -70.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 118.0
+                - Name: FontSize
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 12.0
+                - Name: TextHorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: TextHorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 1
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+                - Name: RightMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+              - Name: Label4
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Value: {"LocaleId":"en-US","Text":"End"}
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  Value: "#e4e4e4"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 78.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 119.0
+                - Name: FontSize
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 12.0
+                - Name: TextHorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: TextHorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 1
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+                - Name: RightMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+              - Name: Label5
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/mes_v1/Model/KPIS/ESG/Energia_kWh"
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  Value: "#ffffff"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: -70.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 104.0
+                - Name: FontSize
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 13.0
+                - Name: TextHorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: TextHorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 1
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+                - Name: RightMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+              - Name: Label6
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/mes_v1/Model/KPIS/ESG/Energia_kWh"
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  Value: "#ffffff"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 80.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 104.0
+                - Name: FontSize
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 13.0
+                - Name: TextHorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: TextHorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 1
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+                - Name: RightMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+            - Name: Label1
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                ModellingRule: Optional
+                Value: {"LocaleId":"en-US","Text":"→ "}
+              - Name: FontSize
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 40.0
+              - Name: FontWeight
+                Type: BaseDataVariableType
+                DataType: FontWeightEnum
+                ModellingRule: Optional
+                Value: 950
+              - Name: TextColor
+                Type: BaseDataVariableType
+                DataType: Color
+                ModellingRule: Optional
+                Value: "#ffffff"
+              - Name: VerticalAlignment
+                Type: BaseVariableType
+                DataType: VerticalAlignment
+                ModellingRule: Optional
+                Value: 2
+              - Name: LeftMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 5.0
+              - Name: TopMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+              - Name: BottomMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 20.0
+            - Name: Rectangle2
+              Type: Rectangle
+              Children:
+              - Name: Width
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 170.0
+              - Name: Height
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 155.0
+              - Name: LeftMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: -5.0
+              - Name: TopMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+              - Name: BorderColor
+                Type: BaseDataVariableType
+                DataType: Color
+                ModellingRule: Optional
+                Value: "#2a3f4f"
+              - Name: CornerRadius
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 10.0
+              - Name: BorderThickness
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 3.0
+              - Name: FillColor
+                Type: BaseDataVariableType
+                DataType: Color
+                ModellingRule: Optional
+                Value: "#162b38"
+              - Name: Label1
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  ModellingRule: Optional
+                  Value: {"LocaleId":"en-US","Text":"Crushing"}
+                - Name: WordWrap
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                  ModellingRule: Optional
+                  Value: true
+                - Name: Width
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 68.0
+                - Name: TextHorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: TextHorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 1
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 76.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 10.0
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  ModellingRule: Optional
+                  Value: "#ffffff"
+                - Name: RightMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+              - Name: Image1
+                Type: Image
+                Children:
+                - Name: Path
+                  Type: BaseDataVariableType
+                  DataType: ResourceUri
+                - Name: Width
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 80.0
+                - Name: Height
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 80.0
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 10.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 10.0
+              - Name: Label3
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/mes_v1/Model/KPIS/ESG/Energia_kWh"
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  Value: "#ffffff"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 80.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 44.0
+                - Name: FontSize
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 13.0
+                - Name: TextHorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: TextHorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 1
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+                - Name: RightMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+              - Name: Label2
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Value: {"LocaleId":"en-US","Text":"Start "}
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  Value: "#e4e4e4"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: -70.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 118.0
+                - Name: FontSize
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 12.0
+                - Name: TextHorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: TextHorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 1
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+                - Name: RightMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+              - Name: Label4
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Value: {"LocaleId":"en-US","Text":"End"}
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  Value: "#e4e4e4"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 78.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 119.0
+                - Name: FontSize
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 12.0
+                - Name: TextHorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: TextHorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 1
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+                - Name: RightMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+              - Name: Label5
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/mes_v1/Model/KPIS/ESG/Energia_kWh"
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  Value: "#ffffff"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: -70.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 104.0
+                - Name: FontSize
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 13.0
+                - Name: TextHorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: TextHorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 1
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+                - Name: RightMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+              - Name: Label6
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/mes_v1/Model/KPIS/ESG/Energia_kWh"
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  Value: "#ffffff"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 80.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 104.0
+                - Name: FontSize
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 13.0
+                - Name: TextHorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: TextHorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 1
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+                - Name: RightMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+            - Name: Label2
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                ModellingRule: Optional
+                Value: {"LocaleId":"en-US","Text":"→ "}
+              - Name: FontSize
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 40.0
+              - Name: FontWeight
+                Type: BaseDataVariableType
+                DataType: FontWeightEnum
+                ModellingRule: Optional
+                Value: 950
+              - Name: TextColor
+                Type: BaseDataVariableType
+                DataType: Color
+                ModellingRule: Optional
+                Value: "#ffffff"
+              - Name: VerticalAlignment
+                Type: BaseVariableType
+                DataType: VerticalAlignment
+                ModellingRule: Optional
+                Value: 2
+              - Name: LeftMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 5.0
+              - Name: TopMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+              - Name: BottomMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 20.0
+            - Name: Rectangle3
+              Type: Rectangle
+              Children:
+              - Name: Width
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 170.0
+              - Name: Height
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 155.0
+              - Name: LeftMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: -5.0
+              - Name: TopMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+              - Name: BorderColor
+                Type: BaseDataVariableType
+                DataType: Color
+                ModellingRule: Optional
+                Value: "#2a3f4f"
+              - Name: CornerRadius
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 10.0
+              - Name: BorderThickness
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 3.0
+              - Name: FillColor
+                Type: BaseDataVariableType
+                DataType: Color
+                ModellingRule: Optional
+                Value: "#162b38"
+              - Name: Label1
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  ModellingRule: Optional
+                  Value: {"LocaleId":"en-US","Text":"Grinding"}
+                - Name: WordWrap
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                  ModellingRule: Optional
+                  Value: true
+                - Name: Width
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 68.0
+                - Name: TextHorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: TextHorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 1
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 76.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 10.0
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  ModellingRule: Optional
+                  Value: "#ffffff"
+                - Name: RightMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+              - Name: Image1
+                Type: Image
+                Children:
+                - Name: Path
+                  Type: BaseDataVariableType
+                  DataType: ResourceUri
+                - Name: Width
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 80.0
+                - Name: Height
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 80.0
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 10.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 10.0
+              - Name: Label3
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/mes_v1/Model/KPIS/ESG/Energia_kWh"
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  Value: "#ffffff"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 80.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 44.0
+                - Name: FontSize
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 13.0
+                - Name: TextHorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: TextHorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 1
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+                - Name: RightMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+              - Name: Label2
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Value: {"LocaleId":"en-US","Text":"Start "}
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  Value: "#e4e4e4"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: -70.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 118.0
+                - Name: FontSize
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 12.0
+                - Name: TextHorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: TextHorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 1
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+                - Name: RightMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+              - Name: Label4
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Value: {"LocaleId":"en-US","Text":"End"}
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  Value: "#e4e4e4"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 78.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 119.0
+                - Name: FontSize
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 12.0
+                - Name: TextHorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: TextHorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 1
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+                - Name: RightMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+              - Name: Label5
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/mes_v1/Model/KPIS/ESG/Energia_kWh"
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  Value: "#ffffff"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: -70.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 104.0
+                - Name: FontSize
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 13.0
+                - Name: TextHorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: TextHorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 1
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+                - Name: RightMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+              - Name: Label6
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/mes_v1/Model/KPIS/ESG/Energia_kWh"
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  Value: "#ffffff"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 80.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 104.0
+                - Name: FontSize
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 13.0
+                - Name: TextHorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: TextHorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 1
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+                - Name: RightMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+            - Name: Label3
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                ModellingRule: Optional
+                Value: {"LocaleId":"en-US","Text":"→ "}
+              - Name: FontSize
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 40.0
+              - Name: FontWeight
+                Type: BaseDataVariableType
+                DataType: FontWeightEnum
+                ModellingRule: Optional
+                Value: 950
+              - Name: TextColor
+                Type: BaseDataVariableType
+                DataType: Color
+                ModellingRule: Optional
+                Value: "#ffffff"
+              - Name: VerticalAlignment
+                Type: BaseVariableType
+                DataType: VerticalAlignment
+                ModellingRule: Optional
+                Value: 2
+              - Name: LeftMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 5.0
+              - Name: TopMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+              - Name: BottomMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 20.0
+            - Name: Rectangle4
+              Type: Rectangle
+              Children:
+              - Name: Width
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 170.0
+              - Name: Height
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 155.0
+              - Name: LeftMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: -5.0
+              - Name: TopMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+              - Name: BorderColor
+                Type: BaseDataVariableType
+                DataType: Color
+                ModellingRule: Optional
+                Value: "#2a3f4f"
+              - Name: CornerRadius
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 10.0
+              - Name: BorderThickness
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 3.0
+              - Name: FillColor
+                Type: BaseDataVariableType
+                DataType: Color
+                ModellingRule: Optional
+                Value: "#162b38"
+              - Name: Label1
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  ModellingRule: Optional
+                  Value: {"LocaleId":"en-US","Text":"Flotation"}
+                - Name: WordWrap
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                  ModellingRule: Optional
+                  Value: true
+                - Name: Width
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 68.0
+                - Name: TextHorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: TextHorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 1
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 76.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 10.0
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  ModellingRule: Optional
+                  Value: "#ffffff"
+                - Name: RightMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+              - Name: Image1
+                Type: Image
+                Children:
+                - Name: Path
+                  Type: BaseDataVariableType
+                  DataType: ResourceUri
+                - Name: Width
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 80.0
+                - Name: Height
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 80.0
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 10.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 10.0
+              - Name: Label3
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/mes_v1/Model/KPIS/ESG/Energia_kWh"
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  Value: "#ffffff"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 80.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 44.0
+                - Name: FontSize
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 13.0
+                - Name: TextHorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: TextHorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 1
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+                - Name: RightMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+              - Name: Label2
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Value: {"LocaleId":"en-US","Text":"Start "}
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  Value: "#e4e4e4"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: -70.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 118.0
+                - Name: FontSize
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 12.0
+                - Name: TextHorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: TextHorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 1
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+                - Name: RightMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+              - Name: Label4
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Value: {"LocaleId":"en-US","Text":"End"}
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  Value: "#e4e4e4"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 78.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 119.0
+                - Name: FontSize
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 12.0
+                - Name: TextHorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: TextHorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 1
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+                - Name: RightMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+              - Name: Label5
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/mes_v1/Model/KPIS/ESG/Energia_kWh"
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  Value: "#ffffff"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: -70.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 104.0
+                - Name: FontSize
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 13.0
+                - Name: TextHorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: TextHorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 1
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+                - Name: RightMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+              - Name: Label6
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/mes_v1/Model/KPIS/ESG/Energia_kWh"
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  Value: "#ffffff"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 80.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 104.0
+                - Name: FontSize
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 13.0
+                - Name: TextHorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: TextHorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 1
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+                - Name: RightMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+            - Name: Label4
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                ModellingRule: Optional
+                Value: {"LocaleId":"en-US","Text":"→ "}
+              - Name: FontSize
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 40.0
+              - Name: FontWeight
+                Type: BaseDataVariableType
+                DataType: FontWeightEnum
+                ModellingRule: Optional
+                Value: 950
+              - Name: TextColor
+                Type: BaseDataVariableType
+                DataType: Color
+                ModellingRule: Optional
+                Value: "#ffffff"
+              - Name: VerticalAlignment
+                Type: BaseVariableType
+                DataType: VerticalAlignment
+                ModellingRule: Optional
+                Value: 2
+              - Name: LeftMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 5.0
+              - Name: TopMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+              - Name: BottomMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 20.0
+            - Name: Rectangle5
+              Type: Rectangle
+              Children:
+              - Name: Width
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 170.0
+              - Name: Height
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 155.0
+              - Name: LeftMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: -5.0
+              - Name: TopMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+              - Name: BorderColor
+                Type: BaseDataVariableType
+                DataType: Color
+                ModellingRule: Optional
+                Value: "#2a3f4f"
+              - Name: CornerRadius
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 10.0
+              - Name: BorderThickness
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 3.0
+              - Name: FillColor
+                Type: BaseDataVariableType
+                DataType: Color
+                ModellingRule: Optional
+                Value: "#162b38"
+              - Name: Label1
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  ModellingRule: Optional
+                  Value: {"LocaleId":"en-US","Text":"Foundry"}
+                - Name: WordWrap
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                  ModellingRule: Optional
+                  Value: true
+                - Name: Width
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 68.0
+                - Name: TextHorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: TextHorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 1
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 76.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 10.0
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  ModellingRule: Optional
+                  Value: "#ffffff"
+                - Name: RightMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+              - Name: Image1
+                Type: Image
+                Children:
+                - Name: Path
+                  Type: BaseDataVariableType
+                  DataType: ResourceUri
+                - Name: Width
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 80.0
+                - Name: Height
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 80.0
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 10.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 10.0
+              - Name: Label3
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/mes_v1/Model/KPIS/ESG/Energia_kWh"
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  Value: "#ffffff"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 80.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 44.0
+                - Name: FontSize
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 13.0
+                - Name: TextHorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: TextHorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 1
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+                - Name: RightMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+              - Name: Label2
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Value: {"LocaleId":"en-US","Text":"Start "}
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  Value: "#e4e4e4"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: -70.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 118.0
+                - Name: FontSize
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 12.0
+                - Name: TextHorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: TextHorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 1
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+                - Name: RightMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+              - Name: Label4
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Value: {"LocaleId":"en-US","Text":"End"}
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  Value: "#e4e4e4"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 78.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 119.0
+                - Name: FontSize
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 12.0
+                - Name: TextHorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: TextHorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 1
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+                - Name: RightMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+              - Name: Label5
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/mes_v1/Model/KPIS/ESG/Energia_kWh"
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  Value: "#ffffff"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: -70.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 104.0
+                - Name: FontSize
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 13.0
+                - Name: TextHorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: TextHorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 1
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+                - Name: RightMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+              - Name: Label6
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/mes_v1/Model/KPIS/ESG/Energia_kWh"
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  Value: "#ffffff"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 80.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 104.0
+                - Name: FontSize
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 13.0
+                - Name: TextHorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: TextHorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 1
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+                - Name: RightMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+            - Name: Label5
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                ModellingRule: Optional
+                Value: {"LocaleId":"en-US","Text":"→ "}
+              - Name: FontSize
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 40.0
+              - Name: FontWeight
+                Type: BaseDataVariableType
+                DataType: FontWeightEnum
+                ModellingRule: Optional
+                Value: 950
+              - Name: TextColor
+                Type: BaseDataVariableType
+                DataType: Color
+                ModellingRule: Optional
+                Value: "#ffffff"
+              - Name: VerticalAlignment
+                Type: BaseVariableType
+                DataType: VerticalAlignment
+                ModellingRule: Optional
+                Value: 2
+              - Name: LeftMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 5.0
+              - Name: TopMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+              - Name: BottomMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 20.0
+            - Name: Rectangle6
+              Type: Rectangle
+              Children:
+              - Name: Width
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 180.0
+              - Name: Height
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 155.0
+              - Name: LeftMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: -5.0
+              - Name: TopMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+              - Name: BorderColor
+                Type: BaseDataVariableType
+                DataType: Color
+                ModellingRule: Optional
+                Value: "#2a3f4f"
+              - Name: CornerRadius
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 10.0
+              - Name: BorderThickness
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 3.0
+              - Name: FillColor
+                Type: BaseDataVariableType
+                DataType: Color
+                ModellingRule: Optional
+                Value: "#162b38"
+              - Name: Label3
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/mes_v1/Model/KPIS/ESG/Energia_kWh"
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  Value: "#ffffff"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 90.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 44.0
+                - Name: FontSize
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 13.0
+                - Name: TextHorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: TextHorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 1
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+                - Name: RightMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+              - Name: Label1
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  ModellingRule: Optional
+                  Value: {"LocaleId":"en-US","Text":"Electrowinning"}
+                - Name: WordWrap
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                  ModellingRule: Optional
+                  Value: true
+                - Name: Width
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 98.0
+                - Name: TextHorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: TextHorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 1
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 88.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 10.0
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  ModellingRule: Optional
+                  Value: "#ffffff"
+                - Name: RightMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+              - Name: Image1
+                Type: Image
+                Children:
+                - Name: Path
+                  Type: BaseDataVariableType
+                  DataType: ResourceUri
+                - Name: Width
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 80.0
+                - Name: Height
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 80.0
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 10.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 10.0
+              - Name: Label2
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Value: {"LocaleId":"en-US","Text":"Start "}
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  Value: "#e4e4e4"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: -70.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 118.0
+                - Name: FontSize
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 12.0
+                - Name: TextHorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: TextHorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 1
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+                - Name: RightMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+              - Name: Label4
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Value: {"LocaleId":"en-US","Text":"End"}
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  Value: "#e4e4e4"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 78.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 119.0
+                - Name: FontSize
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 12.0
+                - Name: TextHorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: TextHorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 1
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+                - Name: RightMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+              - Name: Label5
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/mes_v1/Model/KPIS/ESG/Energia_kWh"
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  Value: "#ffffff"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: -70.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 104.0
+                - Name: FontSize
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 13.0
+                - Name: TextHorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: TextHorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 1
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+                - Name: RightMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+              - Name: Label6
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/mes_v1/Model/KPIS/ESG/Energia_kWh"
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  Value: "#ffffff"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 80.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 104.0
+                - Name: FontSize
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 13.0
+                - Name: TextHorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: TextHorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 1
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+                - Name: RightMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: -2.0
+          - Name: BottomMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 52.0
+          - Name: HorizontalLayout2
+            Type: RowLayout
+            Children:
+            - Name: Width
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 50.0
+            - Name: Height
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 185.0
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 205.0
+            - Name: HorizontalAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              ModellingRule: Optional
+              Value: 3
+            - Name: Rectangle1
+              Type: Rectangle
+              Children:
+              - Name: Width
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 695.0
+              - Name: Height
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 200.0
+              - Name: LeftMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 25.0
+              - Name: VerticalAlignment
+                Type: BaseVariableType
+                DataType: VerticalAlignment
+                ModellingRule: Optional
+                Value: 3
+              - Name: FillColor
+                Type: BaseDataVariableType
+                DataType: Color
+                Value: "#13232f"
+              - Name: BorderColor
+                Type: BaseDataVariableType
+                DataType: Color
+                Value: "#2a3f4f"
+              - Name: BorderThickness
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 3.0
+              - Name: Label1
+                Type: Label
+                Children:
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  ModellingRule: Optional
+                  Value: "#ffffff"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 12.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 6.0
+                - Name: FontSize
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 15.0
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  ModellingRule: Optional
+                  Value: {"LocaleId":"en-US","Text":"Lot timeline"}
+              - Name: CornerRadius
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 10.0
+              - Name: DataGrid1
+                Type: DataGrid
+                Children:
+                - Name: Model
+                  Type: NodePointer
+                  DataType: NodeId
+                  Children:
+                  - Name: ItemKind
+                    Type: PropertyType
+                    DataType: NodeId
+                  - Name: Kind
+                    Type: PropertyType
+                    DataType: NodeId
+                - Name: Query
+                  Type: BaseDataVariableType
+                  DataType: String
+                - Name: Columns
+                  Type: BaseObjectType
+                  Children:
+                  - Name: DataGridColumn1
+                    Type: DataGridColumn
+                    Children:
+                    - Name: Title
+                      Type: BaseDataVariableType
+                      DataType: LocalizedText
+                    - Name: Width
+                      Type: BaseDataVariableType
+                      DataType: Size
+                      Value: -1.0
+                    - Name: Visible
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      Value: true
+                    - Name: HeaderAlignment
+                      Type: BaseDataVariableType
+                      DataType: TextHorizontalAlignment
+                    - Name: ContentAlignment
+                      Type: BaseVariableType
+                      DataType: HorizontalAlignment
+                    - Name: OrderBy
+                      Type: BaseDataVariableType
+                      DataType: NodePath
+                    - Name: DataItemTemplate
+                      Type: DataGridLabelItemTemplate
+                      Children:
+                      - Name: Text
+                        Type: BaseDataVariableType
+                        DataType: LocalizedText
+                - Name: SelectedItem
+                  Type: NodePointer
+                  DataType: NodeId
+                  Children:
+                  - Name: Kind
+                    Type: PropertyType
+                    DataType: NodeId
+                - Name: UISelectedItem
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                  AccessLevel: Read
+                - Name: SortColumn
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                - Name: SortOrder
+                  Type: BaseDataVariableType
+                  DataType: SortOrderEnum
+                - Class: Reference
+                  Target: ns=5;i=504
+                  Direction: Forward
+                - Name: Width
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 674.0
+                - Name: Height
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 160.0
+                - Name: Item
+                  Type: Alias
+                  DataType: NodeId
+                  Children:
+                  - Name: Kind
+                    Type: PropertyType
+                    DataType: NodeId
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 25.0
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: Rectangle2
+              Type: Rectangle
+              Children:
+              - Name: Width
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 570.0
+              - Name: Height
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 200.0
+              - Name: LeftMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 10.0
+              - Name: VerticalAlignment
+                Type: BaseVariableType
+                DataType: VerticalAlignment
+                ModellingRule: Optional
+                Value: 3
+              - Name: FillColor
+                Type: BaseDataVariableType
+                DataType: Color
+                Value: "#13232f"
+              - Name: BorderColor
+                Type: BaseDataVariableType
+                DataType: Color
+                Value: "#2a3f4f"
+              - Name: BorderThickness
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 3.0
+              - Name: Label1
+                Type: Label
+                Children:
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  ModellingRule: Optional
+                  Value: "#ffffff"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 12.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 6.0
+                - Name: FontSize
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 15.0
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  ModellingRule: Optional
+                  Value: {"LocaleId":"en-US","Text":"Current parameters"}
+              - Name: CornerRadius
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 10.0
+              - Name: Current parameters
+                Type: PanelLoader
+                Children:
+                - Name: Panel
+                  Type: NodePointer
+                  DataType: NodeId
+                  Children:
+                  - Name: Kind
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+                - Name: CurrentPanel
+                  Type: NodePointer
+                  DataType: NodeId
+                  AccessLevel: Read
+                  Children:
+                  - Name: Kind
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item"
+                - Class: Reference
+                  Target: ns=5;i=478
+                  Direction: Forward
+                - Name: Width
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 550.0
+                - Name: Height
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 150.0
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 35.0
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 15.0
+      - Name: HorizontalLayout3
+        Type: RowLayout
+        Children:
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 1420.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 265.0
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+        - Name: Rectangle1
+          Type: Rectangle
+          Children:
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 600.0
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 200.0
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 40.0
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 3
+          - Name: FillColor
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#13232f"
+          - Name: BorderColor
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#2a3f4f"
+          - Name: BorderThickness
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 3.0
+          - Name: Label1
+            Type: Label
+            Children:
+            - Name: TextColor
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#ffffff"
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 12.0
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 6.0
+            - Name: FontSize
+              Type: BaseDataVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 15.0
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              ModellingRule: Optional
+              Value: {"LocaleId":"en-US","Text":"Stage details"}
+          - Name: CornerRadius
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 10.0
+          - Name: Stage details
+            Type: PanelLoader
+            Children:
+            - Name: Panel
+              Type: NodePointer
+              DataType: NodeId
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+            - Name: CurrentPanel
+              Type: NodePointer
+              DataType: NodeId
+              AccessLevel: Read
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item"
+            - Class: Reference
+              Target: ns=5;i=478
+              Direction: Forward
+            - Name: Width
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 580.0
+            - Name: Height
+              Type: BaseVariableType
+              DataType: Size
+              Value: 220.0
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 35.0
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 10.0
+            - Name: HorizontalAlignment
+              Type: BaseVariableType
+              DataType: HorizontalAlignment
+              ModellingRule: Optional
+              Value: 2
+            - Name: RightMargin
+              Type: BaseVariableType
+              DataType: Size
+              Value: 10.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: -45.0
+        - Name: Rectangle2
+          Type: Rectangle
+          Children:
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 720.0
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 200.0
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 10.0
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 3
+          - Name: FillColor
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#13232f"
+          - Name: BorderColor
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#2a3f4f"
+          - Name: BorderThickness
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 3.0
+          - Name: Label1
+            Type: Label
+            Children:
+            - Name: TextColor
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#ffffff"
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 12.0
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 6.0
+            - Name: FontSize
+              Type: BaseDataVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 15.0
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              ModellingRule: Optional
+              Value: {"LocaleId":"en-US","Text":"Parameters monitoring"}
+          - Name: CornerRadius
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 10.0
+          - Name: PanelLoader3
+            Type: PanelLoader
+            Children:
+            - Name: Panel
+              Type: NodePointer
+              DataType: NodeId
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+            - Name: CurrentPanel
+              Type: NodePointer
+              DataType: NodeId
+              AccessLevel: Read
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item"
+            - Class: Reference
+              Target: ns=5;i=478
+              Direction: Forward
+            - Name: Width
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 100.0
+            - Name: Height
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 220.0
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 10.0
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 35.0
+          - Name: PanelLoader4
+            Type: PanelLoader
+            Children:
+            - Name: Panel
+              Type: NodePointer
+              DataType: NodeId
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+            - Name: CurrentPanel
+              Type: NodePointer
+              DataType: NodeId
+              AccessLevel: Read
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item"
+            - Class: Reference
+              Target: ns=5;i=478
+              Direction: Forward
+            - Name: Width
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 590.0
+            - Name: Height
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 220.0
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 120.0
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 35.0
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
   - Name: Width
     Type: BaseVariableType
     DataType: Size

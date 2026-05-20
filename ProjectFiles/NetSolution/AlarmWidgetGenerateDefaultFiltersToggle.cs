@@ -12,6 +12,7 @@ using FTOptix.InfluxDBStore;
 using FTOptix.InfluxDBStoreRemote;
 using FTOptix.RAEtherNetIP;
 using FTOptix.CommunicationDriver;
+using FTOptix.Report;
 using static AlarmFilterDataLogic;
 #endregion
 

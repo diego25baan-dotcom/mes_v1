@@ -9,6 +9,7 @@ using FTOptix.Core;
 using FTOptix.HMIProject;
 using FTOptix.RAEtherNetIP;
 using FTOptix.CommunicationDriver;
+using FTOptix.Report;
 #endregion
 
 public class DataLoggerExporter : BaseNetLogic

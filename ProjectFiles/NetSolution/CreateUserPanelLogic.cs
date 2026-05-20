@@ -17,6 +17,7 @@ using FTOptix.InfluxDBStore;
 using FTOptix.InfluxDBStoreRemote;
 using FTOptix.RAEtherNetIP;
 using FTOptix.CommunicationDriver;
+using FTOptix.Report;
 using OpcUa = UAManagedCore.OpcUa;
 #endregion
 
