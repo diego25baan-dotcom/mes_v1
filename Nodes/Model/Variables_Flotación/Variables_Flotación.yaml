@@ -1,2 +1,6 @@
 Name: Variables_Flotación
 Type: FolderType
+Children:
+- Name: Variable1
+  Type: BaseDataVariableType
+  DataType: Int32

@@ -1,2 +1,15 @@
 Name: ESG
 Type: FolderType
+Children:
+- Name: Potencia_kW
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Toneladas_producidas
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: CO2_total
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Variable1
+  Type: BaseDataVariableType
+  DataType: Int32

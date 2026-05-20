@@ -145,14 +145,6 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "Chancado_ON"
-- Name: Chancado_OFF
-  Type: RAEtherNetIPTag
-  DataType: Boolean
-  Children:
-  - Name: SymbolName
-    Type: BaseDataVariableType
-    DataType: String
-    Value: "Chancado_OFF"
 - Name: Chancadora_ON
   Type: RAEtherNetIPTag
   DataType: Boolean
@@ -969,3 +961,483 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "Ley_mineral_salida_chanc"
+- Name: Chancado_OFF
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Chancado_OFF"
+- Name: Nivel_Pila_Chan
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Nivel_Pila_Chan"
+- Name: Toneladas_Pila
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Toneladas_Pila"
+- Name: Capacidad_Pila_Ton
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Capacidad_Pila_Ton"
+- Name: Nivel_min_Pila
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Nivel_min_Pila"
+- Name: Nivel_Max_Pila
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Nivel_Max_Pila"
+- Name: Alarma_Pila_Vacia
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Alarma_Pila_Vacia"
+- Name: Alarma_Pila_Llena
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Alarma_Pila_Llena"
+- Name: Correa_Alim_SAG_ON
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Correa_Alim_SAG_ON"
+- Name: Vel_Correa_SAG
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Vel_Correa_SAG"
+- Name: Vel_Max_Correa_SAG
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Vel_Max_Correa_SAG"
+- Name: Vel_min_Correa_SAG
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Vel_min_Correa_SAG"
+- Name: Vel_correa_SAG_A0
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Vel_correa_SAG_A0"
+- Name: Flag_reducir_correa_SAG
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Flag_reducir_correa_SAG"
+- Name: Valvula_agua_SAG_on
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Valvula_agua_SAG_on"
+- Name: Caudal_Agua_SAG_Ls
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Caudal_Agua_SAG_Ls"
+- Name: Densidad_Pulpa_SAG
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Densidad_Pulpa_SAG"
+- Name: Densidad_Max_SAG
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Densidad_Max_SAG"
+- Name: SAG_molino_ON
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "SAG_molino_ON"
+- Name: Motor_SAG
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Motor_SAG"
+- Name: Potencia_SAG_kW
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Potencia_SAG_kW"
+- Name: Limite_Pot_SAG
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Limite_Pot_SAG"
+- Name: Llimite_Critico_SAG
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Llimite_Critico_SAG"
+- Name: Nivel_Pulpa_SAG
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Nivel_Pulpa_SAG"
+- Name: Nivel_Max_Pulpa_SAG
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Nivel_Max_Pulpa_SAG"
+- Name: Alarma_Sobrecarga_SAG
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Alarma_Sobrecarga_SAG"
+- Name: Alarma_Nivel_Alto_SAG
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Alarma_Nivel_Alto_SAG"
+- Name: Alarma_Sin_Material_SAG
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Alarma_Sin_Material_SAG"
+- Name: Tiempo_SAG_s
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Tiempo_SAG_s"
+- Name: Energia_SAG_kWh
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Energia_SAG_kWh"
+- Name: Bomba_Hidrociclon_Prim_ON
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Bomba_Hidrociclon_Prim_ON"
+- Name: Presion_Hidrociclon_Prim
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Presion_Hidrociclon_Prim"
+- Name: Presion_Min_Hidrociclon
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Presion_Min_Hidrociclon"
+- Name: Alarma_Presion_baja_HP
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Alarma_Presion_baja_HP"
+- Name: Energia_bomba_hidro_kWh
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Energia_bomba_hidro_kWh"
+- Name: Potencia_Bomba_hidro_kW
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Potencia_Bomba_hidro_kW"
+- Name: Valvula_Agua_Bolas_ON
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Valvula_Agua_Bolas_ON"
+- Name: Caudal_Agua_Bolas_Ls
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Caudal_Agua_Bolas_Ls"
+- Name: Densidad_Pulpa_Bolas
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Densidad_Pulpa_Bolas"
+- Name: Densidad_Max_Bolas
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Densidad_Max_Bolas"
+- Name: Molino_Bolas_ON
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Molino_Bolas_ON"
+- Name: Motor_Bolas
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Motor_Bolas"
+- Name: Potencia_Molino_Bolas_kW
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Potencia_Molino_Bolas_kW"
+- Name: Potencia_Total_Molienda_kW
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Potencia_Total_Molienda_kW"
+- Name: Energia_Total_Molienda_kWh
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Energia_Total_Molienda_kWh"
+- Name: Caudal_Agua_Total_Ls
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Caudal_Agua_Total_Ls"
+- Name: Volumen_Agua_SAG_L
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Volumen_Agua_SAG_L"
+- Name: Volumen_Agua_Total_L
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Volumen_Agua_Total_L"
+- Name: FeedRate_Molienda_tph
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "FeedRate_Molienda_tph"
+- Name: Toneladas_Molienda_entrada
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Toneladas_Molienda_entrada"
+- Name: Toneladas_Molienda_salida
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Toneladas_Molienda_salida"
+- Name: Ley_mineral_entrada_Molienda
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Ley_mineral_entrada_Molienda"
+- Name: Potencia_renovable_Molienda_kW
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Potencia_renovable_Molienda_kW"
+- Name: Alarma_Molienda_Activa
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Alarma_Molienda_Activa"
+- Name: Indicador_Molienda_Activa
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Indicador_Molienda_Activa"
+- Name: Reset_acumulados_Molienda
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Reset_acumulados_Molienda"
+- Name: Caudal_descarga_Molino
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Caudal_descarga_Molino"
+- Name: Numero_Incidentes_Molino
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Numero_Incidentes_Molino"
+- Name: Tiempo_Respuesta_molino
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Tiempo_Respuesta_molino"
+- Name: Ley_mineral_salida_Molienda
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Ley_mineral_salida_Molienda"
