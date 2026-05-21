@@ -465,6 +465,21 @@ Children:
         - Name: Timestamp
           Type: StoreColumn
           DataType: UtcTime
+        - Name: Energia_KWh
+          Type: StoreColumn
+          DataType: Float
+        - Name: KPI_EN_001 CONSUMO
+          Type: StoreColumn
+          DataType: Float
+        - Name: KPI_EN_002 CO2_AREA
+          Type: StoreColumn
+          DataType: Float
+        - Name: KPI_EN_003 KWh_ton
+          Type: StoreColumn
+          DataType: Float
+        - Name: KPI_EN_004 % EN RENOVABLE
+          Type: StoreColumn
+          DataType: Float
     - Name: DataLogger_esg
       Id: g=94c8183a4a024b978219ff94237b229d
       Type: RemoteInfluxDBStoreTable

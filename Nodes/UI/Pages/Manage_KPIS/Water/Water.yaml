@@ -1,0 +1,1571 @@
+Name: Water
+Type: FolderType
+Children:
+- Name: KPI01_WA
+  Id: g=59f279bec6817af60bb4706974007b9b
+  Supertype: Manage_KPI_variables
+  ReferenceType: HasComponent
+  Children:
+  - Name: Label1
+    Type: Label
+  - Name: HorizontalLayout1
+    Type: RowLayout
+    Children:
+    - Name: Rectangle1
+      Type: Rectangle
+      Children:
+      - Name: Label1
+        Type: Label
+      - Name: Label2
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"KPI-WA-001 — Water Footprint per Produced Unit"}
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+        - Name: RightMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 28.0
+        - Name: BottomMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+    - Name: Rectangle2
+      Type: Rectangle
+      Children:
+      - Name: Label1
+        Type: Label
+      - Name: Label2
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/mes_v1/Model/KPIS/Agua/KPI_WA_001_huella"
+  - Name: VerticalLayout1
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Measures water consumption associated with each produced unit or processed ton."}
+    - Name: Label3
+      Type: Label
+      Children:
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 68.0
+    - Name: Label4
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Water Footprint=\n\nTotal Water Consumption/Processed tons\n"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: -2.0
+    - Name: Label5
+      Type: Label
+    - Name: Label6
+      Type: Label
+    - Name: Rectangle2
+      Type: Rectangle
+      Children:
+      - Name: Label2
+        Type: Label
+      - Name: Caution1
+        Type: ScaleLayout
+        WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+        Children:
+        - Name: FillColor
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#d1d3d4"
+        - Name: Icon_border
+          Type: Image
+          Children:
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+            Value: "ns=14;%PROJECTDIR%/res/CautionIcon_Icon_border.svg"
+          - Name: DynamicColor
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#d1d3d4"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../FillColor"
+  - Name: VerticalLayout2
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Rectangle2
+      Type: Rectangle
+      Children:
+      - Name: Rectangle1
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle2
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle3
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle4
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle5
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle6
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Total Water Consumption"}
+      - Name: Rectangle7
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Water used during operation."}
+      - Name: Rectangle8
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/mes_v1/Model/KPIS/Agua/Agua_total"
+      - Name: Rectangle9
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle10
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle11
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Processed Tons"}
+      - Name: Rectangle12
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Tons processed."}
+      - Name: Rectangle13
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/mes_v1/Model/KPIS/Agua/Toneladas producidas"
+      - Name: Rectangle14
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle15
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle16
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+      - Name: Rectangle17
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Visible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ModellingRule: Optional
+          - Name: Enabled
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ModellingRule: Optional
+      - Name: Rectangle18
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+      - Name: Rectangle19
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+      - Name: Rectangle20
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+      - Name: Trend1
+        Type: Trend
+        Children:
+        - Name: Pens
+          Type: BaseObjectType
+          Children:
+          - Name: KPI_WA_001_huella
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#8673a1"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/KPI_WA_001_huella/LastValue"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+        - Class: Reference
+          Target: ns=5;i=1129
+          Direction: Forward
+        - Name: XAxis
+          Type: DateTimeAxis
+          Children:
+          - Name: Follow
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Window
+            Type: BaseDataVariableType
+            DataType: Duration
+            Value: "0:00:30:00.0000000"
+          - Name: Interactive
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Time
+            Type: BaseDataVariableType
+            DataType: DateTime
+        - Name: YAxis
+          Type: ValueAxis
+          Children:
+          - Name: Position
+            Type: BaseDataVariableType
+            DataType: HorizontalPositionEnum
+          - Name: MinValue
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -100.0
+          - Name: MaxValue
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: 100.0
+          - Name: AutoScale
+            Type: BaseDataVariableType
+            DataType: Boolean
+          - Name: Interactive
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+        - Name: LegendVisible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Class: Reference
+          Target: ns=5;i=1201
+          Direction: Forward
+        - Name: TimeRanges
+          Type: BaseObjectType
+        - Class: Reference
+          Target: ns=5;i=1209
+          Direction: Forward
+        - Name: Model
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/mes_v1/Loggers/DataLogger_agua"
+          Children:
+          - Name: ItemKind
+            Type: PropertyType
+            DataType: NodeId
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+    - Name: Label2
+      Type: Label
+- Name: KPI02_WA
+  Id: g=ec166201eb195005f9e7ded36a6c3777
+  Supertype: Manage_KPI_variables
+  ReferenceType: HasComponent
+  Children:
+  - Name: Label1
+    Type: Label
+  - Name: HorizontalLayout1
+    Type: RowLayout
+    Children:
+    - Name: Rectangle1
+      Type: Rectangle
+      Children:
+      - Name: Label1
+        Type: Label
+      - Name: Label2
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"KPI-WA-002 — Treated Water Reuse Percentage"}
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+        - Name: RightMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 16.0
+        - Name: BottomMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+    - Name: Rectangle2
+      Type: Rectangle
+      Children:
+      - Name: Label1
+        Type: Label
+      - Name: Label2
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/mes_v1/Model/KPIS/Agua/KPI_WA_001_huella"
+  - Name: VerticalLayout1
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Measures the percentage of treated water reintegrated into the process."}
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"%Water Reuse=ReusedWater/Total Water Consumption×100"}
+    - Name: Label5
+      Type: Label
+    - Name: Label6
+      Type: Label
+    - Name: Rectangle2
+      Type: Rectangle
+      Children:
+      - Name: Label2
+        Type: Label
+      - Name: Caution1
+        Type: ScaleLayout
+        WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+        Children:
+        - Name: FillColor
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#d1d3d4"
+        - Name: Icon_border
+          Type: Image
+          Children:
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+            Value: "ns=14;%PROJECTDIR%/res/CautionIcon_Icon_border.svg"
+          - Name: DynamicColor
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#d1d3d4"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../FillColor"
+  - Name: VerticalLayout2
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Rectangle2
+      Type: Rectangle
+      Children:
+      - Name: Rectangle1
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle2
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle3
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle4
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle5
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle6
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Reused Water"}
+      - Name: Rectangle7
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Water recirculated into the process."}
+      - Name: Rectangle8
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/mes_v1/Model/KPIS/Agua/Agua_reutilizada"
+      - Name: Rectangle9
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle10
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle11
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Total Water Consumption"}
+      - Name: Rectangle12
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Water used during operation."}
+      - Name: Rectangle13
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/mes_v1/Model/KPIS/Agua/Agua_total"
+      - Name: Rectangle14
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle15
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle16
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+      - Name: Rectangle17
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Visible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ModellingRule: Optional
+          - Name: Enabled
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ModellingRule: Optional
+      - Name: Rectangle18
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+      - Name: Rectangle19
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+      - Name: Rectangle20
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+      - Name: Trend1
+        Type: Trend
+        Children:
+        - Name: Pens
+          Type: BaseObjectType
+          Children:
+          - Name: KPI_WA_002_reutilizacion
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#1e5945"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/KPI_WA_002_reutilizacion/LastValue"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+        - Class: Reference
+          Target: ns=5;i=1129
+          Direction: Forward
+        - Name: XAxis
+          Type: DateTimeAxis
+          Children:
+          - Name: Follow
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Window
+            Type: BaseDataVariableType
+            DataType: Duration
+            Value: "0:00:30:00.0000000"
+          - Name: Interactive
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Time
+            Type: BaseDataVariableType
+            DataType: DateTime
+        - Name: YAxis
+          Type: ValueAxis
+          Children:
+          - Name: Position
+            Type: BaseDataVariableType
+            DataType: HorizontalPositionEnum
+          - Name: MinValue
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -100.0
+          - Name: MaxValue
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: 100.0
+          - Name: AutoScale
+            Type: BaseDataVariableType
+            DataType: Boolean
+          - Name: Interactive
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+        - Name: LegendVisible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Class: Reference
+          Target: ns=5;i=1201
+          Direction: Forward
+        - Name: TimeRanges
+          Type: BaseObjectType
+        - Class: Reference
+          Target: ns=5;i=1209
+          Direction: Forward
+        - Name: Model
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/mes_v1/Loggers/DataLogger_agua"
+          Children:
+          - Name: ItemKind
+            Type: PropertyType
+            DataType: NodeId
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+    - Name: Label2
+      Type: Label
+- Name: KPI03_WA
+  Id: g=3247d6d1c41e22b54b27a6856bdc82b6
+  Supertype: Manage_KPI_variables
+  ReferenceType: HasComponent
+  Children:
+  - Name: Label1
+    Type: Label
+  - Name: HorizontalLayout1
+    Type: RowLayout
+    Children:
+    - Name: Rectangle1
+      Type: Rectangle
+      Children:
+      - Name: Label1
+        Type: Label
+      - Name: Label2
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"KPI-WA-003 — Wastewater Discharge Volume"}
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+        - Name: RightMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 16.0
+        - Name: BottomMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+    - Name: Rectangle2
+      Type: Rectangle
+      Children:
+      - Name: Label1
+        Type: Label
+      - Name: Label2
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/mes_v1/Model/KPIS/Agua/KPI_WA_003_des_residual"
+  - Name: VerticalLayout1
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Tracks the total volume of wastewater discharged during a given period."}
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Wastewater Volume=∑Flowdischarge​"}
+    - Name: Label5
+      Type: Label
+    - Name: Label6
+      Type: Label
+    - Name: Rectangle2
+      Type: Rectangle
+      Children:
+      - Name: Label2
+        Type: Label
+      - Name: Caution1
+        Type: ScaleLayout
+        WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+        Children:
+        - Name: FillColor
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#d1d3d4"
+        - Name: Icon_border
+          Type: Image
+          Children:
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+            Value: "ns=14;%PROJECTDIR%/res/CautionIcon_Icon_border.svg"
+          - Name: DynamicColor
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#d1d3d4"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../FillColor"
+  - Name: VerticalLayout2
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Rectangle2
+      Type: Rectangle
+      Children:
+      - Name: Rectangle1
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle2
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle3
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle4
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle5
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle6
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle7
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle8
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle9
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle10
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle11
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle12
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle13
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle14
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle15
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle16
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle17
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle18
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle19
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle20
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Trend1
+        Type: Trend
+        Children:
+        - Name: Pens
+          Type: BaseObjectType
+          Children:
+          - Name: KPI_WA_003_des_residual
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#c51d34"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/KPI_WA_003_des_residual/LastValue"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+        - Class: Reference
+          Target: ns=5;i=1129
+          Direction: Forward
+        - Name: XAxis
+          Type: DateTimeAxis
+          Children:
+          - Name: Follow
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Window
+            Type: BaseDataVariableType
+            DataType: Duration
+            Value: "0:00:30:00.0000000"
+          - Name: Interactive
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Time
+            Type: BaseDataVariableType
+            DataType: DateTime
+        - Name: YAxis
+          Type: ValueAxis
+          Children:
+          - Name: Position
+            Type: BaseDataVariableType
+            DataType: HorizontalPositionEnum
+          - Name: MinValue
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -100.0
+          - Name: MaxValue
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: 100.0
+          - Name: AutoScale
+            Type: BaseDataVariableType
+            DataType: Boolean
+          - Name: Interactive
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+        - Name: LegendVisible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Class: Reference
+          Target: ns=5;i=1201
+          Direction: Forward
+        - Name: TimeRanges
+          Type: BaseObjectType
+        - Class: Reference
+          Target: ns=5;i=1209
+          Direction: Forward
+        - Name: Model
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/mes_v1/Loggers/DataLogger_agua"
+          Children:
+          - Name: ItemKind
+            Type: PropertyType
+            DataType: NodeId
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+    - Name: Label2
+      Type: Label
+- Name: KPI04_WA
+  Id: g=ec63482c288f8323fb9391d672e4b1d7
+  Supertype: Manage_KPI_variables
+  ReferenceType: HasComponent
+  Children:
+  - Name: Label1
+    Type: Label
+  - Name: HorizontalLayout1
+    Type: RowLayout
+    Children:
+    - Name: Rectangle1
+      Type: Rectangle
+      Children:
+      - Name: Label1
+        Type: Label
+      - Name: Label2
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"KPI-WA-004 — Compliance Incidents and Alert Response Time"}
+        - Name: FontSize
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 20.0
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+        - Name: RightMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 12.0
+        - Name: BottomMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+    - Name: Rectangle2
+      Type: Rectangle
+      Children:
+      - Name: Label1
+        Type: Label
+      - Name: Label2
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/mes_v1/Model/KPIS/Agua/KPI_WA_004_incidentes"
+  - Name: VerticalLayout1
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Measures environmental non-compliance events and operational responsiveness."}
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Average Response Time=∑Response Times/Number of Incidents"}
+    - Name: Label5
+      Type: Label
+    - Name: Label6
+      Type: Label
+    - Name: Rectangle2
+      Type: Rectangle
+      Children:
+      - Name: Label2
+        Type: Label
+      - Name: Caution1
+        Type: ScaleLayout
+        WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+        Children:
+        - Name: FillColor
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#d1d3d4"
+        - Name: Icon_border
+          Type: Image
+          Children:
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+            Value: "ns=14;%PROJECTDIR%/res/CautionIcon_Icon_border.svg"
+          - Name: DynamicColor
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#d1d3d4"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../FillColor"
+  - Name: VerticalLayout2
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Rectangle2
+      Type: Rectangle
+      Children:
+      - Name: Rectangle1
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle2
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle3
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle4
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle5
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle6
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Response Time"}
+      - Name: Rectangle7
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Time required to resolve an alert."}
+      - Name: Rectangle8
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/mes_v1/Model/KPIS/Agua/Tiempo_respuesta"
+      - Name: Rectangle9
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle10
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle11
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Number of Incidents"}
+      - Name: Rectangle12
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Total environmental alerts or violations."}
+      - Name: Rectangle13
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/mes_v1/Model/KPIS/Agua/Numero_incidentes"
+      - Name: Rectangle14
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle15
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"seconds"}
+      - Name: Rectangle16
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+      - Name: Rectangle17
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+      - Name: Rectangle18
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+      - Name: Rectangle19
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+      - Name: Rectangle20
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+      - Name: Trend1
+        Type: Trend
+        Children:
+        - Name: Pens
+          Type: BaseObjectType
+          Children:
+          - Name: KPI_WA_004_incidentes
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#f3a505"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/KPI_WA_004_incidentes/LastValue"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+        - Class: Reference
+          Target: ns=5;i=1129
+          Direction: Forward
+        - Name: XAxis
+          Type: DateTimeAxis
+          Children:
+          - Name: Follow
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Window
+            Type: BaseDataVariableType
+            DataType: Duration
+            Value: "0:00:30:00.0000000"
+          - Name: Interactive
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Time
+            Type: BaseDataVariableType
+            DataType: DateTime
+        - Name: YAxis
+          Type: ValueAxis
+          Children:
+          - Name: Position
+            Type: BaseDataVariableType
+            DataType: HorizontalPositionEnum
+          - Name: MinValue
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -100.0
+          - Name: MaxValue
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: 100.0
+          - Name: AutoScale
+            Type: BaseDataVariableType
+            DataType: Boolean
+          - Name: Interactive
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+        - Name: LegendVisible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Class: Reference
+          Target: ns=5;i=1201
+          Direction: Forward
+        - Name: TimeRanges
+          Type: BaseObjectType
+        - Class: Reference
+          Target: ns=5;i=1209
+          Direction: Forward
+        - Name: Model
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/mes_v1/Loggers/DataLogger_agua"
+          Children:
+          - Name: ItemKind
+            Type: PropertyType
+            DataType: NodeId
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+    - Name: Label2
+      Type: Label

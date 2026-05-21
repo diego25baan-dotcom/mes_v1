@@ -1,0 +1,7 @@
+Name: Manage KPIS
+Type: FolderType
+Children:
+- File: Energy/Energy.yaml
+- File: Water/Water.yaml
+- File: Esg/Esg.yaml
+- File: Production/Production.yaml

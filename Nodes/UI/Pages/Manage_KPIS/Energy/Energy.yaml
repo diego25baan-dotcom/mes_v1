@@ -1,0 +1,1564 @@
+Name: Energy
+Type: FolderType
+Children:
+- Name: KPI01_ENE
+  Id: g=475a5369300f7bb84bb7e82e1c55a8b2
+  Supertype: Manage_KPI_variables
+  ReferenceType: HasComponent
+  Children:
+  - Name: Label1
+    Type: Label
+  - Name: HorizontalLayout1
+    Type: RowLayout
+    Children:
+    - Name: Rectangle1
+      Type: Rectangle
+      Children:
+      - Name: Label1
+        Type: Label
+      - Name: Label2
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"KPI_EN_001 CONSUMPTION"}
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 170.0
+        - Name: WordWrap
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
+    - Name: Rectangle2
+      Type: Rectangle
+      Children:
+      - Name: Label1
+        Type: Label
+      - Name: Label2
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/mes_v1/Model/KPIS/Energía/KPI_EN_001 CONSUMO"
+  - Name: VerticalLayout1
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Measures total electrical energy consumed in a specific production line, operational area, shift, or product batch during a defined period."}
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Energy Consumption=∑kWh equipment​"}
+    - Name: Label5
+      Type: Label
+    - Name: Label6
+      Type: Label
+    - Name: Rectangle2
+      Type: Rectangle
+      Children:
+      - Name: Label2
+        Type: Label
+      - Name: Caution1
+        Type: ScaleLayout
+        WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+        Children:
+        - Name: FillColor
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#d1d3d4"
+        - Name: Icon_border
+          Type: Image
+          Children:
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+            Value: "ns=14;%PROJECTDIR%/res/CautionIcon_Icon_border.svg"
+          - Name: DynamicColor
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#d1d3d4"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../FillColor"
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 76.0
+  - Name: VerticalLayout2
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Rectangle2
+      Type: Rectangle
+      Children:
+      - Name: Rectangle1
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle2
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle3
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle4
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle5
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle6
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"kWh_equipment"}
+      - Name: Rectangle7
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Electrical energy consumed by each machine or subsystem."}
+      - Name: Rectangle8
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle9
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle10
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle11
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Line / Area / Shift / Product"}
+      - Name: Rectangle12
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Segmentation criteria for analysis."}
+      - Name: Rectangle13
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle14
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle15
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle16
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Time Period"}
+      - Name: Rectangle17
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Interval used for aggregation."}
+      - Name: Rectangle18
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle19
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle20
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Trend1
+        Type: Trend
+        Children:
+        - Name: Pens
+          Type: BaseObjectType
+          Children:
+          - Name: KPI_EN_001 CONSUMO
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#8673a1"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/KPI_EN_001 CONSUMO/LastValue"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+        - Class: Reference
+          Target: ns=5;i=1129
+          Direction: Forward
+        - Name: XAxis
+          Type: DateTimeAxis
+          Children:
+          - Name: Follow
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Window
+            Type: BaseDataVariableType
+            DataType: Duration
+            Value: "0:00:30:00.0000000"
+          - Name: Interactive
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Time
+            Type: BaseDataVariableType
+            DataType: DateTime
+        - Name: YAxis
+          Type: ValueAxis
+          Children:
+          - Name: Position
+            Type: BaseDataVariableType
+            DataType: HorizontalPositionEnum
+          - Name: MinValue
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -100.0
+          - Name: MaxValue
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: 100.0
+          - Name: AutoScale
+            Type: BaseDataVariableType
+            DataType: Boolean
+          - Name: Interactive
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+        - Name: LegendVisible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Class: Reference
+          Target: ns=5;i=1201
+          Direction: Forward
+        - Name: TimeRanges
+          Type: BaseObjectType
+        - Class: Reference
+          Target: ns=5;i=1209
+          Direction: Forward
+        - Name: Model
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/mes_v1/Loggers/DataLogger_energia"
+          Children:
+          - Name: ItemKind
+            Type: PropertyType
+            DataType: NodeId
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+    - Name: Label2
+      Type: Label
+- Name: KPI02_ENE
+  Id: g=9e57c1c696a31bda84a0a82e3e3f7330
+  Supertype: Manage_KPI_variables
+  ReferenceType: HasComponent
+  Children:
+  - Name: Label1
+    Type: Label
+  - Name: HorizontalLayout1
+    Type: RowLayout
+    Children:
+    - Name: Rectangle1
+      Type: Rectangle
+      Children:
+      - Name: Label1
+        Type: Label
+      - Name: Label2
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"KPI-EN-002 — Equivalent CO₂ Emissions"}
+    - Name: Rectangle2
+      Type: Rectangle
+      Children:
+      - Name: Label1
+        Type: Label
+      - Name: Label2
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/mes_v1/Model/KPIS/Energía/KPI_EN_002 CO2_AREA"
+  - Name: VerticalLayout1
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Calculates indirect greenhouse gas emissions associated with electrical energy consumption."}
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"CO2e​=Energy Consumption×Emission Factor"}
+    - Name: Label5
+      Type: Label
+    - Name: Label6
+      Type: Label
+    - Name: Rectangle2
+      Type: Rectangle
+      Children:
+      - Name: Label2
+        Type: Label
+      - Name: Caution1
+        Type: ScaleLayout
+        WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+        Children:
+        - Name: FillColor
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#d1d3d4"
+        - Name: Icon_border
+          Type: Image
+          Children:
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+            Value: "ns=14;%PROJECTDIR%/res/CautionIcon_Icon_border.svg"
+          - Name: DynamicColor
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#d1d3d4"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../FillColor"
+  - Name: VerticalLayout2
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Rectangle2
+      Type: Rectangle
+      Children:
+      - Name: Rectangle1
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle2
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle3
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle4
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle5
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle6
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Energy Consumption (kWh)"}
+      - Name: Rectangle7
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Total electrical energy consumed."}
+      - Name: Rectangle8
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/mes_v1/Model/KPIS/Energía/Energia_KWh"
+      - Name: Rectangle9
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle10
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle11
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Emission Factor (kgCO₂e/kWh)"}
+      - Name: Rectangle12
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Conversion factor based on the energy source or national grid."}
+      - Name: Rectangle13
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/mes_v1/Model/KPIS/Energía/Factor_emision"
+      - Name: Rectangle14
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle15
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle16
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Variable"}
+        - Name: FillColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+      - Name: Rectangle17
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Enabled
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ModellingRule: Optional
+          - Name: Visible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ModellingRule: Optional
+      - Name: Rectangle18
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+      - Name: Rectangle19
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+      - Name: Rectangle20
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+      - Name: Trend1
+        Type: Trend
+        Children:
+        - Name: Pens
+          Type: BaseObjectType
+          Children:
+          - Name: KPI_EN_002 CO2_AREA
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#1e5945"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/KPI_EN_002 CO2_AREA/LastValue"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+        - Class: Reference
+          Target: ns=5;i=1129
+          Direction: Forward
+        - Name: XAxis
+          Type: DateTimeAxis
+          Children:
+          - Name: Follow
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Window
+            Type: BaseDataVariableType
+            DataType: Duration
+            Value: "0:00:30:00.0000000"
+          - Name: Interactive
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Time
+            Type: BaseDataVariableType
+            DataType: DateTime
+        - Name: YAxis
+          Type: ValueAxis
+          Children:
+          - Name: Position
+            Type: BaseDataVariableType
+            DataType: HorizontalPositionEnum
+          - Name: MinValue
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -100.0
+          - Name: MaxValue
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: 100.0
+          - Name: AutoScale
+            Type: BaseDataVariableType
+            DataType: Boolean
+          - Name: Interactive
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+        - Name: LegendVisible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Class: Reference
+          Target: ns=5;i=1201
+          Direction: Forward
+        - Name: TimeRanges
+          Type: BaseObjectType
+        - Class: Reference
+          Target: ns=5;i=1209
+          Direction: Forward
+        - Name: Model
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/mes_v1/Loggers/DataLogger_energia"
+          Children:
+          - Name: ItemKind
+            Type: PropertyType
+            DataType: NodeId
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+    - Name: Label2
+      Type: Label
+- Name: KPI03_ENE
+  Id: g=a271b936d33b85e1afcb60c15fc1050c
+  Supertype: Manage_KPI_variables
+  ReferenceType: HasComponent
+  Children:
+  - Name: Label1
+    Type: Label
+  - Name: HorizontalLayout1
+    Type: RowLayout
+    Children:
+    - Name: Rectangle1
+      Type: Rectangle
+      Children:
+      - Name: Label1
+        Type: Label
+      - Name: Label2
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"KPI-EN-003 — Energy Intensity"}
+    - Name: Rectangle2
+      Type: Rectangle
+      Children:
+      - Name: Label1
+        Type: Label
+      - Name: Label2
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/mes_v1/Model/KPIS/Energía/KPI_EN_003 KWh_ton"
+  - Name: VerticalLayout1
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Indicates how much energy is required to process one ton of mineral or produce one unit."}
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Energy Intensity=Processed TonsTotal Energy Consumption​"}
+    - Name: Label5
+      Type: Label
+    - Name: Label6
+      Type: Label
+    - Name: Rectangle2
+      Type: Rectangle
+      Children:
+      - Name: Label2
+        Type: Label
+      - Name: Caution1
+        Type: ScaleLayout
+        WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+        Children:
+        - Name: FillColor
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#d1d3d4"
+        - Name: Icon_border
+          Type: Image
+          Children:
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+            Value: "ns=14;%PROJECTDIR%/res/CautionIcon_Icon_border.svg"
+          - Name: DynamicColor
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#d1d3d4"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../FillColor"
+  - Name: VerticalLayout2
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Rectangle2
+      Type: Rectangle
+      Children:
+      - Name: Rectangle1
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle2
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle3
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle4
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle5
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle6
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Total Energy Consumption (kWh)"}
+      - Name: Rectangle7
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Overall consumed energy."}
+      - Name: Rectangle8
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/mes_v1/Model/KPIS/Energía/Energia_KWh"
+      - Name: Rectangle9
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle10
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle11
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Processed Tons"}
+      - Name: Rectangle12
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Tons of mineral processed."}
+      - Name: Rectangle13
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/mes_v1/Model/KPIS/Energía/toneladas_acumuladas"
+      - Name: Rectangle14
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle15
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle16
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+      - Name: Rectangle17
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Visible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ModellingRule: Optional
+          - Name: Enabled
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ModellingRule: Optional
+      - Name: Rectangle18
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+      - Name: Rectangle19
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+      - Name: Rectangle20
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+      - Name: Trend1
+        Type: Trend
+        Children:
+        - Name: Pens
+          Type: BaseObjectType
+          Children:
+          - Name: KPI_EN_003 KWh_ton
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#c51d34"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/KPI_EN_003 KWh_ton/LastValue"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+        - Class: Reference
+          Target: ns=5;i=1129
+          Direction: Forward
+        - Name: XAxis
+          Type: DateTimeAxis
+          Children:
+          - Name: Follow
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Window
+            Type: BaseDataVariableType
+            DataType: Duration
+            Value: "0:00:30:00.0000000"
+          - Name: Interactive
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Time
+            Type: BaseDataVariableType
+            DataType: DateTime
+        - Name: YAxis
+          Type: ValueAxis
+          Children:
+          - Name: Position
+            Type: BaseDataVariableType
+            DataType: HorizontalPositionEnum
+          - Name: MinValue
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -100.0
+          - Name: MaxValue
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: 100.0
+          - Name: AutoScale
+            Type: BaseDataVariableType
+            DataType: Boolean
+          - Name: Interactive
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+        - Name: LegendVisible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Class: Reference
+          Target: ns=5;i=1201
+          Direction: Forward
+        - Name: TimeRanges
+          Type: BaseObjectType
+        - Class: Reference
+          Target: ns=5;i=1209
+          Direction: Forward
+        - Name: Model
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/mes_v1/Loggers/DataLogger_energia"
+          Children:
+          - Name: ItemKind
+            Type: PropertyType
+            DataType: NodeId
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+    - Name: Label2
+      Type: Label
+- Name: KPI04_ENE
+  Id: g=2584aef76780f3542bb8465c7bef37c2
+  Supertype: Manage_KPI_variables
+  ReferenceType: HasComponent
+  Children:
+  - Name: Label1
+    Type: Label
+  - Name: HorizontalLayout1
+    Type: RowLayout
+    Children:
+    - Name: Rectangle1
+      Type: Rectangle
+      Children:
+      - Name: Label1
+        Type: Label
+      - Name: Label2
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"KPI-EN-004 — Renewable Energy Percentage"}
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+        - Name: RightMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 32.0
+        - Name: BottomMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+    - Name: Rectangle2
+      Type: Rectangle
+      Children:
+      - Name: Label1
+        Type: Label
+      - Name: Label2
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/mes_v1/Model/KPIS/Energía/KPI_EN_004 % EN RENOVABLE"
+  - Name: VerticalLayout1
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Measures the proportion of renewable energy used within the operation."}
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"%Renewable Energy=Total Energy/Renewable Energy​×100"}
+    - Name: Label5
+      Type: Label
+    - Name: Label6
+      Type: Label
+    - Name: Rectangle2
+      Type: Rectangle
+      Children:
+      - Name: Label2
+        Type: Label
+      - Name: Caution1
+        Type: ScaleLayout
+        WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+        Children:
+        - Name: FillColor
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#d1d3d4"
+        - Name: Icon_border
+          Type: Image
+          Children:
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+            Value: "ns=14;%PROJECTDIR%/res/CautionIcon_Icon_border.svg"
+          - Name: DynamicColor
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#d1d3d4"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../FillColor"
+  - Name: VerticalLayout2
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Rectangle2
+      Type: Rectangle
+      Children:
+      - Name: Rectangle1
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle2
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle3
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle4
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle5
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle6
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Renewable Energy (kWh)"}
+      - Name: Rectangle7
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Energy obtained from renewable sources."}
+      - Name: Rectangle8
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/mes_v1/Model/KPIS/Energía/Energa_Renovable_kW"
+      - Name: Rectangle9
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle10
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle11
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Total Energy (kWh)"}
+      - Name: Rectangle12
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Total operational energy consumption."}
+      - Name: Rectangle13
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/mes_v1/Model/KPIS/Energía/Energia_KWh"
+      - Name: Rectangle14
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle15
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle16
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+      - Name: Rectangle17
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Visible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ModellingRule: Optional
+          - Name: Enabled
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ModellingRule: Optional
+      - Name: Rectangle18
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+      - Name: Rectangle19
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+      - Name: Rectangle20
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Visible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ModellingRule: Optional
+          - Name: Enabled
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ModellingRule: Optional
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+      - Name: Trend1
+        Type: Trend
+        Children:
+        - Name: Pens
+          Type: BaseObjectType
+          Children:
+          - Name: KPI_EN_004 % EN RENOVABLE
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+            - Name: Color
+              Type: BaseDataVariableType
+              DataType: Color
+              ModellingRule: Optional
+              Value: "#f3a505"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Model/VariablesToLog/KPI_EN_004 % EN RENOVABLE/LastValue"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+        - Class: Reference
+          Target: ns=5;i=1129
+          Direction: Forward
+        - Name: XAxis
+          Type: DateTimeAxis
+          Children:
+          - Name: Follow
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Window
+            Type: BaseDataVariableType
+            DataType: Duration
+            Value: "0:00:30:00.0000000"
+          - Name: Interactive
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Time
+            Type: BaseDataVariableType
+            DataType: DateTime
+        - Name: YAxis
+          Type: ValueAxis
+          Children:
+          - Name: Position
+            Type: BaseDataVariableType
+            DataType: HorizontalPositionEnum
+          - Name: MinValue
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -100.0
+          - Name: MaxValue
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: 100.0
+          - Name: AutoScale
+            Type: BaseDataVariableType
+            DataType: Boolean
+          - Name: Interactive
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+        - Name: LegendVisible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Class: Reference
+          Target: ns=5;i=1201
+          Direction: Forward
+        - Name: TimeRanges
+          Type: BaseObjectType
+        - Class: Reference
+          Target: ns=5;i=1209
+          Direction: Forward
+        - Name: Model
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/mes_v1/Loggers/DataLogger_energia"
+          Children:
+          - Name: ItemKind
+            Type: PropertyType
+            DataType: NodeId
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+    - Name: Label2
+      Type: Label

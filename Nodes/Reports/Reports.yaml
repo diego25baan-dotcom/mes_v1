@@ -188,7 +188,6 @@ Children:
     - Name: Default
       Type: ScreenStyle
 - Name: Reports1
-  Id: g=b5b1b5939455b2a4dd0c8eaaed7aeb21
   Type: Report
   ReferenceType: HasComponent
   Children:

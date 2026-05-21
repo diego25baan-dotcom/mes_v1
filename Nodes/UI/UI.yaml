@@ -865,12 +865,12 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 10.0
+          Value: 40.0
         - Name: BottomMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 10.0
+          Value: 30.0
       - Name: FillColor
         Type: BaseDataVariableType
         DataType: Color

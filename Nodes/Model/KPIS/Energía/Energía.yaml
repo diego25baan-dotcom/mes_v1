@@ -105,7 +105,7 @@ Children:
       Type: BaseVariableType
       DataType: DynamicLinkMode
       Value: 2
-- Name: Potencia_Renovable_kW
+- Name: Energa_Renovable_kW
   Type: BaseDataVariableType
   DataType: Float
   Children:
@@ -1392,3 +1392,16 @@ Children:
       - Name: Severity
         Type: PropertyType
         DataType: UInt16
+- Name: Energia_KWh
+  Type: BaseDataVariableType
+  DataType: Float
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Energy_consumed_extraction"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2

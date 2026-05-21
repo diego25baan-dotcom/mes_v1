@@ -1,0 +1,1011 @@
+Name: Production
+Type: FolderType
+Children:
+- Name: KPI9
+  Id: g=56b84898c904c604930e5da7e93f2490
+  Supertype: Manage_KPI_variables
+  ReferenceType: HasComponent
+  Children:
+  - Name: Label1
+    Type: Label
+  - Name: HorizontalLayout1
+    Type: RowLayout
+    Children:
+    - Name: Rectangle1
+      Type: Rectangle
+      Children:
+      - Name: Label1
+        Type: Label
+      - Name: Label2
+        Type: Label
+    - Name: Rectangle2
+      Type: Rectangle
+      Children:
+      - Name: Label1
+        Type: Label
+      - Name: Label2
+        Type: Label
+  - Name: VerticalLayout1
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+    - Name: Label5
+      Type: Label
+    - Name: Label6
+      Type: Label
+    - Name: Rectangle2
+      Type: Rectangle
+      Children:
+      - Name: Label2
+        Type: Label
+      - Name: Caution1
+        Type: ScaleLayout
+        WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+        Children:
+        - Name: FillColor
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#d1d3d4"
+        - Name: Icon_border
+          Type: Image
+          Children:
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+            Value: "ns=14;%PROJECTDIR%/res/CautionIcon_Icon_border.svg"
+          - Name: DynamicColor
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#d1d3d4"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../FillColor"
+  - Name: VerticalLayout2
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Rectangle2
+      Type: Rectangle
+      Children:
+      - Name: Rectangle1
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle2
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle3
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle4
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle5
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle6
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle7
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle8
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle9
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle10
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle11
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle12
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle13
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle14
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle15
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle16
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle17
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle18
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle19
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle20
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Trend1
+        Type: Trend
+        Children:
+        - Name: Pens
+          Type: BaseObjectType
+          Children:
+          - Name: TrendPen1
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+        - Class: Reference
+          Target: ns=5;i=1129
+          Direction: Forward
+        - Name: XAxis
+          Type: DateTimeAxis
+          Children:
+          - Name: Follow
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Window
+            Type: BaseDataVariableType
+            DataType: Duration
+            Value: "0:00:30:00.0000000"
+          - Name: Interactive
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Time
+            Type: BaseDataVariableType
+            DataType: DateTime
+        - Name: YAxis
+          Type: ValueAxis
+          Children:
+          - Name: Position
+            Type: BaseDataVariableType
+            DataType: HorizontalPositionEnum
+          - Name: MinValue
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -100.0
+          - Name: MaxValue
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: 100.0
+          - Name: AutoScale
+            Type: BaseDataVariableType
+            DataType: Boolean
+          - Name: Interactive
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+        - Name: LegendVisible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Class: Reference
+          Target: ns=5;i=1201
+          Direction: Forward
+        - Name: TimeRanges
+          Type: BaseObjectType
+        - Class: Reference
+          Target: ns=5;i=1209
+          Direction: Forward
+    - Name: Label2
+      Type: Label
+- Name: KPI10
+  Id: g=385f3136e2010bb2edee04513df6e19f
+  Supertype: Manage_KPI_variables
+  ReferenceType: HasComponent
+  Children:
+  - Name: Label1
+    Type: Label
+  - Name: HorizontalLayout1
+    Type: RowLayout
+    Children:
+    - Name: Rectangle1
+      Type: Rectangle
+      Children:
+      - Name: Label1
+        Type: Label
+      - Name: Label2
+        Type: Label
+    - Name: Rectangle2
+      Type: Rectangle
+      Children:
+      - Name: Label1
+        Type: Label
+      - Name: Label2
+        Type: Label
+  - Name: VerticalLayout1
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+    - Name: Label5
+      Type: Label
+    - Name: Label6
+      Type: Label
+    - Name: Rectangle2
+      Type: Rectangle
+      Children:
+      - Name: Label2
+        Type: Label
+      - Name: Caution1
+        Type: ScaleLayout
+        WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+        Children:
+        - Name: FillColor
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#d1d3d4"
+        - Name: Icon_border
+          Type: Image
+          Children:
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+            Value: "ns=14;%PROJECTDIR%/res/CautionIcon_Icon_border.svg"
+          - Name: DynamicColor
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#d1d3d4"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../FillColor"
+  - Name: VerticalLayout2
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Rectangle2
+      Type: Rectangle
+      Children:
+      - Name: Rectangle1
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle2
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle3
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle4
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle5
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle6
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle7
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle8
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle9
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle10
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle11
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle12
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle13
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle14
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle15
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle16
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle17
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle18
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle19
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle20
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Trend1
+        Type: Trend
+        Children:
+        - Name: Pens
+          Type: BaseObjectType
+          Children:
+          - Name: TrendPen1
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+        - Class: Reference
+          Target: ns=5;i=1129
+          Direction: Forward
+        - Name: XAxis
+          Type: DateTimeAxis
+          Children:
+          - Name: Follow
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Window
+            Type: BaseDataVariableType
+            DataType: Duration
+            Value: "0:00:30:00.0000000"
+          - Name: Interactive
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Time
+            Type: BaseDataVariableType
+            DataType: DateTime
+        - Name: YAxis
+          Type: ValueAxis
+          Children:
+          - Name: Position
+            Type: BaseDataVariableType
+            DataType: HorizontalPositionEnum
+          - Name: MinValue
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -100.0
+          - Name: MaxValue
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: 100.0
+          - Name: AutoScale
+            Type: BaseDataVariableType
+            DataType: Boolean
+          - Name: Interactive
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+        - Name: LegendVisible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Class: Reference
+          Target: ns=5;i=1201
+          Direction: Forward
+        - Name: TimeRanges
+          Type: BaseObjectType
+        - Class: Reference
+          Target: ns=5;i=1209
+          Direction: Forward
+    - Name: Label2
+      Type: Label
+- Name: KPI11
+  Id: g=6cbe2c2ca959d7e463730a4af2be48d3
+  Supertype: Manage_KPI_variables
+  ReferenceType: HasComponent
+  Children:
+  - Name: Label1
+    Type: Label
+  - Name: HorizontalLayout1
+    Type: RowLayout
+    Children:
+    - Name: Rectangle1
+      Type: Rectangle
+      Children:
+      - Name: Label1
+        Type: Label
+      - Name: Label2
+        Type: Label
+    - Name: Rectangle2
+      Type: Rectangle
+      Children:
+      - Name: Label1
+        Type: Label
+      - Name: Label2
+        Type: Label
+  - Name: VerticalLayout1
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+    - Name: Label5
+      Type: Label
+    - Name: Label6
+      Type: Label
+    - Name: Rectangle2
+      Type: Rectangle
+      Children:
+      - Name: Label2
+        Type: Label
+      - Name: Caution1
+        Type: ScaleLayout
+        WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+        Children:
+        - Name: FillColor
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#d1d3d4"
+        - Name: Icon_border
+          Type: Image
+          Children:
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+            Value: "ns=14;%PROJECTDIR%/res/CautionIcon_Icon_border.svg"
+          - Name: DynamicColor
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#d1d3d4"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../FillColor"
+  - Name: VerticalLayout2
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Rectangle2
+      Type: Rectangle
+      Children:
+      - Name: Rectangle1
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle2
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle3
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle4
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle5
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle6
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle7
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle8
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle9
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle10
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle11
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle12
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle13
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle14
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle15
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle16
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle17
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle18
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle19
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle20
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Trend1
+        Type: Trend
+        Children:
+        - Name: Pens
+          Type: BaseObjectType
+          Children:
+          - Name: TrendPen1
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+        - Class: Reference
+          Target: ns=5;i=1129
+          Direction: Forward
+        - Name: XAxis
+          Type: DateTimeAxis
+          Children:
+          - Name: Follow
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Window
+            Type: BaseDataVariableType
+            DataType: Duration
+            Value: "0:00:30:00.0000000"
+          - Name: Interactive
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Time
+            Type: BaseDataVariableType
+            DataType: DateTime
+        - Name: YAxis
+          Type: ValueAxis
+          Children:
+          - Name: Position
+            Type: BaseDataVariableType
+            DataType: HorizontalPositionEnum
+          - Name: MinValue
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -100.0
+          - Name: MaxValue
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: 100.0
+          - Name: AutoScale
+            Type: BaseDataVariableType
+            DataType: Boolean
+          - Name: Interactive
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+        - Name: LegendVisible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Class: Reference
+          Target: ns=5;i=1201
+          Direction: Forward
+        - Name: TimeRanges
+          Type: BaseObjectType
+        - Class: Reference
+          Target: ns=5;i=1209
+          Direction: Forward
+    - Name: Label2
+      Type: Label
+- Name: KPI12
+  Id: g=0ede3d6605632982a55ca3dcfc015593
+  Supertype: Manage_KPI_variables
+  ReferenceType: HasComponent
+  Children:
+  - Name: Label1
+    Type: Label
+  - Name: HorizontalLayout1
+    Type: RowLayout
+    Children:
+    - Name: Rectangle1
+      Type: Rectangle
+      Children:
+      - Name: Label1
+        Type: Label
+      - Name: Label2
+        Type: Label
+    - Name: Rectangle2
+      Type: Rectangle
+      Children:
+      - Name: Label1
+        Type: Label
+      - Name: Label2
+        Type: Label
+  - Name: VerticalLayout1
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+    - Name: Label5
+      Type: Label
+    - Name: Label6
+      Type: Label
+    - Name: Rectangle2
+      Type: Rectangle
+      Children:
+      - Name: Label2
+        Type: Label
+      - Name: Caution1
+        Type: ScaleLayout
+        WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+        Children:
+        - Name: FillColor
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#d1d3d4"
+        - Name: Icon_border
+          Type: Image
+          Children:
+          - Name: Path
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+            Value: "ns=14;%PROJECTDIR%/res/CautionIcon_Icon_border.svg"
+          - Name: DynamicColor
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#d1d3d4"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../FillColor"
+  - Name: VerticalLayout2
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Rectangle2
+      Type: Rectangle
+      Children:
+      - Name: Rectangle1
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle2
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle3
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle4
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle5
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle6
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle7
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle8
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle9
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle10
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle11
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle12
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle13
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle14
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle15
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle16
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle17
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle18
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle19
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle20
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Trend1
+        Type: Trend
+        Children:
+        - Name: Pens
+          Type: BaseObjectType
+          Children:
+          - Name: TrendPen1
+            Type: TrendPen
+            DataType: BaseDataType
+            Children:
+            - Name: Thickness
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -1.0
+            - Name: Enabled
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Thresholds
+              Type: BaseObjectType
+        - Class: Reference
+          Target: ns=5;i=1129
+          Direction: Forward
+        - Name: XAxis
+          Type: DateTimeAxis
+          Children:
+          - Name: Follow
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Window
+            Type: BaseDataVariableType
+            DataType: Duration
+            Value: "0:00:30:00.0000000"
+          - Name: Interactive
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Time
+            Type: BaseDataVariableType
+            DataType: DateTime
+        - Name: YAxis
+          Type: ValueAxis
+          Children:
+          - Name: Position
+            Type: BaseDataVariableType
+            DataType: HorizontalPositionEnum
+          - Name: MinValue
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -100.0
+          - Name: MaxValue
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: 100.0
+          - Name: AutoScale
+            Type: BaseDataVariableType
+            DataType: Boolean
+          - Name: Interactive
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+        - Name: LegendVisible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Class: Reference
+          Target: ns=5;i=1201
+          Direction: Forward
+        - Name: TimeRanges
+          Type: BaseObjectType
+        - Class: Reference
+          Target: ns=5;i=1209
+          Direction: Forward
+    - Name: Label2
+      Type: Label
