@@ -149,15 +149,15 @@ Project:
    Module: FTOptix.Report.Net
    Version: 2.5
  Statistics:
-  TotalNodeCount: 26963
-  Objects: 5049
-  ObjectTypes: 127
-  Variables: 21741
+  TotalNodeCount: 27037
+  Objects: 5090
+  ObjectTypes: 128
+  Variables: 21773
   VariableTypes: 1
   DataTypes: 1
   Methods: 44
   References: 321
   ReferenceTypes: 0
-  Files: 76
+  Files: 77
  Nodes:
  - File: Nodes/mes_v1.yaml

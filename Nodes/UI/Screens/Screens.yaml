@@ -2815,7 +2815,7 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 20.0
-- Name: critical_equipment
+- Name: critical_equipment_overview
   Id: g=44bfcb314c54d0eac701bc929874e04f
   Supertype: Screen
   ReferenceType: HasComponent
