@@ -134,7 +134,7 @@ Children:
       - Name: FontSize
         Type: BaseDataVariableType
         DataType: Size
-        Value: 8.0
+        Value: 6.0
       - Name: HandleSize
         Type: BaseDataVariableType
         DataType: Size
@@ -259,7 +259,7 @@ Children:
   - Name: StartingUser
     Type: NodePointer
     DataType: NodeId
-    Value: "/Objects/mes_v1/Security/Users/Diego"
+    Value: "/Objects/Users/Anonymous"
     Children:
     - Name: Kind
       Type: PropertyType

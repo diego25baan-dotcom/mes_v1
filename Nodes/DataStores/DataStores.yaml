@@ -549,7 +549,7 @@ Children:
   - Name: Token
     Type: BaseDataVariableType
     DataType: Password
-    SecretValue: p5IM/xam+N3WnKIp6cmPOyBv+5s9A36h+WJSNyrS3xV62+S8z81L9U3KsSeSyFDl07mqFMYPwQBVqUQzqGIKikJxxAwEtGEYeaduaOUz6Cav8DwiOIg5UPz3MPzK1gVLzXBVaHIfqVIpSNBcE/rwzEruGN8=
+    SecretValue: kGzMEQ+s/qHSn5D4cBMEJqY9Km1sVVyzEqn8KTaH3WLpai9kFFVaFCfHetbmwCzR+j6l9bY2nYo7XfYKZTGXkAPOPrttHLnobFFKDrPhBam/x5IAEFKHMjzppJOaW/K7UZgT6h0pVdKOflfxV+dQlH/QtJg=
   - Name: Organization
     Type: BaseDataVariableType
     DataType: String
