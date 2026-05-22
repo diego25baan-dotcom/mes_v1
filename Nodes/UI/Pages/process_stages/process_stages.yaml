@@ -2662,7 +2662,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Molienda/Energía/Potencia_Renovable_kW"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -2817,7 +2817,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Molienda/Energía/Velocidad_correa_mps"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -2972,7 +2972,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Molienda/Energía/Carga_correa_kg"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -3140,7 +3140,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Molienda/Energía/Toneladas_acumuladas"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -3351,7 +3351,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Molienda/Agua/Caudal_Agua_Ls"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -3529,7 +3529,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Molienda/Agua/Agua_Reutilizada"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -3684,7 +3684,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Molienda/Agua/Agua_total"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -3839,7 +3839,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Molienda/Agua/Caudal_descarga_m3h"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -3994,7 +3994,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Molienda/Agua/Numero_Incidentes_molino"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -4149,7 +4149,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Molienda/Agua/Tiempo_Respuesta"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -4347,7 +4347,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Molienda/ESG/CO2_total"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -4568,7 +4568,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Molienda/Producción/Ley_mineral_entrada"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -4746,7 +4746,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Molienda/Producción/Ley_mineral_salida"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -4901,7 +4901,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Molienda/Producción/Rendimiento_Molino"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -5056,7 +5056,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Molienda/Producción/Disponibilidad_Molino"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -5211,7 +5211,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Molienda/Producción/Calidad_Molino"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
