@@ -63,7 +63,7 @@ public class Sim_energía : BaseNetLogic
 
             // KPI 4 (% renovable)
             if (potencia_val > 0.001)
-                KPI_ENER_4.Value = (potencia_renovable_val / potencia_val) * 100;
+                KPI_ENER_4.Value = (potencia_val / potencia_renovable_val) * 100;
             else
                 KPI_ENER_4.Value = 0;
         }

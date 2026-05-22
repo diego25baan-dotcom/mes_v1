@@ -181,12 +181,42 @@ Children:
   - Name: Caudal_Agua_Ls
     Type: BaseDataVariableType
     DataType: Float
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/KPIS/Agua/Caudal_Agua_Ls"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
   - Name: Agua_reutilizada
     Type: BaseDataVariableType
     DataType: Float
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/KPIS/Agua/Agua_reutilizada"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
   - Name: Agua_total
     Type: BaseDataVariableType
     DataType: Float
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/KPIS/Agua/Agua_total"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
   - Name: Numero_incidentes
     Type: BaseDataVariableType
     DataType: Float
@@ -196,6 +226,16 @@ Children:
   - Name: Caudal_descarga_m3h
     Type: BaseDataVariableType
     DataType: Float
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/KPIS/Agua/Caudal_descarga_m3h"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
   - Name: Toneladas_acumuladas
     Type: BaseDataVariableType
     DataType: Float
@@ -224,6 +264,16 @@ Children:
   - Name: Water_consumption
     Type: BaseDataVariableType
     DataType: Float
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/KPIS/Agua/Water_consumption"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
 - Name: Sim_esg
   Type: NetLogic
   Children:

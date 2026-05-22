@@ -21,8 +21,8 @@ public class Sim_agua : BaseNetLogic
         caudalAgua = LogicObject.GetVariable("Caudal_Agua_Ls");
         caudalDescarga = LogicObject.GetVariable("Caudal_descarga_m3h");
         agua_reutilizada = LogicObject.GetVariable("Agua_reutilizada");
-        agua_total= LogicObject.GetVariable("Agua_total");
-        water_consumption= LogicObject.GetVariable("Water_consumption");
+        agua_total = LogicObject.GetVariable("Agua_total");
+        water_consumption = LogicObject.GetVariable("Water_consumption");
         numero_incidentes = LogicObject.GetVariable("Numero_incidentes");
         tiempo_respuesta = LogicObject.GetVariable("Tiempo_respuesta");
         toneladas_acumuladas = LogicObject.GetVariable("Toneladas_acumuladas");
@@ -40,6 +40,7 @@ public class Sim_agua : BaseNetLogic
     {
         if (runVariable.Value)
         {
+            // Contadores
             if (integerCounter <= 99)
                 integerCounter++;
             else
@@ -47,79 +48,106 @@ public class Sim_agua : BaseNetLogic
 
             decimalCounter += 0.05;
 
-            estadoOperacion = (rand.NextDouble() > 0.05) ? 1.0 : 0.0;
-            
+            // Estado aleatorio operación
+            estadoOperacion =
+                (rand.NextDouble() > 0.05) ? 1.0 : 0.0;
 
+            // Lectura caudal agua
+            caudal_Agua_val = caudalAgua.Value;
 
-            double baseCaudalAgua = 50 + 10 * Math.Sin(decimalCounter / 4);
-            double ruidoAgua = (rand.NextDouble() - 0.5) * 5;
-            double caudalAgua_val = (baseCaudalAgua + ruidoAgua) * estadoOperacion;
+            if (caudal_Agua_val < 0)
+                caudal_Agua_val = 0;
 
-            if (caudalAgua_val < 0) caudalAgua_val = 0;
+            caudalAgua.Value = caudal_Agua_val;
 
-            caudalAgua.Value = caudalAgua_val;
+            // Tiempo de muestreo
+            double dt = 0.25;
 
-            
-            double dt = .25; 
-            double volumen_agua = caudalAgua_val * dt * 0.001;
+            // Lectura variables
+            toneladas_acumuladas_val =
+                toneladas_acumuladas.Value;
 
-            
-            agua_acumulada += volumen_agua;
-            agua_total.Value += volumen_agua;
+            agua_total_val =
+                agua_total.Value;
 
-            // reutilización (40–80%)
-            double factorReuso = 0.4 + 0.4 * Math.Abs(Math.Sin(decimalCounter / 6));
-            double agua_reuso = volumen_agua * factorReuso;
-            agua_reutilizada.Value += agua_reuso;
-            water_consumption.Value = volumen_agua- agua_reuso;
+            agua_reutilizada_val =
+                agua_reutilizada.Value;
 
+            // ==================================================
             // KPI-WA-001: Huella hídrica
-            if (toneladas_acumuladas.Value > 0.001)
-                KPI_WA_001.Value = agua_acumulada / toneladas_acumuladas.Value;
+            // ==================================================
+
+            if (toneladas_acumuladas_val > 0.001)
+            {
+                KPI_WA_001.Value =
+                    agua_total_val /
+                    toneladas_acumuladas_val;
+            }
             else
+            {
                 KPI_WA_001.Value = 0;
+            }
 
-            // 🔹 KPI-WA-002: % reutilización
-            if (agua_acumulada > 0.001)
-                KPI_WA_002.Value = (agua_reutilizada.Value / agua_acumulada) * 100;
+            // ==================================================
+            // KPI-WA-002: % reutilización
+            // ==================================================
+
+            if (agua_total_val > 0.001)
+            {
+                KPI_WA_002.Value =
+                    (agua_reutilizada_val /
+                    agua_total_val) * 100;
+            }
             else
+            {
                 KPI_WA_002.Value = 0;
+            }
 
+            // ==================================================
+            // KPI-WA-003: Descarga residual acumulada
+            // ==================================================
 
-            // 🔷 KPI-WA-003: Descarga residual
+            caudalDescarga_val =
+                caudalDescarga.Value;
 
-            double baseDescarga = 20 + 5 * Math.Sin(decimalCounter / 3);
-            double caudalDescarga_val = baseDescarga * estadoOperacion;
+            double descarga_m3 =
+                caudalDescarga_val *
+                (dt / 3600.0);
 
-            if (caudalDescarga_val < 0) caudalDescarga_val = 0;
-
-            caudalDescarga.Value = caudalDescarga_val;
-
-            // m3/h → m3 en dt
-            double descarga_m3 = caudalDescarga_val * (dt / 3600.0);
             descarga_acumulada += descarga_m3;
 
-            KPI_WA_003.Value = descarga_acumulada;
+            KPI_WA_003.Value =
+                descarga_acumulada;
 
+            // ==================================================
+            // KPI-WA-004:
+            // Tiempo promedio de respuesta incidentes
+            // ==================================================
 
-            // 🔷 KPI-WA-004: Incidentes y tiempo de respuesta
-
-            // Simular incidente aleatorio
+            // Simulación aleatoria de incidente
             if (rand.NextDouble() < 0.02)
             {
                 numero_incidentes.Value++;
 
-                // tiempo de respuesta entre 5 y 30 min
-                tiempo_respuesta.Value = 5 + rand.NextDouble() * 25;
+                // Tiempo respuesta entre 5 y 30 min
+                tiempo_respuesta.Value =
+                    5 + rand.NextDouble() * 25;
 
-                tiempo_respuesta_total += tiempo_respuesta.Value;
+                tiempo_respuesta_total +=
+                    tiempo_respuesta.Value;
             }
 
-            // KPI: tiempo promedio de respuesta
+            // Promedio tiempo respuesta
             if (numero_incidentes.Value > 0)
-                KPI_WA_004.Value = tiempo_respuesta_total / numero_incidentes.Value;
+            {
+                KPI_WA_004.Value =
+                    tiempo_respuesta_total /
+                    numero_incidentes.Value;
+            }
             else
+            {
                 KPI_WA_004.Value = 0;
+            }
         }
     }
 
@@ -127,28 +155,60 @@ public class Sim_agua : BaseNetLogic
     {
         simulationTask?.Dispose();
     }
+
+    // ======================================================
+    // Variables internas
+    // ======================================================
+
     private int integerCounter;
     private double decimalCounter;
     private double estadoOperacion;
-    private IUAVariable runVariable;
+
     private Random rand = new Random();
+
     private PeriodicTask simulationTask;
+
+    // ======================================================
+    // Variables FTOptix
+    // ======================================================
+
+    private IUAVariable runVariable;
+
     private IUAVariable caudalAgua;
     private IUAVariable caudalDescarga;
+
     private IUAVariable agua_reutilizada;
     private IUAVariable agua_total;
+
     private IUAVariable water_consumption;
+
     private IUAVariable numero_incidentes;
     private IUAVariable tiempo_respuesta;
+
     private IUAVariable toneladas_acumuladas;
+
+    // ======================================================
+    // KPIs
+    // ======================================================
 
     private IUAVariable KPI_WA_001;
     private IUAVariable KPI_WA_002;
     private IUAVariable KPI_WA_003;
     private IUAVariable KPI_WA_004;
 
-    
-    private double agua_acumulada = 0.0;
+    // ======================================================
+    // Variables auxiliares
+    // ======================================================
+
+    private double agua_total_val = 0.0;
+    private double agua_reutilizada_val = 0.0;
+
+    private double caudal_Agua_val = 0.0;
+    private double caudalDescarga_val = 0.0;
+
     private double descarga_acumulada = 0.0;
+
     private double tiempo_respuesta_total = 0.0;
+
+    private double toneladas_acumuladas_val = 0.0;
 }
