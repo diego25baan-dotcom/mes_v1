@@ -65,13 +65,10 @@ public class Sim_esg : BaseNetLogic
             Toneladas_producidas.Value += toneladas;
             
             
-            double energia = Potencia_kW.Value * (dt / 3600.0);
-            Energia_kWh_tot.Value += energia;
-            Energia_kWh.Value = energia;
+            
             
 
-            double co2 = energia * 0.45;
-            CO2_total.Value += co2;
+        
 
             double relaves = toneladas * 0.35;
             Relaves_totales.Value += relaves;

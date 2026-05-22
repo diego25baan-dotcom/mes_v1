@@ -280,6 +280,16 @@ Children:
   - Name: CO2_total
     Type: BaseDataVariableType
     DataType: Float
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/KPIS/ESG/CO2_total"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
   - Name: Potencia_kW
     Type: BaseDataVariableType
     DataType: Float
@@ -296,9 +306,29 @@ Children:
   - Name: Energia_kWh
     Type: BaseDataVariableType
     DataType: Float
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/KPIS/ESG/Energia_kWh"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
   - Name: Toneladas_producidas
     Type: BaseDataVariableType
     DataType: Float
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/KPIS/ESG/Toneladas_producidas"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
   - Name: Relaves_tratados
     Type: BaseDataVariableType
     DataType: Float
@@ -345,6 +375,16 @@ Children:
   - Name: Energia_kWh_tot
     Type: BaseDataVariableType
     DataType: Float
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/KPIS/ESG/Energia_kWh_tot"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
   - Name: KPI_ESG_002 RESTORED
     Type: BaseDataVariableType
     DataType: Float
