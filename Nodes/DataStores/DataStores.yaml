@@ -561,6 +561,65 @@ Children:
         - Name: KPI_ESG_002_02 RESTORED
           Type: StoreColumn
           DataType: Float
+    - Name: DataLogger_prod
+      Type: RemoteInfluxDBStoreTable
+      Children:
+      - Name: Tags
+        Type: BaseObjectType
+      - Class: Reference
+        Target: ns=17;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=17;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=17;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=17;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Ley_mineral_entrada
+          Type: StoreColumn
+          DataType: Float
+        - Name: Ley_mineral_salida
+          Type: StoreColumn
+          DataType: Float
+        - Name: Disponibilidad
+          Type: StoreColumn
+          DataType: Float
+        - Name: Rendimiento
+          Type: StoreColumn
+          DataType: Float
+        - Name: Calidad
+          Type: StoreColumn
+          DataType: Float
+        - Name: Costo_total
+          Type: StoreColumn
+          DataType: Float
+        - Name: Toneladas_producidas
+          Type: StoreColumn
+          DataType: Float
+        - Name: 'KPI_PROD_001 PRODUCTION '
+          Type: StoreColumn
+          DataType: Float
+        - Name: KPI_PROD_002 RECOVERY
+          Type: StoreColumn
+          DataType: Float
+        - Name: KPI_PROD_003 OEE
+          Type: StoreColumn
+          DataType: Float
+        - Name: KPI_PROD_004 COSTS PER TON
+          Type: StoreColumn
+          DataType: Float
   - Name: Token
     Type: BaseDataVariableType
     DataType: Password
