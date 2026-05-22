@@ -23960,6 +23960,81 @@ Children:
               DataType: Size
               ModellingRule: Optional
               Value: 40.0
+            - Name: MouseClickEventHandler1
+              Type: EventHandler
+              Children:
+              - Name: ListenEventType
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+              - Name: MethodsToCall
+                Type: BaseObjectType
+                Children:
+                - Name: MethodContainer1
+                  Type: BaseObjectType
+                  Children:
+                  - Name: ns=3;ObjectPointer
+                    Type: NodePointer
+                    DataType: NodeId
+                    Children:
+                    - Name: Kind
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: "/Types/ObjectTypes/BaseObjectType"
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "{PanelLoader_equipment}@NodeId"
+                      Children:
+                      - Name: Mode
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
+                  - Name: ns=3;Method
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "ChangePanel"
+                  - Name: InputArguments
+                    Type: BaseObjectType
+                    Children:
+                    - Name: NewPanel
+                      Type: BaseDataVariableType
+                      DataType: NodeId
+                      Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
+                      Value: "/Objects/mes_v1/UI/Pages/critical_equipment_overview/Conveyor_Belt"
+                    - Name: AliasNode
+                      Type: BaseDataVariableType
+                      DataType: NodeId
+                      Description: {"NamespaceIndex":5,"TextId":"ChangePanelAliasNodeDescription"}
+                      ValueRank: ScalarOrOneDimension
+              - Name: EventArguments
+                Type: MouseClickEvent
+                Children:
+                - Name: EventId
+                  Type: PropertyType
+                  DataType: ByteString
+                - Name: EventType
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceNode
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceName
+                  Type: PropertyType
+                  DataType: String
+                - Name: Time
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: ReceiveTime
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: Message
+                  Type: PropertyType
+                  DataType: LocalizedText
+                - Name: Severity
+                  Type: PropertyType
+                  DataType: UInt16
           - Name: Button2
             Type: Button
             Children:
@@ -23978,6 +24053,81 @@ Children:
               DataType: Size
               ModellingRule: Optional
               Value: 10.0
+            - Name: MouseClickEventHandler1
+              Type: EventHandler
+              Children:
+              - Name: ListenEventType
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+              - Name: MethodsToCall
+                Type: BaseObjectType
+                Children:
+                - Name: MethodContainer1
+                  Type: BaseObjectType
+                  Children:
+                  - Name: ns=3;ObjectPointer
+                    Type: NodePointer
+                    DataType: NodeId
+                    Children:
+                    - Name: Kind
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: "/Types/ObjectTypes/BaseObjectType"
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "{PanelLoader_equipment}@NodeId"
+                      Children:
+                      - Name: Mode
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
+                  - Name: ns=3;Method
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "ChangePanel"
+                  - Name: InputArguments
+                    Type: BaseObjectType
+                    Children:
+                    - Name: NewPanel
+                      Type: BaseDataVariableType
+                      DataType: NodeId
+                      Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
+                      Value: "/Objects/mes_v1/UI/Pages/critical_equipment_overview/Hopper"
+                    - Name: AliasNode
+                      Type: BaseDataVariableType
+                      DataType: NodeId
+                      Description: {"NamespaceIndex":5,"TextId":"ChangePanelAliasNodeDescription"}
+                      ValueRank: ScalarOrOneDimension
+              - Name: EventArguments
+                Type: MouseClickEvent
+                Children:
+                - Name: EventId
+                  Type: PropertyType
+                  DataType: ByteString
+                - Name: EventType
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceNode
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceName
+                  Type: PropertyType
+                  DataType: String
+                - Name: Time
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: ReceiveTime
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: Message
+                  Type: PropertyType
+                  DataType: LocalizedText
+                - Name: Severity
+                  Type: PropertyType
+                  DataType: UInt16
           - Name: Button3
             Type: Button
             Children:
@@ -23996,6 +24146,81 @@ Children:
               DataType: Size
               ModellingRule: Optional
               Value: 10.0
+            - Name: MouseClickEventHandler1
+              Type: EventHandler
+              Children:
+              - Name: ListenEventType
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+              - Name: MethodsToCall
+                Type: BaseObjectType
+                Children:
+                - Name: MethodContainer1
+                  Type: BaseObjectType
+                  Children:
+                  - Name: ns=3;ObjectPointer
+                    Type: NodePointer
+                    DataType: NodeId
+                    Children:
+                    - Name: Kind
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: "/Types/ObjectTypes/BaseObjectType"
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "{PanelLoader_equipment}@NodeId"
+                      Children:
+                      - Name: Mode
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
+                  - Name: ns=3;Method
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "ChangePanel"
+                  - Name: InputArguments
+                    Type: BaseObjectType
+                    Children:
+                    - Name: NewPanel
+                      Type: BaseDataVariableType
+                      DataType: NodeId
+                      Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
+                      Value: "/Objects/mes_v1/UI/Pages/critical_equipment_overview/Crusher"
+                    - Name: AliasNode
+                      Type: BaseDataVariableType
+                      DataType: NodeId
+                      Description: {"NamespaceIndex":5,"TextId":"ChangePanelAliasNodeDescription"}
+                      ValueRank: ScalarOrOneDimension
+              - Name: EventArguments
+                Type: MouseClickEvent
+                Children:
+                - Name: EventId
+                  Type: PropertyType
+                  DataType: ByteString
+                - Name: EventType
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceNode
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceName
+                  Type: PropertyType
+                  DataType: String
+                - Name: Time
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: ReceiveTime
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: Message
+                  Type: PropertyType
+                  DataType: LocalizedText
+                - Name: Severity
+                  Type: PropertyType
+                  DataType: UInt16
           - Name: Button4
             Type: Button
             Children:
@@ -24014,6 +24239,81 @@ Children:
               DataType: Size
               ModellingRule: Optional
               Value: 10.0
+            - Name: MouseClickEventHandler1
+              Type: EventHandler
+              Children:
+              - Name: ListenEventType
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+              - Name: MethodsToCall
+                Type: BaseObjectType
+                Children:
+                - Name: MethodContainer1
+                  Type: BaseObjectType
+                  Children:
+                  - Name: ns=3;ObjectPointer
+                    Type: NodePointer
+                    DataType: NodeId
+                    Children:
+                    - Name: Kind
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: "/Types/ObjectTypes/BaseObjectType"
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "{PanelLoader_equipment}@NodeId"
+                      Children:
+                      - Name: Mode
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
+                  - Name: ns=3;Method
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "ChangePanel"
+                  - Name: InputArguments
+                    Type: BaseObjectType
+                    Children:
+                    - Name: NewPanel
+                      Type: BaseDataVariableType
+                      DataType: NodeId
+                      Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
+                      Value: "/Objects/mes_v1/UI/Pages/critical_equipment_overview/Mill"
+                    - Name: AliasNode
+                      Type: BaseDataVariableType
+                      DataType: NodeId
+                      Description: {"NamespaceIndex":5,"TextId":"ChangePanelAliasNodeDescription"}
+                      ValueRank: ScalarOrOneDimension
+              - Name: EventArguments
+                Type: MouseClickEvent
+                Children:
+                - Name: EventId
+                  Type: PropertyType
+                  DataType: ByteString
+                - Name: EventType
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceNode
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceName
+                  Type: PropertyType
+                  DataType: String
+                - Name: Time
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: ReceiveTime
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: Message
+                  Type: PropertyType
+                  DataType: LocalizedText
+                - Name: Severity
+                  Type: PropertyType
+                  DataType: UInt16
           - Name: Button5
             Type: Button
             Children:
@@ -24032,6 +24332,81 @@ Children:
               DataType: Size
               ModellingRule: Optional
               Value: 10.0
+            - Name: MouseClickEventHandler1
+              Type: EventHandler
+              Children:
+              - Name: ListenEventType
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+              - Name: MethodsToCall
+                Type: BaseObjectType
+                Children:
+                - Name: MethodContainer1
+                  Type: BaseObjectType
+                  Children:
+                  - Name: ns=3;ObjectPointer
+                    Type: NodePointer
+                    DataType: NodeId
+                    Children:
+                    - Name: Kind
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: "/Types/ObjectTypes/BaseObjectType"
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "{PanelLoader_equipment}@NodeId"
+                      Children:
+                      - Name: Mode
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
+                  - Name: ns=3;Method
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "ChangePanel"
+                  - Name: InputArguments
+                    Type: BaseObjectType
+                    Children:
+                    - Name: NewPanel
+                      Type: BaseDataVariableType
+                      DataType: NodeId
+                      Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
+                      Value: "/Objects/mes_v1/UI/Pages/critical_equipment_overview/Chemical_tank"
+                    - Name: AliasNode
+                      Type: BaseDataVariableType
+                      DataType: NodeId
+                      Description: {"NamespaceIndex":5,"TextId":"ChangePanelAliasNodeDescription"}
+                      ValueRank: ScalarOrOneDimension
+              - Name: EventArguments
+                Type: MouseClickEvent
+                Children:
+                - Name: EventId
+                  Type: PropertyType
+                  DataType: ByteString
+                - Name: EventType
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceNode
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceName
+                  Type: PropertyType
+                  DataType: String
+                - Name: Time
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: ReceiveTime
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: Message
+                  Type: PropertyType
+                  DataType: LocalizedText
+                - Name: Severity
+                  Type: PropertyType
+                  DataType: UInt16
           - Name: Button6
             Type: Button
             Children:
@@ -24050,6 +24425,81 @@ Children:
               DataType: Size
               ModellingRule: Optional
               Value: 10.0
+            - Name: MouseClickEventHandler1
+              Type: EventHandler
+              Children:
+              - Name: ListenEventType
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+              - Name: MethodsToCall
+                Type: BaseObjectType
+                Children:
+                - Name: MethodContainer1
+                  Type: BaseObjectType
+                  Children:
+                  - Name: ns=3;ObjectPointer
+                    Type: NodePointer
+                    DataType: NodeId
+                    Children:
+                    - Name: Kind
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: "/Types/ObjectTypes/BaseObjectType"
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "{PanelLoader_equipment}@NodeId"
+                      Children:
+                      - Name: Mode
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
+                  - Name: ns=3;Method
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "ChangePanel"
+                  - Name: InputArguments
+                    Type: BaseObjectType
+                    Children:
+                    - Name: NewPanel
+                      Type: BaseDataVariableType
+                      DataType: NodeId
+                      Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
+                      Value: "/Objects/mes_v1/UI/Pages/critical_equipment_overview/Flotation_cells"
+                    - Name: AliasNode
+                      Type: BaseDataVariableType
+                      DataType: NodeId
+                      Description: {"NamespaceIndex":5,"TextId":"ChangePanelAliasNodeDescription"}
+                      ValueRank: ScalarOrOneDimension
+              - Name: EventArguments
+                Type: MouseClickEvent
+                Children:
+                - Name: EventId
+                  Type: PropertyType
+                  DataType: ByteString
+                - Name: EventType
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceNode
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceName
+                  Type: PropertyType
+                  DataType: String
+                - Name: Time
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: ReceiveTime
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: Message
+                  Type: PropertyType
+                  DataType: LocalizedText
+                - Name: Severity
+                  Type: PropertyType
+                  DataType: UInt16
           - Name: Button7
             Type: Button
             Children:
@@ -24068,6 +24518,81 @@ Children:
               DataType: Size
               ModellingRule: Optional
               Value: 10.0
+            - Name: MouseClickEventHandler1
+              Type: EventHandler
+              Children:
+              - Name: ListenEventType
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+              - Name: MethodsToCall
+                Type: BaseObjectType
+                Children:
+                - Name: MethodContainer1
+                  Type: BaseObjectType
+                  Children:
+                  - Name: ns=3;ObjectPointer
+                    Type: NodePointer
+                    DataType: NodeId
+                    Children:
+                    - Name: Kind
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: "/Types/ObjectTypes/BaseObjectType"
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "{PanelLoader_equipment}@NodeId"
+                      Children:
+                      - Name: Mode
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
+                  - Name: ns=3;Method
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "ChangePanel"
+                  - Name: InputArguments
+                    Type: BaseObjectType
+                    Children:
+                    - Name: NewPanel
+                      Type: BaseDataVariableType
+                      DataType: NodeId
+                      Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
+                      Value: "/Objects/mes_v1/UI/Pages/critical_equipment_overview/Furnace"
+                    - Name: AliasNode
+                      Type: BaseDataVariableType
+                      DataType: NodeId
+                      Description: {"NamespaceIndex":5,"TextId":"ChangePanelAliasNodeDescription"}
+                      ValueRank: ScalarOrOneDimension
+              - Name: EventArguments
+                Type: MouseClickEvent
+                Children:
+                - Name: EventId
+                  Type: PropertyType
+                  DataType: ByteString
+                - Name: EventType
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceNode
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceName
+                  Type: PropertyType
+                  DataType: String
+                - Name: Time
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: ReceiveTime
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: Message
+                  Type: PropertyType
+                  DataType: LocalizedText
+                - Name: Severity
+                  Type: PropertyType
+                  DataType: UInt16
           - Name: Button8
             Type: Button
             Children:
@@ -24086,6 +24611,81 @@ Children:
               DataType: Size
               ModellingRule: Optional
               Value: 10.0
+            - Name: MouseClickEventHandler1
+              Type: EventHandler
+              Children:
+              - Name: ListenEventType
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+              - Name: MethodsToCall
+                Type: BaseObjectType
+                Children:
+                - Name: MethodContainer1
+                  Type: BaseObjectType
+                  Children:
+                  - Name: ns=3;ObjectPointer
+                    Type: NodePointer
+                    DataType: NodeId
+                    Children:
+                    - Name: Kind
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: "/Types/ObjectTypes/BaseObjectType"
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "{PanelLoader_equipment}@NodeId"
+                      Children:
+                      - Name: Mode
+                        Type: BaseVariableType
+                        DataType: DynamicLinkMode
+                        ModellingRule: Optional
+                        Value: 2
+                  - Name: ns=3;Method
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "ChangePanel"
+                  - Name: InputArguments
+                    Type: BaseObjectType
+                    Children:
+                    - Name: NewPanel
+                      Type: BaseDataVariableType
+                      DataType: NodeId
+                      Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
+                      Value: "/Objects/mes_v1/UI/Pages/critical_equipment_overview/Electrowinning_water_tank"
+                    - Name: AliasNode
+                      Type: BaseDataVariableType
+                      DataType: NodeId
+                      Description: {"NamespaceIndex":5,"TextId":"ChangePanelAliasNodeDescription"}
+                      ValueRank: ScalarOrOneDimension
+              - Name: EventArguments
+                Type: MouseClickEvent
+                Children:
+                - Name: EventId
+                  Type: PropertyType
+                  DataType: ByteString
+                - Name: EventType
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceNode
+                  Type: PropertyType
+                  DataType: NodeId
+                - Name: SourceName
+                  Type: PropertyType
+                  DataType: String
+                - Name: Time
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: ReceiveTime
+                  Type: PropertyType
+                  DataType: UtcTime
+                - Name: Message
+                  Type: PropertyType
+                  DataType: LocalizedText
+                - Name: Severity
+                  Type: PropertyType
+                  DataType: UInt16
       - Name: RightMargin
         Type: BaseVariableType
         DataType: Size
@@ -25263,6 +25863,39 @@ Children:
                   DataType: Color
                   ModellingRule: Optional
                   Value: "#ffffff"
+              - Name: Label10
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  ModellingRule: Optional
+                  Value: {"LocaleId":"en-US","Text":"1"}
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 198.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: -1.0
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  ModellingRule: Optional
+                  Value: "#e4e4e4"
+                - Name: FontWeight
+                  Type: BaseDataVariableType
+                  DataType: FontWeightEnum
+                  ModellingRule: Optional
+                  Value: 800
+                - Name: FontSize
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 22.0
             - Name: Rectangle3
               Type: Rectangle
               Children:
@@ -25598,6 +26231,39 @@ Children:
                   DataType: Size
                   ModellingRule: Optional
                   Value: 30.0
+              - Name: Label10
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  ModellingRule: Optional
+                  Value: {"LocaleId":"en-US","Text":"2"}
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 198.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: -1.0
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  ModellingRule: Optional
+                  Value: "#e4e4e4"
+                - Name: FontWeight
+                  Type: BaseDataVariableType
+                  DataType: FontWeightEnum
+                  ModellingRule: Optional
+                  Value: 800
+                - Name: FontSize
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 22.0
             - Name: Rectangle4
               Type: Rectangle
               Children:
@@ -25634,20 +26300,10 @@ Children:
                 Type: BaseDataVariableType
                 DataType: Color
                 Value: "#2a3f4f"
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_BORDER"
               - Name: FillColor
                 Type: BaseDataVariableType
                 DataType: Color
                 Value: "#162b38"
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_FILL"
               - Name: VerticalAlignment
                 Type: BaseVariableType
                 DataType: VerticalAlignment
@@ -25941,6 +26597,39 @@ Children:
                   DataType: Size
                   ModellingRule: Optional
                   Value: 30.0
+              - Name: Label10
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  ModellingRule: Optional
+                  Value: {"LocaleId":"en-US","Text":"3"}
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 198.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: -1.0
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  ModellingRule: Optional
+                  Value: "#e4e4e4"
+                - Name: FontWeight
+                  Type: BaseDataVariableType
+                  DataType: FontWeightEnum
+                  ModellingRule: Optional
+                  Value: 800
+                - Name: FontSize
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 22.0
             - Name: Rectangle2
               Type: Rectangle
               Children:
@@ -26276,6 +26965,39 @@ Children:
                   DataType: Size
                   ModellingRule: Optional
                   Value: 30.0
+              - Name: Label10
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  ModellingRule: Optional
+                  Value: {"LocaleId":"en-US","Text":"4"}
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 198.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: -1.0
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  ModellingRule: Optional
+                  Value: "#e4e4e4"
+                - Name: FontWeight
+                  Type: BaseDataVariableType
+                  DataType: FontWeightEnum
+                  ModellingRule: Optional
+                  Value: 800
+                - Name: FontSize
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 22.0
           - Name: CornerRadius
             Type: BaseDataVariableType
             DataType: Size
@@ -26643,6 +27365,39 @@ Children:
                   DataType: Size
                   ModellingRule: Optional
                   Value: 30.0
+              - Name: Label10
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  ModellingRule: Optional
+                  Value: {"LocaleId":"en-US","Text":"5"}
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 198.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: -1.0
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  ModellingRule: Optional
+                  Value: "#e4e4e4"
+                - Name: FontWeight
+                  Type: BaseDataVariableType
+                  DataType: FontWeightEnum
+                  ModellingRule: Optional
+                  Value: 800
+                - Name: FontSize
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 22.0
             - Name: Rectangle2
               Type: Rectangle
               Children:
@@ -26978,6 +27733,39 @@ Children:
                   DataType: Size
                   ModellingRule: Optional
                   Value: 40.0
+              - Name: Label10
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  ModellingRule: Optional
+                  Value: {"LocaleId":"en-US","Text":"6"}
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 198.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: -1.0
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  ModellingRule: Optional
+                  Value: "#e4e4e4"
+                - Name: FontWeight
+                  Type: BaseDataVariableType
+                  DataType: FontWeightEnum
+                  ModellingRule: Optional
+                  Value: 800
+                - Name: FontSize
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 22.0
             - Name: Rectangle3
               Type: Rectangle
               Children:
@@ -27313,6 +28101,39 @@ Children:
                   DataType: Size
                   ModellingRule: Optional
                   Value: 37.0
+              - Name: Label10
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  ModellingRule: Optional
+                  Value: {"LocaleId":"en-US","Text":"7"}
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 198.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: -1.0
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  ModellingRule: Optional
+                  Value: "#e4e4e4"
+                - Name: FontWeight
+                  Type: BaseDataVariableType
+                  DataType: FontWeightEnum
+                  ModellingRule: Optional
+                  Value: 800
+                - Name: FontSize
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 22.0
             - Name: Rectangle4
               Type: Rectangle
               Children:
@@ -27349,20 +28170,10 @@ Children:
                 Type: BaseDataVariableType
                 DataType: Color
                 Value: "#2a3f4f"
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_BORDER"
               - Name: FillColor
                 Type: BaseDataVariableType
                 DataType: Color
                 Value: "#162b38"
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_FILL"
               - Name: VerticalAlignment
                 Type: BaseVariableType
                 DataType: VerticalAlignment
@@ -27656,6 +28467,39 @@ Children:
                   DataType: Size
                   ModellingRule: Optional
                   Value: 47.0
+              - Name: Label10
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  ModellingRule: Optional
+                  Value: {"LocaleId":"en-US","Text":"8"}
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 198.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: -1.0
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  ModellingRule: Optional
+                  Value: "#e4e4e4"
+                - Name: FontWeight
+                  Type: BaseDataVariableType
+                  DataType: FontWeightEnum
+                  ModellingRule: Optional
+                  Value: 800
+                - Name: FontSize
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 22.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
@@ -27961,20 +28805,10 @@ Children:
             Type: BaseDataVariableType
             DataType: Color
             Value: "#13232f"
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_FILL"
           - Name: BorderColor
             Type: BaseDataVariableType
             DataType: Color
             Value: "#2a3f4f"
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_BORDER"
           - Name: BorderThickness
             Type: BaseDataVariableType
             DataType: Size
@@ -28092,20 +28926,10 @@ Children:
             Type: BaseDataVariableType
             DataType: Color
             Value: "#13232f"
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_FILL"
           - Name: BorderColor
             Type: BaseDataVariableType
             DataType: Color
             Value: "#2a3f4f"
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_BORDER"
           - Name: BorderThickness
             Type: BaseDataVariableType
             DataType: Size
@@ -28214,20 +29038,10 @@ Children:
             Type: BaseDataVariableType
             DataType: Color
             Value: "#13232f"
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_FILL"
           - Name: BorderColor
             Type: BaseDataVariableType
             DataType: Color
             Value: "#2a3f4f"
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_BORDER"
           - Name: BorderThickness
             Type: BaseDataVariableType
             DataType: Size
@@ -28336,20 +29150,10 @@ Children:
             Type: BaseDataVariableType
             DataType: Color
             Value: "#13232f"
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_FILL"
           - Name: BorderColor
             Type: BaseDataVariableType
             DataType: Color
             Value: "#2a3f4f"
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_BORDER"
           - Name: BorderThickness
             Type: BaseDataVariableType
             DataType: Size
@@ -28458,20 +29262,10 @@ Children:
             Type: BaseDataVariableType
             DataType: Color
             Value: "#13232f"
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_FILL"
           - Name: BorderColor
             Type: BaseDataVariableType
             DataType: Color
             Value: "#2a3f4f"
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_BORDER"
           - Name: BorderThickness
             Type: BaseDataVariableType
             DataType: Size
@@ -28580,20 +29374,10 @@ Children:
             Type: BaseDataVariableType
             DataType: Color
             Value: "#13232f"
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_FILL"
           - Name: BorderColor
             Type: BaseDataVariableType
             DataType: Color
             Value: "#2a3f4f"
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_BORDER"
           - Name: BorderThickness
             Type: BaseDataVariableType
             DataType: Size
@@ -28702,20 +29486,10 @@ Children:
             Type: BaseDataVariableType
             DataType: Color
             Value: "#13232f"
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_FILL"
           - Name: BorderColor
             Type: BaseDataVariableType
             DataType: Color
             Value: "#2a3f4f"
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_BORDER"
           - Name: BorderThickness
             Type: BaseDataVariableType
             DataType: Size
@@ -28824,20 +29598,10 @@ Children:
             Type: BaseDataVariableType
             DataType: Color
             Value: "#13232f"
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_FILL"
           - Name: BorderColor
             Type: BaseDataVariableType
             DataType: Color
             Value: "#2a3f4f"
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_BORDER"
           - Name: BorderThickness
             Type: BaseDataVariableType
             DataType: Size

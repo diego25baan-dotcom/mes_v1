@@ -1,7 +1,7 @@
 Name: process stages
 Type: FolderType
 Children:
-- Name: extraction
+- Name: Extraction
   Id: g=6d724e197f48653b57992a41502e6d09
   Supertype: stages
   ReferenceType: HasComponent
@@ -1018,7 +1018,7 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 255.0
-- Name: crushing
+- Name: Crushing
   Id: g=d1779e21caefbe9196cb888cd5485d6c
   Supertype: stages
   ReferenceType: HasComponent
@@ -2035,7 +2035,7 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 255.0
-- Name: grinding
+- Name: Grinding
   Id: g=ff7a5a3f7d40bdf1655fe4cd44edb70a
   Supertype: stages
   ReferenceType: HasComponent
@@ -5633,7 +5633,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-- Name: flotation
+- Name: Flotation
   Id: g=502ecdb89c6fc1ab3ac1f88489b0b1bd
   Supertype: stages
   ReferenceType: HasComponent
@@ -9138,7 +9138,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-- Name: foundry
+- Name: Foundry
   Id: g=41275424b7510eaa5c0b8299afb7b3a7
   Supertype: stages
   ReferenceType: HasComponent
@@ -11968,7 +11968,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-- Name: electrowinning
+- Name: Electrowinning
   Id: g=5740714ebeade6127503c0f7a7aeb572
   Supertype: stages
   ReferenceType: HasComponent

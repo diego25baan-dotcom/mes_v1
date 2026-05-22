@@ -26,6 +26,8 @@ public class Sim_energía : BaseNetLogic
         flujo_material = LogicObject.GetVariable("flujo_material");
         potenciaRenovable = LogicObject.GetVariable("Potencia_Renovable_kW");
         toneladas_acumuladas = LogicObject.GetVariable("toneladas_acumuladas");
+        energia = LogicObject.GetVariable("energia");
+        energia_renovable = LogicObject.GetVariable("energia_renovable");
 
         KPI_ENER_1 = LogicObject.GetVariable("KPI_EN_001 CONSUMO");
         KPI_ENER_2 = LogicObject.GetVariable("KPI_EN_002 CO2_AREA");
@@ -41,78 +43,22 @@ public class Sim_energía : BaseNetLogic
         if (runVariable.Value)
         {
             
-            if (integerCounter <= 99)
-                integerCounter++;
-            else
-                integerCounter = 0;
-
-            decimalCounter += 0.05;
-
-            
-            estadoOperacion = (rand.NextDouble() > 0.05) ? 1.0 : 0.0;
-            carga = 0.5 + 0.3 * Math.Sin(decimalCounter / 5);
-
-            
-            double basePower = 80 + (carga * 40);
-            double ruidoPotencia = (rand.NextDouble() - 0.5) * 5;
-            double potencia_val = (basePower + ruidoPotencia) * estadoOperacion;
-            potencia.Value = potencia_val;
-
-            
-            double baseVelocidad = 1.5 + 0.3 * Math.Sin(decimalCounter / 3);
-            double ruidoVelocidad = (rand.NextDouble() - 0.5) * 0.2;
-            double velocidad_val = (baseVelocidad + ruidoVelocidad) * estadoOperacion;
-            velocidad.Value = velocidad_val;
-
-            
-            double baseCarga = (100 + (carga * 50)) * 1000;
-            double ruidoCarga = ((rand.NextDouble() - 0.5) * 10) * 1000;
-            double carga_val = ((baseCarga + ruidoCarga) * estadoOperacion) / 1000;
-            cargaBanda.Value = carga_val;
-
-            
-            double flujo_val = velocidad_val * carga_val;
-            flujo_material.Value = flujo_val;
-
-            
-            double dt = .25;
-
-           
-            double toneladas_procesadas = (flujo_val * dt) / 1000.0;
-
-  
-            double energia_kWh = potencia_val * (dt / 3600.0);
-
-           
-            energia_acumulada += energia_kWh;
-            toneladas_acumuladas.Value += toneladas_procesadas;
-
-            // FACTOR DE EMISIÓN
-            double baseFactor = 0.45;
-            double variacion = (rand.NextDouble() - 0.5) * 0.02;
-            double factor_val = baseFactor + variacion;
-            factorEmision.Value = factor_val;
-
-            // ENERGÍA RENOVABLE
-            double porcentajeRenovable = 0.2 + 0.2 * Math.Sin(decimalCounter / 10);
-            double potenciaRenovable_val = potencia_val * porcentajeRenovable;
-            potenciaRenovable.Value = potenciaRenovable_val;
-
             // KPI 1 (Consumo)
-            KPI_ENER_1.Value = potencia_val;
+            KPI_ENER_1.Value = energia.Value;
 
             // KPI 2 (CO2)
-            KPI_ENER_2.Value = potencia_val * factor_val;
+            KPI_ENER_2.Value = energia.Value * factorEmision.Value;
 
             // KPI 3 (kWh/ton) 
             if (toneladas_acumuladas.Value > 0.001)
-                KPI_ENER_3.Value = energia_acumulada / toneladas_acumuladas.Value;
+                KPI_ENER_3.Value = energia.Value / toneladas_acumuladas.Value;
             else
                 KPI_ENER_3.Value = 0;
 
+
             // KPI 4 (% renovable)
-            if (potencia_val > 0.001)
-                KPI_ENER_4.Value = (potenciaRenovable_val / potencia_val) * 100;
+            if (potencia.Value > 0.001)
+                KPI_ENER_4.Value = (potenciaRenovable.Value / potencia.Value) * 100;
             else
                 KPI_ENER_4.Value = 0;
         }
@@ -122,28 +68,20 @@ public class Sim_energía : BaseNetLogic
     {
         simulationTask?.Dispose();
     }
-
+    
     private PeriodicTask simulationTask;
-    private int integerCounter;
-    private double decimalCounter;
-
-    private double carga;
-    private double estadoOperacion;
-    private Random rand = new Random();
-
-    
-    private double energia_acumulada = 0.0;
-    
-
     private IUAVariable runVariable;
     private IUAVariable toneladas_acumuladas;
-
     private IUAVariable potencia;
     private IUAVariable velocidad;
     private IUAVariable cargaBanda;
     private IUAVariable factorEmision;
     private IUAVariable potenciaRenovable;
     private IUAVariable flujo_material;
+    private IUAVariable energia;
+    private IUAVariable energia_renovable;
+   
+
 
     private IUAVariable KPI_ENER_1;
     private IUAVariable KPI_ENER_2;

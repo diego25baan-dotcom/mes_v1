@@ -1,7 +1,7 @@
 Name: critical_equipment_overview
 Type: FolderType
 Children:
-- Name: critical_equipment_overview1
+- Name: Conveyor_Belt
   Id: g=fb23016d53249a87ea433193015ae7c3
   Supertype: critical_equipment_overview
   ReferenceType: HasComponent
@@ -14,6 +14,1160 @@ Children:
     - Name: Path
       Type: BaseDataVariableType
       DataType: ResourceUri
+      Value: "ns=14;%PROJECTDIR%/banda.jpg"
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 180.0
+  - Name: CircularGauge1
+    Type: CircularGauge
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MaxValue
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 100.0
+    - Name: WarningZones
+      Type: BaseObjectType
+  - Name: VerticalLayout1
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+    - Name: Label5
+      Type: Label
+  - Name: VerticalLayout2
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+  - Name: VerticalLayout3
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+    - Name: Label5
+      Type: Label
+    - Name: Label6
+      Type: Label
+    - Name: Label7
+      Type: Label
+    - Name: Label8
+      Type: Label
+    - Name: Label9
+      Type: Label
+  - Name: VerticalLayout4
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+    - Name: Label5
+      Type: Label
+  - Name: Label2
+    Type: Label
+  - Name: CircularGauge2
+    Type: CircularGauge
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MaxValue
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 100.0
+    - Name: WarningZones
+      Type: BaseObjectType
+  - Name: CircularGauge3
+    Type: CircularGauge
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MaxValue
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 100.0
+    - Name: WarningZones
+      Type: BaseObjectType
+  - Name: CircularGauge4
+    Type: CircularGauge
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MaxValue
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 100.0
+    - Name: WarningZones
+      Type: BaseObjectType
+  - Name: CircularGauge5
+    Type: CircularGauge
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MaxValue
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 100.0
+    - Name: WarningZones
+      Type: BaseObjectType
+- Name: Hopper
+  Id: g=5115f471f98962429ef2850180a288f5
+  Supertype: critical_equipment_overview
+  ReferenceType: HasComponent
+  Children:
+  - Name: Label1
+    Type: Label
+  - Name: Image1
+    Type: Image
+    Children:
+    - Name: Path
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=14;%PROJECTDIR%/tolva.jpg"
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 170.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 180.0
+  - Name: CircularGauge1
+    Type: CircularGauge
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MaxValue
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 100.0
+    - Name: WarningZones
+      Type: BaseObjectType
+  - Name: VerticalLayout1
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+    - Name: Label5
+      Type: Label
+  - Name: VerticalLayout2
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+  - Name: VerticalLayout3
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+    - Name: Label5
+      Type: Label
+    - Name: Label6
+      Type: Label
+    - Name: Label7
+      Type: Label
+    - Name: Label8
+      Type: Label
+    - Name: Label9
+      Type: Label
+  - Name: VerticalLayout4
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+    - Name: Label5
+      Type: Label
+  - Name: Label2
+    Type: Label
+  - Name: CircularGauge2
+    Type: CircularGauge
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MaxValue
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 100.0
+    - Name: WarningZones
+      Type: BaseObjectType
+  - Name: CircularGauge3
+    Type: CircularGauge
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MaxValue
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 100.0
+    - Name: WarningZones
+      Type: BaseObjectType
+  - Name: CircularGauge4
+    Type: CircularGauge
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MaxValue
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 100.0
+    - Name: WarningZones
+      Type: BaseObjectType
+  - Name: CircularGauge5
+    Type: CircularGauge
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MaxValue
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 100.0
+    - Name: WarningZones
+      Type: BaseObjectType
+- Name: Crusher
+  Id: g=f8ce175a57b1c3df4edb1b72ef51f840
+  Supertype: critical_equipment_overview
+  ReferenceType: HasComponent
+  Children:
+  - Name: Label1
+    Type: Label
+  - Name: Image1
+    Type: Image
+    Children:
+    - Name: Path
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=14;%PROJECTDIR%/chancadora.jpg"
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 170.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 180.0
+  - Name: CircularGauge1
+    Type: CircularGauge
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MaxValue
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 100.0
+    - Name: WarningZones
+      Type: BaseObjectType
+  - Name: VerticalLayout1
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+    - Name: Label5
+      Type: Label
+  - Name: VerticalLayout2
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+  - Name: VerticalLayout3
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+    - Name: Label5
+      Type: Label
+    - Name: Label6
+      Type: Label
+    - Name: Label7
+      Type: Label
+    - Name: Label8
+      Type: Label
+    - Name: Label9
+      Type: Label
+  - Name: VerticalLayout4
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+    - Name: Label5
+      Type: Label
+  - Name: Label2
+    Type: Label
+  - Name: CircularGauge2
+    Type: CircularGauge
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MaxValue
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 100.0
+    - Name: WarningZones
+      Type: BaseObjectType
+  - Name: CircularGauge3
+    Type: CircularGauge
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MaxValue
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 100.0
+    - Name: WarningZones
+      Type: BaseObjectType
+  - Name: CircularGauge4
+    Type: CircularGauge
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MaxValue
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 100.0
+    - Name: WarningZones
+      Type: BaseObjectType
+  - Name: CircularGauge5
+    Type: CircularGauge
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MaxValue
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 100.0
+    - Name: WarningZones
+      Type: BaseObjectType
+- Name: Mill
+  Id: g=ab2d5e862f16df72a05090a3dd1fc4d3
+  Supertype: critical_equipment_overview
+  ReferenceType: HasComponent
+  Children:
+  - Name: Label1
+    Type: Label
+  - Name: Image1
+    Type: Image
+    Children:
+    - Name: Path
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=14;%PROJECTDIR%/molino.jpg"
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 170.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 180.0
+  - Name: CircularGauge1
+    Type: CircularGauge
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MaxValue
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 100.0
+    - Name: WarningZones
+      Type: BaseObjectType
+  - Name: VerticalLayout1
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+    - Name: Label5
+      Type: Label
+  - Name: VerticalLayout2
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+  - Name: VerticalLayout3
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+    - Name: Label5
+      Type: Label
+    - Name: Label6
+      Type: Label
+    - Name: Label7
+      Type: Label
+    - Name: Label8
+      Type: Label
+    - Name: Label9
+      Type: Label
+  - Name: VerticalLayout4
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+    - Name: Label5
+      Type: Label
+  - Name: Label2
+    Type: Label
+  - Name: CircularGauge2
+    Type: CircularGauge
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MaxValue
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 100.0
+    - Name: WarningZones
+      Type: BaseObjectType
+  - Name: CircularGauge3
+    Type: CircularGauge
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MaxValue
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 100.0
+    - Name: WarningZones
+      Type: BaseObjectType
+  - Name: CircularGauge4
+    Type: CircularGauge
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MaxValue
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 100.0
+    - Name: WarningZones
+      Type: BaseObjectType
+  - Name: CircularGauge5
+    Type: CircularGauge
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MaxValue
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 100.0
+    - Name: WarningZones
+      Type: BaseObjectType
+- Name: Chemical_tank
+  Id: g=c9613fbf930ad752c5f362dd50f3a1d6
+  Supertype: critical_equipment_overview
+  ReferenceType: HasComponent
+  Children:
+  - Name: Label1
+    Type: Label
+  - Name: Image1
+    Type: Image
+    Children:
+    - Name: Path
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=14;%PROJECTDIR%/tanque.jpg"
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 170.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 180.0
+  - Name: CircularGauge1
+    Type: CircularGauge
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MaxValue
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 100.0
+    - Name: WarningZones
+      Type: BaseObjectType
+  - Name: VerticalLayout1
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+    - Name: Label5
+      Type: Label
+  - Name: VerticalLayout2
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+  - Name: VerticalLayout3
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+    - Name: Label5
+      Type: Label
+    - Name: Label6
+      Type: Label
+    - Name: Label7
+      Type: Label
+    - Name: Label8
+      Type: Label
+    - Name: Label9
+      Type: Label
+  - Name: VerticalLayout4
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+    - Name: Label5
+      Type: Label
+  - Name: Label2
+    Type: Label
+  - Name: CircularGauge2
+    Type: CircularGauge
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MaxValue
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 100.0
+    - Name: WarningZones
+      Type: BaseObjectType
+  - Name: CircularGauge3
+    Type: CircularGauge
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MaxValue
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 100.0
+    - Name: WarningZones
+      Type: BaseObjectType
+  - Name: CircularGauge4
+    Type: CircularGauge
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MaxValue
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 100.0
+    - Name: WarningZones
+      Type: BaseObjectType
+  - Name: CircularGauge5
+    Type: CircularGauge
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MaxValue
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 100.0
+    - Name: WarningZones
+      Type: BaseObjectType
+- Name: Flotation_cells
+  Id: g=603b7c61f66bfdc6e41a1702d5c39e13
+  Supertype: critical_equipment_overview
+  ReferenceType: HasComponent
+  Children:
+  - Name: Label1
+    Type: Label
+  - Name: Image1
+    Type: Image
+    Children:
+    - Name: Path
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=14;%PROJECTDIR%/flotacion.jpg"
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 170.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 180.0
+  - Name: CircularGauge1
+    Type: CircularGauge
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MaxValue
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 100.0
+    - Name: WarningZones
+      Type: BaseObjectType
+  - Name: VerticalLayout1
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+    - Name: Label5
+      Type: Label
+  - Name: VerticalLayout2
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+  - Name: VerticalLayout3
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+    - Name: Label5
+      Type: Label
+    - Name: Label6
+      Type: Label
+    - Name: Label7
+      Type: Label
+    - Name: Label8
+      Type: Label
+    - Name: Label9
+      Type: Label
+  - Name: VerticalLayout4
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+    - Name: Label5
+      Type: Label
+  - Name: Label2
+    Type: Label
+  - Name: CircularGauge2
+    Type: CircularGauge
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MaxValue
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 100.0
+    - Name: WarningZones
+      Type: BaseObjectType
+  - Name: CircularGauge3
+    Type: CircularGauge
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MaxValue
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 100.0
+    - Name: WarningZones
+      Type: BaseObjectType
+  - Name: CircularGauge4
+    Type: CircularGauge
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MaxValue
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 100.0
+    - Name: WarningZones
+      Type: BaseObjectType
+  - Name: CircularGauge5
+    Type: CircularGauge
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MaxValue
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 100.0
+    - Name: WarningZones
+      Type: BaseObjectType
+- Name: Furnace
+  Id: g=594b503147368053ae621b364289e47c
+  Supertype: critical_equipment_overview
+  ReferenceType: HasComponent
+  Children:
+  - Name: Label1
+    Type: Label
+  - Name: Image1
+    Type: Image
+    Children:
+    - Name: Path
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=14;%PROJECTDIR%/horno.jpg"
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 170.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 180.0
+  - Name: CircularGauge1
+    Type: CircularGauge
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MaxValue
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 100.0
+    - Name: WarningZones
+      Type: BaseObjectType
+  - Name: VerticalLayout1
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+    - Name: Label5
+      Type: Label
+  - Name: VerticalLayout2
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+  - Name: VerticalLayout3
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+    - Name: Label5
+      Type: Label
+    - Name: Label6
+      Type: Label
+    - Name: Label7
+      Type: Label
+    - Name: Label8
+      Type: Label
+    - Name: Label9
+      Type: Label
+  - Name: VerticalLayout4
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+    - Name: Label5
+      Type: Label
+  - Name: Label2
+    Type: Label
+  - Name: CircularGauge2
+    Type: CircularGauge
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MaxValue
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 100.0
+    - Name: WarningZones
+      Type: BaseObjectType
+  - Name: CircularGauge3
+    Type: CircularGauge
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MaxValue
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 100.0
+    - Name: WarningZones
+      Type: BaseObjectType
+  - Name: CircularGauge4
+    Type: CircularGauge
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MaxValue
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 100.0
+    - Name: WarningZones
+      Type: BaseObjectType
+  - Name: CircularGauge5
+    Type: CircularGauge
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MaxValue
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 100.0
+    - Name: WarningZones
+      Type: BaseObjectType
+- Name: Electrowinning_water_tank
+  Id: g=9c719689cc9037ad53498c016aa3c09c
+  Supertype: critical_equipment_overview
+  ReferenceType: HasComponent
+  Children:
+  - Name: Label1
+    Type: Label
+  - Name: Image1
+    Type: Image
+    Children:
+    - Name: Path
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=14;%PROJECTDIR%/tanque electro.jpg"
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 170.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 180.0
   - Name: CircularGauge1
     Type: CircularGauge
     Children:
