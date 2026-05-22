@@ -388,3 +388,113 @@ Children:
   - Name: KPI_ESG_002 RESTORED
     Type: BaseDataVariableType
     DataType: Float
+- Name: Sim_prod
+  Type: NetLogic
+  Children:
+  - Name: Ley_mineral_entrada
+    Type: BaseDataVariableType
+    DataType: Float
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/KPIS/Producción/Ley_mineral_entrada"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: Ley_mineral_salida
+    Type: BaseDataVariableType
+    DataType: Float
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/KPIS/Producción/Ley_mineral_salida"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: Disponibilidad
+    Type: BaseDataVariableType
+    DataType: Float
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/KPIS/Producción/Disponibilidad"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: Rendimiento
+    Type: BaseDataVariableType
+    DataType: Float
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/KPIS/Producción/Rendimiento"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: Calidad
+    Type: BaseDataVariableType
+    DataType: Float
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/KPIS/Producción/Calidad"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: Costo_total
+    Type: BaseDataVariableType
+    DataType: Float
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/KPIS/Producción/Costo_total"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: Toneladas_producidas
+    Type: BaseDataVariableType
+    DataType: Float
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/KPIS/Producción/Toneladas_producidas"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: 'KPI_PROD_001 PRODUCTION '
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: KPI_PROD_002 RECOVERY
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: KPI_PROD_003 OEE
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: KPI_PROD_004 COSTS PER TON
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: RunSimulation
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true

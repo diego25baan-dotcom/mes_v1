@@ -1010,7 +1010,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"OEE=Availability×Performance×Quality               Availability=OperatingTime/PlannedProdTime     Performance=IdealCycleTimeXTotalUnits/OperationTime                                                    Quality=Good units/Total units"}
+        Value: {"LocaleId":"en-US","Text":"OEE=Availability×Performance×Quality/10000               Availability=OperatingTime/PlannedProdTime     Performance=IdealCycleTimeXTotalUnits/OperationTime                                                    Quality=Good units/Total units"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
