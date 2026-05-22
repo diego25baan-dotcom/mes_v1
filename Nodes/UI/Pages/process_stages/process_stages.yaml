@@ -2484,7 +2484,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Molienda/Energía/Potencia_kW"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
