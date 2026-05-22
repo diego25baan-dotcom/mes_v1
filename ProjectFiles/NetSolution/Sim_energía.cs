@@ -42,7 +42,8 @@ public class Sim_energía : BaseNetLogic
     {
         if (runVariable.Value)
         {
-            
+            pot = potencia.Value;
+            tons=toneladas_acumuladas.Value;
             // KPI 1 (Consumo)
             KPI_ENER_1.Value = energia.Value;
 
@@ -50,14 +51,15 @@ public class Sim_energía : BaseNetLogic
             KPI_ENER_2.Value = energia.Value * factorEmision.Value;
 
             // KPI 3 (kWh/ton) 
-            if (toneladas_acumuladas.Value > 0.001)
+            
+            if (tons> 0.001)
                 KPI_ENER_3.Value = energia.Value / toneladas_acumuladas.Value;
             else
                 KPI_ENER_3.Value = 0;
 
 
             // KPI 4 (% renovable)
-            if (potencia.Value > 0.001)
+            if (pot > 0.001)
                 KPI_ENER_4.Value = (potenciaRenovable.Value / potencia.Value) * 100;
             else
                 KPI_ENER_4.Value = 0;
@@ -80,7 +82,8 @@ public class Sim_energía : BaseNetLogic
     private IUAVariable flujo_material;
     private IUAVariable energia;
     private IUAVariable energia_renovable;
-   
+    private double tons = 0.0;
+    private double pot = 0.0;
 
 
     private IUAVariable KPI_ENER_1;
