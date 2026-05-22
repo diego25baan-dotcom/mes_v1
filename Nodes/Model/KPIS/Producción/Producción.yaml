@@ -4,9 +4,29 @@ Children:
 - Name: Ley_mineral_entrada
   Type: BaseDataVariableType
   DataType: Float
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Ley_mineral_entrada_chan"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
 - Name: Ley_mineral_salida
   Type: BaseDataVariableType
   DataType: Float
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Ley_mineral_salida_proceso"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
 - Name: Disponibilidad
   Type: BaseDataVariableType
   DataType: Float
@@ -22,6 +42,16 @@ Children:
 - Name: Toneladas_producidas
   Type: BaseDataVariableType
   DataType: Float
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Toneladas_producidas_totales_proceso"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
 - Name: 'KPI_PROD_001 PRODUCTION '
   Type: BaseDataVariableType
   DataType: Float

@@ -2966,6 +2966,7 @@ Children:
         ModellingRule: Optional
         Value: 10.0
     - Name: Scroll
+      Id: g=b280b349b585e4055c2657ca9d1dd0b1
       Type: ScrollView
       Children:
       - Name: Width
@@ -3286,6 +3287,7 @@ Children:
       - Class: Method
         Name: AddPen
     - Name: ScrollView1
+      Id: g=1e69fc4ce6194f9bb7a769c7b2d24b5f
       Type: ScrollView
       Children:
       - Name: Width

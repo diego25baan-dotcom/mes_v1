@@ -21,7 +21,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../Energía/Potencia_kW"
+    Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Potencia_total_proceso_kW"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -34,7 +34,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../NetLogic/Sim_esg/Energia_kWh"
+    Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Energia_total_proceso_kWh"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -47,7 +47,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../NetLogic/Sim_esg/Toneladas_producidas"
+    Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Toneladas_producidas_totales_proceso"
     Children:
     - Name: Mode
       Type: BaseVariableType

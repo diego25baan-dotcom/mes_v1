@@ -8,7 +8,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../NetLogic/Sim_agua/Caudal_Agua_Ls"
+    Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Flujo_material_salida_elecro"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -21,7 +21,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../NetLogic/Sim_agua/Toneladas_acumuladas"
+    Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Toneladas_producidas_totales_proceso"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -34,7 +34,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../Energía/toneladas_acumuladas"
+    Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Agua_recuperada_total_proceso"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -47,7 +47,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../NetLogic/Sim_agua/Agua_total"
+    Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Energia_total_proceso_kWh"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -86,7 +86,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../NetLogic/Sim_agua/Caudal_descarga_m3h"
+    Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Flujo_material_salida_elecro"
     Children:
     - Name: Mode
       Type: BaseVariableType
@@ -774,7 +774,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../NetLogic/Sim_agua/Water_consumption"
+    Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Agua_total_utilizada_proceso"
     Children:
     - Name: Mode
       Type: BaseVariableType
