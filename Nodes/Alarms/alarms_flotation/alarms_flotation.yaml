@@ -2,7 +2,7 @@ Name: alarms_flotation
 Id: g=4b454481870513ba3e77e9b0366107ef
 Type: FolderType
 Children:
-- Name: ExclusiveLevelAlarm1
+- Name: Water
   Id: g=087be1f1025c49c28f87d7d1a783b42a
   Type: ExclusiveLevelAlarmController
   Children:
@@ -15,7 +15,7 @@ Children:
       Id: g=b38335a803b6c388c289d3f9531e7afd
       Type: DynamicLink
       DataType: NodePath
-      Value: "../../../../Model/KPIS/ESG/Numero_incidentes"
+      Value: "../../../../Model/Variables_Flotación/Agua/Agua_Total_flot"
       Children:
       - Name: Mode
         Id: g=c5d416617c89cda827a4863841adb920
@@ -65,7 +65,7 @@ Children:
     Id: g=02fc96709e119a1913af924f7b264b67
     Type: BaseDataVariableType
     DataType: Double
-    Value: 2.0
+    Value: 1000.0
   - Name: Message
     Id: g=e60935c5c5b7baeeb2745a8c2395ef0d
     Type: BaseDataVariableType
@@ -75,4 +75,88 @@ Children:
       Id: g=db6f94f9627c6a945f1faf32f581d452
       Type: BaseDataVariableType
       DataType: LocalizedText
-      Value: {"LocaleId":"en-US","Text":"High number of incidents"}
+      Value: {"LocaleId":"en-US","Text":"high water use"}
+- Name: performance
+  Id: g=ac060200facc3e2be91d42648de90e02
+  Type: ExclusiveLevelAlarmController
+  Children:
+  - Name: InputValue
+    Id: g=d3ad3b8a586ad2483f6a30b8426f15ae
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=b51b0826a54d5c7a472fa7b626277194
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Model/Variables_Flotación/Producción/Rendimiento"
+      Children:
+      - Name: Mode
+        Id: g=2a554c81d54b78101da9a9094b7f453b
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=bd493728ac2f3ce581d954af24c74d48
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=154
+    Direction: Forward
+  - Name: HighLimit
+    Id: g=9d57c0916013849c353adc933c5e738a
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: "NaN"
+  - Name: Message
+    Id: g=27b66135119cb1892af5e6307b3c851c
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: HighStateMessage
+      Id: g=fd7f6615e477bb5cc9967996a0f8aa90
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":""}
+    - Name: LowStateMessage
+      Id: g=2fa7b3bc5ca74128b15099e99c77eb8f
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Low performance"}
+  - Name: LowLimit
+    Id: g=b69f977bfd52b55af639dbe06dea02fe
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 50.0

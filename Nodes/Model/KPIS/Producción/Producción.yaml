@@ -55,12 +55,52 @@ Children:
 - Name: 'KPI_PROD_001 PRODUCTION '
   Type: BaseDataVariableType
   DataType: Float
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../NetLogic/Sim_prod/KPI_PROD_001 PRODUCTION "
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
 - Name: KPI_PROD_002 RECOVERY
   Type: BaseDataVariableType
   DataType: Float
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../NetLogic/Sim_prod/KPI_PROD_002 RECOVERY"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
 - Name: KPI_PROD_003 OEE
   Type: BaseDataVariableType
   DataType: Float
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../NetLogic/Sim_prod/KPI_PROD_003 OEE"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
 - Name: KPI_PROD_004 COSTS PER TON
   Type: BaseDataVariableType
   DataType: Float
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../NetLogic/Sim_prod/KPI_PROD_004 COSTS PER TON"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2

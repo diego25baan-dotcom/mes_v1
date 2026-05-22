@@ -3,27 +3,15 @@ Id: g=c9cfcdc21d5ce2704e14e7f9123be37c
 Type: FolderType
 Children:
 - Name: ExclusiveLevelAlarm1
-  Id: g=cd23bbfc520bed55b3232a5171e8f826
+  Id: g=63d33327e4080980673ed43392172358
   Type: ExclusiveLevelAlarmController
   Children:
   - Name: InputValue
-    Id: g=856c43ccbdb54655f1383c42c38d42e4
+    Id: g=ffd6e8ecc28fc901a2581e4a0b361290
     Type: BaseDataVariableType
     DataType: Double
-    Children:
-    - Name: DynamicLink
-      Id: g=a8e390a4c03b157d6bc713721dfb4852
-      Type: DynamicLink
-      DataType: NodePath
-      Value: "../../../../Model/KPIS/ESG/Numero_incidentes"
-      Children:
-      - Name: Mode
-        Id: g=85a3654c384a3b2be13c7eaae93ab202
-        Type: BaseVariableType
-        DataType: DynamicLinkMode
-        Value: 2
   - Name: LastEvent
-    Id: g=c7fb6d32d56cec30b7190e4b52b8dc89
+    Id: g=148218120c64ea273110fa747a7ae6ed
     Type: BaseDataVariableType
     DataType: BaseDataType
     ValueRank: OneDimension
@@ -61,18 +49,3 @@ Children:
   - Class: Reference
     Target: ns=23;i=154
     Direction: Forward
-  - Name: HighLimit
-    Id: g=72aa39dfd2f67e5abfc29bd0e57ad85f
-    Type: BaseDataVariableType
-    DataType: Double
-    Value: 2.0
-  - Name: Message
-    Id: g=aa002c4bc651701b048df92464abe992
-    Type: BaseDataVariableType
-    DataType: LocalizedText
-    Children:
-    - Name: HighStateMessage
-      Id: g=abac38466ca288361ef6742a107d0f58
-      Type: BaseDataVariableType
-      DataType: LocalizedText
-      Value: {"LocaleId":"en-US","Text":"High number of incidents"}
