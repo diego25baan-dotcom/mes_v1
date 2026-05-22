@@ -1,0 +1,90 @@
+Name: Producción
+Type: FolderType
+Children:
+- Name: Agua_recuperada_flot
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Agua_recuperada_Espesador_L"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Ley_mineral_entrada
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Ley_mineral_Entrada_flot"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Ley_mineral_salida
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Ley_mineral_Salida_flot"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Toneladas_Producidas
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Toneladas_Concentrado_flot"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Disponibilidad
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Rendimiento
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Calidad
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Ley_concentrado_flot
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Ley_concentrado_flot"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Recuperación_flot
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Recuperacion_flotacion"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2

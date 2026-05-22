@@ -1441,3 +1441,435 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "Ley_mineral_salida_Molienda"
+- Name: Potencia_Total_flotacion_kW
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Potencia_Total_flotacion_kW"
+- Name: Energia_Total_Flotacion_kWh
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Energia_Total_Flotacion_kWh"
+- Name: Potencia_Renovable_Flot
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Potencia_Renovable_Flot"
+- Name: Recuperacion_flotacion
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Recuperacion_flotacion"
+- Name: Ley_concentrado_flot
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Ley_concentrado_flot"
+- Name: Ley_mineral_Entrada_flot
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Ley_mineral_Entrada_flot"
+- Name: Ley_mineral_Salida_flot
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Ley_mineral_Salida_flot"
+- Name: FeedRate_Flotacion_tph
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "FeedRate_Flotacion_tph"
+- Name: Toneladas_Concentrado_flot
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Toneladas_Concentrado_flot"
+- Name: Toneladas_Flot_Entrada
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Toneladas_Flot_Entrada"
+- Name: Agua_recuperada_Espesador_L
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Agua_recuperada_Espesador_L"
+- Name: Volumen_Agua_Flotacion_L
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Volumen_Agua_Flotacion_L"
+- Name: Caudal_Agua_Flotacion_Ls
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Caudal_Agua_Flotacion_Ls"
+- Name: Torque_Rastrillo
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Torque_Rastrillo"
+- Name: Potencia_Espesador_flot_kW
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Potencia_Espesador_flot_kW"
+- Name: Velocidad_Bomba_admin_flot
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Velocidad_Bomba_admin_flot"
+- Name: Caudal_Agua_Fundicion_Ls
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Caudal_Agua_Fundicion_Ls"
+- Name: Volumen_Agua_Fundicion_Ls
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Volumen_Agua_Fundicion_Ls"
+- Name: Factor_Emision_Gas
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Factor_Emision_Gas"
+- Name: Emisiones_Gas_Fund_Kg
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Emisiones_Gas_Fund_Kg"
+- Name: Potencia_Renovable_Fund_kW
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Potencia_Renovable_Fund_kW"
+- Name: Energia_Total_Fund_kWh
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Energia_Total_Fund_kWh"
+- Name: Potencia_Total_Fund_kW
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Potencia_Total_Fund_kW"
+- Name: Toneladas_Anodos_Producidos
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Toneladas_Anodos_Producidos"
+- Name: Ley_mineral_entrada_Fund
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Ley_mineral_entrada_Fund"
+- Name: Ley_mineral_salida_Fund
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Ley_mineral_salida_Fund"
+- Name: Ley_Anodo_Fund
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Ley_Anodo_Fund"
+- Name: Velocidad_rueda_colada_fund
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Velocidad_rueda_colada_fund"
+- Name: Toneladas_catodos_producidos
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Toneladas_catodos_producidos"
+- Name: Pureza_Cu_pct
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Pureza_Cu_pct"
+- Name: Lodos_Anodicos_kg
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Lodos_Anodicos_kg"
+- Name: Factor_Lodos_kg_ton
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Factor_Lodos_kg_ton"
+- Name: Caudal_Agua_Lavado_Ls
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Caudal_Agua_Lavado_Ls"
+- Name: Potencia_total_Electro_kW
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Potencia_total_Electro_kW"
+- Name: Energia_total_Electro_kWh
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Energia_total_Electro_kWh"
+- Name: Potencia_renovable_Electro_kW
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Potencia_renovable_Electro_kW"
+- Name: Volumen_Agua_total_Electro_L
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Volumen_Agua_total_Electro_L"
+- Name: Agua_Reutilizada_Electro_L
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Agua_Reutilizada_Electro_L"
+- Name: Eficiencia_Corriente_pct
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Eficiencia_Corriente_pct"
+- Name: Cu_Teorico_Kg
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Cu_Teorico_Kg"
+- Name: Cu_Real_kg
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Cu_Real_kg"
+- Name: Ley_Anodo_entrada_pct
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Ley_Anodo_entrada_pct"
+- Name: Ley_Catodo_salida_pct
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Ley_Catodo_salida_pct"
+- Name: Potencia_total_proceso_kW
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Potencia_total_proceso_kW"
+- Name: Factor_emision_total_proceso
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Factor_emision_total_proceso"
+- Name: Potencia_total_Renovable_proceso
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Potencia_total_Renovable_proceso"
+- Name: Agua_recuperada_total_proceso
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Agua_recuperada_total_proceso"
+- Name: Agua_total_utilizada_proceso
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Agua_total_utilizada_proceso"
+- Name: Energia_total_proceso_kWh
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Energia_total_proceso_kWh"
+- Name: Toneladas_producidas_totales_proceso
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Toneladas_producidas_totales_proceso"
+- Name: Ley_mineral_entrada_proceso
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Ley_mineral_entrada_proceso"
+- Name: Ley_mineral_salida_proceso
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Ley_mineral_salida_proceso"
+- Name: Ley_mineral_entrada_extraccion
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Ley_mineral_entrada_extraccion"
+- Name: Flujo_material_salida_elecro
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Flujo_material_salida_elecro"

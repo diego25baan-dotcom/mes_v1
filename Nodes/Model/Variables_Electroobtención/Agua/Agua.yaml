@@ -1,0 +1,29 @@
+Name: Agua
+Type: FolderType
+Children:
+- Name: Volumen_agua_total_electro__L
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Volumen_Agua_total_Electro_L"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Agua_reutilizada_electro_L
+  Type: BaseDataVariableType
+  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Agua_Reutilizada_Electro_L"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2

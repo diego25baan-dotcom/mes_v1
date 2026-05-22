@@ -1,2 +1,7 @@
 Name: Variables_Fundición
 Type: FolderType
+Children:
+- File: Energía/Energía.yaml
+- File: ESG/ESG.yaml
+- File: Producción/Producción.yaml
+- File: Agua/Agua.yaml
