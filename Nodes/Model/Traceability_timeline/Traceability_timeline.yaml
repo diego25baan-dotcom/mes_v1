@@ -1,0 +1,19 @@
+Name: Traceability_timeline
+Type: FolderType
+Children:
+- Name: Stage
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+- Name: Equipment
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+- Name: Event
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+- Name: Variable1
+  Id: g=0e417d7d12b36508869aab3d5f8c6c94
+  Type: BaseDataVariableType
+  DataType: Int32

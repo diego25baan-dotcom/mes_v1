@@ -620,10 +620,44 @@ Children:
         - Name: KPI_PROD_004 COSTS PER TON
           Type: StoreColumn
           DataType: Float
+    - Name: traceability_timeline
+      Type: RemoteInfluxDBStoreTable
+      Children:
+      - Name: Tags
+        Type: BaseObjectType
+      - Class: Reference
+        Target: ns=17;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=17;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=17;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=17;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Stage
+          Type: StoreColumn
+          DataType: String
+        - Name: Equipment
+          Type: StoreColumn
+          DataType: String
+        - Name: Event
+          Type: StoreColumn
+          DataType: String
   - Name: Token
     Type: BaseDataVariableType
     DataType: Password
-    SecretValue: dIp3BlxjlYICnwGrA3mZOktlRPVAp5zUXnfILY3LwHQz4A7VFdZOVTR/hacrskd7U8cSSVCupF0XcAYKOIC4EXkwd4Xm1L8gFzp280jVteAM6PSKhcQkN1y+0KXGQSoZ+nBr+8u3tfdf8G2+E8ZN8bJIvYk=
   - Name: Organization
     Type: BaseDataVariableType
     DataType: String

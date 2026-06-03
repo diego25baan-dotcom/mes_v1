@@ -28785,7 +28785,7 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 160.0
+            Value: 184.0
           - Name: Height
             Type: BaseVariableType
             DataType: Size
@@ -28906,7 +28906,7 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 160.0
+            Value: 184.0
           - Name: Height
             Type: BaseVariableType
             DataType: Size
@@ -29018,7 +29018,7 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 160.0
+            Value: 184.0
           - Name: Height
             Type: BaseVariableType
             DataType: Size
@@ -29130,7 +29130,7 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 160.0
+            Value: 184.0
           - Name: Height
             Type: BaseVariableType
             DataType: Size
@@ -29242,7 +29242,7 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 160.0
+            Value: 184.0
           - Name: Height
             Type: BaseVariableType
             DataType: Size
@@ -29354,7 +29354,7 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 160.0
+            Value: 184.0
           - Name: Height
             Type: BaseVariableType
             DataType: Size
@@ -29466,7 +29466,7 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 160.0
+            Value: 184.0
           - Name: Height
             Type: BaseVariableType
             DataType: Size
@@ -29503,118 +29503,6 @@ Children:
               DataType: LocalizedText
               ModellingRule: Optional
               Value: {"LocaleId":"en-US","Text":"Feed grade"}
-            - Name: TextColor
-              Type: BaseDataVariableType
-              DataType: Color
-              ModellingRule: Optional
-              Value: "#ffffff"
-            - Name: LeftMargin
-              Type: BaseVariableType
-              DataType: Size
-              ModellingRule: Optional
-            - Name: TopMargin
-              Type: BaseVariableType
-              DataType: Size
-              ModellingRule: Optional
-              Value: 6.0
-            - Name: FontSize
-              Type: BaseDataVariableType
-              DataType: Size
-              ModellingRule: Optional
-              Value: 15.0
-            - Name: HorizontalAlignment
-              Type: BaseVariableType
-              DataType: HorizontalAlignment
-              ModellingRule: Optional
-              Value: 2
-          - Name: Label3
-            Type: Label
-            Children:
-            - Name: Text
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
-            - Name: TextColor
-              Type: BaseDataVariableType
-              DataType: Color
-              Value: "#ffffff"
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_TEXT"
-            - Name: LeftMargin
-              Type: BaseVariableType
-              DataType: Size
-              ModellingRule: Optional
-            - Name: TopMargin
-              Type: BaseVariableType
-              DataType: Size
-              ModellingRule: Optional
-              Value: 30.0
-            - Name: FontSize
-              Type: BaseDataVariableType
-              DataType: Size
-              ModellingRule: Optional
-              Value: 30.0
-            - Name: HorizontalAlignment
-              Type: BaseVariableType
-              DataType: HorizontalAlignment
-              ModellingRule: Optional
-              Value: 2
-          - Name: CornerRadius
-            Type: BaseDataVariableType
-            DataType: Size
-            ModellingRule: Optional
-            Value: 10.0
-        - Name: Rectangle8
-          Type: Rectangle
-          Children:
-          - Name: Width
-            Type: BaseVariableType
-            DataType: Size
-            ModellingRule: Optional
-            Value: 160.0
-          - Name: Height
-            Type: BaseVariableType
-            DataType: Size
-            ModellingRule: Optional
-            Value: 200.0
-          - Name: LeftMargin
-            Type: BaseVariableType
-            DataType: Size
-            ModellingRule: Optional
-            Value: 8.0
-          - Name: VerticalAlignment
-            Type: BaseVariableType
-            DataType: VerticalAlignment
-            ModellingRule: Optional
-            Value: 3
-          - Name: FillColor
-            Type: BaseDataVariableType
-            DataType: Color
-            Value: "#13232f"
-          - Name: BorderColor
-            Type: BaseDataVariableType
-            DataType: Color
-            Value: "#2a3f4f"
-          - Name: BorderThickness
-            Type: BaseDataVariableType
-            DataType: Size
-            ModellingRule: Optional
-            Value: 3.0
-          - Name: Label1
-            Type: Label
-            Children:
-            - Name: Text
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              ModellingRule: Optional
-              Value: {"LocaleId":"en-US","Text":"Lot start time"}
             - Name: TextColor
               Type: BaseDataVariableType
               DataType: Color
@@ -29885,12 +29773,18 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
+                - Name: FontWeight
+                  Type: BaseDataVariableType
+                  DataType: FontWeightEnum
+                  ModellingRule: Optional
+                  Value: 700
               - Name: Image1
                 Type: Image
                 Children:
                 - Name: Path
                   Type: BaseDataVariableType
                   DataType: ResourceUri
+                  Value: "ns=14;%PROJECTDIR%/extraction.jpg"
                 - Name: Width
                   Type: BaseVariableType
                   DataType: Size
@@ -30254,12 +30148,18 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
+                - Name: FontWeight
+                  Type: BaseDataVariableType
+                  DataType: FontWeightEnum
+                  ModellingRule: Optional
+                  Value: 700
               - Name: Image1
                 Type: Image
                 Children:
                 - Name: Path
                   Type: BaseDataVariableType
                   DataType: ResourceUri
+                  Value: "ns=14;%PROJECTDIR%/crushing.png"
                 - Name: Width
                   Type: BaseVariableType
                   DataType: Size
@@ -30623,12 +30523,18 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
+                - Name: FontWeight
+                  Type: BaseDataVariableType
+                  DataType: FontWeightEnum
+                  ModellingRule: Optional
+                  Value: 700
               - Name: Image1
                 Type: Image
                 Children:
                 - Name: Path
                   Type: BaseDataVariableType
                   DataType: ResourceUri
+                  Value: "ns=14;%PROJECTDIR%/grinding.png"
                 - Name: Width
                   Type: BaseVariableType
                   DataType: Size
@@ -30992,12 +30898,18 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
+                - Name: FontWeight
+                  Type: BaseDataVariableType
+                  DataType: FontWeightEnum
+                  ModellingRule: Optional
+                  Value: 700
               - Name: Image1
                 Type: Image
                 Children:
                 - Name: Path
                   Type: BaseDataVariableType
                   DataType: ResourceUri
+                  Value: "ns=14;%PROJECTDIR%/flotation.png"
                 - Name: Width
                   Type: BaseVariableType
                   DataType: Size
@@ -31361,12 +31273,18 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
+                - Name: FontWeight
+                  Type: BaseDataVariableType
+                  DataType: FontWeightEnum
+                  ModellingRule: Optional
+                  Value: 700
               - Name: Image1
                 Type: Image
                 Children:
                 - Name: Path
                   Type: BaseDataVariableType
                   DataType: ResourceUri
+                  Value: "ns=14;%PROJECTDIR%/foundry.png"
                 - Name: Width
                   Type: BaseVariableType
                   DataType: Size
@@ -31774,12 +31692,18 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
+                - Name: FontWeight
+                  Type: BaseDataVariableType
+                  DataType: FontWeightEnum
+                  ModellingRule: Optional
+                  Value: 700
               - Name: Image1
                 Type: Image
                 Children:
                 - Name: Path
                   Type: BaseDataVariableType
                   DataType: ResourceUri
+                  Value: "ns=14;%PROJECTDIR%/electrowinning.png"
                 - Name: Width
                   Type: BaseVariableType
                   DataType: Size
@@ -32080,6 +32004,7 @@ Children:
                 - Name: Model
                   Type: NodePointer
                   DataType: NodeId
+                  Value: "/Objects/mes_v1/DataStores/Database"
                   Children:
                   - Name: ItemKind
                     Type: PropertyType
@@ -32090,15 +32015,17 @@ Children:
                 - Name: Query
                   Type: BaseDataVariableType
                   DataType: String
+                  Value: "SELECT * FROM \"traceability_timeline\""
                 - Name: Columns
                   Type: BaseObjectType
                   Children:
-                  - Name: DataGridColumn1
+                  - Name: LocalTimestamp
                     Type: DataGridColumn
                     Children:
                     - Name: Title
                       Type: BaseDataVariableType
                       DataType: LocalizedText
+                      Value: {"LocaleId":"en-US","Text":"Time  "}
                     - Name: Width
                       Type: BaseDataVariableType
                       DataType: Size
@@ -32116,12 +32043,126 @@ Children:
                     - Name: OrderBy
                       Type: BaseDataVariableType
                       DataType: NodePath
+                      Value: "{Item}/LocalTimestamp"
                     - Name: DataItemTemplate
                       Type: DataGridLabelItemTemplate
                       Children:
                       - Name: Text
                         Type: BaseDataVariableType
                         DataType: LocalizedText
+                        Children:
+                        - Name: DynamicLink
+                          Type: DynamicLink
+                          DataType: NodePath
+                          Value: "{Item}/LocalTimestamp"
+                  - Name: Stage
+                    Type: DataGridColumn
+                    Children:
+                    - Name: Title
+                      Type: BaseDataVariableType
+                      DataType: LocalizedText
+                      Value: {"LocaleId":"en-US","Text":"Stage"}
+                    - Name: Width
+                      Type: BaseDataVariableType
+                      DataType: Size
+                      Value: -1.0
+                    - Name: Visible
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      Value: true
+                    - Name: HeaderAlignment
+                      Type: BaseDataVariableType
+                      DataType: TextHorizontalAlignment
+                    - Name: ContentAlignment
+                      Type: BaseVariableType
+                      DataType: HorizontalAlignment
+                    - Name: OrderBy
+                      Type: BaseDataVariableType
+                      DataType: NodePath
+                      Value: "{Item}/Stage"
+                    - Name: DataItemTemplate
+                      Type: DataGridLabelItemTemplate
+                      Children:
+                      - Name: Text
+                        Type: BaseDataVariableType
+                        DataType: LocalizedText
+                        Children:
+                        - Name: DynamicLink
+                          Type: DynamicLink
+                          DataType: NodePath
+                          Value: "{Item}/Stage"
+                  - Name: Equipment
+                    Type: DataGridColumn
+                    Children:
+                    - Name: Title
+                      Type: BaseDataVariableType
+                      DataType: LocalizedText
+                      Value: {"LocaleId":"en-US","Text":"Equipment"}
+                    - Name: Width
+                      Type: BaseDataVariableType
+                      DataType: Size
+                      Value: -1.0
+                    - Name: Visible
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      Value: true
+                    - Name: HeaderAlignment
+                      Type: BaseDataVariableType
+                      DataType: TextHorizontalAlignment
+                    - Name: ContentAlignment
+                      Type: BaseVariableType
+                      DataType: HorizontalAlignment
+                    - Name: OrderBy
+                      Type: BaseDataVariableType
+                      DataType: NodePath
+                      Value: "{Item}/Equipment"
+                    - Name: DataItemTemplate
+                      Type: DataGridLabelItemTemplate
+                      Children:
+                      - Name: Text
+                        Type: BaseDataVariableType
+                        DataType: LocalizedText
+                        Children:
+                        - Name: DynamicLink
+                          Type: DynamicLink
+                          DataType: NodePath
+                          Value: "{Item}/Equipment"
+                  - Name: Event
+                    Type: DataGridColumn
+                    Children:
+                    - Name: Title
+                      Type: BaseDataVariableType
+                      DataType: LocalizedText
+                      Value: {"LocaleId":"en-US","Text":"Event"}
+                    - Name: Width
+                      Type: BaseDataVariableType
+                      DataType: Size
+                      Value: -1.0
+                    - Name: Visible
+                      Type: BaseDataVariableType
+                      DataType: Boolean
+                      Value: true
+                    - Name: HeaderAlignment
+                      Type: BaseDataVariableType
+                      DataType: TextHorizontalAlignment
+                    - Name: ContentAlignment
+                      Type: BaseVariableType
+                      DataType: HorizontalAlignment
+                    - Name: OrderBy
+                      Type: BaseDataVariableType
+                      DataType: NodePath
+                      Value: "{Item}/Event"
+                    - Name: DataItemTemplate
+                      Type: DataGridLabelItemTemplate
+                      Children:
+                      - Name: Text
+                        Type: BaseDataVariableType
+                        DataType: LocalizedText
+                        Children:
+                        - Name: DynamicLink
+                          Type: DynamicLink
+                          DataType: NodePath
+                          Value: "{Item}/Event"
                 - Name: SelectedItem
                   Type: NodePointer
                   DataType: NodeId
@@ -32133,12 +32174,6 @@ Children:
                   Type: BaseDataVariableType
                   DataType: NodeId
                   AccessLevel: Read
-                - Name: SortColumn
-                  Type: BaseDataVariableType
-                  DataType: NodeId
-                - Name: SortOrder
-                  Type: BaseDataVariableType
-                  DataType: SortOrderEnum
                 - Class: Reference
                   Target: ns=5;i=504
                   Direction: Forward
@@ -32173,6 +32208,22 @@ Children:
                   DataType: HorizontalAlignment
                   ModellingRule: Optional
                   Value: 2
+                - Name: SortColumn
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../Columns/LocalTimestamp@NodeId"
+                - Name: SortOrder
+                  Type: BaseDataVariableType
+                  DataType: SortOrderEnum
+                  Value: 1
+                - Name: AutoRefreshTime
+                  Type: BaseDataVariableType
+                  DataType: Duration
+                  Value: "0:00:00:02.0000000"
             - Name: Rectangle2
               Type: Rectangle
               Children:
@@ -32289,6 +32340,155 @@ Children:
                   DataType: HorizontalAlignment
                   ModellingRule: Optional
                   Value: 2
+              - Name: Button1
+                Type: Button
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  ModellingRule: Optional
+                  Value: {"LocaleId":"en-US","Text":"Button1"}
+                - Name: MouseDownEventHandler1
+                  Type: EventHandler
+                  Children:
+                  - Name: ListenEventType
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseDownEvent"
+                  - Name: MethodsToCall
+                    Type: BaseObjectType
+                    Children:
+                    - Name: MethodContainer1
+                      Type: BaseObjectType
+                      Children:
+                      - Name: ns=3;ObjectPointer
+                        Type: NodePointer
+                        DataType: NodeId
+                        Value: "/Objects/Commands/VariableCommands"
+                        Children:
+                        - Name: Kind
+                          Type: PropertyType
+                          DataType: NodeId
+                          Value: "/Types/ObjectTypes/BaseObjectType"
+                      - Name: ns=3;Method
+                        Type: BaseDataVariableType
+                        DataType: String
+                        Value: "Set"
+                      - Name: InputArguments
+                        Type: BaseObjectType
+                        Children:
+                        - Name: VariableToModify
+                          Type: BaseDataVariableType
+                          DataType: VariablePointer
+                          Description: {"NamespaceIndex":3,"TextId":"SetVariableToModifyDescription"}
+                          Value: "/Objects/mes_v1/Model/Traceability_timeline/Variable1"
+                        - Name: Value
+                          Type: BaseDataVariableType
+                          DataType: Int32
+                          Description: {"NamespaceIndex":3,"TextId":"SetValueDescription"}
+                          Value: 1
+                        - Name: ArrayIndex
+                          Type: BaseDataVariableType
+                          DataType: UInt32
+                          Description: {"NamespaceIndex":3,"TextId":"SetArrayIndexDescription"}
+                          ValueRank: ScalarOrOneDimension
+                  - Name: EventArguments
+                    Type: MouseDownEvent
+                    Children:
+                    - Name: EventId
+                      Type: PropertyType
+                      DataType: ByteString
+                    - Name: EventType
+                      Type: PropertyType
+                      DataType: NodeId
+                    - Name: SourceNode
+                      Type: PropertyType
+                      DataType: NodeId
+                    - Name: SourceName
+                      Type: PropertyType
+                      DataType: String
+                    - Name: Time
+                      Type: PropertyType
+                      DataType: UtcTime
+                    - Name: ReceiveTime
+                      Type: PropertyType
+                      DataType: UtcTime
+                    - Name: Message
+                      Type: PropertyType
+                      DataType: LocalizedText
+                    - Name: Severity
+                      Type: PropertyType
+                      DataType: UInt16
+                - Name: MouseUpEventHandler1
+                  Type: EventHandler
+                  Children:
+                  - Name: ListenEventType
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseUpEvent"
+                  - Name: MethodsToCall
+                    Type: BaseObjectType
+                    Children:
+                    - Name: MethodContainer1
+                      Type: BaseObjectType
+                      Children:
+                      - Name: ns=3;ObjectPointer
+                        Type: NodePointer
+                        DataType: NodeId
+                        Value: "/Objects/Commands/VariableCommands"
+                        Children:
+                        - Name: Kind
+                          Type: PropertyType
+                          DataType: NodeId
+                          Value: "/Types/ObjectTypes/BaseObjectType"
+                      - Name: ns=3;Method
+                        Type: BaseDataVariableType
+                        DataType: String
+                        Value: "Set"
+                      - Name: InputArguments
+                        Type: BaseObjectType
+                        Children:
+                        - Name: VariableToModify
+                          Type: BaseDataVariableType
+                          DataType: VariablePointer
+                          Description: {"NamespaceIndex":3,"TextId":"SetVariableToModifyDescription"}
+                          Value: "/Objects/mes_v1/Model/Traceability_timeline/Variable1"
+                        - Name: Value
+                          Type: BaseDataVariableType
+                          DataType: Int32
+                          Description: {"NamespaceIndex":3,"TextId":"SetValueDescription"}
+                        - Name: ArrayIndex
+                          Type: BaseDataVariableType
+                          DataType: UInt32
+                          Description: {"NamespaceIndex":3,"TextId":"SetArrayIndexDescription"}
+                          ValueRank: ScalarOrOneDimension
+                  - Name: EventArguments
+                    Type: MouseUpEvent
+                    Children:
+                    - Name: EventId
+                      Type: PropertyType
+                      DataType: ByteString
+                    - Name: EventType
+                      Type: PropertyType
+                      DataType: NodeId
+                    - Name: SourceNode
+                      Type: PropertyType
+                      DataType: NodeId
+                    - Name: SourceName
+                      Type: PropertyType
+                      DataType: String
+                    - Name: Time
+                      Type: PropertyType
+                      DataType: UtcTime
+                    - Name: ReceiveTime
+                      Type: PropertyType
+                      DataType: UtcTime
+                    - Name: Message
+                      Type: PropertyType
+                      DataType: LocalizedText
+                    - Name: Severity
+                      Type: PropertyType
+                      DataType: UInt16
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size

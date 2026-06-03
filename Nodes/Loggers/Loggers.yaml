@@ -2951,3 +2951,143 @@ Children:
        "highestIgnoredVersion": 0
       }
      }
+- Name: traceability_timeline
+  Type: DataLogger
+  Children:
+  - Name: SamplingMode
+    Type: PropertyType
+    DataType: SamplingModeEnum
+    Value: 1
+  - Name: Store
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/mes_v1/DataStores/Database"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/Store"
+  - Name: VariablesToLog
+    Type: BaseObjectType
+    Children:
+    - Name: Stage
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Traceability_timeline/Stage"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: Equipment
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Traceability_timeline/Equipment"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: Event
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Traceability_timeline/Event"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+  - Class: Reference
+    Target: ns=15;i=21
+    Direction: Forward
+  - Name: LogLocalTime
+    Type: PropertyType
+    DataType: Boolean
+    Value: true
+  - Name: SamplingPeriod
+    Type: PropertyType
+    DataType: Duration
+    Value: "0:00:00:01.0000000"
+    Children:
+    - Name: ConditionalConverter1
+      Type: ConditionalConverter
+      Children:
+      - Name: Condition
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ReferenceType: HasSource
+        Children:
+        - Name: ExpressionEvaluator1
+          Type: ExpressionEvaluator
+          Children:
+          - Name: Expression
+            Type: BaseDataVariableType
+            DataType: String
+            ReferenceType: HasParameter
+            Value: "{0}==1"
+          - Name: ns=3;Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../../../Model/Traceability_timeline/Variable1"
+      - Name: TrueValue
+        Type: BaseDataVariableType
+        DataType: Duration
+        ReferenceType: HasParameter
+        Value: "0:00:00:01.0000000"
+      - Name: FalseValue
+        Type: BaseDataVariableType
+        DataType: Duration
+        ReferenceType: HasParameter
