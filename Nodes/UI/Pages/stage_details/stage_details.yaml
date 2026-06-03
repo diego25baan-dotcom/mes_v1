@@ -1,0 +1,345 @@
+Name: stage_details
+Type: FolderType
+Children:
+- Name: Extraction_details
+  Id: g=8ecfd7a475f464bafcb6312252dd4620
+  Supertype: stage_details
+  ReferenceType: HasComponent
+  Children:
+  - Name: Label1
+    Type: Label
+  - Name: Image1
+    Type: Image
+    Children:
+    - Name: Path
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=14;%PROJECTDIR%/extraction.jpg"
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 340.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 200.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 200.0
+  - Name: VerticalLayout2
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+    - Name: Label5
+      Type: Label
+    - Name: Label6
+      Type: Label
+    - Name: Label7
+      Type: Label
+    - Name: Label8
+      Type: Label
+  - Name: VerticalLayout3
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+    - Name: Label5
+      Type: Label
+    - Name: Label6
+      Type: Label
+    - Name: Label7
+      Type: Label
+    - Name: Label8
+      Type: Label
+- Name: Crushing_details
+  Id: g=bc1672839ba78ea4496043838cd6a869
+  Supertype: stage_details
+  ReferenceType: HasComponent
+  Children:
+  - Name: Label1
+    Type: Label
+  - Name: Image1
+    Type: Image
+    Children:
+    - Name: Path
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=14;%PROJECTDIR%/crushing.png"
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 200.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 200.0
+  - Name: VerticalLayout2
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+    - Name: Label5
+      Type: Label
+    - Name: Label6
+      Type: Label
+    - Name: Label7
+      Type: Label
+    - Name: Label8
+      Type: Label
+  - Name: VerticalLayout3
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+    - Name: Label5
+      Type: Label
+    - Name: Label6
+      Type: Label
+    - Name: Label7
+      Type: Label
+    - Name: Label8
+      Type: Label
+- Name: Grinding_details
+  Id: g=a73831451c5e8b2b6bce71b8f390a75c
+  Supertype: stage_details
+  ReferenceType: HasComponent
+  Children:
+  - Name: Label1
+    Type: Label
+  - Name: Image1
+    Type: Image
+    Children:
+    - Name: Path
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=14;%PROJECTDIR%/grinding.png"
+  - Name: VerticalLayout2
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+    - Name: Label5
+      Type: Label
+    - Name: Label6
+      Type: Label
+    - Name: Label7
+      Type: Label
+    - Name: Label8
+      Type: Label
+  - Name: VerticalLayout3
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+    - Name: Label5
+      Type: Label
+    - Name: Label6
+      Type: Label
+    - Name: Label7
+      Type: Label
+    - Name: Label8
+      Type: Label
+- Name: Flotation_details
+  Id: g=3fe0e2812fef95d8b6fc07ecc30ef6d7
+  Supertype: stage_details
+  ReferenceType: HasComponent
+  Children:
+  - Name: Label1
+    Type: Label
+  - Name: Image1
+    Type: Image
+    Children:
+    - Name: Path
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=14;%PROJECTDIR%/flotation.png"
+  - Name: VerticalLayout2
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+    - Name: Label5
+      Type: Label
+    - Name: Label6
+      Type: Label
+    - Name: Label7
+      Type: Label
+    - Name: Label8
+      Type: Label
+  - Name: VerticalLayout3
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+    - Name: Label5
+      Type: Label
+    - Name: Label6
+      Type: Label
+    - Name: Label7
+      Type: Label
+    - Name: Label8
+      Type: Label
+- Name: Foundry_details
+  Id: g=75f7c341f6eef4141f0647f292f6dad9
+  Supertype: stage_details
+  ReferenceType: HasComponent
+  Children:
+  - Name: Label1
+    Type: Label
+  - Name: Image1
+    Type: Image
+    Children:
+    - Name: Path
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=14;%PROJECTDIR%/foundry.png"
+  - Name: VerticalLayout2
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+    - Name: Label5
+      Type: Label
+    - Name: Label6
+      Type: Label
+    - Name: Label7
+      Type: Label
+    - Name: Label8
+      Type: Label
+  - Name: VerticalLayout3
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+    - Name: Label5
+      Type: Label
+    - Name: Label6
+      Type: Label
+    - Name: Label7
+      Type: Label
+    - Name: Label8
+      Type: Label
+- Name: Electrowinning_details
+  Id: g=e7543c23cf9d239970d43a74aa285e37
+  Supertype: stage_details
+  ReferenceType: HasComponent
+  Children:
+  - Name: Label1
+    Type: Label
+  - Name: Image1
+    Type: Image
+    Children:
+    - Name: Path
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=14;%PROJECTDIR%/electrowinning.png"
+  - Name: VerticalLayout2
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+    - Name: Label5
+      Type: Label
+    - Name: Label6
+      Type: Label
+    - Name: Label7
+      Type: Label
+    - Name: Label8
+      Type: Label
+  - Name: VerticalLayout3
+    Type: ColumnLayout
+    Children:
+    - Name: Label1
+      Type: Label
+    - Name: Label2
+      Type: Label
+    - Name: Label3
+      Type: Label
+    - Name: Label4
+      Type: Label
+    - Name: Label5
+      Type: Label
+    - Name: Label6
+      Type: Label
+    - Name: Label7
+      Type: Label
+    - Name: Label8
+      Type: Label
