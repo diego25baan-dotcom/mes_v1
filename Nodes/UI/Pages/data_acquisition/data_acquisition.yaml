@@ -1378,6 +1378,7 @@ Children:
             - Name: NewPanel
               Type: BaseDataVariableType
               DataType: NodeId
+              Value: "/Objects/mes_v1/UI/Pages/datalog_prod"
             - Name: AliasNode
               Type: BaseDataVariableType
               DataType: NodeId

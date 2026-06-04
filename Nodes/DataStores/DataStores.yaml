@@ -562,6 +562,7 @@ Children:
           Type: StoreColumn
           DataType: Float
     - Name: DataLogger_prod
+      Id: g=3a9b0e277fbf21636b2476a6a3b0e4da
       Type: RemoteInfluxDBStoreTable
       Children:
       - Name: Tags
