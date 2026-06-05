@@ -8,6 +8,12 @@ Children:
   Children:
   - Name: Label1
     Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Conveyor belt"}
   - Name: Image1
     Type: Image
     Children:
@@ -40,6 +46,12 @@ Children:
     Children:
     - Name: Label1
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Area"}
     - Name: Label2
       Type: Label
     - Name: Label3
@@ -64,8 +76,20 @@ Children:
     Children:
     - Name: Label1
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Extraction"}
     - Name: Label2
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"CV-01"}
     - Name: Label3
       Type: Label
     - Name: Label4
@@ -162,6 +186,12 @@ Children:
   Children:
   - Name: Label1
     Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Hopper"}
   - Name: Image1
     Type: Image
     Children:
@@ -228,8 +258,20 @@ Children:
     Children:
     - Name: Label1
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Crushing"}
     - Name: Label2
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"HOP-01"}
     - Name: Label3
       Type: Label
     - Name: Label4
@@ -326,6 +368,12 @@ Children:
   Children:
   - Name: Label1
     Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Crusher"}
   - Name: Image1
     Type: Image
     Children:
@@ -392,8 +440,20 @@ Children:
     Children:
     - Name: Label1
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Crushing"}
     - Name: Label2
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"CPRI-01"}
     - Name: Label3
       Type: Label
     - Name: Label4
@@ -490,6 +550,12 @@ Children:
   Children:
   - Name: Label1
     Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Mill"}
   - Name: Image1
     Type: Image
     Children:
@@ -556,8 +622,20 @@ Children:
     Children:
     - Name: Label1
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Grinding"}
     - Name: Label2
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"MSAG-01"}
     - Name: Label3
       Type: Label
     - Name: Label4
@@ -654,6 +732,12 @@ Children:
   Children:
   - Name: Label1
     Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Chemical tank"}
   - Name: Image1
     Type: Image
     Children:
@@ -720,8 +804,20 @@ Children:
     Children:
     - Name: Label1
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Flotation"}
     - Name: Label2
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"THK-01"}
     - Name: Label3
       Type: Label
     - Name: Label4
@@ -818,6 +914,12 @@ Children:
   Children:
   - Name: Label1
     Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Flotation cells"}
   - Name: Image1
     Type: Image
     Children:
@@ -884,8 +986,20 @@ Children:
     Children:
     - Name: Label1
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Flotation"}
     - Name: Label2
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"FLT-01"}
     - Name: Label3
       Type: Label
     - Name: Label4
@@ -982,6 +1096,12 @@ Children:
   Children:
   - Name: Label1
     Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Furnace"}
   - Name: Image1
     Type: Image
     Children:
@@ -1048,8 +1168,20 @@ Children:
     Children:
     - Name: Label1
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Foundry"}
     - Name: Label2
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"FUR-01"}
     - Name: Label3
       Type: Label
     - Name: Label4
@@ -1146,6 +1278,12 @@ Children:
   Children:
   - Name: Label1
     Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Electrowinning water tank"}
   - Name: Image1
     Type: Image
     Children:
@@ -1212,8 +1350,20 @@ Children:
     Children:
     - Name: Label1
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Electrowinning"}
     - Name: Label2
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"EWT-01"}
     - Name: Label3
       Type: Label
     - Name: Label4
