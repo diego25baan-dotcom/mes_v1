@@ -73,6 +73,14 @@ Children:
       Type: Label
     - Name: Label8
       Type: Label
+  - Name: Label2
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Extraction"}
 - Name: Crushing_details
   Id: g=bc1672839ba78ea4496043838cd6a869
   Supertype: stage_details
@@ -135,6 +143,14 @@ Children:
       Type: Label
     - Name: Label8
       Type: Label
+  - Name: Label2
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Crushing"}
 - Name: Grinding_details
   Id: g=a73831451c5e8b2b6bce71b8f390a75c
   Supertype: stage_details
@@ -187,6 +203,14 @@ Children:
       Type: Label
     - Name: Label8
       Type: Label
+  - Name: Label2
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Grinding"}
 - Name: Flotation_details
   Id: g=3fe0e2812fef95d8b6fc07ecc30ef6d7
   Supertype: stage_details
@@ -239,6 +263,14 @@ Children:
       Type: Label
     - Name: Label8
       Type: Label
+  - Name: Label2
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Flotation"}
 - Name: Foundry_details
   Id: g=75f7c341f6eef4141f0647f292f6dad9
   Supertype: stage_details
@@ -291,6 +323,14 @@ Children:
       Type: Label
     - Name: Label8
       Type: Label
+  - Name: Label2
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Foundry"}
 - Name: Electrowinning_details
   Id: g=e7543c23cf9d239970d43a74aa285e37
   Supertype: stage_details
@@ -343,3 +383,11 @@ Children:
       Type: Label
     - Name: Label8
       Type: Label
+  - Name: Label2
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Electrowinning"}

@@ -5974,7 +5974,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 150.0
+      Value: 110.0
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
@@ -6082,7 +6082,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Flotación/Energía/Potencia_flot_kW"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -6260,7 +6260,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Flotación/Energía/Potencia_Renovable_kW"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -6345,7 +6345,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 90.0
+        Value: 182.0
       - Name: Height
         Type: BaseVariableType
         DataType: Size
@@ -6415,7 +6415,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Flotación/Energía/Energía_total_flot"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -6493,338 +6493,6 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-    - Name: Rectangle4
-      Type: Rectangle
-      Children:
-      - Name: Width
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 90.0
-      - Name: Height
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 40.0
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 98.0
-      - Name: VerticalAlignment
-        Type: BaseVariableType
-        DataType: VerticalAlignment
-        ModellingRule: Optional
-      - Name: FillColor
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#13232f"
-      - Name: BorderColor
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#2a3f4f"
-      - Name: BorderThickness
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 3.0
-      - Name: Label1
-        Type: Label
-        Children:
-        - Name: Text
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-          ModellingRule: Optional
-          Value: {"LocaleId":"en-US","Text":"Energy intensity"}
-        - Name: TextColor
-          Type: BaseDataVariableType
-          DataType: Color
-          ModellingRule: Optional
-          Value: "#ffffff"
-        - Name: LeftMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-        - Name: TopMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 6.0
-        - Name: FontSize
-          Type: BaseDataVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 10.0
-        - Name: HorizontalAlignment
-          Type: BaseVariableType
-          DataType: HorizontalAlignment
-          ModellingRule: Optional
-          Value: 2
-      - Name: Label3
-        Type: Label
-        Children:
-        - Name: Text
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
-        - Name: TextColor
-          Type: BaseDataVariableType
-          DataType: Color
-          Value: "#ffffff"
-        - Name: LeftMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-        - Name: TopMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 20.0
-        - Name: FontSize
-          Type: BaseDataVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 15.0
-        - Name: HorizontalAlignment
-          Type: BaseVariableType
-          DataType: HorizontalAlignment
-          ModellingRule: Optional
-          Value: 2
-        - Name: RightMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-      - Name: CornerRadius
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 10.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 63.0
-      - Name: Label2
-        Type: Label
-        Children:
-        - Name: Text
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-          Value: {"LocaleId":"en-US","Text":"u "}
-        - Name: TextColor
-          Type: BaseDataVariableType
-          DataType: Color
-          Value: "#ffffff"
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_TEXT"
-        - Name: LeftMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 70.0
-        - Name: TopMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 20.0
-        - Name: FontSize
-          Type: BaseDataVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 15.0
-        - Name: HorizontalAlignment
-          Type: BaseVariableType
-          DataType: HorizontalAlignment
-          ModellingRule: Optional
-          Value: 2
-        - Name: RightMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-    - Name: Rectangle5
-      Type: Rectangle
-      Children:
-      - Name: Width
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 182.0
-      - Name: Height
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 40.0
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 6.0
-      - Name: VerticalAlignment
-        Type: BaseVariableType
-        DataType: VerticalAlignment
-        ModellingRule: Optional
-      - Name: FillColor
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#13232f"
-      - Name: BorderColor
-        Type: BaseDataVariableType
-        DataType: Color
-        Value: "#2a3f4f"
-      - Name: BorderThickness
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 3.0
-      - Name: Label1
-        Type: Label
-        Children:
-        - Name: Text
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-          ModellingRule: Optional
-          Value: {"LocaleId":"en-US","Text":"Renewable %"}
-        - Name: TextColor
-          Type: BaseDataVariableType
-          DataType: Color
-          ModellingRule: Optional
-          Value: "#ffffff"
-        - Name: LeftMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: -114.0
-        - Name: TopMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-        - Name: FontSize
-          Type: BaseDataVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 10.0
-        - Name: HorizontalAlignment
-          Type: BaseVariableType
-          DataType: HorizontalAlignment
-          ModellingRule: Optional
-          Value: 2
-        - Name: RightMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-        - Name: VerticalAlignment
-          Type: BaseVariableType
-          DataType: VerticalAlignment
-          ModellingRule: Optional
-          Value: 2
-      - Name: Label3
-        Type: Label
-        Children:
-        - Name: Text
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
-        - Name: TextColor
-          Type: BaseDataVariableType
-          DataType: Color
-          Value: "#ffffff"
-        - Name: LeftMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 58.0
-        - Name: TopMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-        - Name: FontSize
-          Type: BaseDataVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 15.0
-        - Name: HorizontalAlignment
-          Type: BaseVariableType
-          DataType: HorizontalAlignment
-          ModellingRule: Optional
-          Value: 2
-        - Name: RightMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-        - Name: VerticalAlignment
-          Type: BaseVariableType
-          DataType: VerticalAlignment
-          ModellingRule: Optional
-          Value: 2
-        - Name: BottomMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-      - Name: CornerRadius
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 10.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 105.0
-      - Name: Label2
-        Type: Label
-        Children:
-        - Name: Text
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-          Value: {"LocaleId":"en-US","Text":"u "}
-        - Name: TextColor
-          Type: BaseDataVariableType
-          DataType: Color
-          Value: "#ffffff"
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_TEXT"
-        - Name: LeftMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 154.0
-        - Name: TopMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-        - Name: FontSize
-          Type: BaseDataVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 15.0
-        - Name: HorizontalAlignment
-          Type: BaseVariableType
-          DataType: HorizontalAlignment
-          ModellingRule: Optional
-          Value: 2
-        - Name: RightMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-        - Name: VerticalAlignment
-          Type: BaseVariableType
-          DataType: VerticalAlignment
-          ModellingRule: Optional
-          Value: 2
   - Name: Rectangle1
     Type: Rectangle
     Children:
@@ -6945,7 +6613,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Flotación/Energía/Flujo_material"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -7123,7 +6791,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Flotación/Energía/Toneladas_acumuladas"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -7278,7 +6946,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Flotación/Energía/Velocidad_bomba_flot"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -7476,7 +7144,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Flotación/Producción/Toneladas_Producidas"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -7619,7 +7287,7 @@ Children:
           Type: BaseDataVariableType
           DataType: LocalizedText
           ModellingRule: Optional
-          Value: {"LocaleId":"en-US","Text":"Cumulated production"}
+          Value: {"LocaleId":"en-US","Text":"Output ore grade"}
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -7654,7 +7322,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Flotación/Producción/Ley_mineral_salida"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -7852,7 +7520,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Flotación/Energía/Factor_Emision"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -8030,7 +7698,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Flotación/ESG/CO2"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -8228,7 +7896,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Flotación/Agua/Caudal_Agua_Ls"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -8406,7 +8074,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Flotación/Agua/Agua_Total_flot"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -8561,7 +8229,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Flotación/Agua/Agua_Reutilizada"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -8716,7 +8384,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Flotación/Agua/Caudal_descarga_m3h"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -9587,7 +9255,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Fundición/Energía/Potencia_total_fundición_kW"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -9765,7 +9433,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Fundición/Energía/Energía_total_fundición_kWh"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -9920,7 +9588,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Fundición/Energía/Velocidad_rueda"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -10089,7 +9757,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Fundición/Energía/Potencia_renovable_fund_kW"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -10287,7 +9955,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Fundición/ESG/Factor_emision_gas"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -10465,7 +10133,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Fundición/ESG/Emision_gas_fund_kg"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -10663,7 +10331,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Fundición/Producción/Toneladas_anodos"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -10841,7 +10509,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Fundición/Producción/Ley_mineral_entrada_fund"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -10996,7 +10664,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Fundición/Producción/Ley_mineral_salida_fund"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -11170,7 +10838,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Fundición/Producción/Ley_anodo"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -11368,7 +11036,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Fundición/Agua/Caudal_agua_fund_Ls"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -11546,7 +11214,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Fundición/Agua/Volumen_agua_fund_L"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -12417,7 +12085,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Electroobtención/Energía/Potencia_total_electro_kW"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -12595,7 +12263,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Electroobtención/Energía/Potencia_renovable_electro_kW"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -12680,7 +12348,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 90.0
+        Value: 182.0
       - Name: Height
         Type: BaseVariableType
         DataType: Size
@@ -12750,7 +12418,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Electroobtención/Energía/Eficiencia_corriente_pct"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -12948,7 +12616,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Electroobtención/Agua/Volumen_agua_total_electro__L"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -13126,7 +12794,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Electroobtención/Agua/Agua_reutilizada_electro_L"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -13324,7 +12992,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Electroobtención/ESG/Energía_electro_kWh"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -13502,7 +13170,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Electroobtención/ESG/CO2"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -13700,7 +13368,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Electroobtención/Producción/Toneladas_producidas_electro"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -13878,7 +13546,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Electroobtención/Producción/Cu_Teorico_kg"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -14033,7 +13701,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Electroobtención/Producción/Cu_Real_kg"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -14196,7 +13864,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Electroobtención/Producción/Ley_mineral_entrada"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -14359,7 +14027,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+            Value: "/Objects/mes_v1/Model/Variables_Electroobtención/Producción/Ley_mineral_salida"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color

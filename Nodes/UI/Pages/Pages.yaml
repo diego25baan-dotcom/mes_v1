@@ -24604,6 +24604,7 @@ Children:
             - Name: Panel
               Type: NodePointer
               DataType: NodeId
+              Value: "/Objects/mes_v1/UI/Pages/critical_equipment_overview/Conveyor_Belt"
               Children:
               - Name: Kind
                 Type: PropertyType
@@ -24639,6 +24640,10 @@ Children:
             - Name: VerticalAlignment
               Type: BaseVariableType
               DataType: VerticalAlignment
+              ModellingRule: Optional
+            - Name: EnterAnimation
+              Type: BaseDataVariableType
+              DataType: PanelLoaderAnimationTypeEnum
               ModellingRule: Optional
         - Name: HorizontalLayout1
           Type: RowLayout
@@ -33514,6 +33519,7 @@ Children:
             - Name: Panel
               Type: NodePointer
               DataType: NodeId
+              Value: "/Objects/mes_v1/UI/Pages/stage_details/Extraction_details"
               Children:
               - Name: Kind
                 Type: PropertyType
@@ -33735,6 +33741,7 @@ Children:
                         Type: BaseDataVariableType
                         DataType: NodeId
                         Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
+                        Value: "/Objects/mes_v1/UI/Pages/stage_details/Crushing_details"
                       - Name: AliasNode
                         Type: BaseDataVariableType
                         DataType: NodeId
@@ -33827,6 +33834,7 @@ Children:
                         Type: BaseDataVariableType
                         DataType: NodeId
                         Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
+                        Value: "/Objects/mes_v1/UI/Pages/stage_details/Grinding_details"
                       - Name: AliasNode
                         Type: BaseDataVariableType
                         DataType: NodeId
@@ -33919,6 +33927,7 @@ Children:
                         Type: BaseDataVariableType
                         DataType: NodeId
                         Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
+                        Value: "/Objects/mes_v1/UI/Pages/stage_details/Flotation_details"
                       - Name: AliasNode
                         Type: BaseDataVariableType
                         DataType: NodeId
@@ -34011,6 +34020,7 @@ Children:
                         Type: BaseDataVariableType
                         DataType: NodeId
                         Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
+                        Value: "/Objects/mes_v1/UI/Pages/stage_details/Foundry_details"
                       - Name: AliasNode
                         Type: BaseDataVariableType
                         DataType: NodeId
@@ -34103,6 +34113,7 @@ Children:
                         Type: BaseDataVariableType
                         DataType: NodeId
                         Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
+                        Value: "/Objects/mes_v1/UI/Pages/stage_details/Electrowinning_details"
                       - Name: AliasNode
                         Type: BaseDataVariableType
                         DataType: NodeId
