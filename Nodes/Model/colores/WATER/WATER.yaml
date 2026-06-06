@@ -1,24 +1,6 @@
 Name: WATER
 Type: FolderType
 Children:
-- Name: KPI01_WATER_C
-  Type: BaseDataVariableType
-  DataType: Color
-  Value: "#e4e4e4"
-- Name: KPI02_WATER_C
-  Type: BaseDataVariableType
-  DataType: Color
-  Value: "#e4e4e4"
-- Name: KPI03_WATER_C
-  Id: g=295732b47e4face8461c330718431296
-  Type: BaseDataVariableType
-  DataType: Color
-  Value: "#e4e4e4"
-- Name: KPI04_WATER_C
-  Id: g=80b6fecff3025376dafc508da55e6d00
-  Type: BaseDataVariableType
-  DataType: Color
-  Value: "#e4e4e4"
 - Name: KPI01_WATER_C_TEXT
   Type: BaseDataVariableType
   DataType: Color
@@ -498,7 +480,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../../../../../../KPIS/ESG/KPI_ESG_003 JOB SECURITY"
+            Value: "../../../../../../../KPIS/Agua/KPI_WA_003_des_residual"
     - Name: TrueValue
       Type: BaseDataVariableType
       DataType: Color
@@ -533,7 +515,7 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "../../../../../../../../../KPIS/ESG/KPI_ESG_003 JOB SECURITY"
+                Value: "../../../../../../../../../KPIS/Agua/KPI_WA_003_des_residual"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -573,7 +555,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../../../../../../KPIS/ESG/KPI_ESG_003 JOB SECURITY"
+            Value: "../../../../../../../KPIS/Agua/KPI_WA_003_des_residual"
     - Name: TrueValue
       Type: BaseDataVariableType
       DataType: Color
@@ -608,7 +590,7 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "../../../../../../../../../KPIS/ESG/KPI_ESG_003 JOB SECURITY"
+                Value: "../../../../../../../../../KPIS/Agua/KPI_WA_003_des_residual"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -648,7 +630,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../../../../../../KPIS/ESG/KPI_ESG_003 JOB SECURITY"
+            Value: "../../../../../../../KPIS/Agua/KPI_WA_003_des_residual"
     - Name: TrueValue
       Type: BaseDataVariableType
       DataType: Color
@@ -683,7 +665,7 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "../../../../../../../../../KPIS/ESG/KPI_ESG_003 JOB SECURITY"
+                Value: "../../../../../../../../../KPIS/Agua/KPI_WA_003_des_residual"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color

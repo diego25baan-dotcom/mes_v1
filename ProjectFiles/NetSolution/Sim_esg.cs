@@ -59,7 +59,7 @@ public class Sim_esg : BaseNetLogic
             
             // Simulación base ESG
             
-            double dt = .25;
+            
             double toneladas = (20 + 5 * Math.Sin(decimalCounter / 4)) * estadoOperacion;
             if (toneladas < 0) toneladas = 0;
             Toneladas_producidas.Value += toneladas;

@@ -1558,7 +1558,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/colores/ENERGY/KPI03_ENERGIA_C"
+            Value: "/Objects/mes_v1/Model/colores/ENERGY/KPI03_ENER_C_BORDER"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -1895,7 +1895,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/colores/ENERGY/KPI01_ENERGIA_C"
+            Value: "/Objects/mes_v1/Model/colores/ENERGY/KPI01_ENER_C_BORDER"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -2231,7 +2231,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/colores/ENERGY/KPI02_ENERGIA_C"
+            Value: "/Objects/mes_v1/Model/colores/ENERGY/KPI02_ENER_C_BORDER"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -2567,7 +2567,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/colores/ENERGY/KPI04_ENERGIA_C"
+            Value: "/Objects/mes_v1/Model/colores/ENERGY/KPI04_ENER_C_BORDER"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -3634,7 +3634,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/colores/WATER/KPI03_WATER_C"
+            Value: "/Objects/mes_v1/Model/colores/WATER/KPI03_WATER_C_BORDER"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -3970,7 +3970,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/colores/WATER/KPI01_WATER_C"
+            Value: "/Objects/mes_v1/Model/colores/WATER/KPI01_WATER_C_BORDER"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -4306,7 +4306,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/colores/WATER/KPI02_WATER_C"
+            Value: "/Objects/mes_v1/Model/colores/WATER/KPI02_WATER_C_BORDER"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -4642,7 +4642,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/colores/WATER/KPI04_WATER_C"
+            Value: "/Objects/mes_v1/Model/colores/WATER/KPI04_WATER_C_BORDER"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -8591,7 +8591,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/colores/PRODUCTION/KPI03_PROD_C"
+            Value: "/Objects/mes_v1/Model/colores/PRODUCTION/KPI03_PROD_C_BORDER"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -8927,7 +8927,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/colores/PRODUCTION/KPI01_PROD_C"
+            Value: "/Objects/mes_v1/Model/colores/PRODUCTION/KPI01_PROD_C_BORDER"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -9263,7 +9263,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/colores/PRODUCTION/KPI02_PROD_C"
+            Value: "/Objects/mes_v1/Model/colores/PRODUCTION/KPI02_PROD_C_BORDER"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -9599,7 +9599,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/mes_v1/Model/colores/PRODUCTION/KPI04_PROD_C"
+            Value: "/Objects/mes_v1/Model/colores/PRODUCTION/KPI04_PROD_C_BORDER"
             Children:
             - Name: Mode
               Type: BaseVariableType

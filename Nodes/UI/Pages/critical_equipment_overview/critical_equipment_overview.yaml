@@ -65,6 +65,12 @@ Children:
     Children:
     - Name: Label1
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Load"}
     - Name: Label2
       Type: Label
     - Name: Label3
@@ -94,6 +100,15 @@ Children:
       Type: Label
     - Name: Label4
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/KPIS/Energía/Velocidad_Banda_mps"
     - Name: Label5
       Type: Label
     - Name: Label6
@@ -109,6 +124,15 @@ Children:
     Children:
     - Name: Label1
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/KPIS/Energía/Carga_Banda_kg_m"
     - Name: Label2
       Type: Label
     - Name: Label3

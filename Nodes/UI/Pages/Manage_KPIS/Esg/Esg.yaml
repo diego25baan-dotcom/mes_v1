@@ -40,6 +40,33 @@ Children:
             Type: DynamicLink
             DataType: NodePath
             Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#ffffff"
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_TEXT"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#2a3f4f"
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_BORDER"
+      - Name: FillColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#162b38"
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_FILL"
   - Name: VerticalLayout1
     Type: ColumnLayout
     Children:
@@ -553,6 +580,33 @@ Children:
             Type: DynamicLink
             DataType: NodePath
             Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_002 REHABILITATION"
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#ffffff"
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/mes_v1/Model/colores/ESG/KPI02_ESG_C_TEXT"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#2a3f4f"
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/colores/ESG/KPI02_ESG_C_BORDER"
+      - Name: FillColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#162b38"
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/colores/ESG/KPI02_ESG_C_FILL"
   - Name: VerticalLayout1
     Type: ColumnLayout
     Children:
@@ -1180,6 +1234,33 @@ Children:
             Type: DynamicLink
             DataType: NodePath
             Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_003 JOB SECURITY"
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#ffffff"
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/mes_v1/Model/colores/ESG/KPI03_ESG_C_TEXT"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#2a3f4f"
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/colores/ESG/KPI03_ESG_C_BORDER"
+      - Name: FillColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#162b38"
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/colores/ESG/KPI03_ESG_C_FILL"
   - Name: VerticalLayout1
     Type: ColumnLayout
     Children:
@@ -1693,6 +1774,33 @@ Children:
             Type: DynamicLink
             DataType: NodePath
             Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_004 AUDIT COMPLIANCE"
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#ffffff"
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/mes_v1/Model/colores/ESG/KPI04_ESG_C_TEXT"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#2a3f4f"
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/colores/ESG/KPI04_ESG_C_BORDER"
+      - Name: FillColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#162b38"
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/colores/ESG/KPI04_ESG_C_FILL"
   - Name: VerticalLayout1
     Type: ColumnLayout
     Children:
@@ -2162,3 +2270,7 @@ Children:
         - Name: Severity
           Type: PropertyType
           DataType: UInt16
+  - Name: BackgroundColor
+    Type: BaseDataVariableType
+    DataType: Color
+    Value: "#13232f"

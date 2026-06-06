@@ -1,23 +1,903 @@
 Name: ENERGY
 Type: FolderType
 Children:
-- Name: KPI01_ENERGIA_C
-  Id: g=404f4fb9d5d4df524f1baaa09acb499d
+- Name: KPI01_ENER_C_TEXT
   Type: BaseDataVariableType
   DataType: Color
-  Value: "#e4e4e4"
-- Name: KPI02_ENERGIA_C
-  Id: g=b58a7fea006147722ed5ff98d61f2ef6
+  Value: "#6fcf97"
+  Children:
+  - Name: ConditionalConverter1
+    Type: ConditionalConverter
+    Children:
+    - Name: Condition
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ReferenceType: HasSource
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          Value: "{0}<0.00016"
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+    - Name: TrueValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Value: "#6fcf97"
+    - Name: FalseValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Children:
+          - Name: ExpressionEvaluator1
+            Type: ExpressionEvaluator
+            Children:
+            - Name: Expression
+              Type: BaseDataVariableType
+              DataType: String
+              ReferenceType: HasParameter
+              Value: "{0}>0.00018"
+            - Name: ns=3;Source0
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../../../../KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#eb5757"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#f2c94c"
+- Name: KPI01_ENER_C_FILL
   Type: BaseDataVariableType
   DataType: Color
-  Value: "#e4e4e4"
-- Name: KPI03_ENERGIA_C
-  Id: g=4a4803a64dbc8f75d9db8f68a8db16a0
+  Value: "#6fcf97"
+  Children:
+  - Name: ConditionalConverter1
+    Type: ConditionalConverter
+    Children:
+    - Name: Condition
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ReferenceType: HasSource
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          Value: "{0}<0.00016"
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../KPIS/Energía/KPI_EN_001 CONSUMO"
+    - Name: TrueValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Value: "#0f2a1d"
+    - Name: FalseValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Children:
+          - Name: ExpressionEvaluator1
+            Type: ExpressionEvaluator
+            Children:
+            - Name: Expression
+              Type: BaseDataVariableType
+              DataType: String
+              ReferenceType: HasParameter
+              Value: "{0}>0.00018"
+            - Name: ns=3;Source0
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../../../../KPIS/Energía/KPI_EN_001 CONSUMO"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#2a1414"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#2a2412"
+- Name: KPI01_ENER_C_BORDER
   Type: BaseDataVariableType
   DataType: Color
-  Value: "#e4e4e4"
-- Name: KPI04_ENERGIA_C
-  Id: g=90d4ab70b5250d432cd38d58d3f82c2a
+  Value: "#6fcf97"
+  Children:
+  - Name: ConditionalConverter1
+    Type: ConditionalConverter
+    Children:
+    - Name: Condition
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ReferenceType: HasSource
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          Value: "{0}<0.00016"
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../KPIS/Energía/KPI_EN_001 CONSUMO"
+    - Name: TrueValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Value: "#27ae60"
+    - Name: FalseValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Children:
+          - Name: ExpressionEvaluator1
+            Type: ExpressionEvaluator
+            Children:
+            - Name: Expression
+              Type: BaseDataVariableType
+              DataType: String
+              ReferenceType: HasParameter
+              Value: "{0}>0.00018"
+            - Name: ns=3;Source0
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../../../../KPIS/Energía/KPI_EN_001 CONSUMO"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#e74c3c"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#f2c94c"
+- Name: KPI02_ENER_C_TEXT
   Type: BaseDataVariableType
   DataType: Color
-  Value: "#e4e4e4"
+  Value: "#6fcf97"
+  Children:
+  - Name: ConditionalConverter1
+    Type: ConditionalConverter
+    Children:
+    - Name: Condition
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ReferenceType: HasSource
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          Value: "{0}>80"
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../KPIS/Energía/KPI_EN_002 CO2_AREA"
+    - Name: TrueValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Value: "#6fcf97"
+    - Name: FalseValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Children:
+          - Name: ExpressionEvaluator1
+            Type: ExpressionEvaluator
+            Children:
+            - Name: Expression
+              Type: BaseDataVariableType
+              DataType: String
+              ReferenceType: HasParameter
+              Value: "{0}<75"
+            - Name: ns=3;Source0
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../../../../KPIS/Energía/KPI_EN_002 CO2_AREA"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#eb5757"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#f2c94c"
+- Name: KPI02_ENER_C_FILL
+  Type: BaseDataVariableType
+  DataType: Color
+  Value: "#6fcf97"
+  Children:
+  - Name: ConditionalConverter1
+    Type: ConditionalConverter
+    Children:
+    - Name: Condition
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ReferenceType: HasSource
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          Value: "{0}>80"
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../KPIS/Energía/KPI_EN_002 CO2_AREA"
+    - Name: TrueValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Value: "#0f2a1d"
+    - Name: FalseValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Children:
+          - Name: ExpressionEvaluator1
+            Type: ExpressionEvaluator
+            Children:
+            - Name: Expression
+              Type: BaseDataVariableType
+              DataType: String
+              ReferenceType: HasParameter
+              Value: "{0}<75"
+            - Name: ns=3;Source0
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../../../../KPIS/Energía/KPI_EN_002 CO2_AREA"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#2a1414"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#2a2412"
+- Name: KPI02_ENER_C_BORDER
+  Type: BaseDataVariableType
+  DataType: Color
+  Value: "#6fcf97"
+  Children:
+  - Name: ConditionalConverter1
+    Type: ConditionalConverter
+    Children:
+    - Name: Condition
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ReferenceType: HasSource
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          Value: "{0}>80"
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../KPIS/Energía/KPI_EN_002 CO2_AREA"
+    - Name: TrueValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Value: "#27ae60"
+    - Name: FalseValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Children:
+          - Name: ExpressionEvaluator1
+            Type: ExpressionEvaluator
+            Children:
+            - Name: Expression
+              Type: BaseDataVariableType
+              DataType: String
+              ReferenceType: HasParameter
+              Value: "{0}<75"
+            - Name: ns=3;Source0
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../../../../KPIS/Energía/KPI_EN_002 CO2_AREA"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#e74c3c"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#f2c94c"
+- Name: KPI03_ENER_C_TEXT
+  Type: BaseDataVariableType
+  DataType: Color
+  Value: "#6fcf97"
+  Children:
+  - Name: ConditionalConverter1
+    Type: ConditionalConverter
+    Children:
+    - Name: Condition
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ReferenceType: HasSource
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          Value: "{0}<5"
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../KPIS/Energía/KPI_EN_003 KWh_ton"
+    - Name: TrueValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Value: "#6fcf97"
+    - Name: FalseValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Children:
+          - Name: ExpressionEvaluator1
+            Type: ExpressionEvaluator
+            Children:
+            - Name: Expression
+              Type: BaseDataVariableType
+              DataType: String
+              ReferenceType: HasParameter
+              Value: "{0}>10"
+            - Name: ns=3;Source0
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../../../../KPIS/Energía/KPI_EN_003 KWh_ton"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#eb5757"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#f2c94c"
+- Name: KPI03_ENER_C_FILL
+  Type: BaseDataVariableType
+  DataType: Color
+  Value: "#6fcf97"
+  Children:
+  - Name: ConditionalConverter1
+    Type: ConditionalConverter
+    Children:
+    - Name: Condition
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ReferenceType: HasSource
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          Value: "{0}<5"
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../KPIS/Energía/KPI_EN_003 KWh_ton"
+    - Name: TrueValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Value: "#0f2a1d"
+    - Name: FalseValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Children:
+          - Name: ExpressionEvaluator1
+            Type: ExpressionEvaluator
+            Children:
+            - Name: Expression
+              Type: BaseDataVariableType
+              DataType: String
+              ReferenceType: HasParameter
+              Value: "{0}>10"
+            - Name: ns=3;Source0
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../../../../KPIS/Energía/KPI_EN_003 KWh_ton"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#2a1414"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#2a2412"
+- Name: KPI03_ENER_C_BORDER
+  Type: BaseDataVariableType
+  DataType: Color
+  Value: "#6fcf97"
+  Children:
+  - Name: ConditionalConverter1
+    Type: ConditionalConverter
+    Children:
+    - Name: Condition
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ReferenceType: HasSource
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          Value: "{0}<5"
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../KPIS/Energía/KPI_EN_003 KWh_ton"
+    - Name: TrueValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Value: "#27ae60"
+    - Name: FalseValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Children:
+          - Name: ExpressionEvaluator1
+            Type: ExpressionEvaluator
+            Children:
+            - Name: Expression
+              Type: BaseDataVariableType
+              DataType: String
+              ReferenceType: HasParameter
+              Value: "{0}>10"
+            - Name: ns=3;Source0
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../../../../KPIS/Energía/KPI_EN_003 KWh_ton"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#e74c3c"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#f2c94c"
+- Name: KPI04_ENER_C_TEXT
+  Type: BaseDataVariableType
+  DataType: Color
+  Value: "#6fcf97"
+  Children:
+  - Name: ConditionalConverter1
+    Type: ConditionalConverter
+    Children:
+    - Name: Condition
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ReferenceType: HasSource
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          Value: "{0}>90"
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../KPIS/Energía/KPI_EN_004 % EN RENOVABLE"
+    - Name: TrueValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Value: "#6fcf97"
+    - Name: FalseValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Children:
+          - Name: ExpressionEvaluator1
+            Type: ExpressionEvaluator
+            Children:
+            - Name: Expression
+              Type: BaseDataVariableType
+              DataType: String
+              ReferenceType: HasParameter
+              Value: "{0}<85"
+            - Name: ns=3;Source0
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../../../../KPIS/Energía/KPI_EN_004 % EN RENOVABLE"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#eb5757"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#f2c94c"
+- Name: KPI04_ENER_C_FILL
+  Type: BaseDataVariableType
+  DataType: Color
+  Value: "#6fcf97"
+  Children:
+  - Name: ConditionalConverter1
+    Type: ConditionalConverter
+    Children:
+    - Name: Condition
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ReferenceType: HasSource
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          Value: "{0}>90"
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../KPIS/Energía/KPI_EN_004 % EN RENOVABLE"
+    - Name: TrueValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Value: "#0f2a1d"
+    - Name: FalseValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Children:
+          - Name: ExpressionEvaluator1
+            Type: ExpressionEvaluator
+            Children:
+            - Name: Expression
+              Type: BaseDataVariableType
+              DataType: String
+              ReferenceType: HasParameter
+              Value: "{0}<85"
+            - Name: ns=3;Source0
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../../../../KPIS/Energía/KPI_EN_004 % EN RENOVABLE"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#2a1414"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#2a2412"
+- Name: KPI04_ENER_C_BORDER
+  Type: BaseDataVariableType
+  DataType: Color
+  Value: "#6fcf97"
+  Children:
+  - Name: ConditionalConverter1
+    Type: ConditionalConverter
+    Children:
+    - Name: Condition
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ReferenceType: HasSource
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          Value: "{0}>90"
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../KPIS/Energía/KPI_EN_004 % EN RENOVABLE"
+    - Name: TrueValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Value: "#27ae60"
+    - Name: FalseValue
+      Type: BaseDataVariableType
+      DataType: Color
+      ReferenceType: HasParameter
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Children:
+          - Name: ExpressionEvaluator1
+            Type: ExpressionEvaluator
+            Children:
+            - Name: Expression
+              Type: BaseDataVariableType
+              DataType: String
+              ReferenceType: HasParameter
+              Value: "{0}<85"
+            - Name: ns=3;Source0
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../../../../KPIS/Energía/KPI_EN_004 % EN RENOVABLE"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#e74c3c"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          Value: "#f2c94c"

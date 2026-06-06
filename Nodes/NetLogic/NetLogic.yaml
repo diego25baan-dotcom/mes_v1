@@ -498,3 +498,16 @@ Children:
     Type: BaseDataVariableType
     DataType: Boolean
     Value: true
+  - Name: Toneladas_producidas_molienda
+    Type: BaseDataVariableType
+    DataType: Float
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Variables_Molienda/Energía/Toneladas_acumuladas"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2

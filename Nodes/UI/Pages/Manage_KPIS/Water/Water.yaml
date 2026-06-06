@@ -57,6 +57,33 @@ Children:
             Type: DynamicLink
             DataType: NodePath
             Value: "/Objects/mes_v1/Model/KPIS/Agua/KPI_WA_001_huella"
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#ffffff"
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/mes_v1/Model/colores/WATER/KPI01_WATER_C_TEXT"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#2a3f4f"
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/colores/WATER/KPI01_WATER_C_BORDER"
+      - Name: FillColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#162b38"
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/colores/WATER/KPI01_WATER_C_FILL"
   - Name: VerticalLayout1
     Type: ColumnLayout
     Children:
@@ -286,6 +313,14 @@ Children:
             Type: BaseDataVariableType
             DataType: Boolean
             ModellingRule: Optional
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
       - Name: Rectangle18
         Type: Rectangle
         Children:
@@ -592,6 +627,33 @@ Children:
             Type: DynamicLink
             DataType: NodePath
             Value: "/Objects/mes_v1/Model/KPIS/Agua/KPI_WA_001_huella"
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#ffffff"
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/mes_v1/Model/colores/WATER/KPI02_WATER_C_TEXT"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#2a3f4f"
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/colores/WATER/KPI01_WATER_C_BORDER"
+      - Name: FillColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#162b38"
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/colores/WATER/KPI01_WATER_C_FILL"
   - Name: VerticalLayout1
     Type: ColumnLayout
     Children:
@@ -800,6 +862,14 @@ Children:
             Type: BaseDataVariableType
             DataType: Boolean
             ModellingRule: Optional
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
       - Name: Rectangle18
         Type: Rectangle
         Children:
@@ -1051,7 +1121,7 @@ Children:
           Type: PropertyType
           DataType: UInt16
 - Name: KPI03_WA
-  Id: g=3247d6d1c41e22b54b27a6856bdc82b6
+  Id: g=fe1f47014bee701241f421802e56797b
   Supertype: Manage_KPI_variables
   ReferenceType: HasComponent
   Children:
@@ -1072,24 +1142,22 @@ Children:
           Type: BaseDataVariableType
           DataType: LocalizedText
           ModellingRule: Optional
-          Value: {"LocaleId":"en-US","Text":"KPI-WA-003 — Wastewater Discharge Volume"}
-        - Name: LeftMargin
+          Value: {"LocaleId":"en-US","Text":"KPI-WA-003 — Wastewater Discharge Flow"}
+        - Name: Width
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-        - Name: RightMargin
-          Type: BaseVariableType
+          Value: 170.0
+        - Name: WordWrap
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
+        - Name: FontSize
+          Type: BaseDataVariableType
           DataType: Size
           ModellingRule: Optional
-        - Name: TopMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 16.0
-        - Name: BottomMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
+          Value: 20.0
     - Name: Rectangle2
       Type: Rectangle
       Children:
@@ -1106,6 +1174,33 @@ Children:
             Type: DynamicLink
             DataType: NodePath
             Value: "/Objects/mes_v1/Model/KPIS/Agua/KPI_WA_003_des_residual"
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#ffffff"
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/mes_v1/Model/colores/WATER/KPI03_WATER_C_TEXT"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#2a3f4f"
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/colores/WATER/KPI03_WATER_C_BORDER"
+      - Name: FillColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#162b38"
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/colores/WATER/KPI03_WATER_C_FILL"
   - Name: VerticalLayout1
     Type: ColumnLayout
     Children:
@@ -1118,7 +1213,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"Tracks the total volume of wastewater discharged during a given period."}
+        Value: {"LocaleId":"en-US","Text":"Tracks the total wastewater discharged flow during a given period."}
     - Name: Label3
       Type: Label
     - Name: Label4
@@ -1162,6 +1257,16 @@ Children:
               Type: DynamicLink
               DataType: NodePath
               Value: "../../FillColor"
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 76.0
   - Name: VerticalLayout2
     Type: ColumnLayout
     Children:
@@ -1200,197 +1305,307 @@ Children:
         Children:
         - Name: Label1
           Type: Label
-        - Name: Visible
-          Type: BaseDataVariableType
-          DataType: Boolean
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Discharge flow  from extraction"}
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
           ModellingRule: Optional
-        - Name: Enabled
-          Type: BaseDataVariableType
-          DataType: Boolean
-          ModellingRule: Optional
+          Value: 50.0
       - Name: Rectangle7
         Type: Rectangle
         Children:
         - Name: Label1
           Type: Label
-        - Name: Visible
-          Type: BaseDataVariableType
-          DataType: Boolean
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Wastewater flow rate discharged from the extraction stage."}
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 40.0
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 190.0
+          - Name: FontSize
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 13.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
           ModellingRule: Optional
-        - Name: Enabled
-          Type: BaseDataVariableType
-          DataType: Boolean
-          ModellingRule: Optional
+          Value: 50.0
       - Name: Rectangle8
         Type: Rectangle
         Children:
         - Name: Label1
           Type: Label
-        - Name: Visible
-          Type: BaseDataVariableType
-          DataType: Boolean
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":14,"TextId":"Value"}
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
           ModellingRule: Optional
-        - Name: Enabled
-          Type: BaseDataVariableType
-          DataType: Boolean
-          ModellingRule: Optional
+          Value: 50.0
       - Name: Rectangle9
         Type: Rectangle
         Children:
         - Name: Label1
           Type: Label
-        - Name: Visible
-          Type: BaseDataVariableType
-          DataType: Boolean
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
           ModellingRule: Optional
-        - Name: Enabled
-          Type: BaseDataVariableType
-          DataType: Boolean
-          ModellingRule: Optional
+          Value: 50.0
       - Name: Rectangle10
         Type: Rectangle
         Children:
         - Name: Label1
           Type: Label
-        - Name: Visible
-          Type: BaseDataVariableType
-          DataType: Boolean
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
           ModellingRule: Optional
-        - Name: Enabled
-          Type: BaseDataVariableType
-          DataType: Boolean
-          ModellingRule: Optional
+          Value: 50.0
       - Name: Rectangle11
         Type: Rectangle
         Children:
         - Name: Label1
           Type: Label
-        - Name: Visible
-          Type: BaseDataVariableType
-          DataType: Boolean
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Discharge flow from crushing"}
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
           ModellingRule: Optional
-        - Name: Enabled
-          Type: BaseDataVariableType
-          DataType: Boolean
+          Value: 50.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
           ModellingRule: Optional
+          Value: 90.0
       - Name: Rectangle12
         Type: Rectangle
         Children:
         - Name: Label1
           Type: Label
           Children:
-          - Name: Visible
+          - Name: Text
             Type: BaseDataVariableType
-            DataType: Boolean
+            DataType: LocalizedText
             ModellingRule: Optional
-          - Name: Enabled
+            Value: {"LocaleId":"en-US","Text":"Wastewater flow rate discharged from the crushing stage."}
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 40.0
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+            Value: 2
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 190.0
+          - Name: FontSize
             Type: BaseDataVariableType
-            DataType: Boolean
+            DataType: Size
             ModellingRule: Optional
+            Value: 13.0
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 210.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 50.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 90.0
       - Name: Rectangle13
         Type: Rectangle
         Children:
         - Name: Label1
           Type: Label
-        - Name: Visible
-          Type: BaseDataVariableType
-          DataType: Boolean
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":14,"TextId":"Value"}
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
           ModellingRule: Optional
-        - Name: Enabled
-          Type: BaseDataVariableType
-          DataType: Boolean
+          Value: 50.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
           ModellingRule: Optional
+          Value: 90.0
       - Name: Rectangle14
         Type: Rectangle
         Children:
         - Name: Label1
           Type: Label
-        - Name: Visible
-          Type: BaseDataVariableType
-          DataType: Boolean
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
           ModellingRule: Optional
-        - Name: Enabled
-          Type: BaseDataVariableType
-          DataType: Boolean
+          Value: 50.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
           ModellingRule: Optional
+          Value: 90.0
       - Name: Rectangle15
         Type: Rectangle
         Children:
         - Name: Label1
           Type: Label
-        - Name: Visible
-          Type: BaseDataVariableType
-          DataType: Boolean
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
           ModellingRule: Optional
-        - Name: Enabled
-          Type: BaseDataVariableType
-          DataType: Boolean
+          Value: 50.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
           ModellingRule: Optional
+          Value: 90.0
       - Name: Rectangle16
         Type: Rectangle
         Children:
         - Name: Label1
           Type: Label
-        - Name: Visible
-          Type: BaseDataVariableType
-          DataType: Boolean
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Discharge flow from grinding"}
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
           ModellingRule: Optional
-        - Name: Enabled
-          Type: BaseDataVariableType
-          DataType: Boolean
+          Value: 50.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
           ModellingRule: Optional
+          Value: 140.0
       - Name: Rectangle17
         Type: Rectangle
         Children:
         - Name: Label1
           Type: Label
-        - Name: Visible
-          Type: BaseDataVariableType
-          DataType: Boolean
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Wastewater flow rate discharged from the grinding stage."}
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 40.0
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 190.0
+          - Name: FontSize
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 13.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
           ModellingRule: Optional
-        - Name: Enabled
-          Type: BaseDataVariableType
-          DataType: Boolean
+          Value: 50.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
           ModellingRule: Optional
+          Value: 140.0
       - Name: Rectangle18
         Type: Rectangle
         Children:
         - Name: Label1
           Type: Label
-        - Name: Visible
-          Type: BaseDataVariableType
-          DataType: Boolean
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":14,"TextId":"Value"}
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
           ModellingRule: Optional
-        - Name: Enabled
-          Type: BaseDataVariableType
-          DataType: Boolean
+          Value: 50.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
           ModellingRule: Optional
+          Value: 140.0
       - Name: Rectangle19
         Type: Rectangle
         Children:
         - Name: Label1
           Type: Label
-        - Name: Visible
-          Type: BaseDataVariableType
-          DataType: Boolean
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
           ModellingRule: Optional
-        - Name: Enabled
-          Type: BaseDataVariableType
-          DataType: Boolean
+          Value: 50.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
           ModellingRule: Optional
+          Value: 140.0
       - Name: Rectangle20
         Type: Rectangle
         Children:
         - Name: Label1
           Type: Label
-        - Name: Visible
-          Type: BaseDataVariableType
-          DataType: Boolean
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
           ModellingRule: Optional
-        - Name: Enabled
-          Type: BaseDataVariableType
-          DataType: Boolean
+          Value: 50.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
           ModellingRule: Optional
+          Value: 140.0
       - Name: Trend1
         Type: Trend
         Children:
@@ -1426,20 +1641,6 @@ Children:
                 DataType: DynamicLinkMode
                 ModellingRule: Optional
                 Value: 2
-          - Name: TrendPen1
-            Type: TrendPen
-            DataType: BaseDataType
-            Children:
-            - Name: Thickness
-              Type: BaseDataVariableType
-              DataType: Size
-              Value: -1.0
-            - Name: Enabled
-              Type: BaseDataVariableType
-              DataType: Boolean
-              Value: true
-            - Name: Thresholds
-              Type: BaseObjectType
         - Class: Reference
           Target: ns=5;i=1129
           Direction: Forward
@@ -1510,26 +1711,969 @@ Children:
         Children:
         - Name: Label1
           Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Discharge flow from flotation"}
+          - Name: TextColor
+            Type: BaseDataVariableType
+            DataType: Color
+            ModellingRule: Optional
+            Value: "#e4e4e4"
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 50.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 190.0
+        - Name: BorderColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#2a3f4f"
+        - Name: FillColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#162b38"
       - Name: Rectangle22
         Type: Rectangle
         Children:
         - Name: Label1
           Type: Label
+          Children:
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 40.0
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Wastewater flow rate discharged from the flotation stage."}
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 190.0
+          - Name: FontSize
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 13.0
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 50.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 190.0
       - Name: Rectangle23
         Type: Rectangle
         Children:
         - Name: Label1
           Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":14,"TextId":"Value"}
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 190.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 50.0
       - Name: Rectangle24
         Type: Rectangle
         Children:
         - Name: Label1
           Type: Label
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 50.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 190.0
       - Name: Rectangle25
         Type: Rectangle
         Children:
         - Name: Label1
           Type: Label
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 190.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 50.0
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: -2.0
+      - Name: Rectangle26
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Discharge flow from foundry"}
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+            Value: 2
+          - Name: FontSize
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 14.0
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 150.0
+          - Name: TextColor
+            Type: BaseDataVariableType
+            DataType: Color
+            ModellingRule: Optional
+            Value: "#e4e4e4"
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 2
+          - Name: WordWrap
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ModellingRule: Optional
+            Value: true
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 50.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 240.0
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 170.0
+        - Name: BorderColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#2a3f4f"
+        - Name: FillColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#162b38"
+      - Name: Rectangle27
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Discharge flow from electrowinning"}
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+            Value: 2
+          - Name: FontSize
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 14.0
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 150.0
+          - Name: TextColor
+            Type: BaseDataVariableType
+            DataType: Color
+            ModellingRule: Optional
+            Value: "#e4e4e4"
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 2
+          - Name: WordWrap
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ModellingRule: Optional
+            Value: true
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 50.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 290.0
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 170.0
+        - Name: BorderColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#2a3f4f"
+        - Name: FillColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#162b38"
+      - Name: Rectangle28
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Wastewater flow rate discharged from the foundry stage."}
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+            Value: 2
+          - Name: FontSize
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 13.0
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 190.0
+          - Name: TextColor
+            Type: BaseDataVariableType
+            DataType: Color
+            ModellingRule: Optional
+            Value: "#e4e4e4"
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 2
+          - Name: WordWrap
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ModellingRule: Optional
+            Value: true
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 50.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 240.0
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 170.0
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 210.0
+        - Name: BorderColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#2a3f4f"
+        - Name: FillColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#162b38"
+      - Name: Rectangle29
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":14,"TextId":"Value"}
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+            Value: 2
+          - Name: FontSize
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 14.0
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 200.0
+          - Name: TextColor
+            Type: BaseDataVariableType
+            DataType: Color
+            ModellingRule: Optional
+            Value: "#e4e4e4"
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 2
+          - Name: TextHorizontalAlignment
+            Type: BaseVariableType
+            DataType: TextHorizontalAlignment
+            ModellingRule: Optional
+            Value: 1
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 50.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 240.0
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 380.0
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 230.0
+        - Name: BorderColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#2a3f4f"
+        - Name: FillColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#162b38"
+      - Name: Rectangle30
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Unit"}
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+            Value: 2
+          - Name: FontSize
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 14.0
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: -1.0
+          - Name: TextColor
+            Type: BaseDataVariableType
+            DataType: Color
+            ModellingRule: Optional
+            Value: "#e4e4e4"
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 2
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 50.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 240.0
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 610.0
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 130.0
+        - Name: BorderColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#2a3f4f"
+        - Name: FillColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#162b38"
+      - Name: Rectangle31
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Allowed range"}
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+            Value: 2
+          - Name: FontSize
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 14.0
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: -1.0
+          - Name: TextColor
+            Type: BaseDataVariableType
+            DataType: Color
+            ModellingRule: Optional
+            Value: "#e4e4e4"
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 2
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 50.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 240.0
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 740.0
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 220.0
+        - Name: BorderColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#2a3f4f"
+        - Name: FillColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#162b38"
+      - Name: Rectangle32
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Wastewater flow rate discharged from the electrowinning stage."}
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+            Value: 2
+          - Name: FontSize
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 13.0
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 190.0
+          - Name: TextColor
+            Type: BaseDataVariableType
+            DataType: Color
+            ModellingRule: Optional
+            Value: "#e4e4e4"
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 2
+          - Name: WordWrap
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ModellingRule: Optional
+            Value: true
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 50.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 290.0
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 170.0
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 210.0
+        - Name: BorderColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#2a3f4f"
+        - Name: FillColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#162b38"
+      - Name: Rectangle33
+        Type: Rectangle
+        Children:
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 50.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 290.0
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 380.0
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 230.0
+        - Name: BorderColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#2a3f4f"
+        - Name: FillColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#162b38"
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":14,"TextId":"Value"}
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+            Value: 2
+          - Name: FontSize
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 14.0
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 200.0
+          - Name: TextColor
+            Type: BaseDataVariableType
+            DataType: Color
+            ModellingRule: Optional
+            Value: "#e4e4e4"
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 2
+          - Name: TextHorizontalAlignment
+            Type: BaseVariableType
+            DataType: TextHorizontalAlignment
+            ModellingRule: Optional
+            Value: 1
+      - Name: Rectangle34
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Unit"}
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+            Value: 2
+          - Name: FontSize
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 14.0
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: -1.0
+          - Name: TextColor
+            Type: BaseDataVariableType
+            DataType: Color
+            ModellingRule: Optional
+            Value: "#e4e4e4"
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 2
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 50.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 290.0
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 610.0
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 130.0
+        - Name: BorderColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#2a3f4f"
+        - Name: FillColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#162b38"
+      - Name: Rectangle35
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Allowed range"}
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+            Value: 2
+          - Name: FontSize
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 14.0
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: -1.0
+          - Name: TextColor
+            Type: BaseDataVariableType
+            DataType: Color
+            ModellingRule: Optional
+            Value: "#e4e4e4"
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 2
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 50.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 290.0
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 740.0
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 220.0
+        - Name: BorderColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#2a3f4f"
+        - Name: FillColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#162b38"
     - Name: Label2
       Type: Label
   - Name: Button1
@@ -1663,6 +2807,33 @@ Children:
             Type: DynamicLink
             DataType: NodePath
             Value: "/Objects/mes_v1/Model/KPIS/Agua/KPI_WA_004_incidentes"
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#ffffff"
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/mes_v1/Model/colores/WATER/KPI04_WATER_C_TEXT"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#2a3f4f"
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/colores/WATER/KPI04_WATER_C_BORDER"
+      - Name: FillColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#162b38"
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/colores/WATER/KPI04_WATER_C_FILL"
   - Name: VerticalLayout1
     Type: ColumnLayout
     Children:

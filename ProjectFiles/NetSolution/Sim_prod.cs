@@ -12,7 +12,7 @@ using FTOptix.CommunicationDriver;
 using FTOptix.Report;
 #endregion
 
-public class Sim_produccion : BaseNetLogic
+public class Sim_prod : BaseNetLogic
 {
     public override void Start()
     {
@@ -22,45 +22,35 @@ public class Sim_produccion : BaseNetLogic
         // Variables de proceso
         // ==================================================
 
-        Ley_mineral_entrada =
-            LogicObject.GetVariable("Ley_mineral_entrada");
+        Ley_mineral_entrada =LogicObject.GetVariable("Ley_mineral_entrada");
 
-        Ley_mineral_salida =
-            LogicObject.GetVariable("Ley_mineral_salida");
+        Ley_mineral_salida =LogicObject.GetVariable("Ley_mineral_salida");
 
-        Disponibilidad =
-            LogicObject.GetVariable("Disponibilidad");
+        Disponibilidad =LogicObject.GetVariable("Disponibilidad");
 
-        Rendimiento =
-            LogicObject.GetVariable("Rendimiento");
+        Rendimiento =LogicObject.GetVariable("Rendimiento");
 
-        Calidad =
-            LogicObject.GetVariable("Calidad");
+        Calidad =LogicObject.GetVariable("Calidad");
 
-        Costo_total =
-            LogicObject.GetVariable("Costo_total");
+        Costo_total =LogicObject.GetVariable("Costo_total");
 
-        Toneladas_producidas =
-            LogicObject.GetVariable("Toneladas_producidas");
+        Toneladas_producidas =LogicObject.GetVariable("Toneladas_producidas");
+        
+        Toneladas_producidas_molienda =LogicObject.GetVariable("Toneladas_producidas_molienda");
 
         // ==================================================
         // KPIs
         // ==================================================
 
-        KPI_PROD_001 =
-            LogicObject.GetVariable("KPI_PROD_001");
+        KPI_PROD_001 =LogicObject.GetVariable("KPI_PROD_001");
 
-        KPI_PROD_002 =
-            LogicObject.GetVariable("KPI_PROD_002");
+        KPI_PROD_002 =LogicObject.GetVariable("KPI_PROD_002");
 
-        KPI_PROD_003 =
-            LogicObject.GetVariable("KPI_PROD_003");
+        KPI_PROD_003 =LogicObject.GetVariable("KPI_PROD_003");
 
-        KPI_PROD_004 =
-            LogicObject.GetVariable("KPI_PROD_004");
+        KPI_PROD_004 =LogicObject.GetVariable("KPI_PROD_004");
 
-        simulationTask =
-            new PeriodicTask(Simulation, 250, LogicObject);
+        simulationTask =new PeriodicTask(Simulation, 250, LogicObject);
 
         simulationTask.Start();
     }
@@ -73,34 +63,28 @@ public class Sim_produccion : BaseNetLogic
             // Lectura de variables
             // ==================================================
 
-            Ley_mineral_entrada_val =
-                Ley_mineral_entrada.Value;
+            double Ley_mineral_entrada_val =Ley_mineral_entrada.Value;
 
-            Ley_mineral_salida_val =
-                Ley_mineral_salida.Value;
+            double Ley_mineral_salida_val =Ley_mineral_salida.Value;
 
-            Disponibilidad_val =
-                Disponibilidad.Value;
+            double Disponibilidad_val =Disponibilidad.Value;
 
-            Rendimiento_val =
-                Rendimiento.Value;
+            double Rendimiento_val =Rendimiento.Value;
 
-            Calidad_val =
-                Calidad.Value;
+            double Calidad_val =Calidad.Value;
 
-            Costo_total_val =
-                Costo_total.Value;
+            double Costo_total_val =Costo_total.Value;
 
-            Toneladas_producidas_val =
-                Toneladas_producidas.Value;
+            double Toneladas_producidas_val =Toneladas_producidas.Value;
+            
+            double Toneladas_producidas_molienda_val =Toneladas_producidas_molienda.Value;
 
             // ==================================================
             // KPI_PROD_001
             // Producción total
             // ==================================================
 
-            KPI_PROD_001.Value =
-                Toneladas_producidas_val;
+            KPI_PROD_001.Value =Toneladas_producidas_val;
 
             // ==================================================
             // KPI_PROD_002
@@ -108,17 +92,15 @@ public class Sim_produccion : BaseNetLogic
             // Formula:
             // (Ley salida / Ley entrada) * 100
             // ==================================================
-
-            if (Ley_mineral_entrada_val > 0.001)
+            if (Ley_mineral_entrada_val > 0 && Toneladas_producidas_molienda_val > 0)
             {
-                KPI_PROD_002.Value =
-                    (Ley_mineral_salida_val /
-                    Ley_mineral_entrada_val) * 100;
+                KPI_PROD_002.Value =(Ley_mineral_salida_val* Toneladas_producidas_val /Ley_mineral_entrada_val* Toneladas_producidas_molienda_val) * 100.0;
             }
             else
             {
                 KPI_PROD_002.Value = 0;
             }
+            
 
             // ==================================================
             // KPI_PROD_003
@@ -127,10 +109,7 @@ public class Sim_produccion : BaseNetLogic
             // Disponibilidad * Rendimiento * Calidad
             // ==================================================
 
-            KPI_PROD_003.Value =
-                (Disponibilidad_val *
-                Rendimiento_val *
-                Calidad_val) / 10000.0;
+            KPI_PROD_003.Value =(Disponibilidad_val *Rendimiento_val *Calidad_val) / 10000.0;
 
             // ==================================================
             // KPI_PROD_004
@@ -141,9 +120,7 @@ public class Sim_produccion : BaseNetLogic
 
             if (Toneladas_producidas_val > 0.001)
             {
-                KPI_PROD_004.Value =
-                    Costo_total_val /
-                    Toneladas_producidas_val;
+                KPI_PROD_004.Value =Costo_total_val /Toneladas_producidas_val;
             }
             else
             {
@@ -172,6 +149,7 @@ public class Sim_produccion : BaseNetLogic
 
     private IUAVariable Costo_total;
     private IUAVariable Toneladas_producidas;
+    private IUAVariable Toneladas_producidas_molienda;
 
     // ======================================================
     // KPIs

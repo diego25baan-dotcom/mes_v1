@@ -1,22 +1,6 @@
 Name: ESG
 Type: FolderType
 Children:
-- Name: KPI01_ESG_C
-  Type: BaseDataVariableType
-  DataType: Color
-  Value: "#e4e4e4"
-- Name: KPI02_ESG_C
-  Type: BaseDataVariableType
-  DataType: Color
-  Value: "#e4e4e4"
-- Name: KPI03_ESG_C
-  Type: BaseDataVariableType
-  DataType: Color
-  Value: "#e4e4e4"
-- Name: KPI04_ESG_C
-  Type: BaseDataVariableType
-  DataType: Color
-  Value: "#e4e4e4"
 - Name: KPI01_ESG_C_TEXT
   Type: BaseDataVariableType
   DataType: Color

@@ -40,6 +40,33 @@ Children:
             Type: DynamicLink
             DataType: NodePath
             Value: "/Objects/mes_v1/Model/KPIS/Producción/KPI_PROD_001 PRODUCTION "
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#ffffff"
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/mes_v1/Model/colores/PRODUCTION/KPI01_PROD_C_TEXT"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#2a3f4f"
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/colores/PRODUCTION/KPI01_PROD_C_BORDER"
+      - Name: FillColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#162b38"
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/colores/PRODUCTION/KPI01_PROD_C_FILL"
   - Name: VerticalLayout1
     Type: ColumnLayout
     Children:
@@ -52,7 +79,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"Measures mining production efficiency and metallurgical performance."}
+        Value: {"LocaleId":"en-US","Text":"Measures the amount of copper contained in the produced cathodes."}
     - Name: Label3
       Type: Label
     - Name: Label4
@@ -62,7 +89,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"Processed Tons=∑Weightprocessed​"}
+        Value: {"LocaleId":"en-US","Text":"Contained Copper=Weight_cathode X Cathode Grade"}
     - Name: Label5
       Type: Label
     - Name: Label6
@@ -134,40 +161,67 @@ Children:
         Children:
         - Name: Label1
           Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Weight Cathode"}
         - Name: Visible
           Type: BaseDataVariableType
           DataType: Boolean
           ModellingRule: Optional
+          Value: true
         - Name: Enabled
           Type: BaseDataVariableType
           DataType: Boolean
           ModellingRule: Optional
+          Value: true
       - Name: Rectangle7
         Type: Rectangle
         Children:
         - Name: Label1
           Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Total weight of produced cathodes"}
         - Name: Visible
           Type: BaseDataVariableType
           DataType: Boolean
           ModellingRule: Optional
+          Value: true
         - Name: Enabled
           Type: BaseDataVariableType
           DataType: Boolean
           ModellingRule: Optional
+          Value: true
       - Name: Rectangle8
         Type: Rectangle
         Children:
         - Name: Label1
           Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/mes_v1/Model/KPIS/Producción/Toneladas_producidas"
         - Name: Visible
           Type: BaseDataVariableType
           DataType: Boolean
           ModellingRule: Optional
+          Value: true
         - Name: Enabled
           Type: BaseDataVariableType
           DataType: Boolean
           ModellingRule: Optional
+          Value: true
       - Name: Rectangle9
         Type: Rectangle
         Children:
@@ -177,10 +231,12 @@ Children:
           Type: BaseDataVariableType
           DataType: Boolean
           ModellingRule: Optional
+          Value: true
         - Name: Enabled
           Type: BaseDataVariableType
           DataType: Boolean
           ModellingRule: Optional
+          Value: true
       - Name: Rectangle10
         Type: Rectangle
         Children:
@@ -190,23 +246,33 @@ Children:
           Type: BaseDataVariableType
           DataType: Boolean
           ModellingRule: Optional
+          Value: true
         - Name: Enabled
           Type: BaseDataVariableType
           DataType: Boolean
           ModellingRule: Optional
+          Value: true
       - Name: Rectangle11
         Type: Rectangle
         Children:
         - Name: Label1
           Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Cathode Grade"}
         - Name: Visible
           Type: BaseDataVariableType
           DataType: Boolean
           ModellingRule: Optional
+          Value: true
         - Name: Enabled
           Type: BaseDataVariableType
           DataType: Boolean
           ModellingRule: Optional
+          Value: true
       - Name: Rectangle12
         Type: Rectangle
         Children:
@@ -217,23 +283,41 @@ Children:
             Type: BaseDataVariableType
             DataType: Boolean
             ModellingRule: Optional
+            Value: true
           - Name: Enabled
             Type: BaseDataVariableType
             DataType: Boolean
             ModellingRule: Optional
+            Value: true
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Copper purity of the cathodes."}
       - Name: Rectangle13
         Type: Rectangle
         Children:
         - Name: Label1
           Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/mes_v1/Model/Variables_Electroobtención/Producción/Ley_mineral_salida"
         - Name: Visible
           Type: BaseDataVariableType
           DataType: Boolean
           ModellingRule: Optional
+          Value: true
         - Name: Enabled
           Type: BaseDataVariableType
           DataType: Boolean
           ModellingRule: Optional
+          Value: true
       - Name: Rectangle14
         Type: Rectangle
         Children:
@@ -243,10 +327,12 @@ Children:
           Type: BaseDataVariableType
           DataType: Boolean
           ModellingRule: Optional
+          Value: true
         - Name: Enabled
           Type: BaseDataVariableType
           DataType: Boolean
           ModellingRule: Optional
+          Value: true
       - Name: Rectangle15
         Type: Rectangle
         Children:
@@ -256,10 +342,12 @@ Children:
           Type: BaseDataVariableType
           DataType: Boolean
           ModellingRule: Optional
+          Value: true
         - Name: Enabled
           Type: BaseDataVariableType
           DataType: Boolean
           ModellingRule: Optional
+          Value: true
       - Name: Rectangle16
         Type: Rectangle
         Children:
@@ -287,6 +375,14 @@ Children:
             Type: BaseDataVariableType
             DataType: Boolean
             ModellingRule: Optional
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
       - Name: Rectangle18
         Type: Rectangle
         Children:
@@ -576,6 +672,33 @@ Children:
             Type: DynamicLink
             DataType: NodePath
             Value: "/Objects/mes_v1/Model/KPIS/Producción/KPI_PROD_002 RECOVERY"
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#ffffff"
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/mes_v1/Model/colores/PRODUCTION/KPI02_PROD_C_TEXT"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#2a3f4f"
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/colores/PRODUCTION/KPI02_PROD_C_BORDER"
+      - Name: FillColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#162b38"
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/colores/PRODUCTION/KPI02_PROD_C_FILL"
   - Name: VerticalLayout1
     Type: ColumnLayout
     Children:
@@ -591,6 +714,17 @@ Children:
         Value: {"LocaleId":"en-US","Text":"Measures extraction efficiency of valuable mineral."}
     - Name: Label3
       Type: Label
+      Children:
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 42.0
     - Name: Label4
       Type: Label
       Children:
@@ -598,11 +732,43 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"Recovery (%)=OutputGrade/InputGradeX100"}
+        Value: {"LocaleId":"en-US","Text":"Recovery (%)=(CTons X CGrade/FTons X FGrade)X100                                                      "}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
     - Name: Label5
       Type: Label
+      Children:
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 114.0
     - Name: Label6
       Type: Label
+      Children:
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
     - Name: Rectangle2
       Type: Rectangle
       Children:
@@ -675,7 +841,7 @@ Children:
             Type: BaseDataVariableType
             DataType: LocalizedText
             ModellingRule: Optional
-            Value: {"LocaleId":"en-US","Text":"Input Grade"}
+            Value: {"LocaleId":"en-US","Text":"CTons"}
       - Name: Rectangle7
         Type: Rectangle
         Children:
@@ -686,7 +852,7 @@ Children:
             Type: BaseDataVariableType
             DataType: LocalizedText
             ModellingRule: Optional
-            Value: {"LocaleId":"en-US","Text":"Concentration or percentage of valuable mineral present in the material entering the process."}
+            Value: {"LocaleId":"en-US","Text":"Tons of concentrate produced"}
           - Name: FontSize
             Type: BaseDataVariableType
             DataType: Size
@@ -705,7 +871,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "/Objects/mes_v1/Model/KPIS/Producción/Ley_mineral_entrada"
+              Value: "/Objects/mes_v1/Model/Variables_Flotación/Energía/Toneladas_acumuladas"
       - Name: Rectangle9
         Type: Rectangle
         Children:
@@ -726,7 +892,7 @@ Children:
             Type: BaseDataVariableType
             DataType: LocalizedText
             ModellingRule: Optional
-            Value: {"LocaleId":"en-US","Text":"Output Grade"}
+            Value: {"LocaleId":"en-US","Text":"CGrade"}
       - Name: Rectangle12
         Type: Rectangle
         Children:
@@ -737,7 +903,7 @@ Children:
             Type: BaseDataVariableType
             DataType: LocalizedText
             ModellingRule: Optional
-            Value: {"LocaleId":"en-US","Text":"Concentration or percentage of valuable mineral present in the material leaving the process after treatment"}
+            Value: {"LocaleId":"en-US","Text":"Metal grade of the concentrate"}
           - Name: FontSize
             Type: BaseDataVariableType
             DataType: Size
@@ -756,7 +922,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "/Objects/mes_v1/Model/KPIS/Producción/Ley_mineral_salida"
+              Value: "/Objects/mes_v1/Model/Variables_Flotación/Producción/Ley_mineral_salida"
       - Name: Rectangle14
         Type: Rectangle
         Children:
@@ -772,40 +938,67 @@ Children:
         Children:
         - Name: Label1
           Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Ftons"}
         - Name: Visible
           Type: BaseDataVariableType
           DataType: Boolean
           ModellingRule: Optional
+          Value: true
         - Name: Enabled
           Type: BaseDataVariableType
           DataType: Boolean
           ModellingRule: Optional
+          Value: true
       - Name: Rectangle17
         Type: Rectangle
         Children:
         - Name: Label1
           Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Tons fed to flotation"}
         - Name: Visible
           Type: BaseDataVariableType
           DataType: Boolean
           ModellingRule: Optional
+          Value: true
         - Name: Enabled
           Type: BaseDataVariableType
           DataType: Boolean
           ModellingRule: Optional
+          Value: true
       - Name: Rectangle18
         Type: Rectangle
         Children:
         - Name: Label1
           Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/mes_v1/Model/Variables_Molienda/Energía/Toneladas_acumuladas"
         - Name: Visible
           Type: BaseDataVariableType
           DataType: Boolean
           ModellingRule: Optional
+          Value: true
         - Name: Enabled
           Type: BaseDataVariableType
           DataType: Boolean
           ModellingRule: Optional
+          Value: true
       - Name: Rectangle19
         Type: Rectangle
         Children:
@@ -815,10 +1008,12 @@ Children:
           Type: BaseDataVariableType
           DataType: Boolean
           ModellingRule: Optional
+          Value: true
         - Name: Enabled
           Type: BaseDataVariableType
           DataType: Boolean
           ModellingRule: Optional
+          Value: true
       - Name: Rectangle20
         Type: Rectangle
         Children:
@@ -828,10 +1023,12 @@ Children:
           Type: BaseDataVariableType
           DataType: Boolean
           ModellingRule: Optional
+          Value: true
         - Name: Enabled
           Type: BaseDataVariableType
           DataType: Boolean
           ModellingRule: Optional
+          Value: true
       - Name: Trend1
         Type: Trend
         Children:
@@ -951,26 +1148,97 @@ Children:
         Children:
         - Name: Label1
           Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"FGrade"}
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
       - Name: Rectangle22
         Type: Rectangle
         Children:
         - Name: Label1
           Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Metal grade of flotation feed"}
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
       - Name: Rectangle23
         Type: Rectangle
         Children:
         - Name: Label1
           Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/mes_v1/Model/Variables_Flotación/Producción/Ley_mineral_entrada"
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
       - Name: Rectangle24
         Type: Rectangle
         Children:
         - Name: Label1
           Type: Label
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
       - Name: Rectangle25
         Type: Rectangle
         Children:
         - Name: Label1
           Type: Label
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: true
     - Name: Label2
       Type: Label
   - Name: Button1
@@ -1043,7 +1311,7 @@ Children:
         - Name: Severity
           Type: PropertyType
           DataType: UInt16
-- Name: KPI103_PROD
+- Name: KPI03_PROD
   Id: g=6cbe2c2ca959d7e463730a4af2be48d3
   Supertype: Manage_KPI_variables
   ReferenceType: HasComponent
@@ -1099,6 +1367,33 @@ Children:
             Type: DynamicLink
             DataType: NodePath
             Value: "/Objects/mes_v1/Model/KPIS/Producción/KPI_PROD_003 OEE"
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#ffffff"
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/mes_v1/Model/colores/PRODUCTION/KPI03_PROD_C_TEXT"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#2a3f4f"
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/colores/PRODUCTION/KPI03_PROD_C_BORDER"
+      - Name: FillColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#162b38"
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/colores/PRODUCTION/KPI03_PROD_C_FILL"
   - Name: VerticalLayout1
     Type: ColumnLayout
     Children:
@@ -1591,7 +1886,7 @@ Children:
           Type: BaseDataVariableType
           DataType: LocalizedText
           ModellingRule: Optional
-          Value: {"LocaleId":"en-US","Text":"KPI-PROD-003 — Cost per ton"}
+          Value: {"LocaleId":"en-US","Text":"KPI-PROD-004 — Cost per ton"}
     - Name: Rectangle2
       Type: Rectangle
       Children:
@@ -1608,6 +1903,33 @@ Children:
             Type: DynamicLink
             DataType: NodePath
             Value: "/Objects/mes_v1/Model/KPIS/Producción/KPI_PROD_004 COSTS PER TON"
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#ffffff"
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/mes_v1/Model/colores/PRODUCTION/KPI04_PROD_C_TEXT"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#2a3f4f"
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/colores/PRODUCTION/KPI04_PROD_C_BORDER"
+      - Name: FillColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#162b38"
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/colores/PRODUCTION/KPI04_PROD_C_FILL"
   - Name: VerticalLayout1
     Type: ColumnLayout
     Children:
