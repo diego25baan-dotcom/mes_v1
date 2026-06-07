@@ -12,7 +12,7 @@ Children:
     - Name: Pens
       Type: BaseObjectType
       Children:
-      - Name: TrendPen1
+      - Name: Potencia_flot_kW
         Type: TrendPen
         DataType: BaseDataType
         Children:
@@ -26,6 +26,21 @@ Children:
           Value: true
         - Name: Thresholds
           Type: BaseObjectType
+        - Name: Color
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#1b5583"
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Model/VariablesToLog/Potencia_flot_kW/LastValue"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
     - Class: Reference
       Target: ns=5;i=1129
       Direction: Forward
@@ -39,7 +54,7 @@ Children:
       - Name: Window
         Type: BaseDataVariableType
         DataType: Duration
-        Value: "0:00:00:05.0000000"
+        Value: "0:00:05:00.0000000"
       - Name: Interactive
         Type: BaseDataVariableType
         DataType: Boolean
@@ -56,11 +71,11 @@ Children:
       - Name: MinValue
         Type: BaseDataVariableType
         DataType: Size
-        Value: -100.0
+        Value: -1.0
       - Name: MaxValue
         Type: BaseDataVariableType
         DataType: Size
-        Value: 100.0
+        Value: -1.0
       - Name: AutoScale
         Type: BaseDataVariableType
         DataType: Boolean
@@ -80,6 +95,17 @@ Children:
     - Class: Reference
       Target: ns=5;i=1209
       Direction: Forward
+    - Name: Model
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/mes_v1/Loggers/flotation"
+      Children:
+      - Name: ItemKind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
 - Name: CO2_emissions2
   Id: g=5b1a07708fddfba62a39408be39a4e00
   Supertype: parameters_monitoring_trend
@@ -91,7 +117,7 @@ Children:
     - Name: Pens
       Type: BaseObjectType
       Children:
-      - Name: TrendPen1
+      - Name: CO2
         Type: TrendPen
         DataType: BaseDataType
         Children:
@@ -105,6 +131,21 @@ Children:
           Value: true
         - Name: Thresholds
           Type: BaseObjectType
+        - Name: Color
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#bdecb6"
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Model/VariablesToLog/CO2/LastValue"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
     - Class: Reference
       Target: ns=5;i=1129
       Direction: Forward
@@ -118,7 +159,7 @@ Children:
       - Name: Window
         Type: BaseDataVariableType
         DataType: Duration
-        Value: "0:00:00:05.0000000"
+        Value: "0:00:05:00.0000000"
       - Name: Interactive
         Type: BaseDataVariableType
         DataType: Boolean
@@ -135,11 +176,11 @@ Children:
       - Name: MinValue
         Type: BaseDataVariableType
         DataType: Size
-        Value: -100.0
+        Value: -1.0
       - Name: MaxValue
         Type: BaseDataVariableType
         DataType: Size
-        Value: 100.0
+        Value: -1.0
       - Name: AutoScale
         Type: BaseDataVariableType
         DataType: Boolean
@@ -159,6 +200,17 @@ Children:
     - Class: Reference
       Target: ns=5;i=1209
       Direction: Forward
+    - Name: Model
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/mes_v1/Loggers/flotation"
+      Children:
+      - Name: ItemKind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
 - Name: Water_consumed2
   Id: g=17cc95a1b2cc1c5b675cb49b94d74522
   Supertype: parameters_monitoring_trend
@@ -170,7 +222,7 @@ Children:
     - Name: Pens
       Type: BaseObjectType
       Children:
-      - Name: TrendPen1
+      - Name: Agua_Total_flot
         Type: TrendPen
         DataType: BaseDataType
         Children:
@@ -184,6 +236,21 @@ Children:
           Value: true
         - Name: Thresholds
           Type: BaseObjectType
+        - Name: Color
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#c51d34"
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Model/VariablesToLog/Agua_Total_flot/LastValue"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
     - Class: Reference
       Target: ns=5;i=1129
       Direction: Forward
@@ -197,7 +264,7 @@ Children:
       - Name: Window
         Type: BaseDataVariableType
         DataType: Duration
-        Value: "0:00:00:05.0000000"
+        Value: "0:00:05:00.0000000"
       - Name: Interactive
         Type: BaseDataVariableType
         DataType: Boolean
@@ -214,11 +281,11 @@ Children:
       - Name: MinValue
         Type: BaseDataVariableType
         DataType: Size
-        Value: -100.0
+        Value: -1.0
       - Name: MaxValue
         Type: BaseDataVariableType
         DataType: Size
-        Value: 100.0
+        Value: -1.0
       - Name: AutoScale
         Type: BaseDataVariableType
         DataType: Boolean
@@ -238,6 +305,17 @@ Children:
     - Class: Reference
       Target: ns=5;i=1209
       Direction: Forward
+    - Name: Model
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/mes_v1/Loggers/flotation"
+      Children:
+      - Name: ItemKind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
 - Name: Tons_produced1
   Id: g=6a56714aaa6e6ab3a771669eaf8bc866
   Supertype: parameters_monitoring_trend
@@ -249,7 +327,7 @@ Children:
     - Name: Pens
       Type: BaseObjectType
       Children:
-      - Name: TrendPen1
+      - Name: Toneladas_Producidas1
         Type: TrendPen
         DataType: BaseDataType
         Children:
@@ -263,6 +341,21 @@ Children:
           Value: true
         - Name: Thresholds
           Type: BaseObjectType
+        - Name: Color
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#f5e456"
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Model/VariablesToLog/Toneladas_Producidas1/LastValue"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
     - Class: Reference
       Target: ns=5;i=1129
       Direction: Forward
@@ -276,7 +369,7 @@ Children:
       - Name: Window
         Type: BaseDataVariableType
         DataType: Duration
-        Value: "0:00:00:05.0000000"
+        Value: "0:00:05:00.0000000"
       - Name: Interactive
         Type: BaseDataVariableType
         DataType: Boolean
@@ -293,11 +386,11 @@ Children:
       - Name: MinValue
         Type: BaseDataVariableType
         DataType: Size
-        Value: -100.0
+        Value: -1.0
       - Name: MaxValue
         Type: BaseDataVariableType
         DataType: Size
-        Value: 100.0
+        Value: -1.0
       - Name: AutoScale
         Type: BaseDataVariableType
         DataType: Boolean
@@ -317,7 +410,18 @@ Children:
     - Class: Reference
       Target: ns=5;i=1209
       Direction: Forward
-- Name: Pump_speed
+    - Name: Model
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/mes_v1/Loggers/flotation"
+      Children:
+      - Name: ItemKind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+- Name: Water_recovered
   Id: g=1b6c756be8f6e324a5c4718a2bda73c7
   Supertype: parameters_monitoring_trend
   ReferenceType: HasComponent
@@ -328,7 +432,7 @@ Children:
     - Name: Pens
       Type: BaseObjectType
       Children:
-      - Name: TrendPen1
+      - Name: Agua_recuperada_flot
         Type: TrendPen
         DataType: BaseDataType
         Children:
@@ -342,6 +446,21 @@ Children:
           Value: true
         - Name: Thresholds
           Type: BaseObjectType
+        - Name: Color
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#2bda4c"
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Model/VariablesToLog/Agua_recuperada_flot/LastValue"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
     - Class: Reference
       Target: ns=5;i=1129
       Direction: Forward
@@ -355,7 +474,7 @@ Children:
       - Name: Window
         Type: BaseDataVariableType
         DataType: Duration
-        Value: "0:00:00:05.0000000"
+        Value: "0:00:05:00.0000000"
       - Name: Interactive
         Type: BaseDataVariableType
         DataType: Boolean
@@ -372,11 +491,11 @@ Children:
       - Name: MinValue
         Type: BaseDataVariableType
         DataType: Size
-        Value: -100.0
+        Value: -1.0
       - Name: MaxValue
         Type: BaseDataVariableType
         DataType: Size
-        Value: 100.0
+        Value: -1.0
       - Name: AutoScale
         Type: BaseDataVariableType
         DataType: Boolean
@@ -396,3 +515,14 @@ Children:
     - Class: Reference
       Target: ns=5;i=1209
       Direction: Forward
+    - Name: Model
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/mes_v1/Loggers/flotation"
+      Children:
+      - Name: ItemKind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId

@@ -4909,7 +4909,7 @@ Children:
       - Name: Window
         Type: BaseDataVariableType
         DataType: Duration
-        Value: "0:00:00:05.0000000"
+        Value: "0:00:05:00.0000000"
       - Name: Interactive
         Type: BaseDataVariableType
         DataType: Boolean
@@ -4926,11 +4926,11 @@ Children:
       - Name: MinValue
         Type: BaseDataVariableType
         DataType: Size
-        Value: -100.0
+        Value: -1.0
       - Name: MaxValue
         Type: BaseDataVariableType
         DataType: Size
-        Value: 100.0
+        Value: -1.0
       - Name: AutoScale
         Type: BaseDataVariableType
         DataType: Boolean

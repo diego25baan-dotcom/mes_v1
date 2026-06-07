@@ -12,7 +12,7 @@ Children:
     - Name: Pens
       Type: BaseObjectType
       Children:
-      - Name: TrendPen1
+      - Name: Potencia_kW_Chancado
         Type: TrendPen
         DataType: BaseDataType
         Children:
@@ -26,6 +26,21 @@ Children:
           Value: true
         - Name: Thresholds
           Type: BaseObjectType
+        - Name: Color
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#1b5583"
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Model/VariablesToLog/Potencia_kW_Chancado/LastValue"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
     - Class: Reference
       Target: ns=5;i=1129
       Direction: Forward
@@ -39,7 +54,7 @@ Children:
       - Name: Window
         Type: BaseDataVariableType
         DataType: Duration
-        Value: "0:00:00:05.0000000"
+        Value: "0:00:05:00.0000000"
       - Name: Interactive
         Type: BaseDataVariableType
         DataType: Boolean
@@ -56,11 +71,11 @@ Children:
       - Name: MinValue
         Type: BaseDataVariableType
         DataType: Size
-        Value: -100.0
+        Value: -1.0
       - Name: MaxValue
         Type: BaseDataVariableType
         DataType: Size
-        Value: 100.0
+        Value: -1.0
       - Name: AutoScale
         Type: BaseDataVariableType
         DataType: Boolean
@@ -80,6 +95,17 @@ Children:
     - Class: Reference
       Target: ns=5;i=1209
       Direction: Forward
+    - Name: Model
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/mes_v1/Loggers/crushing"
+      Children:
+      - Name: ItemKind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
 - Name: Tons_produced
   Id: g=d38725abba8d255cdfe760d5eb3df799
   Supertype: parameters_monitoring_trend
@@ -91,7 +117,7 @@ Children:
     - Name: Pens
       Type: BaseObjectType
       Children:
-      - Name: TrendPen1
+      - Name: Toneladas_Producidas_Chancado
         Type: TrendPen
         DataType: BaseDataType
         Children:
@@ -105,6 +131,21 @@ Children:
           Value: true
         - Name: Thresholds
           Type: BaseObjectType
+        - Name: Color
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#c51d34"
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Model/VariablesToLog/Toneladas_Producidas_Chancado/LastValue"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
     - Class: Reference
       Target: ns=5;i=1129
       Direction: Forward
@@ -118,7 +159,7 @@ Children:
       - Name: Window
         Type: BaseDataVariableType
         DataType: Duration
-        Value: "0:00:00:05.0000000"
+        Value: "0:00:05:00.0000000"
       - Name: Interactive
         Type: BaseDataVariableType
         DataType: Boolean
@@ -135,11 +176,11 @@ Children:
       - Name: MinValue
         Type: BaseDataVariableType
         DataType: Size
-        Value: -100.0
+        Value: -1.0
       - Name: MaxValue
         Type: BaseDataVariableType
         DataType: Size
-        Value: 100.0
+        Value: -1.0
       - Name: AutoScale
         Type: BaseDataVariableType
         DataType: Boolean
@@ -159,6 +200,17 @@ Children:
     - Class: Reference
       Target: ns=5;i=1209
       Direction: Forward
+    - Name: Model
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/mes_v1/Loggers/crushing"
+      Children:
+      - Name: ItemKind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
 - Name: Input_ore_grade
   Id: g=a464e6ba3bab23849ca57e04df521654
   Supertype: parameters_monitoring_trend
@@ -170,7 +222,7 @@ Children:
     - Name: Pens
       Type: BaseObjectType
       Children:
-      - Name: TrendPen1
+      - Name: Ley_mineral_entrada_Chancado
         Type: TrendPen
         DataType: BaseDataType
         Children:
@@ -184,6 +236,21 @@ Children:
           Value: true
         - Name: Thresholds
           Type: BaseObjectType
+        - Name: Color
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#f3a505"
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Model/VariablesToLog/Ley_mineral_entrada_Chancado/LastValue"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
     - Class: Reference
       Target: ns=5;i=1129
       Direction: Forward
@@ -197,7 +264,7 @@ Children:
       - Name: Window
         Type: BaseDataVariableType
         DataType: Duration
-        Value: "0:00:00:05.0000000"
+        Value: "0:00:05:00.0000000"
       - Name: Interactive
         Type: BaseDataVariableType
         DataType: Boolean
@@ -214,11 +281,11 @@ Children:
       - Name: MinValue
         Type: BaseDataVariableType
         DataType: Size
-        Value: -100.0
+        Value: -1.0
       - Name: MaxValue
         Type: BaseDataVariableType
         DataType: Size
-        Value: 100.0
+        Value: -1.0
       - Name: AutoScale
         Type: BaseDataVariableType
         DataType: Boolean
@@ -238,6 +305,17 @@ Children:
     - Class: Reference
       Target: ns=5;i=1209
       Direction: Forward
+    - Name: Model
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/mes_v1/Loggers/crushing"
+      Children:
+      - Name: ItemKind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
 - Name: Output_ore_grade
   Id: g=56810eef5f899f151e57332847739965
   Supertype: parameters_monitoring_trend
@@ -249,7 +327,7 @@ Children:
     - Name: Pens
       Type: BaseObjectType
       Children:
-      - Name: TrendPen1
+      - Name: Ley_mineral_salida_Chancado
         Type: TrendPen
         DataType: BaseDataType
         Children:
@@ -263,6 +341,21 @@ Children:
           Value: true
         - Name: Thresholds
           Type: BaseObjectType
+        - Name: Color
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#bdecb6"
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Model/VariablesToLog/Ley_mineral_salida_Chancado/LastValue"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
     - Class: Reference
       Target: ns=5;i=1129
       Direction: Forward
@@ -276,7 +369,7 @@ Children:
       - Name: Window
         Type: BaseDataVariableType
         DataType: Duration
-        Value: "0:00:00:05.0000000"
+        Value: "0:00:05:00.0000000"
       - Name: Interactive
         Type: BaseDataVariableType
         DataType: Boolean
@@ -293,11 +386,11 @@ Children:
       - Name: MinValue
         Type: BaseDataVariableType
         DataType: Size
-        Value: -100.0
+        Value: -1.0
       - Name: MaxValue
         Type: BaseDataVariableType
         DataType: Size
-        Value: 100.0
+        Value: -1.0
       - Name: AutoScale
         Type: BaseDataVariableType
         DataType: Boolean
@@ -317,6 +410,17 @@ Children:
     - Class: Reference
       Target: ns=5;i=1209
       Direction: Forward
+    - Name: Model
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/mes_v1/Loggers/crushing"
+      Children:
+      - Name: ItemKind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
 - Name: CO2_emissions
   Id: g=746ea25709468dbbd7cb782dcf50c683
   Supertype: parameters_monitoring_trend
@@ -328,7 +432,7 @@ Children:
     - Name: Pens
       Type: BaseObjectType
       Children:
-      - Name: TrendPen1
+      - Name: Calidad_Chancado
         Type: TrendPen
         DataType: BaseDataType
         Children:
@@ -342,6 +446,21 @@ Children:
           Value: true
         - Name: Thresholds
           Type: BaseObjectType
+        - Name: Color
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#d7d7d7"
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Model/VariablesToLog/Calidad_Chancado/LastValue"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
     - Class: Reference
       Target: ns=5;i=1129
       Direction: Forward
@@ -355,7 +474,7 @@ Children:
       - Name: Window
         Type: BaseDataVariableType
         DataType: Duration
-        Value: "0:00:00:05.0000000"
+        Value: "0:00:05:00.0000000"
       - Name: Interactive
         Type: BaseDataVariableType
         DataType: Boolean
@@ -372,11 +491,11 @@ Children:
       - Name: MinValue
         Type: BaseDataVariableType
         DataType: Size
-        Value: -100.0
+        Value: -1.0
       - Name: MaxValue
         Type: BaseDataVariableType
         DataType: Size
-        Value: 100.0
+        Value: -1.0
       - Name: AutoScale
         Type: BaseDataVariableType
         DataType: Boolean
@@ -396,6 +515,17 @@ Children:
     - Class: Reference
       Target: ns=5;i=1209
       Direction: Forward
+    - Name: Model
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/mes_v1/Loggers/crushing"
+      Children:
+      - Name: ItemKind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
 - Name: Water_consumed
   Id: g=dd174ecd7fa097f6711abb7d1a5ff04b
   Supertype: parameters_monitoring_trend
@@ -407,7 +537,7 @@ Children:
     - Name: Pens
       Type: BaseObjectType
       Children:
-      - Name: TrendPen1
+      - Name: Calidad_Chancado
         Type: TrendPen
         DataType: BaseDataType
         Children:
@@ -421,6 +551,21 @@ Children:
           Value: true
         - Name: Thresholds
           Type: BaseObjectType
+        - Name: Color
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#d7d7d7"
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Model/VariablesToLog/Calidad_Chancado/LastValue"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
     - Class: Reference
       Target: ns=5;i=1129
       Direction: Forward
@@ -434,7 +579,7 @@ Children:
       - Name: Window
         Type: BaseDataVariableType
         DataType: Duration
-        Value: "0:00:00:05.0000000"
+        Value: "0:00:05:00.0000000"
       - Name: Interactive
         Type: BaseDataVariableType
         DataType: Boolean
@@ -451,11 +596,11 @@ Children:
       - Name: MinValue
         Type: BaseDataVariableType
         DataType: Size
-        Value: -100.0
+        Value: -1.0
       - Name: MaxValue
         Type: BaseDataVariableType
         DataType: Size
-        Value: 100.0
+        Value: -1.0
       - Name: AutoScale
         Type: BaseDataVariableType
         DataType: Boolean
@@ -475,3 +620,14 @@ Children:
     - Class: Reference
       Target: ns=5;i=1209
       Direction: Forward
+    - Name: Model
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/mes_v1/Loggers/crushing"
+      Children:
+      - Name: ItemKind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId

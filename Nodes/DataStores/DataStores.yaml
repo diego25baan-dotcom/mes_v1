@@ -656,6 +656,450 @@ Children:
         - Name: Event
           Type: StoreColumn
           DataType: String
+    - Name: extraction
+      Type: RemoteInfluxDBStoreTable
+      Children:
+      - Name: Tags
+        Type: BaseObjectType
+      - Class: Reference
+        Target: ns=17;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=17;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=17;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=17;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Potencia_kW_extracción
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Velocidad_banda_extracción_mps
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Flujo_material_extracción
+          Type: StoreColumn
+          DataType: Int32
+    - Name: grinding
+      Type: RemoteInfluxDBStoreTable
+      Children:
+      - Name: Tags
+        Type: BaseObjectType
+      - Class: Reference
+        Target: ns=17;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=17;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=17;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=17;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Potencia_kW
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Velocidad_correa_mps
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Carga_correa_kg
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Factor_Emision
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Potencia_Renovable_kW
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Flujo_material
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Toneladas_acumuladas
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Caudal_Agua_Ls
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Toneladas_producidas
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Agua_Reutilizada
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Agua_total
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Caudal_descarga_m3h
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Numero_Incidentes_molino
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Tiempo_Respuesta
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Potencia_kW1
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Toneladas_producidas1
+          Type: StoreColumn
+          DataType: Int32
+        - Name: CO2_total
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Variable1
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Ley_mineral_entrada
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Ley_mineral_salida
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Disponibilidad_Molino
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Rendimiento_Molino
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Calidad_Molino
+          Type: StoreColumn
+          DataType: Int32
+    - Name: flotation
+      Type: RemoteInfluxDBStoreTable
+      Children:
+      - Name: Tags
+        Type: BaseObjectType
+      - Class: Reference
+        Target: ns=17;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=17;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=17;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=17;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Potencia_flot_kW
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Potencia_Renovable_kW
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Flujo_material
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Factor_Emision
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Toneladas_acumuladas
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Energía_total_flot
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Velocidad_bomba_flot
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Caudal_Agua_Ls
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Toneladas_producidad
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Agua_Reutilizada
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Agua_Total_flot
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Caudal_descarga_m3h
+          Type: StoreColumn
+          DataType: Int32
+        - Name: CO2
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Potencia_flot_kW1
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Energía_flot_kW
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Toneladas_Producidas
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Agua_recuperada_flot
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Ley_mineral_entrada
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Ley_mineral_salida
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Toneladas_Producidas1
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Disponibilidad
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Rendimiento
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Calidad
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Ley_concentrado_flot
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Recuperación_flot
+          Type: StoreColumn
+          DataType: Int32
+    - Name: foundry
+      Type: RemoteInfluxDBStoreTable
+      Children:
+      - Name: Tags
+        Type: BaseObjectType
+      - Class: Reference
+        Target: ns=17;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=17;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=17;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=17;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Potencia_total_fundición_kW
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Energía_total_fundición_kWh
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Velocidad_rueda
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Potencia_renovable_fund_kW
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Factor_emision_gas
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Emision_gas_fund_kg
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Potencia_fund_kW
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Energía_fund_kWh
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Toneladas_anodos
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Ley_mineral_entrada_fund
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Ley_mineral_salida_fund
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Ley_anodo
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Caudal_agua_fund_Ls
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Volumen_agua_fund_L
+          Type: StoreColumn
+          DataType: Int32
+    - Name: electrowinning
+      Type: RemoteInfluxDBStoreTable
+      Children:
+      - Name: Tags
+        Type: BaseObjectType
+      - Class: Reference
+        Target: ns=17;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=17;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=17;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=17;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Toneladas_catodos_producidos_electro
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Potencia_total_electro_kW
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Potencia_renovable_electro_kW
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Eficiencia_corriente_pct
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Volumen_agua_total_electro__L
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Agua_reutilizada_electro_L
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Potencia_electro_kW
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Energía_electro_kWh
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Toneladas_producidas_electro
+          Type: StoreColumn
+          DataType: Int32
+        - Name: CO2
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Cu_Teorico_kg
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Cu_Real_kg
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Ley_mineral_entrada
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Ley_mineral_salida
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Toneladas_producidas_electro1
+          Type: StoreColumn
+          DataType: Int32
+    - Name: crushing
+      Type: RemoteInfluxDBStoreTable
+      Children:
+      - Name: Tags
+        Type: BaseObjectType
+      - Class: Reference
+        Target: ns=17;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=17;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=17;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=17;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Potencia_kW_Chancado
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Velocidad_Banda_Chancado_mps
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Velocidad_alimentador_Chancado_mps
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Velocidad_motor_chancadora
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Velocidad_motor_zaranda_chanc
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Factor_Emisión_Chancado
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Potencia_Renovable_Chancado
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Flujo_Material_chancado
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Toneladas_acumuladas_chancado
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Energía_kWh_Chancado
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Toneladas_Producidas_Chancado
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Ley_mineral_entrada_Chancado
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Ley_mineral_salida_Chancado
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Disponibilidad_Chancado
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Rendimiento_Chancado
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Calidad_Chancado
+          Type: StoreColumn
+          DataType: Int32
   - Name: Token
     Type: BaseDataVariableType
     DataType: Password

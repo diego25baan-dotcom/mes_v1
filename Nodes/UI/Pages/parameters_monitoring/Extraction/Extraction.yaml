@@ -12,7 +12,7 @@ Children:
     - Name: Pens
       Type: BaseObjectType
       Children:
-      - Name: TrendPen1
+      - Name: Potencia_kW_extracción
         Type: TrendPen
         DataType: BaseDataType
         Children:
@@ -26,6 +26,21 @@ Children:
           Value: true
         - Name: Thresholds
           Type: BaseObjectType
+        - Name: Color
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#1b5583"
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Model/VariablesToLog/Potencia_kW_extracción/LastValue"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
     - Class: Reference
       Target: ns=5;i=1129
       Direction: Forward
@@ -39,7 +54,7 @@ Children:
       - Name: Window
         Type: BaseDataVariableType
         DataType: Duration
-        Value: "0:00:00:05.0000000"
+        Value: "0:00:05:00.0000000"
       - Name: Interactive
         Type: BaseDataVariableType
         DataType: Boolean
@@ -56,11 +71,11 @@ Children:
       - Name: MinValue
         Type: BaseDataVariableType
         DataType: Size
-        Value: -100.0
+        Value: -1.0
       - Name: MaxValue
         Type: BaseDataVariableType
         DataType: Size
-        Value: 100.0
+        Value: -1.0
       - Name: AutoScale
         Type: BaseDataVariableType
         DataType: Boolean
@@ -80,6 +95,17 @@ Children:
     - Class: Reference
       Target: ns=5;i=1209
       Direction: Forward
+    - Name: Model
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/mes_v1/Loggers/extraction"
+      Children:
+      - Name: ItemKind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
 - Name: Material_flow
   Id: g=897186dcbb4a90e2cbcee546a80730d1
   Supertype: parameters_monitoring_trend
@@ -91,7 +117,7 @@ Children:
     - Name: Pens
       Type: BaseObjectType
       Children:
-      - Name: TrendPen1
+      - Name: Flujo_material_extracción
         Type: TrendPen
         DataType: BaseDataType
         Children:
@@ -105,6 +131,21 @@ Children:
           Value: true
         - Name: Thresholds
           Type: BaseObjectType
+        - Name: Color
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#ff7514"
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Model/VariablesToLog/Flujo_material_extracción/LastValue"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
     - Class: Reference
       Target: ns=5;i=1129
       Direction: Forward
@@ -118,7 +159,7 @@ Children:
       - Name: Window
         Type: BaseDataVariableType
         DataType: Duration
-        Value: "0:00:00:05.0000000"
+        Value: "0:00:05:00.0000000"
       - Name: Interactive
         Type: BaseDataVariableType
         DataType: Boolean
@@ -135,11 +176,11 @@ Children:
       - Name: MinValue
         Type: BaseDataVariableType
         DataType: Size
-        Value: -100.0
+        Value: -1.0
       - Name: MaxValue
         Type: BaseDataVariableType
         DataType: Size
-        Value: 100.0
+        Value: -1.0
       - Name: AutoScale
         Type: BaseDataVariableType
         DataType: Boolean
@@ -159,6 +200,17 @@ Children:
     - Class: Reference
       Target: ns=5;i=1209
       Direction: Forward
+    - Name: Model
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/mes_v1/Loggers/extraction"
+      Children:
+      - Name: ItemKind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
 - Name: Band_speed
   Id: g=a25d0a1cff1e30c638e930e4c302b2f9
   Supertype: parameters_monitoring_trend
@@ -170,7 +222,7 @@ Children:
     - Name: Pens
       Type: BaseObjectType
       Children:
-      - Name: TrendPen1
+      - Name: Velocidad_banda_extracción_mps
         Type: TrendPen
         DataType: BaseDataType
         Children:
@@ -184,6 +236,21 @@ Children:
           Value: true
         - Name: Thresholds
           Type: BaseObjectType
+        - Name: Color
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#f3da08"
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Model/VariablesToLog/Velocidad_banda_extracción_mps/LastValue"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
     - Class: Reference
       Target: ns=5;i=1129
       Direction: Forward
@@ -197,7 +264,7 @@ Children:
       - Name: Window
         Type: BaseDataVariableType
         DataType: Duration
-        Value: "0:00:00:05.0000000"
+        Value: "0:00:05:00.0000000"
       - Name: Interactive
         Type: BaseDataVariableType
         DataType: Boolean
@@ -214,11 +281,11 @@ Children:
       - Name: MinValue
         Type: BaseDataVariableType
         DataType: Size
-        Value: -100.0
+        Value: -1.0
       - Name: MaxValue
         Type: BaseDataVariableType
         DataType: Size
-        Value: 100.0
+        Value: -1.0
       - Name: AutoScale
         Type: BaseDataVariableType
         DataType: Boolean
@@ -238,3 +305,14 @@ Children:
     - Class: Reference
       Target: ns=5;i=1209
       Direction: Forward
+    - Name: Model
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/mes_v1/Loggers/extraction"
+      Children:
+      - Name: ItemKind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId

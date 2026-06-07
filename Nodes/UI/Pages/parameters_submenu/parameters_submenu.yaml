@@ -1145,7 +1145,7 @@ Children:
                 Type: BaseDataVariableType
                 DataType: NodeId
                 Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
-                Value: "/Objects/mes_v1/UI/Pages/parameters_monitoring/grinding/OEE"
+                Value: "/Objects/mes_v1/UI/Pages/parameters_monitoring/grinding/Tons_produced2"
               - Name: AliasNode
                 Type: BaseDataVariableType
                 DataType: NodeId
@@ -1755,7 +1755,7 @@ Children:
               - Name: NewPanel
                 Type: BaseDataVariableType
                 DataType: NodeId
-                Value: "/Objects/mes_v1/UI/Pages/parameters_monitoring/flotation/Pump_speed"
+                Value: "/Objects/mes_v1/UI/Pages/parameters_monitoring/flotation/Water_recovered"
               - Name: AliasNode
                 Type: BaseDataVariableType
                 DataType: NodeId
