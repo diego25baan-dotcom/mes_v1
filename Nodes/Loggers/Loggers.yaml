@@ -1452,6 +1452,14 @@ Children:
     Type: PropertyType
     DataType: Boolean
     Value: true
+  - Name: SamplingPeriod
+    Type: PropertyType
+    DataType: Duration
+    Value: "0:00:00:03.0000000"
+  - Name: PollingPeriod
+    Type: PropertyType
+    DataType: Duration
+    Value: "0:00:00:01.0000000"
 - Name: DataLogger_prod
   Id: g=59edadf5b68e9f07da983c943723cff1
   Type: DataLogger
@@ -1754,6 +1762,14 @@ Children:
     Type: PropertyType
     DataType: Boolean
     Value: true
+  - Name: SamplingPeriod
+    Type: PropertyType
+    DataType: Duration
+    Value: "0:00:00:03.0000000"
+  - Name: PollingPeriod
+    Type: PropertyType
+    DataType: Duration
+    Value: "0:00:00:01.0000000"
 - Name: AlarmsEventLogger_grinding
   Id: g=b35894f7bb7de6292046fc5dbeb667cc
   Type: EventLogger
@@ -3091,6 +3107,10 @@ Children:
         Type: BaseDataVariableType
         DataType: Duration
         ReferenceType: HasParameter
+  - Name: PollingPeriod
+    Type: PropertyType
+    DataType: Duration
+    Value: "0:00:00:01.0000000"
 - Name: extraction
   Id: g=ec7a7e7f3687673e7963514f2e765aed
   Type: DataLogger
@@ -3193,6 +3213,14 @@ Children:
     Type: PropertyType
     DataType: Boolean
     Value: true
+  - Name: SamplingPeriod
+    Type: PropertyType
+    DataType: Duration
+    Value: "0:00:00:03.0000000"
+  - Name: PollingPeriod
+    Type: PropertyType
+    DataType: Duration
+    Value: "0:00:00:01.0000000"
 - Name: crushing
   Id: g=76768ed614743ab4b469b10d07c4248c
   Type: DataLogger
@@ -3620,6 +3648,14 @@ Children:
     Type: PropertyType
     DataType: Boolean
     Value: true
+  - Name: SamplingPeriod
+    Type: PropertyType
+    DataType: Duration
+    Value: "0:00:00:03.0000000"
+  - Name: PollingPeriod
+    Type: PropertyType
+    DataType: Duration
+    Value: "0:00:00:01.0000000"
 - Name: grinding
   Id: g=d58bc799fc3d8fdde2a6c753a9c5feaa
   Type: DataLogger
@@ -4222,6 +4258,14 @@ Children:
     Type: PropertyType
     DataType: Boolean
     Value: true
+  - Name: SamplingPeriod
+    Type: PropertyType
+    DataType: Duration
+    Value: "0:00:00:03.0000000"
+  - Name: PollingPeriod
+    Type: PropertyType
+    DataType: Duration
+    Value: "0:00:00:01.0000000"
 - Name: flotation
   Id: g=e12bd9cc43aaf74a811b9c5bf36cf6e3
   Type: DataLogger
@@ -4874,6 +4918,14 @@ Children:
     Type: PropertyType
     DataType: Boolean
     Value: true
+  - Name: SamplingPeriod
+    Type: PropertyType
+    DataType: Duration
+    Value: "0:00:00:03.0000000"
+  - Name: PollingPeriod
+    Type: PropertyType
+    DataType: Duration
+    Value: "0:00:00:01.0000000"
 - Name: foundry
   Id: g=56edc0611efb2541ebe2619d441258ef
   Type: DataLogger
@@ -5251,6 +5303,14 @@ Children:
     Type: PropertyType
     DataType: Boolean
     Value: true
+  - Name: SamplingPeriod
+    Type: PropertyType
+    DataType: Duration
+    Value: "0:00:00:03.0000000"
+  - Name: PollingPeriod
+    Type: PropertyType
+    DataType: Duration
+    Value: "0:00:00:01.0000000"
 - Name: electrowinning
   Id: g=6d4842b386e5a033ce38a5aa1f18a577
   Type: DataLogger
@@ -5653,3 +5713,11 @@ Children:
     Type: PropertyType
     DataType: Boolean
     Value: true
+  - Name: SamplingPeriod
+    Type: PropertyType
+    DataType: Duration
+    Value: "0:00:00:03.0000000"
+  - Name: PollingPeriod
+    Type: PropertyType
+    DataType: Duration
+    Value: "0:00:00:01.0000000"
