@@ -1,0 +1,9 @@
+Name: parameters_monitoring
+Type: FolderType
+Children:
+- File: Extraction/Extraction.yaml
+- File: crushing/crushing.yaml
+- File: grinding/grinding.yaml
+- File: flotation/flotation.yaml
+- File: Foundry/Foundry.yaml
+- File: Electrowinning/Electrowinning.yaml
