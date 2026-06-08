@@ -20,3 +20,16 @@ Children:
 - File: Variables_Fundición/Variables_Fundición.yaml
 - File: Variables_Electroobtención/Variables_Electroobtención.yaml
 - File: Traceability_timeline/Traceability_timeline.yaml
+- Name: report type
+  Id: g=93eecd147923c9d20a47c6da87632fbe
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+- Name: confirmar
+  Id: g=709fbd448a27daa3381055d20b6770ed
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: email
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
