@@ -1103,7 +1103,7 @@ Children:
   - Name: Token
     Type: BaseDataVariableType
     DataType: Password
-    Value: "_tGcddmUO2A1mAQKBdNomBD69WN_0iWjG62K1L99h01GBD3I9Y5WoZ_31qWImCLpXa3dZrtUZp80jIIIdwLc2A=="
+    Value: "xQvhm2BEhiuqov-pkOxZDkZ980FFJ-kqh1xFcKYE5nRiUYq28FnqFhsLg-kTS5-oOS-03TnGnduQ6Wrh99xjUQ=="
   - Name: Organization
     Type: BaseDataVariableType
     DataType: String
@@ -1111,7 +1111,7 @@ Children:
   - Name: Bucket
     Type: BaseDataVariableType
     DataType: String
-    Value: "remotebase_water"
+    Value: "remotebase_mes"
   - Name: MaxColumnNameLength
     Type: BaseDataVariableType
     DataType: UInt32
@@ -1170,4 +1170,4 @@ Children:
   - Name: ServerCertificate
     Type: BaseDataVariableType
     DataType: ResourceUri
-    Value: "ns=14;%PROJECTDIR%/PKI/Issuers/Certs/us-east-1-1.aws.cloud2.influxdata,pem.crt"
+    Value: "ns=14;%PROJECTDIR%/PKI/Issuers/Certs/us-east-1-1.aws.cloud2.influxdata.pem"
