@@ -1,29 +1,29 @@
-Name: alarms_grinding
-Id: g=ac16741932a6bea9034b8594bb0dcdf4
+Name: alarms_flotation
+Id: g=4b454481870513ba3e77e9b0366107ef
 Type: FolderType
 Children:
-- Name: incidents
-  Id: g=3b4ba26e0057eb45f818ae8dc8e7b157
+- Name: Water
+  Id: g=087be1f1025c49c28f87d7d1a783b42a
   Type: ExclusiveLevelAlarmController
   Children:
   - Name: InputValue
-    Id: g=b096a0e01d3c3398c062cda6341250b3
+    Id: g=d8d60ee24ed38af0ad36b8d45be9a67b
     Type: BaseDataVariableType
     DataType: Double
     Children:
     - Name: DynamicLink
-      Id: g=eb5ce31ee7ab26a6788e124d90851b5e
+      Id: g=b38335a803b6c388c289d3f9531e7afd
       Type: DynamicLink
       DataType: NodePath
-      Value: "../../../../Model/Variables_Molienda/Agua/Numero_Incidentes_molino"
+      Value: "../../../../../Model/Variables_Flotación/Agua/Agua_Total_flot"
       Children:
       - Name: Mode
-        Id: g=412f5cf3e2a2a8229bb29bed95f43caa
+        Id: g=c5d416617c89cda827a4863841adb920
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
   - Name: LastEvent
-    Id: g=ce4653ffff44c1fdc1915bdf9f7ad030
+    Id: g=2608fcd4a14f0c6a2341e26e7f766997
     Type: BaseDataVariableType
     DataType: BaseDataType
     ValueRank: OneDimension
@@ -62,42 +62,42 @@ Children:
     Target: ns=23;i=154
     Direction: Forward
   - Name: HighLimit
-    Id: g=86f0d953e6e74a0f6b7b2710bc34ff8e
+    Id: g=02fc96709e119a1913af924f7b264b67
     Type: BaseDataVariableType
     DataType: Double
-    Value: 2.0
+    Value: 1000.0
   - Name: Message
-    Id: g=15c35c890647132e7596c33765f2823f
+    Id: g=e60935c5c5b7baeeb2745a8c2395ef0d
     Type: BaseDataVariableType
     DataType: LocalizedText
     Children:
     - Name: HighStateMessage
-      Id: g=d259bc550458bb2e0a89e16e0ff60d67
+      Id: g=db6f94f9627c6a945f1faf32f581d452
       Type: BaseDataVariableType
       DataType: LocalizedText
-      Value: {"LocaleId":"en-US","Text":"High number of incidents"}
+      Value: {"LocaleId":"en-US","Text":"high water use"}
 - Name: performance
-  Id: g=d0c91d9ed41b7494e8e6c0db6e175baa
+  Id: g=ac060200facc3e2be91d42648de90e02
   Type: ExclusiveLevelAlarmController
   Children:
   - Name: InputValue
-    Id: g=73fafef4ed8621190c53fdb83c0d7e34
+    Id: g=d3ad3b8a586ad2483f6a30b8426f15ae
     Type: BaseDataVariableType
     DataType: Double
     Children:
     - Name: DynamicLink
-      Id: g=4a495af225809d5a2b7f5af4131e83bb
+      Id: g=b51b0826a54d5c7a472fa7b626277194
       Type: DynamicLink
       DataType: NodePath
-      Value: "../../../../Model/Variables_Molienda/Producción/Rendimiento_Molino"
+      Value: "../../../../../Model/Variables_Flotación/Producción/Rendimiento"
       Children:
       - Name: Mode
-        Id: g=a7a901ad3d085778af6ca4a6a5a3a92d
+        Id: g=2a554c81d54b78101da9a9094b7f453b
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
   - Name: LastEvent
-    Id: g=bf7b2432dfb6e0735886d7bb320ff42b
+    Id: g=bd493728ac2f3ce581d954af24c74d48
     Type: BaseDataVariableType
     DataType: BaseDataType
     ValueRank: OneDimension
@@ -136,27 +136,27 @@ Children:
     Target: ns=23;i=154
     Direction: Forward
   - Name: HighLimit
-    Id: g=9a84a911dcf18fe3c165b9e4f59b9b25
+    Id: g=9d57c0916013849c353adc933c5e738a
     Type: BaseDataVariableType
     DataType: Double
     Value: "NaN"
   - Name: Message
-    Id: g=c81fec0ce5335599b6139e234629ca19
+    Id: g=27b66135119cb1892af5e6307b3c851c
     Type: BaseDataVariableType
     DataType: LocalizedText
     Children:
     - Name: HighStateMessage
-      Id: g=00df459cabf6433392bab11a56424e5a
+      Id: g=fd7f6615e477bb5cc9967996a0f8aa90
       Type: BaseDataVariableType
       DataType: LocalizedText
       Value: {"LocaleId":"en-US","Text":""}
     - Name: LowStateMessage
-      Id: g=c087f85d4bb0e1a1a6751600c53ff826
+      Id: g=2fa7b3bc5ca74128b15099e99c77eb8f
       Type: BaseDataVariableType
       DataType: LocalizedText
       Value: {"LocaleId":"en-US","Text":"Low performance"}
   - Name: LowLimit
-    Id: g=4726ecefe696c0a11e894c7ed63cc555
+    Id: g=b69f977bfd52b55af639dbe06dea02fe
     Type: BaseDataVariableType
     DataType: Double
     Value: 50.0

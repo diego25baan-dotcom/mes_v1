@@ -3,7 +3,3 @@ Id: g=3293e7cd8de0bb06cc725e017a984470
 Type: AlarmsCategoryFolder
 Children:
 - File: all/all.yaml
-- File: alarms_grinding/alarms_grinding.yaml
-- File: alarms_flotation/alarms_flotation.yaml
-- File: alarms_foundry/alarms_foundry.yaml
-- File: alarms_electrowinning/alarms_electrowinning.yaml

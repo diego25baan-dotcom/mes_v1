@@ -59,7 +59,7 @@ Children:
       - Name: RecordLimit
         Type: BaseDataVariableType
         DataType: UInt32
-        Value: 100000
+        Value: 10000
     - Name: AlarmsEventLogger_grinding
       Type: SQLiteStoreTable
       Children:
@@ -111,7 +111,7 @@ Children:
       - Name: RecordLimit
         Type: BaseDataVariableType
         DataType: UInt32
-        Value: 100000
+        Value: 10000
     - Name: AlarmsEventLogger_flotation
       Type: SQLiteStoreTable
       Children:
@@ -160,6 +160,10 @@ Children:
         - Name: LocalTime
           Type: StoreColumn
           DataType: DateTime
+      - Name: RecordLimit
+        Type: BaseDataVariableType
+        DataType: UInt32
+        Value: 10000
     - Name: AlarmsEventLogger_foundry
       Type: SQLiteStoreTable
       Children:
@@ -208,6 +212,10 @@ Children:
         - Name: LocalTime
           Type: StoreColumn
           DataType: DateTime
+      - Name: RecordLimit
+        Type: BaseDataVariableType
+        DataType: UInt32
+        Value: 10000
     - Name: AlarmsEventLogger_electrowinning
       Type: SQLiteStoreTable
       Children:
@@ -256,6 +264,10 @@ Children:
         - Name: LocalTime
           Type: StoreColumn
           DataType: DateTime
+      - Name: RecordLimit
+        Type: BaseDataVariableType
+        DataType: UInt32
+        Value: 10000
   - Class: Reference
     Target: ns=19;i=30
     Direction: Forward
@@ -317,6 +329,9 @@ Children:
   - Class: Reference
     Target: ns=17;i=59
     Direction: Forward
+  - Name: InMemory
+    Type: BaseDataVariableType
+    DataType: Boolean
 - Name: Database
   Id: g=b378678d1541e876aa2b70c262cd4808
   Type: InfluxDBStoreRemote
@@ -1103,7 +1118,6 @@ Children:
   - Name: Token
     Type: BaseDataVariableType
     DataType: Password
-    Value: "xQvhm2BEhiuqov-pkOxZDkZ980FFJ-kqh1xFcKYE5nRiUYq28FnqFhsLg-kTS5-oOS-03TnGnduQ6Wrh99xjUQ=="
   - Name: Organization
     Type: BaseDataVariableType
     DataType: String

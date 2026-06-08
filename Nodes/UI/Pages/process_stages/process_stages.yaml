@@ -1724,10 +1724,12 @@ Children:
         - Name: Model
           Type: NodePointer
           DataType: NodeId
+          Value: "/Objects/mes_v1/Loggers/AlarmsEventLogger_grinding"
           Children:
           - Name: ItemKind
             Type: PropertyType
             DataType: NodeId
+            Value: "/Objects/mes_v1/Loggers/AlarmsEventLogger_grinding/Enabled"
           - Name: Kind
             Type: PropertyType
             DataType: NodeId
@@ -2226,6 +2228,7 @@ Children:
           - Name: Kind
             Type: PropertyType
             DataType: NodeId
+            Value: "/Objects/mes_v1/Loggers/AlarmsEventLogger_grinding/Enabled"
         - Name: SortOrder
           Type: BaseDataVariableType
           DataType: SortOrderEnum
@@ -2237,6 +2240,7 @@ Children:
           - Name: Kind
             Type: PropertyType
             DataType: NodeId
+            Value: "/Objects/mes_v1/Loggers/AlarmsEventLogger_grinding/Enabled"
         - Name: UISelectedItem
           Type: BaseDataVariableType
           DataType: NodeId
