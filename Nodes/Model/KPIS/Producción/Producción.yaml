@@ -59,7 +59,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../NetLogic/Sim_prod/KPI_PROD_001 PRODUCTION "
+    Value: "../../../../NetLogic/Sim_prod/KPI_PROD_001 PRODUCTION"
     Children:
     - Name: Mode
       Type: BaseVariableType

@@ -9,7 +9,7 @@ using FTOptix.Core;
 using FTOptix.HMIProject;
 #endregion
 
-public class DataLoggerExporter : BaseNetLogic
+public class DataLoggerExporter1 : BaseNetLogic
 {
     /// <summary>
     /// This method exports data from a data logger to a CSV file.

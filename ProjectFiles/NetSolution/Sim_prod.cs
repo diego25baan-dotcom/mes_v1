@@ -42,13 +42,13 @@ public class Sim_prod : BaseNetLogic
         // KPIs
         // ==================================================
 
-        KPI_PROD_001 =LogicObject.GetVariable("KPI_PROD_001");
+        KPI_PROD_001 =LogicObject.GetVariable("KPI_PROD_001 PRODUCTION");
 
-        KPI_PROD_002 =LogicObject.GetVariable("KPI_PROD_002");
+        KPI_PROD_002 =LogicObject.GetVariable("KPI_PROD_002 RECOVERY");
 
-        KPI_PROD_003 =LogicObject.GetVariable("KPI_PROD_003");
+        KPI_PROD_003 =LogicObject.GetVariable("KPI_PROD_003 OEE");
 
-        KPI_PROD_004 =LogicObject.GetVariable("KPI_PROD_004");
+        KPI_PROD_004 =LogicObject.GetVariable("KPI_PROD_004 COSTS PER TON");
 
         simulationTask =new PeriodicTask(Simulation, 250, LogicObject);
 

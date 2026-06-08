@@ -482,7 +482,7 @@ Children:
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
-  - Name: 'KPI_PROD_001 PRODUCTION '
+  - Name: KPI_PROD_001 PRODUCTION
     Type: BaseDataVariableType
     DataType: Float
   - Name: KPI_PROD_002 RECOVERY
