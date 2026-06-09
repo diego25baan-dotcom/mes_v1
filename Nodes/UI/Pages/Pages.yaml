@@ -25615,7 +25615,7 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+                Value: "/Objects/mes_v1/Model/KPIS/Producción/KPI_PROD_003 OEE"
             - Name: TextColor
               Type: BaseDataVariableType
               DataType: Color
@@ -25692,7 +25692,7 @@ Children:
               Type: BaseDataVariableType
               DataType: LocalizedText
               ModellingRule: Optional
-              Value: {"LocaleId":"en-US","Text":"Availability"}
+              Value: {"LocaleId":"en-US","Text":"Energy consumed"}
             - Name: TextColor
               Type: BaseDataVariableType
               DataType: Color
@@ -25732,7 +25732,7 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+                Value: "/Objects/mes_v1/Model/KPIS/ESG/Energia_kWh_tot"
             - Name: TextColor
               Type: BaseDataVariableType
               DataType: Color
@@ -25799,7 +25799,7 @@ Children:
               Type: BaseDataVariableType
               DataType: LocalizedText
               ModellingRule: Optional
-              Value: {"LocaleId":"en-US","Text":"Current production"}
+              Value: {"LocaleId":"en-US","Text":"Audit compiliance"}
             - Name: TextColor
               Type: BaseDataVariableType
               DataType: Color
@@ -25839,7 +25839,7 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+                Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_004 AUDIT COMPLIANCE"
             - Name: TextColor
               Type: BaseDataVariableType
               DataType: Color
@@ -25906,7 +25906,7 @@ Children:
               Type: BaseDataVariableType
               DataType: LocalizedText
               ModellingRule: Optional
-              Value: {"LocaleId":"en-US","Text":"Quality"}
+              Value: {"LocaleId":"en-US","Text":"CO2"}
             - Name: TextColor
               Type: BaseDataVariableType
               DataType: Color
@@ -25946,7 +25946,7 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+                Value: "/Objects/mes_v1/Model/KPIS/ESG/CO2_total"
             - Name: TextColor
               Type: BaseDataVariableType
               DataType: Color
@@ -26013,7 +26013,7 @@ Children:
               Type: BaseDataVariableType
               DataType: LocalizedText
               ModellingRule: Optional
-              Value: {"LocaleId":"en-US","Text":"Quality"}
+              Value: {"LocaleId":"en-US","Text":"Performance"}
             - Name: TextColor
               Type: BaseDataVariableType
               DataType: Color
@@ -26053,7 +26053,7 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "/Objects/mes_v1/Model/KPIS/ESG/KPI_ESG_001 ENV iNTENSITY"
+                Value: "/Objects/mes_v1/Model/KPIS/Producción/Rendimiento"
             - Name: TextColor
               Type: BaseDataVariableType
               DataType: Color
