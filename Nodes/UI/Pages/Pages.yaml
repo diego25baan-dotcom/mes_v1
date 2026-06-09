@@ -25564,20 +25564,10 @@ Children:
             Type: BaseDataVariableType
             DataType: Color
             Value: "#13232f"
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_FILL"
           - Name: BorderColor
             Type: BaseDataVariableType
             DataType: Color
             Value: "#2a3f4f"
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_BORDER"
           - Name: BorderThickness
             Type: BaseDataVariableType
             DataType: Size
@@ -25630,11 +25620,6 @@ Children:
               Type: BaseDataVariableType
               DataType: Color
               Value: "#ffffff"
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_TEXT"
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -25691,11 +25676,6 @@ Children:
             Type: BaseDataVariableType
             DataType: Color
             Value: "#13232f"
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "/Objects/mes_v1/Model/colores/ESG/KPI02_ESG_C_FILL"
           - Name: BorderThickness
             Type: BaseDataVariableType
             DataType: Size
@@ -25705,11 +25685,6 @@ Children:
             Type: BaseDataVariableType
             DataType: Color
             Value: "#2a3f4f"
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "/Objects/mes_v1/Model/colores/ESG/KPI02_ESG_C_BORDER"
           - Name: Label1
             Type: Label
             Children:
@@ -25762,11 +25737,6 @@ Children:
               Type: BaseDataVariableType
               DataType: Color
               Value: "#ffffff"
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_TEXT"
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -25813,11 +25783,6 @@ Children:
             Type: BaseDataVariableType
             DataType: Color
             Value: "#13232f"
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "/Objects/mes_v1/Model/colores/ESG/KPI02_ESG_C_FILL"
           - Name: BorderThickness
             Type: BaseDataVariableType
             DataType: Size
@@ -25827,11 +25792,6 @@ Children:
             Type: BaseDataVariableType
             DataType: Color
             Value: "#2a3f4f"
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "/Objects/mes_v1/Model/colores/ESG/KPI02_ESG_C_BORDER"
           - Name: Label1
             Type: Label
             Children:
@@ -25884,11 +25844,6 @@ Children:
               Type: BaseDataVariableType
               DataType: Color
               Value: "#ffffff"
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_TEXT"
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -25935,11 +25890,6 @@ Children:
             Type: BaseDataVariableType
             DataType: Color
             Value: "#13232f"
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "/Objects/mes_v1/Model/colores/ESG/KPI02_ESG_C_FILL"
           - Name: BorderThickness
             Type: BaseDataVariableType
             DataType: Size
@@ -25949,11 +25899,6 @@ Children:
             Type: BaseDataVariableType
             DataType: Color
             Value: "#2a3f4f"
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "/Objects/mes_v1/Model/colores/ESG/KPI02_ESG_C_BORDER"
           - Name: Label1
             Type: Label
             Children:
@@ -26006,11 +25951,6 @@ Children:
               Type: BaseDataVariableType
               DataType: Color
               Value: "#ffffff"
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_TEXT"
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -26057,11 +25997,6 @@ Children:
             Type: BaseDataVariableType
             DataType: Color
             Value: "#13232f"
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "/Objects/mes_v1/Model/colores/ESG/KPI02_ESG_C_FILL"
           - Name: BorderThickness
             Type: BaseDataVariableType
             DataType: Size
@@ -26071,11 +26006,6 @@ Children:
             Type: BaseDataVariableType
             DataType: Color
             Value: "#2a3f4f"
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "/Objects/mes_v1/Model/colores/ESG/KPI02_ESG_C_BORDER"
           - Name: Label1
             Type: Label
             Children:
@@ -26128,11 +26058,6 @@ Children:
               Type: BaseDataVariableType
               DataType: Color
               Value: "#ffffff"
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_TEXT"
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -30140,11 +30065,6 @@ Children:
               Type: BaseDataVariableType
               DataType: Color
               Value: "#ffffff"
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_TEXT"
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -30169,6 +30089,14 @@ Children:
             DataType: Size
             ModellingRule: Optional
             Value: 10.0
+          - Name: Visible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ModellingRule: Optional
+          - Name: Enabled
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ModellingRule: Optional
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
@@ -30261,11 +30189,6 @@ Children:
               Type: BaseDataVariableType
               DataType: Color
               Value: "#ffffff"
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_TEXT"
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -30290,6 +30213,14 @@ Children:
             DataType: Size
             ModellingRule: Optional
             Value: 10.0
+          - Name: Visible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ModellingRule: Optional
+          - Name: Enabled
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ModellingRule: Optional
         - Name: Rectangle3
           Type: Rectangle
           Children:
@@ -30373,11 +30304,6 @@ Children:
               Type: BaseDataVariableType
               DataType: Color
               Value: "#ffffff"
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_TEXT"
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -30402,6 +30328,14 @@ Children:
             DataType: Size
             ModellingRule: Optional
             Value: 10.0
+          - Name: Visible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ModellingRule: Optional
+          - Name: Enabled
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ModellingRule: Optional
         - Name: Rectangle4
           Type: Rectangle
           Children:
@@ -30485,11 +30419,6 @@ Children:
               Type: BaseDataVariableType
               DataType: Color
               Value: "#ffffff"
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_TEXT"
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -30514,6 +30443,14 @@ Children:
             DataType: Size
             ModellingRule: Optional
             Value: 10.0
+          - Name: Visible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ModellingRule: Optional
+          - Name: Enabled
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ModellingRule: Optional
         - Name: Rectangle5
           Type: Rectangle
           Children:
@@ -30597,11 +30534,6 @@ Children:
               Type: BaseDataVariableType
               DataType: Color
               Value: "#ffffff"
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_TEXT"
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -30626,6 +30558,14 @@ Children:
             DataType: Size
             ModellingRule: Optional
             Value: 10.0
+          - Name: Visible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ModellingRule: Optional
+          - Name: Enabled
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ModellingRule: Optional
         - Name: Rectangle6
           Type: Rectangle
           Children:
@@ -30709,11 +30649,6 @@ Children:
               Type: BaseDataVariableType
               DataType: Color
               Value: "#ffffff"
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_TEXT"
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -30738,6 +30673,14 @@ Children:
             DataType: Size
             ModellingRule: Optional
             Value: 10.0
+          - Name: Visible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ModellingRule: Optional
+          - Name: Enabled
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ModellingRule: Optional
         - Name: Rectangle7
           Type: Rectangle
           Children:
@@ -30821,11 +30764,6 @@ Children:
               Type: BaseDataVariableType
               DataType: Color
               Value: "#ffffff"
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "/Objects/mes_v1/Model/colores/ESG/KPI01_ESG_C_TEXT"
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -30850,6 +30788,14 @@ Children:
             DataType: Size
             ModellingRule: Optional
             Value: 10.0
+          - Name: Visible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ModellingRule: Optional
+          - Name: Enabled
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ModellingRule: Optional
       - Name: HorizontalLayout2
         Type: RowLayout
         Children:
