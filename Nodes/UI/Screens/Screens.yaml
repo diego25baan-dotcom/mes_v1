@@ -4855,12 +4855,12 @@ Children:
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
-    Value: 590.0
+    Value: 605.0
   - Name: Height
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
-    Value: 220.0
+    Value: 420.0
   - Name: BorderColor
     Type: BaseDataVariableType
     DataType: Color

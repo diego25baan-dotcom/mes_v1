@@ -1,0 +1,324 @@
+Name: Equipment
+Id: g=8409b7ea70008fb91a5b8d3fe2ae66ed
+Type: FolderType
+Children:
+- Name: band speed
+  Id: g=a534005726cca12b3fffd197741eedae
+  Type: ExclusiveLevelAlarmController
+  Children:
+  - Name: InputValue
+    Id: g=bd25310d14ddd57f50f011de900b7406
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=ba7b01c0c387d93473682da8a0306cff
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Model/Variables_Extracción/Energía/Velocidad_banda_extracción_mps"
+      Children:
+      - Name: Mode
+        Id: g=33a342edac2b1357d432442d28484a86
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=8f67896be34fb8f3d04b5ce637de626c
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=154
+    Direction: Forward
+  - Name: HighLimit
+    Id: g=e0aea5b9850739f1310de4dd44de1d53
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 1.5
+  - Name: Message
+    Id: g=c0f50e1671bf960e8f3de10b7ebd9a3d
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: HighStateMessage
+      Id: g=edd4b02808bdcb295cf76b91d01c9de1
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Velocidad recomendada de la banda excedida"}
+  - Name: LatchingEnabled
+    Id: g=86af700cb4959396c2aff5c9c3d30277
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: Flotation water consumed
+  Id: g=e6be7d04704175e222642b8b8a07c5b7
+  Type: ExclusiveLevelAlarmController
+  Children:
+  - Name: InputValue
+    Id: g=639b04d9455266477614f53be42e5cc4
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=34f489a2ca09eb305490ba82d4ec3405
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Model/Variables_Flotación/Agua/Agua_Total_flot"
+      Children:
+      - Name: Mode
+        Id: g=239103e220b3815d36149212daf2ad35
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=95d871d09a2443fd4ca19aaee8f2f5dd
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=154
+    Direction: Forward
+  - Name: HighLimit
+    Id: g=75592226716a580ac982392f710bcb92
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 500.0
+  - Name: Message
+    Id: g=2f897c9a333d8971007fb5fef0917e8a
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: HighStateMessage
+      Id: g=d74a694169af0abde93e1f7b4df894e3
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Water consumed exceeds the configured high limit."}
+- Name: 'Power-foundry'
+  Id: g=660f39646bfe1f5caa5bed9494f7644e
+  Type: ExclusiveLevelAlarmController
+  Children:
+  - Name: InputValue
+    Id: g=e5283d6e7558f46ec09e8f700ecad9af
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=f73a3ac0760fc8dba94b44f32e2774fc
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Model/Variables_Fundición/Energía/Potencia_total_fundición_kW"
+      Children:
+      - Name: Mode
+        Id: g=2263429dd20899e95bae01ef8b04c2f9
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=90a1dc9847563accc09e4711c0b9c839
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=154
+    Direction: Forward
+  - Name: LowLimit
+    Id: g=29dc020a3b4f5a6c23f66d37d80716bc
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 1800.0
+  - Name: HighLimit
+    Id: g=c5e97e0838d7280b76f2f316512de6d2
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 3500.0
+  - Name: Message
+    Id: g=2daa83ae9302d892e789fe58e1ca90c9
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: HighStateMessage
+      Id: g=a73b459f402b4094f9e3958077951104
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Foundry power consumption is above the normal operating range."}
+    - Name: LowStateMessage
+      Id: g=ff25d71d85940eea350b3a24473cd538
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Foundry power consumption is below the normal operating range."}
+- Name: Flotation water consumed1
+  Id: g=8a2b72e4ce22893644e47d7111ce4450
+  Type: ExclusiveLevelAlarmController
+  Children:
+  - Name: InputValue
+    Id: g=e972698be3ad200945b69b4042566eef
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=63da3a1e8ac90e0cc9cae8aca1ba48f9
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Model/Variables_Flotación/Agua/Caudal_Agua_Ls"
+      Children:
+      - Name: Mode
+        Id: g=b2636a3e5b9ee641827c1a751d9ba342
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=bb2a76ec8d3869e7aeeb94204aa3b36f
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=154
+    Direction: Forward
+  - Name: HighLimit
+    Id: g=51d4c3a2aa99679216367b64b7957c68
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 80.0
+  - Name: Message
+    Id: g=00c337ccc519bea4c1ef49faf41039ef
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: HighStateMessage
+      Id: g=ace07c6030c2b9a014cff26c68cabaff
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Flotation water flow rate exceeds the configured high limit."}
+    - Name: LowStateMessage
+      Id: g=fa27e0635921ca7f4690cfef8b2e3cf2
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Flotation water flow rate is below the configured low limit"}
+  - Name: LowLimit
+    Id: g=fb3072667fe46b0fd1573d2f2be8bba7
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 25.0
