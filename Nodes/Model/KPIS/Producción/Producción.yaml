@@ -39,6 +39,7 @@ Children:
 - Name: Costo_total
   Type: BaseDataVariableType
   DataType: Float
+  Value: 2.0
 - Name: Toneladas_producidas
   Type: BaseDataVariableType
   DataType: Float

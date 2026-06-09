@@ -8,7 +8,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../NetLogic/Sim_esg/CO2_total"
+    Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/CO2_Total"
     Children:
     - Name: Mode
       Type: BaseVariableType
