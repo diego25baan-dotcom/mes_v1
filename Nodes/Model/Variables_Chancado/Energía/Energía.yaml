@@ -69,6 +69,16 @@ Children:
 - Name: Factor_Emisión_Chancado
   Type: BaseDataVariableType
   DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/CO2_chancado"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
 - Name: Potencia_Renovable_Chancado
   Type: BaseDataVariableType
   DataType: Int32
@@ -102,7 +112,7 @@ Children:
   - Name: DynamicLink
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Toneladas_Chan_entrada"
+    Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/FeedRate_Chan_tph"
     Children:
     - Name: Mode
       Type: BaseVariableType

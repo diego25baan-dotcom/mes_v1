@@ -362,7 +362,6 @@ Children:
         DataType: NodePath
         Value: "..@NodeId"
     - Name: ScrollView
-      Id: g=352fcb44be0ddda65a511dacd52295ba
       Type: ScrollView
       Children:
       - Name: Width
@@ -2206,7 +2205,6 @@ Children:
                   ModellingRule: Optional
                   Value: 3
               - Name: Message
-                Id: g=58a32662e7ff9c0b49873d326ee27715
                 Type: ScrollView
                 Children:
                 - Name: Width

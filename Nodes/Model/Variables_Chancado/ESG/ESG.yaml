@@ -4,6 +4,16 @@ Children:
 - Name: Energía_kWh_Chancado
   Type: BaseDataVariableType
   DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Energia_Chanc_kWh"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
 - Name: Toneladas_Producidas_Chancado
   Type: BaseDataVariableType
   DataType: Int32
@@ -17,15 +27,29 @@ Children:
       Type: BaseVariableType
       DataType: DynamicLinkMode
       Value: 2
-- Name: Variable3
+- Name: CO2
   Type: BaseDataVariableType
   DataType: Int32
-- Name: Variable4
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/CO2_chancado"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Potencia_kW
   Type: BaseDataVariableType
   DataType: Int32
-- Name: Variable5
-  Type: BaseDataVariableType
-  DataType: Int32
-- Name: Variable6
-  Type: BaseDataVariableType
-  DataType: Int32
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Potencia_total_Chancado"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
