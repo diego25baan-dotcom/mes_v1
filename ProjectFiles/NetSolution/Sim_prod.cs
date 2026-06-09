@@ -173,6 +173,8 @@ public class Sim_prod : BaseNetLogic
 
     private double Costo_total_val = 0.0;
     private double Toneladas_producidas_val = 0.0;
+    private double Toneladas_producidas_molienda_val = 0.0;
+
 
     // ======================================================
     // Task

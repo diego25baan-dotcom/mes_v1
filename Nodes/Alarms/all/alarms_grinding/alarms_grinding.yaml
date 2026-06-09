@@ -2,7 +2,7 @@ Name: alarms_grinding
 Id: g=ac16741932a6bea9034b8594bb0dcdf4
 Type: FolderType
 Children:
-- Name: incidents
+- Name: Grinding incidents
   Id: g=3b4ba26e0057eb45f818ae8dc8e7b157
   Type: ExclusiveLevelAlarmController
   Children:
@@ -76,7 +76,7 @@ Children:
       Type: BaseDataVariableType
       DataType: LocalizedText
       Value: {"LocaleId":"en-US","Text":"High number of incidents"}
-- Name: performance
+- Name: Grinding performance
   Id: g=d0c91d9ed41b7494e8e6c0db6e175baa
   Type: ExclusiveLevelAlarmController
   Children:
@@ -160,3 +160,77 @@ Children:
     Type: BaseDataVariableType
     DataType: Double
     Value: 50.0
+- Name: Foundry CO2
+  Id: g=b12aefee37bae22df04b7136b749e754
+  Type: ExclusiveLevelAlarmController
+  Children:
+  - Name: InputValue
+    Id: g=c8ba46f10fd963559deabc159b48b602
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=78cbe03e1ca43aba3651434bc887c2c5
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../../Model/Variables_Electroobtención/ESG/CO2"
+      Children:
+      - Name: Mode
+        Id: g=af81b8519e55fe2453782b0746324fbe
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=53e4d4f25d5e12ef323e85795b442e49
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=154
+    Direction: Forward
+  - Name: HighLimit
+    Id: g=f92ded9a5f5e3a3289d2ff8742688919
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 3000.0
+  - Name: Message
+    Id: g=ca2403b90f5e60a28fb377ee81b4d0a6
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: HighStateMessage
+      Id: g=b6ee480837eace3b3d260392d9fb81b4
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Grinding CO₂ emissions are above the sustainability target."}

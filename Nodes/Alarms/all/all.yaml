@@ -2,28 +2,28 @@ Name: all
 Id: g=c2408dd2e309e87a224ffef0013f53db
 Type: FolderType
 Children:
-- Name: Alarm_velocidad_banda
-  Id: g=107242b2f9794bb1877dce347f9b0c9d
+- Name: Total power
+  Id: g=f4e98d5320b5193778a80830df3b4ebf
   Type: ExclusiveLevelAlarmController
   Children:
   - Name: InputValue
-    Id: g=42f8bb0e513fab9d50a003762f210218
+    Id: g=d8eb08323a3fd2f6d9a0c4047bef694a
     Type: BaseDataVariableType
     DataType: Double
     Children:
     - Name: DynamicLink
-      Id: g=812c6f4440af8602cf29383aca0c7f9f
+      Id: g=a318468d10a8b18147d6377e2c63cd0e
       Type: DynamicLink
       DataType: NodePath
-      Value: "../../../../Model/KPIS/Energía/Velocidad_Banda_mps"
+      Value: "../../../../Model/KPIS/Energía/KPI_EN_001 CONSUMO"
       Children:
       - Name: Mode
-        Id: g=994e7052174acee2490270326f2bf7f9
+        Id: g=29d53c3dd04e554bf49ca77730bfb3ba
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
   - Name: LastEvent
-    Id: g=d0370e256c10a2e6ac69f0a2b99c65e3
+    Id: g=f62d188da339085f79d0e98ef8230820
     Type: BaseDataVariableType
     DataType: BaseDataType
     ValueRank: OneDimension
@@ -62,24 +62,643 @@ Children:
     Target: ns=23;i=154
     Direction: Forward
   - Name: HighLimit
-    Id: g=b444b45424e92e1db21a44e11b946454
+    Id: g=6e1e3df44aa2bc22b993c8b711ce32f9
     Type: BaseDataVariableType
     DataType: Double
-    Value: 1.5
+    Value: 12000.0
   - Name: Message
-    Id: g=c609b073d894cc80ca30d470dc98dad9
+    Id: g=3fa9ffebb6ac1fb2e98d93ef3413cc44
     Type: BaseDataVariableType
     DataType: LocalizedText
     Children:
     - Name: HighStateMessage
-      Id: g=1d70a7461c355484144809d8763cd2f9
+      Id: g=2b75852201a8c7bab5fd67beeb7ce5f9
       Type: BaseDataVariableType
       DataType: LocalizedText
-      Value: {"LocaleId":"en-US","Text":"Velocidad recomendada de la banda excedida"}
-  - Name: LatchingEnabled
-    Id: g=41aecf56ec93e802f9b799504b1e23f5
+      Value: {"LocaleId":"en-US","Text":"Total power consumption is above the normal operating range."}
+    - Name: LowStateMessage
+      Id: g=f7fd9ef78e658ded6d4dbf312c6a1a1f
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Total power consumption is below the normal operating range."}
+  - Name: LowLimit
+    Id: g=6fd396d6d77b88fab439106952a7bb9a
     Type: BaseDataVariableType
-    DataType: Boolean
+    DataType: Double
+    Value: 1800.0
+- Name: Renewable power
+  Id: g=d77db60e84f0bb6eeed0497c318b21c5
+  Type: ExclusiveLevelAlarmController
+  Children:
+  - Name: InputValue
+    Id: g=b9d967953ba0c89718ed6bd2b3a59d4b
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=a36d20ff36b14bc02c90f7be558c144f
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Model/KPIS/Energía/Potencia_Renovable_kW"
+      Children:
+      - Name: Mode
+        Id: g=18b2e4885c145e781010593574808cee
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=d6400a167c638cb22e88c917658a8368
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=154
+    Direction: Forward
+  - Name: HighLimit
+    Id: g=fca2e7f09866a646019624ad55879da6
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 6000.0
+  - Name: Message
+    Id: g=b4388a54b81e208c5a933fba7c23fb0f
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: HighStateMessage
+      Id: g=5ad0fa520c330db026c8f7f90e4315ed
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Renewable energy generation is above the target range"}
+    - Name: LowStateMessage
+      Id: g=9082cb24665050cd9010b7fa9821c052
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Renewable energy generation is below the target range."}
+  - Name: LowLimit
+    Id: g=5f1537b709d483be6a44ea33eb06d656
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 3000.0
+- Name: Total water consumed
+  Id: g=3288cad7782fb637b90fb5b1cbfb4ed9
+  Type: ExclusiveLevelAlarmController
+  Children:
+  - Name: InputValue
+    Id: g=1456d9b3927b01051a476fc989a7af1f
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=b8d69e5a1c47403250f3e025c39afb7b
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Model/KPIS/Agua/Agua_total"
+      Children:
+      - Name: Mode
+        Id: g=4f1f8051cbc1a8d45b899e406bbe9a59
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=0bfbad51d58b0b319a5ea7b94ac3fc92
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=154
+    Direction: Forward
+  - Name: HighLimit
+    Id: g=c0ae0df7bcd71079bc2ce42ca9af468a
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 900.0
+  - Name: Message
+    Id: g=9169821bea10144ff800902849f7582d
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: HighStateMessage
+      Id: g=61d95f7e71125c648ffa64e68dac20c5
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Total water consumption exceeds the configured high limit."}
+    - Name: LowStateMessage
+      Id: g=b18a76770eaa3558898d5551552c19aa
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Total water consumption is below the configured low limit."}
+  - Name: LowLimit
+    Id: g=53ea93db0b2bfbe52eae58840e7df445
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 1500.0
+- Name: KPI_WA_002_reutilization
+  Id: g=e34ad1cc66b363de11a08daff0511230
+  Type: ExclusiveLevelAlarmController
+  Children:
+  - Name: InputValue
+    Id: g=758ef8de3c0f487cde2f78b4ad64deac
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=15b6d115cc808c4f27656b15197cdc94
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Model/KPIS/Agua/KPI_WA_002_reutilizacion"
+      Children:
+      - Name: Mode
+        Id: g=7cd8d337ddb90a875d9886185b404ee9
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=c8ce438ad55f3cd4ec225ea1d2d3371f
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=154
+    Direction: Forward
+  - Name: LowLimit
+    Id: g=f5081bd9cac226944116d00563352a6b
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 70.0
+  - Name: Message
+    Id: g=c79bc27d2f952f6333d1e7555367900b
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: LowStateMessage
+      Id: g=ad07d7fc7de7f574628d8d3e80bfb6fd
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Water reuse rate is below the target threshold."}
+- Name: number of incidents
+  Id: g=8123a909a05248929fee2f85063092f0
+  Type: ExclusiveLevelAlarmController
+  Children:
+  - Name: InputValue
+    Id: g=12c9a7b880725bae82b9a4a22538f786
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=ee7579c5565d270f837d077dbfdda382
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Model/KPIS/Agua/Numero_incidentes"
+      Children:
+      - Name: Mode
+        Id: g=40192b5064ec474cc231d37835b462f4
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=7e8f581a79a268c7553645f5812e36fa
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=154
+    Direction: Forward
+  - Name: HighLimit
+    Id: g=26bda59ec37e92ba3f1516942f6cd328
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 5.0
+  - Name: Message
+    Id: g=9fc6898cc007642d9bc92e886d522da8
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: HighStateMessage
+      Id: g=3fa34b2e7d68f2122e75a4bca29119f6
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Incident rate is above the expected range."}
+- Name: CO2
+  Id: g=84f8bb123008ef596907d3e6b96301e6
+  Type: ExclusiveLevelAlarmController
+  Children:
+  - Name: InputValue
+    Id: g=651515d7243a522d06ec225b7621a8e7
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=e26900d06f835240a6dfb504e67b458d
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Model/KPIS/ESG/CO2_total"
+      Children:
+      - Name: Mode
+        Id: g=9ff014e866c69e38d66328f989cae8a0
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=2e33a548abd05783e6e5063a5e73d660
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=154
+    Direction: Forward
+  - Name: HighLimit
+    Id: g=a8277d9d3fc0877f02b2368cec9ba40b
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 2000.0
+  - Name: Message
+    Id: g=06bde622beab71e8bbf8a0e1972bad1a
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: HighStateMessage
+      Id: g=d2eabc6472bc468b052b83c16df7a263
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"CO₂ emissions are above the sustainability target."}
+- Name: Exploited area
+  Id: g=5a6dc38d2128bcf8a6f77ef5eebbf9ad
+  Type: ExclusiveLevelAlarmController
+  Children:
+  - Name: InputValue
+    Id: g=e0facb5555bd7147d77a8ac75d6ca694
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=a0a59fe76e03ec63859907f1fde09e23
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Model/KPIS/ESG/Area_explotada"
+      Children:
+      - Name: Mode
+        Id: g=dd352e234ea62db00330017ff8e2c8ac
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=23704c0666b090a9c7cd8b06c217b92d
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=154
+    Direction: Forward
+  - Name: HighLimit
+    Id: g=04a9a278ded7447f9daf3f1e06838eed
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 50000.0
+  - Name: Message
+    Id: g=7cfbd77166b6b9863e0c2d7df11c5132
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: HighStateMessage
+      Id: g=c03045044f4d43030bdd5f3fcdf4ef75
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Exploited area exceeds the configured high limit."}
+- Name: Restored area
+  Id: g=992f37baafbd2d3ba30d1c296654c077
+  Type: ExclusiveLevelAlarmController
+  Children:
+  - Name: InputValue
+    Id: g=c40f813890e2f1d557be0a438cc7cdc0
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=456dc53791ee3353afa8b88af155a88b
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Model/KPIS/ESG/Area_restaurada"
+      Children:
+      - Name: Mode
+        Id: g=4f7391cdc4495d2302b4da97e87e8615
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=740321b6f2a7cb6b0dfb61a7228991a3
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=154
+    Direction: Forward
+  - Name: LowLimit
+    Id: g=5dd8c972dec9b7592bfd34f6a8521303
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 20000.0
+  - Name: Message
+    Id: g=25096a4712c3d03cff6ff7e3002c3802
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: LowStateMessage
+      Id: g=e4154e4f22c03de7226ea4ea70674a14
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Restored area exceeds the configured low limit."}
+- Name: Compliant audits
+  Id: g=618bd688bd1950fc508628caa2582d54
+  Type: ExclusiveLevelAlarmController
+  Children:
+  - Name: InputValue
+    Id: g=d8920a6caf4773acca9999634e564e4d
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=ee2173957c5ec453a74eca41dcc3ea35
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Model/KPIS/ESG/KPI_ESG_004 AUDIT COMPLIANCE"
+      Children:
+      - Name: Mode
+        Id: g=6819f30fc9c6a09e49b86f6401c6e625
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=d8f98ead601381f1baf8a855ee44f34f
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=154
+    Direction: Forward
+  - Name: LowLimit
+    Id: g=f42b5066f100ab947503ec62f7c23963
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 80.0
+  - Name: Message
+    Id: g=dfc0a67c09e0a693cf5a730e5f803d7e
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: LowStateMessage
+      Id: g=c9c0bcd896541c5e5f16bf7dfc138bb3
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Compliant audits are below the configured low limit."}
+- File: extraction_and_crushing/extraction_and_crushing.yaml
 - File: alarms_grinding/alarms_grinding.yaml
 - File: alarms_flotation/alarms_flotation.yaml
 - File: alarms_foundry/alarms_foundry.yaml

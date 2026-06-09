@@ -2784,7 +2784,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"%Renewable Energy=Total Energy/Renewable Energy​×100"}
+        Value: {"LocaleId":"en-US","Text":"%Renewable Energy=Renewable Energy/Total energy​×100"}
     - Name: Label5
       Type: Label
     - Name: Label6

@@ -2,7 +2,7 @@ Name: alarms_foundry
 Id: g=a519f2bf0324cbf50c2501478d8fd0bf
 Type: FolderType
 Children:
-- Name: ExclusiveLevelAlarm1
+- Name: 'Power-foundry'
   Id: g=de899525b098f64b11c26b9596872cfc
   Type: ExclusiveLevelAlarmController
   Children:
@@ -10,6 +10,18 @@ Children:
     Id: g=646f01ae354449fb4be68a7eeff24ee7
     Type: BaseDataVariableType
     DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=0a29593b14ea1b6fa68420f6a62ea5a5
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../../Model/Variables_Fundición/Energía/Potencia_total_fundición_kW"
+      Children:
+      - Name: Mode
+        Id: g=46c937ce4814a8c30afe0747f586d07c
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
   - Name: LastEvent
     Id: g=b988345f2c3729355e040017815def78
     Type: BaseDataVariableType
@@ -49,3 +61,186 @@ Children:
   - Class: Reference
     Target: ns=23;i=154
     Direction: Forward
+  - Name: LowLimit
+    Id: g=9dc81b1a6fbc4a119c86b778413d84fe
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 1800.0
+  - Name: HighLimit
+    Id: g=60b38969037bd9ea1d3455af7e73df55
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 3500.0
+  - Name: Message
+    Id: g=cd8f89e40612f01b609cd90662358494
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: HighStateMessage
+      Id: g=16e98bacdbe9b405f29e0a88add3ef32
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Foundry power consumption is above the normal operating range."}
+    - Name: LowStateMessage
+      Id: g=ccb9c326017e05c1ebc13df4ef1c11cc
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Foundry power consumption is below the normal operating range."}
+- Name: Foundry Renewable power
+  Id: g=9782da98670149c63882773e0bbb464b
+  Type: ExclusiveLevelAlarmController
+  Children:
+  - Name: InputValue
+    Id: g=c0c6d7ec0e6a3017050207e7a373caf8
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=b33f7ef463d0954f65d4fe4c0cf5beca
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../../Model/Variables_Electroobtención/Energía/Potencia_renovable_electro_kW"
+      Children:
+      - Name: Mode
+        Id: g=3fdd1f53b04fa0a7e812cfa08ed5392e
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=a6971cce7ee1f29b6150aa29503a7155
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=154
+    Direction: Forward
+  - Name: HighLimit
+    Id: g=44561e299c9868144981121e441eb338
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 1500.0
+  - Name: Message
+    Id: g=813cfe19b82eb576cbc64d38a20f849d
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: HighStateMessage
+      Id: g=e290d4c17d52c734433bcc3da217a40f
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Foundry renewable power generation is above the target range"}
+    - Name: LowStateMessage
+      Id: g=5d3a7bd65a13331c4590d9bfca7e9528
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Ew renewable power generation is below the target range."}
+  - Name: LowLimit
+    Id: g=9f10edf80275038b3bb73067795c7d50
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 600.0
+- Name: Foundry CO2
+  Id: g=c8d35a3245c3d8fb6ad46b4a45f5361c
+  Type: ExclusiveLevelAlarmController
+  Children:
+  - Name: InputValue
+    Id: g=d53dbf924da09d3b5b216b085c84cce3
+    Type: BaseDataVariableType
+    DataType: Double
+    Children:
+    - Name: DynamicLink
+      Id: g=9c027f8b44a7ea70cec5567654b78e48
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../../Model/Variables_Electroobtención/ESG/CO2"
+      Children:
+      - Name: Mode
+        Id: g=b6597099a3b19627994c5849193829cd
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=9683d095b1d0910636d5e6cfc4a57f1b
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=23;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=83
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=130
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=135
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=132
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=146
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=148
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=150
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=152
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=154
+    Direction: Forward
+  - Name: HighLimit
+    Id: g=bd21aa6caecc84be8b3af72a903070b5
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 2000.0
+  - Name: Message
+    Id: g=c1f030ffb642797d4fb2ccf216bd5336
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: HighStateMessage
+      Id: g=0d5648265894388ea5095ca8ac4bb824
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Foundry CO₂ emissions are above the sustainability target."}
