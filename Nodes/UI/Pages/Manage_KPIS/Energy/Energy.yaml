@@ -226,7 +226,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "/Objects/mes_v1/Model/Variables_Extracción/Energía/Potencia_kW_extracción"
+              Value: "/Objects/mes_v1/Model/Variables_Extracción/Energía/Energía_kWh"
         - Name: Height
           Type: BaseVariableType
           DataType: Size
@@ -317,7 +317,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "/Objects/mes_v1/Model/Variables_Chancado/Energía/Potencia_kW_Chancado"
+              Value: "/Objects/mes_v1/Model/Variables_Chancado/ESG/Energía_kWh_Chancado"
         - Name: Height
           Type: BaseVariableType
           DataType: Size
@@ -418,7 +418,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "/Objects/mes_v1/Model/Variables_Molienda/Energía/Potencia_kW"
+              Value: "/Objects/mes_v1/Model/Variables_Molienda/Energía/Energia_kWh"
         - Name: Height
           Type: BaseVariableType
           DataType: Size
@@ -668,7 +668,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "/Objects/mes_v1/Model/Variables_Flotación/Energía/Potencia_flot_kW"
+              Value: "/Objects/mes_v1/Model/Variables_Flotación/Energía/Energía_total_flot"
         - Name: Enabled
           Type: BaseDataVariableType
           DataType: Boolean
@@ -993,7 +993,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "/Objects/mes_v1/Model/Variables_Fundición/Energía/Potencia_total_fundición_kW"
+              Value: "/Objects/mes_v1/Model/Variables_Fundición/Energía/Energía_total_fundición_kWh"
           - Name: HorizontalAlignment
             Type: BaseVariableType
             DataType: HorizontalAlignment
@@ -1350,7 +1350,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "/Objects/mes_v1/Model/Variables_Electroobtención/Energía/Potencia_total_electro_kW"
+              Value: "/Objects/mes_v1/Model/Variables_Electroobtención/ESG/Energía_electro_kWh"
           - Name: HorizontalAlignment
             Type: BaseVariableType
             DataType: HorizontalAlignment
