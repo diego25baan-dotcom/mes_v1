@@ -117,7 +117,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"Water Footprint=\n\nTotal Water Consumption/Processed tons\n"}
+        Value: {"LocaleId":"en-US","Text":"Water Footprint=\n\nTotal Water Consumption/Ore processed"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -229,7 +229,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "/Objects/mes_v1/Model/KPIS/Agua/Agua_total"
+              Value: "/Objects/mes_v1/Model/KPIS/Agua/Water_consumption"
       - Name: Rectangle9
         Type: Rectangle
         Children:
@@ -275,7 +275,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "/Objects/mes_v1/Model/KPIS/Agua/Toneladas producidas"
+              Value: "/Objects/mes_v1/Model/KPIS/Producción/KPI_PROD_001 PRODUCTION "
       - Name: Rectangle14
         Type: Rectangle
         Children:
