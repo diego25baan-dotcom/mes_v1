@@ -26242,6 +26242,7 @@ Children:
                 - Name: Value
                   Type: BaseDataVariableType
                   DataType: Float
+                  Value: 85.0
                 - Name: MinValue
                   Type: BaseDataVariableType
                   DataType: Float
@@ -26290,6 +26291,10 @@ Children:
                   DataType: Size
                   ModellingRule: Optional
                   Value: 180.0
+                - Name: ValueChangeBehaviour
+                  Type: BaseDataVariableType
+                  DataType: ValueChangeBehaviour
+                  ModellingRule: Optional
               - Name: Label2
                 Type: Label
                 Children:
@@ -26320,7 +26325,7 @@ Children:
                   Type: BaseDataVariableType
                   DataType: LocalizedText
                   ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"Time in state"}
+                  Value: {"LocaleId":"en-US","Text":"Speed"}
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -26342,8 +26347,11 @@ Children:
                 - Name: Text
                   Type: BaseDataVariableType
                   DataType: LocalizedText
-                  ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"####"}
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/mes_v1/Model/Variables_Extracción/Energía/Flujo_material_extracción"
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -26365,8 +26373,11 @@ Children:
                 - Name: Text
                   Type: BaseDataVariableType
                   DataType: LocalizedText
-                  ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"####"}
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/mes_v1/Model/Variables_Extracción/Energía/Velocidad_banda_extracción_mps"
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -26389,35 +26400,12 @@ Children:
                   Type: BaseDataVariableType
                   DataType: LocalizedText
                   ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"Vibration"}
+                  Value: {"LocaleId":"en-US","Text":"Energy"}
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
                   Value: 17.0
-                - Name: TopMargin
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 156.0
-                - Name: TextColor
-                  Type: BaseDataVariableType
-                  DataType: Color
-                  ModellingRule: Optional
-                  Value: "#cfcfcfa1"
-              - Name: Label7
-                Type: Label
-                Children:
-                - Name: Text
-                  Type: BaseDataVariableType
-                  DataType: LocalizedText
-                  ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"Temperature"}
-                - Name: LeftMargin
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 108.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -26434,36 +26422,16 @@ Children:
                 - Name: Text
                   Type: BaseDataVariableType
                   DataType: LocalizedText
-                  ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"####"}
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/mes_v1/Model/Variables_Extracción/Energía/Potencia_kW_extracción"
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
                   Value: 17.0
-                - Name: TopMargin
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 171.0
-                - Name: TextColor
-                  Type: BaseDataVariableType
-                  DataType: Color
-                  ModellingRule: Optional
-                  Value: "#ffffff"
-              - Name: Label9
-                Type: Label
-                Children:
-                - Name: Text
-                  Type: BaseDataVariableType
-                  DataType: LocalizedText
-                  ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"####"}
-                - Name: LeftMargin
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 108.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -26633,6 +26601,7 @@ Children:
                 - Name: Value
                   Type: BaseDataVariableType
                   DataType: Float
+                  Value: 96.0
                 - Name: MinValue
                   Type: BaseDataVariableType
                   DataType: Float
@@ -26688,7 +26657,7 @@ Children:
                   Type: BaseDataVariableType
                   DataType: LocalizedText
                   ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"Production"}
+                  Value: {"LocaleId":"en-US","Text":"Material flow"}
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -26711,7 +26680,7 @@ Children:
                   Type: BaseDataVariableType
                   DataType: LocalizedText
                   ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"Time in state"}
+                  Value: {"LocaleId":"en-US","Text":"Energy"}
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -26733,8 +26702,11 @@ Children:
                 - Name: Text
                   Type: BaseDataVariableType
                   DataType: LocalizedText
-                  ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"####"}
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/mes_v1/Model/Variables_Chancado/Energía/Flujo_Material_chancado"
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -26756,8 +26728,11 @@ Children:
                 - Name: Text
                   Type: BaseDataVariableType
                   DataType: LocalizedText
-                  ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"####"}
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/mes_v1/Model/Variables_Chancado/ESG/Energía_kWh_Chancado"
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -26768,98 +26743,6 @@ Children:
                   DataType: Size
                   ModellingRule: Optional
                   Value: 141.0
-                - Name: TextColor
-                  Type: BaseDataVariableType
-                  DataType: Color
-                  ModellingRule: Optional
-                  Value: "#ffffff"
-              - Name: Label6
-                Type: Label
-                Children:
-                - Name: Text
-                  Type: BaseDataVariableType
-                  DataType: LocalizedText
-                  ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"Vibration"}
-                - Name: LeftMargin
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 17.0
-                - Name: TopMargin
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 156.0
-                - Name: TextColor
-                  Type: BaseDataVariableType
-                  DataType: Color
-                  ModellingRule: Optional
-                  Value: "#cfcfcfa1"
-              - Name: Label7
-                Type: Label
-                Children:
-                - Name: Text
-                  Type: BaseDataVariableType
-                  DataType: LocalizedText
-                  ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"Temperature"}
-                - Name: LeftMargin
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 108.0
-                - Name: TopMargin
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 156.0
-                - Name: TextColor
-                  Type: BaseDataVariableType
-                  DataType: Color
-                  ModellingRule: Optional
-                  Value: "#cfcfcfa1"
-              - Name: Label8
-                Type: Label
-                Children:
-                - Name: Text
-                  Type: BaseDataVariableType
-                  DataType: LocalizedText
-                  ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"####"}
-                - Name: LeftMargin
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 17.0
-                - Name: TopMargin
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 171.0
-                - Name: TextColor
-                  Type: BaseDataVariableType
-                  DataType: Color
-                  ModellingRule: Optional
-                  Value: "#ffffff"
-              - Name: Label9
-                Type: Label
-                Children:
-                - Name: Text
-                  Type: BaseDataVariableType
-                  DataType: LocalizedText
-                  ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"####"}
-                - Name: LeftMargin
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 108.0
-                - Name: TopMargin
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 171.0
                 - Name: TextColor
                   Type: BaseDataVariableType
                   DataType: Color
@@ -26925,6 +26808,55 @@ Children:
                   DataType: Size
                   ModellingRule: Optional
                   Value: 22.0
+              - Name: Label8
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/mes_v1/Model/Variables_Chancado/Energía/Velocidad_alimentador_Chancado_mps"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 17.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 171.0
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  ModellingRule: Optional
+                  Value: "#ffffff"
+              - Name: Label6
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  ModellingRule: Optional
+                  Value: {"LocaleId":"en-US","Text":"Speed"}
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 17.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 156.0
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  ModellingRule: Optional
+                  Value: "#cfcfcfa1"
             - Name: Rectangle4
               Type: Rectangle
               Children:
@@ -26999,6 +26931,7 @@ Children:
                 - Name: Value
                   Type: BaseDataVariableType
                   DataType: Float
+                  Value: 88.0
                 - Name: MinValue
                   Type: BaseDataVariableType
                   DataType: Float
@@ -27077,7 +27010,7 @@ Children:
                   Type: BaseDataVariableType
                   DataType: LocalizedText
                   ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"Time in state"}
+                  Value: {"LocaleId":"en-US","Text":"Motor speed"}
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -27099,8 +27032,11 @@ Children:
                 - Name: Text
                   Type: BaseDataVariableType
                   DataType: LocalizedText
-                  ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"####"}
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/mes_v1/Model/Variables_Chancado/Energía/Toneladas_acumuladas_chancado"
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -27122,8 +27058,11 @@ Children:
                 - Name: Text
                   Type: BaseDataVariableType
                   DataType: LocalizedText
-                  ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"####"}
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/mes_v1/Model/Variables_Chancado/Energía/Velocidad_motor_chancadora"
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -27146,7 +27085,7 @@ Children:
                   Type: BaseDataVariableType
                   DataType: LocalizedText
                   ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"Vibration"}
+                  Value: {"LocaleId":"en-US","Text":"Energy"}
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -27169,7 +27108,7 @@ Children:
                   Type: BaseDataVariableType
                   DataType: LocalizedText
                   ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"Temperature"}
+                  Value: {"LocaleId":"en-US","Text":"Feed rate"}
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -27191,8 +27130,11 @@ Children:
                 - Name: Text
                   Type: BaseDataVariableType
                   DataType: LocalizedText
-                  ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"####"}
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/mes_v1/Model/Variables_Chancado/Energía/Potencia_kW_Chancado"
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -27214,8 +27156,11 @@ Children:
                 - Name: Text
                   Type: BaseDataVariableType
                   DataType: LocalizedText
-                  ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"####"}
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/mes_v1/Model/Variables_Chancado/Energía/Flujo_Material_chancado"
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -27367,6 +27312,7 @@ Children:
                 - Name: Value
                   Type: BaseDataVariableType
                   DataType: Float
+                  Value: 91.0
                 - Name: MinValue
                   Type: BaseDataVariableType
                   DataType: Float
@@ -27467,8 +27413,11 @@ Children:
                 - Name: Text
                   Type: BaseDataVariableType
                   DataType: LocalizedText
-                  ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"####"}
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/mes_v1/Model/Variables_Molienda/Energía/Toneladas_acumuladas"
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -27490,8 +27439,11 @@ Children:
                 - Name: Text
                   Type: BaseDataVariableType
                   DataType: LocalizedText
-                  ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"####"}
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/mes_v1/Model/Variables_Molienda/Agua/Tiempo_Respuesta"
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -27514,7 +27466,7 @@ Children:
                   Type: BaseDataVariableType
                   DataType: LocalizedText
                   ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"Vibration"}
+                  Value: {"LocaleId":"en-US","Text":"Energy"}
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -27537,7 +27489,7 @@ Children:
                   Type: BaseDataVariableType
                   DataType: LocalizedText
                   ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"Temperature"}
+                  Value: {"LocaleId":"en-US","Text":"Water consumed"}
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -27559,8 +27511,11 @@ Children:
                 - Name: Text
                   Type: BaseDataVariableType
                   DataType: LocalizedText
-                  ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"####"}
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/mes_v1/Model/Variables_Molienda/Energía/Potencia_kW"
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -27582,8 +27537,11 @@ Children:
                 - Name: Text
                   Type: BaseDataVariableType
                   DataType: LocalizedText
-                  ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"####"}
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/mes_v1/Model/Variables_Molienda/Agua/Agua_total"
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -27767,6 +27725,7 @@ Children:
                 - Name: Value
                   Type: BaseDataVariableType
                   DataType: Float
+                  Value: 76.0
                 - Name: MinValue
                   Type: BaseDataVariableType
                   DataType: Float
@@ -27845,7 +27804,7 @@ Children:
                   Type: BaseDataVariableType
                   DataType: LocalizedText
                   ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"Time in state"}
+                  Value: {"LocaleId":"en-US","Text":"Feed rate"}
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -27867,8 +27826,11 @@ Children:
                 - Name: Text
                   Type: BaseDataVariableType
                   DataType: LocalizedText
-                  ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"####"}
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/mes_v1/Model/Variables_Flotación/ESG/Toneladas_Producidas"
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -27890,8 +27852,11 @@ Children:
                 - Name: Text
                   Type: BaseDataVariableType
                   DataType: LocalizedText
-                  ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"####"}
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/mes_v1/Model/Variables_Flotación/Energía/Flujo_material"
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -27914,35 +27879,12 @@ Children:
                   Type: BaseDataVariableType
                   DataType: LocalizedText
                   ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"Vibration"}
+                  Value: {"LocaleId":"en-US","Text":"Input ore grade"}
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
                   Value: 17.0
-                - Name: TopMargin
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 156.0
-                - Name: TextColor
-                  Type: BaseDataVariableType
-                  DataType: Color
-                  ModellingRule: Optional
-                  Value: "#cfcfcfa1"
-              - Name: Label7
-                Type: Label
-                Children:
-                - Name: Text
-                  Type: BaseDataVariableType
-                  DataType: LocalizedText
-                  ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"Temperature"}
-                - Name: LeftMargin
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 108.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -27959,36 +27901,16 @@ Children:
                 - Name: Text
                   Type: BaseDataVariableType
                   DataType: LocalizedText
-                  ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"####"}
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/mes_v1/Model/Variables_Flotación/Producción/Ley_mineral_entrada"
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
                   Value: 17.0
-                - Name: TopMargin
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 171.0
-                - Name: TextColor
-                  Type: BaseDataVariableType
-                  DataType: Color
-                  ModellingRule: Optional
-                  Value: "#ffffff"
-              - Name: Label9
-                Type: Label
-                Children:
-                - Name: Text
-                  Type: BaseDataVariableType
-                  DataType: LocalizedText
-                  ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"####"}
-                - Name: LeftMargin
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 108.0
                 - Name: TopMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -28135,6 +28057,7 @@ Children:
                 - Name: Value
                   Type: BaseDataVariableType
                   DataType: Float
+                  Value: 87.0
                 - Name: MinValue
                   Type: BaseDataVariableType
                   DataType: Float
@@ -28183,190 +28106,6 @@ Children:
                   DataType: Size
                   ModellingRule: Optional
                   Value: 180.0
-              - Name: Label2
-                Type: Label
-                Children:
-                - Name: Text
-                  Type: BaseDataVariableType
-                  DataType: LocalizedText
-                  ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"Production"}
-                - Name: LeftMargin
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 17.0
-                - Name: TopMargin
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 126.0
-                - Name: TextColor
-                  Type: BaseDataVariableType
-                  DataType: Color
-                  ModellingRule: Optional
-                  Value: "#cfcfcfa1"
-              - Name: Label3
-                Type: Label
-                Children:
-                - Name: Text
-                  Type: BaseDataVariableType
-                  DataType: LocalizedText
-                  ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"Time in state"}
-                - Name: LeftMargin
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 108.0
-                - Name: TopMargin
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 126.0
-                - Name: TextColor
-                  Type: BaseDataVariableType
-                  DataType: Color
-                  ModellingRule: Optional
-                  Value: "#cfcfcfa1"
-              - Name: Label4
-                Type: Label
-                Children:
-                - Name: Text
-                  Type: BaseDataVariableType
-                  DataType: LocalizedText
-                  ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"####"}
-                - Name: LeftMargin
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 17.0
-                - Name: TopMargin
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 141.0
-                - Name: TextColor
-                  Type: BaseDataVariableType
-                  DataType: Color
-                  ModellingRule: Optional
-                  Value: "#ffffff"
-              - Name: Label5
-                Type: Label
-                Children:
-                - Name: Text
-                  Type: BaseDataVariableType
-                  DataType: LocalizedText
-                  ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"####"}
-                - Name: LeftMargin
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 108.0
-                - Name: TopMargin
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 141.0
-                - Name: TextColor
-                  Type: BaseDataVariableType
-                  DataType: Color
-                  ModellingRule: Optional
-                  Value: "#ffffff"
-              - Name: Label6
-                Type: Label
-                Children:
-                - Name: Text
-                  Type: BaseDataVariableType
-                  DataType: LocalizedText
-                  ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"Vibration"}
-                - Name: LeftMargin
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 17.0
-                - Name: TopMargin
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 156.0
-                - Name: TextColor
-                  Type: BaseDataVariableType
-                  DataType: Color
-                  ModellingRule: Optional
-                  Value: "#cfcfcfa1"
-              - Name: Label7
-                Type: Label
-                Children:
-                - Name: Text
-                  Type: BaseDataVariableType
-                  DataType: LocalizedText
-                  ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"Temperature"}
-                - Name: LeftMargin
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 108.0
-                - Name: TopMargin
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 156.0
-                - Name: TextColor
-                  Type: BaseDataVariableType
-                  DataType: Color
-                  ModellingRule: Optional
-                  Value: "#cfcfcfa1"
-              - Name: Label8
-                Type: Label
-                Children:
-                - Name: Text
-                  Type: BaseDataVariableType
-                  DataType: LocalizedText
-                  ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"####"}
-                - Name: LeftMargin
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 17.0
-                - Name: TopMargin
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 171.0
-                - Name: TextColor
-                  Type: BaseDataVariableType
-                  DataType: Color
-                  ModellingRule: Optional
-                  Value: "#ffffff"
-              - Name: Label9
-                Type: Label
-                Children:
-                - Name: Text
-                  Type: BaseDataVariableType
-                  DataType: LocalizedText
-                  ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"####"}
-                - Name: LeftMargin
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 108.0
-                - Name: TopMargin
-                  Type: BaseVariableType
-                  DataType: Size
-                  ModellingRule: Optional
-                  Value: 171.0
-                - Name: TextColor
-                  Type: BaseDataVariableType
-                  DataType: Color
-                  ModellingRule: Optional
-                  Value: "#ffffff"
               - Name: Image1
                 Type: Image
                 Children:
@@ -28427,6 +28166,153 @@ Children:
                   DataType: Size
                   ModellingRule: Optional
                   Value: 22.0
+              - Name: Label2
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  ModellingRule: Optional
+                  Value: {"LocaleId":"en-US","Text":"Production"}
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 17.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 126.0
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  ModellingRule: Optional
+                  Value: "#cfcfcfa1"
+              - Name: Label3
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  ModellingRule: Optional
+                  Value: {"LocaleId":"en-US","Text":"Feed rate"}
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 108.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 126.0
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  ModellingRule: Optional
+                  Value: "#cfcfcfa1"
+              - Name: Label4
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/mes_v1/Model/Variables_Flotación/ESG/Toneladas_Producidas"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 17.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 141.0
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  ModellingRule: Optional
+                  Value: "#ffffff"
+              - Name: Label5
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/mes_v1/Model/Variables_Flotación/Energía/Flujo_material"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 108.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 141.0
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  ModellingRule: Optional
+                  Value: "#ffffff"
+              - Name: Label6
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  ModellingRule: Optional
+                  Value: {"LocaleId":"en-US","Text":"Input ore grade"}
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 17.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 156.0
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  ModellingRule: Optional
+                  Value: "#cfcfcfa1"
+              - Name: Label8
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/mes_v1/Model/Variables_Flotación/Producción/Ley_mineral_entrada"
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 17.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 171.0
+                - Name: TextColor
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  ModellingRule: Optional
+                  Value: "#ffffff"
             - Name: Rectangle3
               Type: Rectangle
               Children:
@@ -28503,6 +28389,7 @@ Children:
                 - Name: Value
                   Type: BaseDataVariableType
                   DataType: Float
+                  Value: 91.0
                 - Name: MinValue
                   Type: BaseDataVariableType
                   DataType: Float
@@ -28558,7 +28445,7 @@ Children:
                   Type: BaseDataVariableType
                   DataType: LocalizedText
                   ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"Production"}
+                  Value: {"LocaleId":"en-US","Text":"Energy"}
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -28581,7 +28468,7 @@ Children:
                   Type: BaseDataVariableType
                   DataType: LocalizedText
                   ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"Time in state"}
+                  Value: {"LocaleId":"en-US","Text":"Input ore grade"}
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -28603,8 +28490,11 @@ Children:
                 - Name: Text
                   Type: BaseDataVariableType
                   DataType: LocalizedText
-                  ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"####"}
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/mes_v1/Model/Variables_Fundición/Energía/Energía_total_fundición_kWh"
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -28626,8 +28516,11 @@ Children:
                 - Name: Text
                   Type: BaseDataVariableType
                   DataType: LocalizedText
-                  ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"####"}
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/mes_v1/Model/Variables_Fundición/Producción/Ley_mineral_entrada_fund"
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -28650,7 +28543,7 @@ Children:
                   Type: BaseDataVariableType
                   DataType: LocalizedText
                   ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"Vibration"}
+                  Value: {"LocaleId":"en-US","Text":"Emmisions"}
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -28673,7 +28566,7 @@ Children:
                   Type: BaseDataVariableType
                   DataType: LocalizedText
                   ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"Temperature"}
+                  Value: {"LocaleId":"en-US","Text":"Output ore grade"}
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -28695,8 +28588,11 @@ Children:
                 - Name: Text
                   Type: BaseDataVariableType
                   DataType: LocalizedText
-                  ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"####"}
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/mes_v1/Model/Variables_Fundición/ESG/Emision_gas_fund_kg"
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -28718,8 +28614,11 @@ Children:
                 - Name: Text
                   Type: BaseDataVariableType
                   DataType: LocalizedText
-                  ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"####"}
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/mes_v1/Model/Variables_Fundición/Producción/Ley_mineral_salida_fund"
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -28869,6 +28768,7 @@ Children:
                 - Name: Value
                   Type: BaseDataVariableType
                   DataType: Float
+                  Value: 71.0
                 - Name: MinValue
                   Type: BaseDataVariableType
                   DataType: Float
@@ -28924,7 +28824,7 @@ Children:
                   Type: BaseDataVariableType
                   DataType: LocalizedText
                   ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"Production"}
+                  Value: {"LocaleId":"en-US","Text":"Water consumed"}
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -28947,7 +28847,7 @@ Children:
                   Type: BaseDataVariableType
                   DataType: LocalizedText
                   ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"Time in state"}
+                  Value: {"LocaleId":"en-US","Text":"Tons produced"}
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -28969,8 +28869,11 @@ Children:
                 - Name: Text
                   Type: BaseDataVariableType
                   DataType: LocalizedText
-                  ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"####"}
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/mes_v1/Model/Variables_Electroobtención/Agua/Volumen_agua_total_electro__L"
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -28992,8 +28895,11 @@ Children:
                 - Name: Text
                   Type: BaseDataVariableType
                   DataType: LocalizedText
-                  ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"####"}
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/mes_v1/Model/Variables_Electroobtención/Energía/Toneladas_catodos_producidos_electro"
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -29016,7 +28922,7 @@ Children:
                   Type: BaseDataVariableType
                   DataType: LocalizedText
                   ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"Vibration"}
+                  Value: {"LocaleId":"en-US","Text":"Energy"}
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -29039,7 +28945,7 @@ Children:
                   Type: BaseDataVariableType
                   DataType: LocalizedText
                   ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"Temperature"}
+                  Value: {"LocaleId":"en-US","Text":"Current efficiency"}
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -29061,8 +28967,11 @@ Children:
                 - Name: Text
                   Type: BaseDataVariableType
                   DataType: LocalizedText
-                  ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"####"}
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/mes_v1/Model/Variables_Electroobtención/Energía/Potencia_total_electro_kW"
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -29084,8 +28993,11 @@ Children:
                 - Name: Text
                   Type: BaseDataVariableType
                   DataType: LocalizedText
-                  ModellingRule: Optional
-                  Value: {"LocaleId":"en-US","Text":"####"}
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/mes_v1/Model/Variables_Electroobtención/Energía/Eficiencia_corriente_pct"
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
