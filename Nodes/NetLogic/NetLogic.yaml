@@ -274,6 +274,9 @@ Children:
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
+  - Name: KPI_PROD_001 PRODUCTION
+    Type: BaseDataVariableType
+    DataType: Float
 - Name: Sim_esg
   Type: NetLogic
   Children:
@@ -506,6 +509,19 @@ Children:
       Type: DynamicLink
       DataType: NodePath
       Value: "../../../Model/Variables_Molienda/Energía/Toneladas_acumuladas"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: Water_consumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/KPIS/Agua/Water_consumption"
       Children:
       - Name: Mode
         Type: BaseVariableType

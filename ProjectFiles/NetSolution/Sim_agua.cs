@@ -31,6 +31,8 @@ public class Sim_agua : BaseNetLogic
         KPI_WA_002 = LogicObject.GetVariable("KPI_WA_002_reutilizacion");
         KPI_WA_003 = LogicObject.GetVariable("KPI_WA_003_des_residual");
         KPI_WA_004 = LogicObject.GetVariable("KPI_WA_004_incidentes");
+        KPI_PROD_001 =LogicObject.GetVariable("KPI_PROD_001 PRODUCTION");
+        
 
         simulationTask = new PeriodicTask(Simulation, 250, LogicObject);
         simulationTask.Start();
@@ -54,6 +56,8 @@ public class Sim_agua : BaseNetLogic
 
             // Lectura caudal agua
             caudal_Agua_val = caudalAgua.Value;
+            water_consumption_val = water_consumption.Value;
+            KPI_PROD_001_val = KPI_PROD_001.Value;
 
             if (caudal_Agua_val < 0)
                 caudal_Agua_val = 0;
@@ -79,9 +83,7 @@ public class Sim_agua : BaseNetLogic
 
             if (toneladas_acumuladas_val > 0.001)
             {
-                KPI_WA_001.Value =
-                    agua_total_val /
-                    toneladas_acumuladas_val;
+                KPI_WA_001.Value =water_consumption_val /KPI_PROD_001_val;
             }
             else
             {
@@ -195,6 +197,7 @@ public class Sim_agua : BaseNetLogic
     private IUAVariable KPI_WA_002;
     private IUAVariable KPI_WA_003;
     private IUAVariable KPI_WA_004;
+    private IUAVariable KPI_PROD_001;
 
     // ======================================================
     // Variables auxiliares
@@ -202,6 +205,8 @@ public class Sim_agua : BaseNetLogic
 
     private double agua_total_val = 0.0;
     private double agua_reutilizada_val = 0.0;
+    private double water_consumption_val = 0.0;
+    private double KPI_PROD_001_val = 0.0;
 
     private double caudal_Agua_val = 0.0;
     private double caudalDescarga_val = 0.0;

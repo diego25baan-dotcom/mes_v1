@@ -75,6 +75,12 @@ Children:
       Type: Label
     - Name: Label3
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Performance"}
     - Name: Label4
       Type: Label
   - Name: VerticalLayout3
@@ -138,8 +144,6 @@ Children:
     - Name: Label3
       Type: Label
     - Name: Label4
-      Type: Label
-    - Name: Label5
       Type: Label
   - Name: Label2
     Type: Label
@@ -321,8 +325,6 @@ Children:
       Type: Label
     - Name: Label4
       Type: Label
-    - Name: Label5
-      Type: Label
   - Name: Label2
     Type: Label
   - Name: CircularGauge2
@@ -502,8 +504,6 @@ Children:
     - Name: Label3
       Type: Label
     - Name: Label4
-      Type: Label
-    - Name: Label5
       Type: Label
   - Name: Label2
     Type: Label
@@ -685,8 +685,6 @@ Children:
       Type: Label
     - Name: Label4
       Type: Label
-    - Name: Label5
-      Type: Label
   - Name: Label2
     Type: Label
   - Name: CircularGauge2
@@ -866,8 +864,6 @@ Children:
     - Name: Label3
       Type: Label
     - Name: Label4
-      Type: Label
-    - Name: Label5
       Type: Label
   - Name: Label2
     Type: Label
@@ -1049,8 +1045,6 @@ Children:
       Type: Label
     - Name: Label4
       Type: Label
-    - Name: Label5
-      Type: Label
   - Name: Label2
     Type: Label
   - Name: CircularGauge2
@@ -1231,8 +1225,6 @@ Children:
       Type: Label
     - Name: Label4
       Type: Label
-    - Name: Label5
-      Type: Label
   - Name: Label2
     Type: Label
   - Name: CircularGauge2
@@ -1412,8 +1404,6 @@ Children:
     - Name: Label3
       Type: Label
     - Name: Label4
-      Type: Label
-    - Name: Label5
       Type: Label
   - Name: Label2
     Type: Label

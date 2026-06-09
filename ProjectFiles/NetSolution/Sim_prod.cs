@@ -25,6 +25,7 @@ public class Sim_prod : BaseNetLogic
         Ley_mineral_entrada =LogicObject.GetVariable("Ley_mineral_entrada");
 
         Ley_mineral_salida =LogicObject.GetVariable("Ley_mineral_salida");
+        
 
         Disponibilidad =LogicObject.GetVariable("Disponibilidad");
 
@@ -72,6 +73,7 @@ public class Sim_prod : BaseNetLogic
             double Rendimiento_val =Rendimiento.Value;
 
             double Calidad_val =Calidad.Value;
+            
 
             double Costo_total_val =Costo_total.Value;
 
@@ -146,6 +148,7 @@ public class Sim_prod : BaseNetLogic
     private IUAVariable Disponibilidad;
     private IUAVariable Rendimiento;
     private IUAVariable Calidad;
+    
 
     private IUAVariable Costo_total;
     private IUAVariable Toneladas_producidas;
@@ -170,6 +173,7 @@ public class Sim_prod : BaseNetLogic
     private double Disponibilidad_val = 0.0;
     private double Rendimiento_val = 0.0;
     private double Calidad_val = 0.0;
+    
 
     private double Costo_total_val = 0.0;
     private double Toneladas_producidas_val = 0.0;

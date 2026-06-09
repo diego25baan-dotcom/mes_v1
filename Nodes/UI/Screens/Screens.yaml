@@ -3632,34 +3632,6 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 10.0
-    - Name: Label5
-      Type: Label
-      Children:
-      - Name: Text
-        Type: BaseDataVariableType
-        DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"Power"}
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 5.0
-      - Name: TextColor
-        Type: BaseDataVariableType
-        DataType: Color
-        ModellingRule: Optional
-        Value: "#ffffff"
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 5.0
-      - Name: FontSize
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 10.0
   - Name: Label2
     Type: Label
     Children:
