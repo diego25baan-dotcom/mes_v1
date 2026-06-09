@@ -4039,7 +4039,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"Availability"}
+        Value: {"LocaleId":"en-US","Text":"Available"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -4145,34 +4145,6 @@ Children:
         ModellingRule: Optional
         Value: 12.0
     - Name: Label7
-      Type: Label
-      Children:
-      - Name: Text
-        Type: BaseDataVariableType
-        DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"OEE"}
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 5.0
-      - Name: TextColor
-        Type: BaseDataVariableType
-        DataType: Color
-        ModellingRule: Optional
-        Value: "#b3b3b3"
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 5.0
-      - Name: FontSize
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 12.0
-    - Name: Label8
       Type: Label
       Children:
       - Name: Text
@@ -4230,7 +4202,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"Lot"}
+        Value: {"LocaleId":"en-US","Text":"Total power"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -4253,7 +4225,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"Equipment"}
+        Value: {"LocaleId":"en-US","Text":"Water consumed"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -4281,7 +4253,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"Stage"}
+        Value: {"LocaleId":"en-US","Text":"State"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -4309,7 +4281,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"Start time"}
+        Value: {"LocaleId":"en-US","Text":"Disponibility"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -4337,7 +4309,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"Status"}
+        Value: {"LocaleId":"en-US","Text":"Performance"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -4365,7 +4337,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"Elapsed time"}
+        Value: {"LocaleId":"en-US","Text":"Output ore grade"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -4394,34 +4366,6 @@ Children:
         DataType: LocalizedText
         ModellingRule: Optional
         Value: {"LocaleId":"en-US","Text":"Processed Tonnage"}
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 5.0
-      - Name: TextColor
-        Type: BaseDataVariableType
-        DataType: Color
-        ModellingRule: Optional
-        Value: "#ffffff"
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 5.0
-      - Name: FontSize
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 12.0
-    - Name: Label8
-      Type: Label
-      Children:
-      - Name: Text
-        Type: BaseDataVariableType
-        DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"Specific energy"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size

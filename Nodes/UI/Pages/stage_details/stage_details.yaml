@@ -40,20 +40,72 @@ Children:
     Children:
     - Name: Label1
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/Variables_Extracción/Energía/Potencia_kW_extracción"
     - Name: Label2
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/Variables_Molienda/Agua/Agua_total"
     - Name: Label3
       Type: Label
     - Name: Label4
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/Variables_Molienda/Producción/Disponibilidad_Molino"
     - Name: Label5
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/Variables_Molienda/Producción/Rendimiento_Molino"
     - Name: Label6
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/Variables_Molienda/Producción/Ley_mineral_salida"
     - Name: Label7
       Type: Label
-    - Name: Label8
-      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/Variables_Molienda/Energía/Toneladas_acumuladas"
   - Name: VerticalLayout3
     Type: ColumnLayout
     Children:
@@ -70,8 +122,6 @@ Children:
     - Name: Label6
       Type: Label
     - Name: Label7
-      Type: Label
-    - Name: Label8
       Type: Label
   - Name: Label2
     Type: Label
@@ -110,20 +160,72 @@ Children:
     Children:
     - Name: Label1
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/Variables_Chancado/Energía/Potencia_kW_Chancado"
     - Name: Label2
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/Variables_Chancado/Producción/Calidad_Chancado"
     - Name: Label3
       Type: Label
     - Name: Label4
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/Variables_Chancado/Producción/Disponibilidad_Chancado"
     - Name: Label5
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/Variables_Chancado/Producción/Rendimiento_Chancado"
     - Name: Label6
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/Variables_Chancado/Producción/Ley_mineral_salida_Chancado"
     - Name: Label7
       Type: Label
-    - Name: Label8
-      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/Variables_Chancado/Energía/Toneladas_acumuladas_chancado"
   - Name: VerticalLayout3
     Type: ColumnLayout
     Children:
@@ -131,6 +233,12 @@ Children:
       Type: Label
     - Name: Label2
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Quality"}
     - Name: Label3
       Type: Label
     - Name: Label4
@@ -140,8 +248,6 @@ Children:
     - Name: Label6
       Type: Label
     - Name: Label7
-      Type: Label
-    - Name: Label8
       Type: Label
   - Name: Label2
     Type: Label
@@ -170,20 +276,72 @@ Children:
     Children:
     - Name: Label1
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/Variables_Molienda/Energía/Potencia_kW"
     - Name: Label2
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/Variables_Molienda/Agua/Agua_total"
     - Name: Label3
       Type: Label
     - Name: Label4
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/Variables_Molienda/Producción/Disponibilidad_Molino"
     - Name: Label5
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/Variables_Molienda/Producción/Rendimiento_Molino"
     - Name: Label6
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/Variables_Molienda/Producción/Ley_mineral_salida"
     - Name: Label7
       Type: Label
-    - Name: Label8
-      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/Variables_Molienda/Energía/Toneladas_acumuladas"
   - Name: VerticalLayout3
     Type: ColumnLayout
     Children:
@@ -200,8 +358,6 @@ Children:
     - Name: Label6
       Type: Label
     - Name: Label7
-      Type: Label
-    - Name: Label8
       Type: Label
   - Name: Label2
     Type: Label
@@ -230,20 +386,72 @@ Children:
     Children:
     - Name: Label1
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/Variables_Flotación/Energía/Potencia_flot_kW"
     - Name: Label2
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/Variables_Flotación/Agua/Agua_Total_flot"
     - Name: Label3
       Type: Label
     - Name: Label4
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/Variables_Flotación/Producción/Disponibilidad"
     - Name: Label5
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/Variables_Flotación/Producción/Rendimiento"
     - Name: Label6
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/Variables_Flotación/Producción/Ley_mineral_salida"
     - Name: Label7
       Type: Label
-    - Name: Label8
-      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/Variables_Flotación/Energía/Toneladas_acumuladas"
   - Name: VerticalLayout3
     Type: ColumnLayout
     Children:
@@ -260,8 +468,6 @@ Children:
     - Name: Label6
       Type: Label
     - Name: Label7
-      Type: Label
-    - Name: Label8
       Type: Label
   - Name: Label2
     Type: Label
@@ -290,20 +496,80 @@ Children:
     Children:
     - Name: Label1
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/Variables_Fundición/Energía/Potencia_total_fundición_kW"
     - Name: Label2
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/Variables_Fundición/Agua/Volumen_agua_fund_L"
     - Name: Label3
       Type: Label
     - Name: Label4
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/Variables_Fundición/Producción/Ley_mineral_entrada_fund"
     - Name: Label5
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/Variables_Fundición/Producción/Ley_mineral_salida_fund"
     - Name: Label6
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/Variables_Fundición/Producción/Toneladas_anodos"
     - Name: Label7
       Type: Label
-    - Name: Label8
-      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/Variables_Fundición/Producción/Toneladas_anodos"
+      - Name: Visible
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ModellingRule: Optional
+      - Name: Enabled
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ModellingRule: Optional
   - Name: VerticalLayout3
     Type: ColumnLayout
     Children:
@@ -315,14 +581,44 @@ Children:
       Type: Label
     - Name: Label4
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Input ore grade"}
     - Name: Label5
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Output ore grade"}
     - Name: Label6
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Processed Tonnage"}
     - Name: Label7
       Type: Label
-    - Name: Label8
-      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Processed Tonnage"}
+      - Name: Visible
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ModellingRule: Optional
+      - Name: Enabled
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ModellingRule: Optional
   - Name: Label2
     Type: Label
     Children:
@@ -350,20 +646,80 @@ Children:
     Children:
     - Name: Label1
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/Variables_Electroobtención/Energía/Potencia_total_electro_kW"
     - Name: Label2
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/Variables_Electroobtención/Agua/Volumen_agua_total_electro__L"
     - Name: Label3
       Type: Label
     - Name: Label4
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/Variables_Electroobtención/Producción/Ley_mineral_salida"
     - Name: Label5
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/Variables_Electroobtención/Producción/Toneladas_producidas_electro"
     - Name: Label6
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/Variables_Electroobtención/ESG/CO2"
     - Name: Label7
       Type: Label
-    - Name: Label8
-      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/mes_v1/Model/Variables_Electroobtención/Producción/Toneladas_producidas_electro"
+      - Name: Visible
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ModellingRule: Optional
+      - Name: Enabled
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ModellingRule: Optional
   - Name: VerticalLayout3
     Type: ColumnLayout
     Children:
@@ -375,14 +731,44 @@ Children:
       Type: Label
     - Name: Label4
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Output ore grade"}
     - Name: Label5
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Processed Tonnage"}
     - Name: Label6
       Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"CO2"}
     - Name: Label7
       Type: Label
-    - Name: Label8
-      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Processed Tonnage"}
+      - Name: Visible
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ModellingRule: Optional
+      - Name: Enabled
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ModellingRule: Optional
   - Name: Label2
     Type: Label
     Children:
